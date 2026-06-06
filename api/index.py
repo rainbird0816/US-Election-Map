@@ -1,22 +1,46 @@
-"""Vercel Python(서버리스) 진입점 — FastAPI ASGI 앱을 그대로 노출.
-프론트는 Vercel 정적 호스팅(frontend/dist), /api/* 는 이 함수로 rewrite(vercel.json).
-
-런타임 레이아웃이 환경마다 다를 수 있어(예: /var/task/index.py + /var/task/backend),
-index.py 의 모든 상위 디렉터리에서 `backend/app/main.py` 또는 `app/main.py` 를
-찾아 그 디렉터리를 sys.path 에 넣는다.
+"""Vercel Python(서버리스) 진입점 — FastAPI ASGI 앱 노출.
+import 실패 시, 런타임 파일시스템을 JSON 으로 반환하는 진단용 폴백 ASGI 앱을 노출한다
+(/var/task 레이아웃과 backend 포함 여부 확인용).
 """
 import sys
+import os
+import json
 import pathlib
+import traceback
 
 _here = pathlib.Path(__file__).resolve()
-_search = [_here.parent, *_here.parents]
-for _d in _search:
+_diag = {"__file__": str(_here), "cwd": os.getcwd()}
+_found = None
+for _d in [_here.parent, *_here.parents]:
+    try:
+        _diag[str(_d)] = sorted(os.listdir(_d))[:60]
+    except Exception as e:  # noqa: BLE001
+        _diag[str(_d)] = f"ERR {e}"
     for _cand in (_d / "backend", _d):
         if (_cand / "app" / "main.py").exists():
-            sys.path.insert(0, str(_cand))
+            _found = _cand
             break
-    else:
-        continue
-    break
+    if _found:
+        break
 
-from app.main import app  # noqa: E402,F401  (Vercel이 ASGI `app` 감지)
+app = None
+_err = None
+if _found:
+    sys.path.insert(0, str(_found))
+    try:
+        from app.main import app  # noqa: E402
+    except Exception:  # noqa: BLE001
+        _err = traceback.format_exc()
+else:
+    _err = "backend/app/main.py not found in any ancestor of __file__"
+
+if app is None:
+    _payload = json.dumps({"found": str(_found), "error": _err, "diag": _diag},
+                          ensure_ascii=False, indent=2).encode("utf-8")
+
+    async def app(scope, receive, send):  # noqa: F811  (진단용 폴백 ASGI)
+        if scope["type"] != "http":
+            return
+        await send({"type": "http.response.start", "status": 200,
+                    "headers": [(b"content-type", b"application/json; charset=utf-8")]})
+        await send({"type": "http.response.body", "body": _payload})
