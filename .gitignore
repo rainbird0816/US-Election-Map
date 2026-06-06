@@ -1,0 +1,22 @@
+# 데이터 원본 (대용량, DB로 가공되어 불필요 → git 제외)
+data/raw/*.csv
+data/raw/*.tab
+data/geo/
+
+# 주의: backend/db/election.sqlite 는 의도적으로 커밋(서버리스 배포에 필요, 읽기전용)
+
+# 파이썬
+backend/.venv/
+**/__pycache__/
+*.pyc
+
+# 노드
+frontend/node_modules/
+frontend/dist/
+
+# 스크린샷 산출물 + 로컬 검증 스크립트(로컬 경로 의존)
+frontend/shot_*.png
+frontend/shot.mjs
+
+# 배포
+.vercel/

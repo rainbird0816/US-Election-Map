@@ -1,0 +1,8 @@
+{
+  "name": "us-election-map",
+  "private": true,
+  "description": "미국 대통령선거 결과 지도 — Vercel 모노레포 루트(프론트 빌드 스크립트)",
+  "scripts": {
+    "build": "npm --prefix frontend install && npm --prefix frontend run build"
+  }
+}
