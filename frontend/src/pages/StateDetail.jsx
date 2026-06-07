@@ -25,6 +25,33 @@ export default function StateDetail({ cycleYear, code, name, hasCounty }) {
 
   const cands = data.candidates || [];
 
+  // 득표 추이: 민주·공화 고정 순서가 아니라 '가장 최근 사이클에서 득표율 높은 정당'이 위로.
+  const trend = hist?.trend || [];
+  const last = trend[trend.length - 1] || {};
+  const SERIES = {
+    DEM: { key: "DEM", name: "민주", stroke: "#1565C0" },
+    REP: { key: "REP", name: "공화", stroke: "#D32F2F" },
+  };
+  const orderedSeries = [SERIES.DEM, SERIES.REP].sort(
+    (a, b) => (last[b.key] || 0) - (last[a.key] || 0)
+  );
+
+  // 주별 결과 분석 — DB 산출 데이터로만 구성(사실 기반, 추정 서술 없음).
+  const stateAnalysis = (() => {
+    const winners = hist?.winners || [];
+    const top2 = [...cands].sort((a, b) => (b.vote_rate || 0) - (a.vote_rate || 0)).slice(0, 2);
+    const win = top2[0];
+    if (!win) return null;
+    const margin = top2[1] ? (win.vote_rate - top2[1].vote_rate).toFixed(1) : null;
+    const idx = winners.findIndex((w) => w.cycle_year === cycleYear);
+    const cur = idx >= 0 ? winners[idx] : null;
+    const prev = idx > 0 ? winners[idx - 1] : null;
+    const flipped = prev && cur && prev.abbr !== cur.abbr;
+    const demW = winners.filter((w) => w.abbr === "DEM").length;
+    const repW = winners.filter((w) => w.abbr === "REP").length;
+    return { win, margin, cur, prev, flipped, demW, repW, n: winners.length };
+  })();
+
   return (
     <>
       <h2>
@@ -50,24 +77,50 @@ export default function StateDetail({ cycleYear, code, name, hasCounty }) {
         </tbody>
       </table>
 
+      {stateAnalysis && (
+        <div className="state-analysis">
+          <h3 className="sec-title">이 주 결과 분석</h3>
+          <p>
+            <b>{name}</b>는 {cycleYear} 대선에서{" "}
+            <span style={{ color: stateAnalysis.win.color_hex, fontWeight: 700 }}>
+              {stateAnalysis.win.name}({stateAnalysis.win.abbr})
+            </span>
+            가 {stateAnalysis.win.vote_rate}%로 승리
+            {stateAnalysis.margin != null ? <>, 2위와 <b>{stateAnalysis.margin}%p</b> 차였습니다.</> : "했습니다."}
+            {stateAnalysis.cur?.ev != null && <> (선거인단 {stateAnalysis.cur.ev}표)</>}
+          </p>
+          <p className="muted">
+            {stateAnalysis.flipped ? (
+              <>직전 {stateAnalysis.prev.cycle_year}년 <b>{stateAnalysis.prev.abbr}</b> 우세에서 <b>{stateAnalysis.win.abbr}</b>로 뒤집혔습니다. </>
+            ) : stateAnalysis.prev ? (
+              <>직전 사이클에 이어 <b>{stateAnalysis.win.abbr}</b> 우세를 유지했습니다. </>
+            ) : null}
+            1976년 이후 이 주 대선 승자: 민주 {stateAnalysis.demW}회 · 공화 {stateAnalysis.repW}회
+            {stateAnalysis.n ? ` (총 ${stateAnalysis.n}회)` : ""}.
+          </p>
+        </div>
+      )}
+
       {hasCounty ? (
         <CountyPanel cycleYear={cycleYear} stateCode={code} stateName={name} />
       ) : (
         <p className="hint county-note">※ 카운티 단위 결과는 2008년 이후 사이클에서 제공됩니다.</p>
       )}
 
-      {hist?.trend?.length > 0 && (
+      {trend.length > 0 && (
         <>
-          <h3 className="sec-title">역대 대선 득표율 추이 (민주 vs 공화)</h3>
+          <h3 className="sec-title">역대 대선 득표율 추이 <span className="muted">(최근 우세 정당 순)</span></h3>
           <ResponsiveContainer width="100%" height={210}>
-            <LineChart data={hist.trend} margin={{ top: 5, right: 8, bottom: 0, left: -18 }}>
+            <LineChart data={trend} margin={{ top: 5, right: 8, bottom: 0, left: -18 }}>
               <CartesianGrid strokeDasharray="3 3" stroke="#eee" />
               <XAxis dataKey="cycle_year" fontSize={11} />
               <YAxis fontSize={11} unit="%" domain={[0, 100]} />
-              <Tooltip formatter={(v) => `${v}%`} />
+              <Tooltip formatter={(v) => `${v}%`} itemSorter={(item) => -item.value} />
               <RLegend wrapperStyle={{ fontSize: 12 }} />
-              <Line type="monotone" dataKey="DEM" name="민주" stroke="#1565C0" strokeWidth={2} dot={{ r: 2 }} />
-              <Line type="monotone" dataKey="REP" name="공화" stroke="#D32F2F" strokeWidth={2} dot={{ r: 2 }} />
+              {orderedSeries.map((s) => (
+                <Line key={s.key} type="monotone" dataKey={s.key} name={s.name}
+                  stroke={s.stroke} strokeWidth={2} dot={{ r: 2 }} />
+              ))}
             </LineChart>
           </ResponsiveContainer>
         </>

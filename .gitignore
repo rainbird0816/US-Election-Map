@@ -3,7 +3,7 @@ data/raw/*.csv
 data/raw/*.tab
 data/geo/
 
-# 주의: backend/db/election.sqlite 는 의도적으로 커밋(서버리스 배포에 필요, 읽기전용)
+# 주의: api/db/election.sqlite 는 의도적으로 커밋(서버리스 배포 시 api/ 안에서 번들됨, 읽기전용)
 
 # 파이썬
 backend/.venv/

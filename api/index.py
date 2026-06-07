@@ -1,46 +1,34 @@
 """Vercel Python(서버리스) 진입점 — FastAPI ASGI 앱 노출.
-import 실패 시, 런타임 파일시스템을 JSON 으로 반환하는 진단용 폴백 ASGI 앱을 노출한다
-(/var/task 레이아웃과 backend 포함 여부 확인용).
+
+런타임 코드(app 패키지)와 DB(db/election.sqlite)는 이 파일과 같은 디렉터리(api/) 안에 둔다.
+Vercel 새 Python 빌더는 함수 베이스를 api/ 로 잡고(=/var/task) 그 안의 파일만 번들하므로,
+api/ 밖(backend/)에 두면 번들에 포함되지 않는다. import 실패 시 진단 폴백을 노출한다.
 """
-import sys
 import os
 import json
 import pathlib
 import traceback
 
-_here = pathlib.Path(__file__).resolve()
-_diag = {"__file__": str(_here), "cwd": os.getcwd()}
-_found = None
-for _d in [_here.parent, *_here.parents]:
-    try:
-        _diag[str(_d)] = sorted(os.listdir(_d))[:60]
-    except Exception as e:  # noqa: BLE001
-        _diag[str(_d)] = f"ERR {e}"
-    for _cand in (_d / "backend", _d):
-        if (_cand / "app" / "main.py").exists():
-            _found = _cand
-            break
-    if _found:
-        break
-
 app = None
 _err = None
-if _found:
-    sys.path.insert(0, str(_found))
-    try:
-        from app.main import app  # noqa: E402
-    except Exception:  # noqa: BLE001
-        _err = traceback.format_exc()
-else:
-    _err = "backend/app/main.py not found in any ancestor of __file__"
+try:
+    from app.webapp import app  # api/app/webapp.py 의 FastAPI 인스턴스
+except Exception:  # noqa: BLE001
+    _err = traceback.format_exc()
 
 if app is None:
-    _payload = json.dumps({"found": str(_found), "error": _err, "diag": _diag},
-                          ensure_ascii=False, indent=2).encode("utf-8")
+    _here = pathlib.Path(__file__).resolve()
+    _diag = {"__file__": str(_here), "cwd": os.getcwd()}
+    for _d in [_here.parent, *_here.parents][:3]:
+        try:
+            _diag[str(_d)] = sorted(os.listdir(_d))[:60]
+        except Exception as e:  # noqa: BLE001
+            _diag[str(_d)] = f"ERR {e}"
+    _payload = json.dumps({"error": _err, "diag": _diag}, ensure_ascii=False, indent=2).encode("utf-8")
 
     async def app(scope, receive, send):  # noqa: F811  (진단용 폴백 ASGI)
         if scope["type"] != "http":
             return
-        await send({"type": "http.response.start", "status": 200,
+        await send({"type": "http.response.start", "status": 500,
                     "headers": [(b"content-type", b"application/json; charset=utf-8")]})
         await send({"type": "http.response.body", "body": _payload})

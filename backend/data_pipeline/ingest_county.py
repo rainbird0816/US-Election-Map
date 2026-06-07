@@ -15,7 +15,7 @@ import pathlib
 from collections import defaultdict
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent.parent
-DB = ROOT / "backend" / "db" / "election.sqlite"
+DB = ROOT / "api" / "db" / "election.sqlite"
 RAW = ROOT / "data" / "raw"
 
 COMBINED = RAW / "county_08-16.csv"            # 2008, 2012 (and 2016, 미사용)

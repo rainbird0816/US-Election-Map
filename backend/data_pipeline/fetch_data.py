@@ -19,6 +19,10 @@ GEO = ROOT / "frontend" / "public" / "geo"
 
 TONMCG = "https://raw.githubusercontent.com/tonmcg/US_County_Level_Election_Results_08-24/master"
 HF = "https://huggingface.co/datasets/fdaudens/us-presidential-elections/resolve/main"
+# jacksonjude USA-Election-Map: 상원 1976-2020 · 하원 1976-2022 · 주지사(MIT 포맷/voteshare).
+JJU = "https://raw.githubusercontent.com/jacksonjude/USA-Election-Map/master/csv-sources"
+# MEDSL 2024 공식: 2024 상원 주 단위.
+MEDSL24 = "https://raw.githubusercontent.com/MEDSL/2024-elections-official/main"
 
 FILES = [
     (f"{HF}/1976-2020-president.csv", RAW / "1976-2020-president.csv"),
@@ -26,7 +30,16 @@ FILES = [
     (f"{TONMCG}/2020_US_County_Level_Presidential_Results.csv", RAW / "2020_county.csv"),
     (f"{TONMCG}/2024_US_County_Level_Presidential_Results.csv", RAW / "2024_county.csv"),
     (f"{TONMCG}/US_County_Level_Presidential_Results_08-16.csv", RAW / "county_08-16.csv"),
+    (f"{JJU}/1976-2020-senate.csv", RAW / "1976-2020-senate.csv"),
+    (f"{MEDSL24}/2024-senate-state.csv", RAW / "2024-senate-state.csv"),
+    # 상원 2022(정규+보궐) 및 2024 보궐(NE — MEDSL 미수록) 보강. 실제 득표 포함.
+    (f"{JJU}/past-senate.csv", RAW / "past-senate.csv"),
+    (f"{JJU}/1976-2022-house.csv", RAW / "1976-2022-house.csv"),
+    # 하원 2024 선거구별 실제 득표 보강.
+    (f"{JJU}/past-house.csv", RAW / "past-house.csv"),
+    (f"{JJU}/past-governor.csv", RAW / "past-governor.csv"),
     ("https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json", GEO / "us-states-10m.json"),
+    ("https://cdn.jsdelivr.net/npm/us-atlas@3/counties-10m.json", GEO / "us-counties-10m.json"),
 ]
 
 
@@ -37,7 +50,8 @@ def main():
         print(f"↓ {dest.name} …", end=" ", flush=True)
         urllib.request.urlretrieve(url, dest)
         print(f"{dest.stat().st_size:,} bytes")
-    print("완료. 다음: ingest_president.py → ingest_county.py → precompute.py")
+    print("완료. 다음: ingest_president → ingest_county → ingest_senate → "
+          "ingest_house → ingest_governor → precompute")
 
 
 if __name__ == "__main__":

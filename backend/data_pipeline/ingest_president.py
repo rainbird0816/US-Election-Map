@@ -15,7 +15,7 @@ import datetime
 from collections import defaultdict
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent.parent
-DB = ROOT / "backend" / "db" / "election.sqlite"
+DB = ROOT / "api" / "db" / "election.sqlite"
 RAW = ROOT / "data" / "raw"
 STATE_CSV = RAW / "1976-2020-president.csv"
 COUNTY_2024 = RAW / "2024_county.csv"

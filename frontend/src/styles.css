@@ -21,7 +21,17 @@ body {
 }
 .topbar h1 { font-size: 22px; margin: 0; }
 .topbar h1 .sub { font-size: 13px; color: var(--muted); font-weight: 400; margin-left: 8px; }
+.selector { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
 .selector select { font-size: 15px; padding: 5px 10px; border: 1px solid #ccc; border-radius: 6px; }
+.office-tabs { display: inline-flex; border: 1px solid #ccc; border-radius: 8px; overflow: hidden; }
+.office-tab {
+  font-size: 14px; padding: 6px 14px; border: none; background: #fff; cursor: pointer;
+  border-right: 1px solid #eee; color: #444;
+}
+.office-tab:last-child { border-right: none; }
+.office-tab:hover { background: #f4f4f4; }
+.office-tab.active { background: var(--ink); color: #fff; font-weight: 600; }
+.office-summary-title { font-size: 14px; font-weight: 600; }
 
 .error { background: #fde8e8; color: #b00; padding: 10px 14px; border-radius: 8px; margin: 12px 0; }
 
@@ -43,6 +53,35 @@ body {
   font-size: 10px; color: #111; white-space: nowrap;
 }
 .ec-foot { font-size: 12px; color: var(--muted); margin-top: 4px; }
+
+/* 선거 노트 (전국 쟁점·분석) */
+.notes { margin: 14px 0 4px; padding: 12px 16px; border: 1px solid var(--line); border-radius: 10px; background: #fff; }
+.notes-headline { font-size: 15px; margin: 0 0 10px; }
+.notes-grid { display: grid; grid-template-columns: 1fr 1.4fr; gap: 20px; }
+@media (max-width: 760px) { .notes-grid { grid-template-columns: 1fr; gap: 8px; } }
+.notes-col h4 { font-size: 13px; margin: 0 0 6px; color: #444; }
+.notes-col .issues { margin: 0; padding-left: 18px; font-size: 13px; line-height: 1.7; }
+.notes-col p { margin: 0; font-size: 13px; line-height: 1.75; }
+
+.state-analysis { margin-top: 10px; font-size: 13px; line-height: 1.7; }
+.state-analysis p { margin: 4px 0; }
+
+/* 하원 의석 점유 다이어그램 — 도넛 + 당별 의석수(내림차순) */
+.seat-donut-wrap { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; }
+.seat-donut { flex: 0 0 auto; }
+.donut-num { font-size: 30px; font-weight: 700; fill: #222; }
+.donut-label { font-size: 12px; fill: var(--muted); }
+.seat-legend { list-style: none; margin: 0; padding: 0; font-size: 13px; min-width: 130px; }
+.seat-legend li { display: flex; align-items: center; gap: 7px; padding: 3px 0; }
+.seat-legend .swatch { width: 12px; height: 12px; border-radius: 3px; }
+.seat-legend b { min-width: 30px; }
+.seat-legend-n { font-weight: 600; }
+.seat-legend-pct { color: var(--muted); margin-left: auto; }
+.seat-dots { display: flex; flex-wrap: wrap; gap: 3px; margin-top: 12px; }
+.seat-dot { width: 12px; height: 12px; border-radius: 50%; display: inline-block; }
+
+/* 보궐선거 별도 레이스 */
+.special-race { margin-top: 14px; }
 
 /* layout */
 .layout { display: grid; grid-template-columns: 1.5fr 1fr; gap: 24px; margin-top: 8px; }
@@ -72,8 +111,15 @@ body {
 .win-tag { font-size: 10px; background: var(--dem); color: #fff; border-radius: 8px; padding: 0 5px; margin-left: 5px; }
 .elected-row .win-tag { background: #444; }
 
-.county-wrap { max-height: 320px; overflow-y: auto; border: 1px solid var(--line); border-radius: 8px; }
+.county-map { width: 100%; height: auto; display: block; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+.county-map path { transition: opacity .12s; }
+.county-map path:hover { opacity: .78; }
+.county-detail { margin: 10px 0 4px; padding: 8px 10px; border: 1px solid var(--line); border-radius: 8px; background: #fcfcfc; }
+.county-detail-head { font-size: 13px; margin-bottom: 6px; }
+
+.county-wrap { max-height: 320px; overflow-y: auto; border: 1px solid var(--line); border-radius: 8px; margin-top: 10px; }
 .county-table th { position: sticky; top: 0; background: #fff; }
+.county-table tr.row-active { background: #fff6e0; font-weight: 600; }
 
 .winners-list { list-style: none; padding: 0; margin: 0; font-size: 13px; }
 .winners-list li { display: flex; align-items: center; gap: 7px; padding: 3px 0; border-bottom: 1px solid #f5f5f5; }

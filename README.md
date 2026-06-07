@@ -26,52 +26,65 @@
 
 ## 실행
 
-### 1) 데이터 + DB 구축 (1회)
+> 런타임 코드(FastAPI 앱)와 DB는 **`api/` 안**에 둔다. Vercel 새 Python 빌더가 함수 베이스를
+> `api/`로 잡고 그 안의 파일만 번들하기 때문(서버리스 배포 시 backend/ 는 포함되지 않음).
+
+### 1) 데이터 + DB 구축 (1회) — 저장소 루트에서
 ```bash
-# 백엔드 venv
-cd backend
-python -m venv .venv
+# 백엔드 venv (파이프라인용)
+cd backend && python -m venv .venv
 .venv/Scripts/python -m pip install -r requirements.txt   # win: .venv\Scripts\python
+cd ..
 
-# 원본 다운로드 (디스크에만 저장, 모델 컨텍스트 금지)
-python data_pipeline/fetch_data.py
+# 원본 다운로드 (디스크에만 저장)
+backend/.venv/Scripts/python backend/data_pipeline/fetch_data.py
 
-# 스키마+시드 → 적재 → precompute
-python db/init_db.py
-python data_pipeline/ingest_president.py
-python data_pipeline/ingest_county.py
-python data_pipeline/precompute.py
+# 스키마+시드 → 적재 → precompute (DB는 api/db/election.sqlite 에 생성됨)
+backend/.venv/Scripts/python api/db/init_db.py
+backend/.venv/Scripts/python backend/data_pipeline/ingest_president.py
+backend/.venv/Scripts/python backend/data_pipeline/ingest_county.py
+backend/.venv/Scripts/python backend/data_pipeline/precompute.py
 
 # EC 합계 검증 (1976~2024 실제와 대조)
-python app/electoral.py
+backend/.venv/Scripts/python api/app/electoral.py
 ```
 
-### 2) 프론트 빌드 + 서버 (단일 서버 배포)
+### 2) 프론트 빌드 + 서버 (단일 서버 로컬 실행)
 ```bash
 cd frontend && npm install && npm run build
-cd ../backend && .venv/Scripts/python -m uvicorn app.main:app --port 8000
-# → http://localhost:8000
+cd ../api && ../backend/.venv/Scripts/python -m uvicorn app.webapp:app --port 8000
+# → http://localhost:8000  (FastAPI 가 frontend/dist 도 서빙)
 ```
 
 ### 개발 모드 (핫리로드)
 ```bash
 # 터미널 A
-cd backend && .venv/Scripts/python -m uvicorn app.main:app --reload --port 8000
+cd api && ../backend/.venv/Scripts/python -m uvicorn app.webapp:app --reload --port 8000
 # 터미널 B
 cd frontend && npm run dev   # http://localhost:5173 (프록시 /api → 8000)
 ```
 
+### 배포 (Vercel)
+- `vercel.json`: `buildCommand`로 프론트 빌드 → `frontend/dist` 정적 서빙, `/api/(.*)` → `api/index.py`(FastAPI) 리라이트.
+- `api/index.py` 가 `app.webapp:app` 을 노출하고, `api/db/election.sqlite` 가 함께 번들된다.
+
 ## 구조
 ```
-backend/
-  app/main.py          # FastAPI: /president/{elections,map,state,history,counties}
+api/                   # ← Vercel 함수 베이스(= /var/task). 런타임 일체가 여기 안에 있음
+  index.py             # 진입점: app.webapp:app 노출(+import 실패 시 진단 폴백)
+  app/webapp.py        # FastAPI: /president/{elections,map,state,history,counties}
   app/electoral.py     # EC 집계 + 1976~2024 검증
-  data_pipeline/       # fetch_data / ingest_president / ingest_county / precompute
-  db/                  # schema.sql, seed_parties.sql, seed_us.py(regions/EV/senate_class), init_db.py
+  db/                  # election.sqlite(커밋) + schema.sql, seed_parties.sql, seed_us.py, init_db.py
+  requirements.txt     # 런타임 의존성(fastapi)
+backend/
+  data_pipeline/       # fetch_data / ingest_president / ingest_county / precompute (→ api/db 에 기록)
+  requirements.txt     # 파이프라인/개발 의존성(fastapi, uvicorn)
 frontend/src/
-  App.jsx              # 연도 셀렉터 + EC 바 + 지도 + 상세 패널
+  App.jsx              # 연도 셀렉터 + EC 바 + 전국 쟁점·분석 + 지도 + 상세 패널
   maps/MapUS.jsx       # 주 choropleth (geoAlbersUsa)
-  components/ECBar.jsx, Legend.jsx
+  maps/MapCounty.jsx   # 주 클릭 시 카운티 분할 choropleth (d3-geo, 2008+)
+  components/ECBar.jsx, Legend.jsx, ElectionNotes.jsx
+  content/elections.js # 사이클별 쟁점·결과 분석(큐레이션)
   pages/StateDetail.jsx, CountyPanel.jsx
 ```
 
