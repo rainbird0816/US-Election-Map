@@ -85,6 +85,60 @@ def president_map(cycle_year: int):
     return {"ec": ec, "states": rows, "has_county": cycle_year in county_years}
 
 
+@api.get("/president/national")
+def president_national(cycle_year: int):
+    """역대 대선 페이지: 전국 1·2위 후보(정당별 대표) + 선거인단 + 전국 득표.
+    후보명은 DB(표기 혼재)에서 가져오되, 프론트가 큐레이션 한글/영문·초상화로 덮어쓴다.
+    선거인단(ev)·득표율은 검증된 실데이터에서 산출한다."""
+    rows = q(
+        """SELECT p.name AS party_name, p.abbr, p.color_hex, c.name AS cand_name,
+                  SUM(r.votes) AS votes
+           FROM results r
+           JOIN candidates c   ON c.id = r.candidate_id
+           LEFT JOIN parties p ON p.id = c.party_id
+           WHERE r.election_id=? AND r.level='state'
+           GROUP BY c.name
+           ORDER BY votes DESC""",
+        (cycle_year,),
+    )
+    if not rows:
+        raise HTTPException(404, f"no data for cycle {cycle_year}")
+    total = sum(r["votes"] for r in rows)
+
+    con = _con()
+    ec = electoral.ec_for_cycle(con, cycle_year)
+    con.close()
+    ev_by_party = ec["totals"]   # {party_name: ev}
+
+    def card(r):
+        return {"party_name": r["party_name"], "abbr": r["abbr"], "color_hex": r["color_hex"],
+                "cand_name": r["cand_name"], "votes": r["votes"],
+                "pv_pct": round(100 * r["votes"] / total, 1) if total else 0,
+                "ev": ev_by_party.get(r["party_name"], 0)}
+
+    # 정당별 대표 후보 = 그 정당 최다 득표 후보(rows 가 이미 votes desc 라 첫 행).
+    lead = {}
+    for r in rows:
+        lead.setdefault(r["abbr"], r)
+    cands = [card(lead[a]) for a in ("DEM", "REP") if a in lead]
+    cands.sort(key=lambda c: -c["ev"])     # 선거인단 1위 = 당선
+    for i, c in enumerate(cands):
+        c["is_winner"] = (i == 0)
+
+    # 주목할 제3후보(전국 5%+, 집계용 'Other' 행 제외)
+    top2 = {c["cand_name"] for c in cands}
+    third = None
+    for r in rows:
+        if r["cand_name"] in top2 or r["cand_name"] == "Other":
+            continue
+        if total and r["votes"] / total >= 0.05:
+            third = card(r)
+            break
+
+    return {"cycle_year": cycle_year, "ec": ec, "total_votes": total,
+            "candidates": cands, "third": third}
+
+
 @api.get("/president/state")
 def president_state(cycle_year: int, code: str):
     """주 상세: 그 사이클 후보별 득표(낙선 포함)."""

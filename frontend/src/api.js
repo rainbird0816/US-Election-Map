@@ -13,6 +13,8 @@ export const getPresidentMap = (cycleYear) => get("/president/map", { cycle_year
 export const getPresidentState = (cycleYear, code) =>
   get("/president/state", { cycle_year: cycleYear, code });
 export const getPresidentHistory = (code) => get("/president/history", { code });
+export const getPresidentNational = (cycleYear) =>
+  get("/president/national", { cycle_year: cycleYear });
 export const getPresidentCounties = (cycleYear, stateCode) =>
   get("/president/counties", { cycle_year: cycleYear, state_code: stateCode });
 

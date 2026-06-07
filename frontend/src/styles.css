@@ -93,7 +93,11 @@ body {
 
 /* layout */
 .layout { display: grid; grid-template-columns: 1.7fr 1fr; gap: 24px; margin-top: 8px; }
-@media (max-width: 900px) { .layout { grid-template-columns: 1fr; } }
+@media (max-width: 900px) {
+  .layout { grid-template-columns: 1fr; }
+  /* 세로 적층되면 좌측 경계선/들여쓰기 제거하고 위쪽 구분선으로 전환 */
+  .detail { border-left: none; padding-left: 0; border-top: 1px solid var(--line); padding-top: 16px; }
+}
 .map-pane { min-width: 0; }
 
 /* 작은 주·DC 클릭 스트립 (지도에서 식별 어려운 주 보조) */
@@ -156,3 +160,88 @@ body {
 .winners-list li { display: flex; align-items: center; gap: 7px; padding: 3px 0; border-bottom: 1px solid #f5f5f5; }
 .winners-list .yr { width: 42px; color: var(--muted); }
 .winners-list .party { margin-left: auto; color: var(--muted); font-size: 12px; }
+
+/* ── 역대 대선 페이지 ── */
+.potus-page { margin-top: 14px; }
+.potus-nav { display: flex; align-items: center; justify-content: center; gap: 18px; }
+.potus-nav .pn-year { font-size: 24px; font-weight: 800; letter-spacing: -.5px; }
+.potus-nav .pn-year span { font-size: 14px; font-weight: 600; color: var(--muted); margin-left: 6px; }
+.pn-arrow { font-size: 13px; padding: 6px 12px; border: 1px solid #ccc; border-radius: 8px;
+  background: #fff; cursor: pointer; color: #333; }
+.pn-arrow:hover:not(:disabled) { background: #f3f3f3; }
+.pn-arrow:disabled { opacity: .35; cursor: default; }
+
+.potus-timeline { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px; margin: 12px 0 4px; }
+.pt-chip { font-size: 12px; padding: 4px 9px; border: 1px solid var(--line); border-radius: 999px;
+  background: #fff; cursor: pointer; color: #555; }
+.pt-chip:hover { background: #f4f4f4; }
+.pt-chip.on { background: var(--ink); color: #fff; border-color: var(--ink); font-weight: 700; }
+
+.potus-cards { display: grid; grid-template-columns: 1fr auto 1fr; align-items: stretch;
+  gap: 14px; margin: 18px 0 10px; }
+@media (max-width: 620px) { .potus-cards { grid-template-columns: 1fr; }
+  .potus-vs { display: none; } }
+.potus-card { display: flex; gap: 14px; align-items: center; padding: 14px 16px;
+  border: 1px solid var(--line); border-radius: 14px; background: #fff; }
+.potus-card.is-winner { border-color: #bbb; box-shadow: 0 2px 10px rgba(0,0,0,.06); background: #fffdf7; }
+.potus-vs { align-self: center; font-size: 13px; font-weight: 800; color: var(--muted); }
+.pc-photo { width: 84px; height: 104px; object-fit: cover; border-radius: 10px;
+  border: 3px solid #ccc; background: #f0f0f0; flex: 0 0 auto; }
+.pc-fallback { display: flex; align-items: center; justify-content: center;
+  font-size: 26px; font-weight: 700; color: #999; }
+.pc-meta { min-width: 0; }
+.pc-toprow { display: flex; align-items: center; gap: 8px; margin-bottom: 4px; }
+.pc-party { font-size: 11px; font-weight: 700; color: #fff; padding: 1px 8px; border-radius: 999px; }
+.pc-flag { font-size: 11px; font-weight: 700; color: var(--muted); }
+.pc-flag.win { color: #c28a00; }
+.pc-name { font-size: 19px; font-weight: 800; line-height: 1.15; }
+.pc-en { font-size: 12px; color: var(--muted); margin-bottom: 6px; }
+.pc-ev { font-size: 13px; }
+.pc-ev b { font-size: 26px; font-weight: 800; margin-right: 4px; }
+.pc-pv { font-size: 12px; color: #555; margin-top: 2px; }
+
+.potus-third { text-align: center; font-size: 13px; margin: 2px 0 6px; }
+.potus-map { margin-top: 10px; }
+
+/* ── 모바일 (Tier 1: 폰에서 안 깨지게) ── */
+@media (max-width: 600px) {
+  .app { padding: 12px 12px 32px; }
+
+  /* 헤더: 제목 ↔ 셀렉터 세로 적층, 셀렉터는 전체폭 */
+  .topbar { gap: 10px; }
+  .topbar h1 { font-size: 18px; }
+  .topbar h1 .sub { display: block; margin-left: 0; margin-top: 2px; }
+  .selector { width: 100%; }
+
+  /* 탭바: 5개가 한 줄에 안 들어가면 가로 스크롤(잘림 없이) */
+  .office-tabs { width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .office-tab { padding: 8px 12px; white-space: nowrap; }
+  .selector select { flex: 1; min-width: 0; }
+
+  /* 표: 좁은 화면에서 가로 스크롤로 흘려보냄(요약표 '전체표시'도 가로만 스크롤) */
+  .county-wrap, .county-wrap.full { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .cand-table { font-size: 12px; }
+  .cand-table th, .cand-table td { padding: 5px 5px; }
+
+  /* 선거인단 바 숫자 약간 축소 */
+  .ec-side b { font-size: 18px; }
+  .ec-head { font-size: 13px; }
+
+  /* 노트 그리드는 이미 760px에서 1열 — 여백만 정리 */
+  .notes { padding: 10px 12px; }
+
+  /* 역대 대선 카드: 타임라인 가로 스크롤, 후보 카드 폭 최적화 */
+  .potus-nav .pn-year { font-size: 20px; }
+  .potus-timeline { flex-wrap: nowrap; overflow-x: auto; justify-content: flex-start;
+    -webkit-overflow-scrolling: touch; padding-bottom: 4px; }
+  .pt-chip { flex: 0 0 auto; }
+  .potus-card { padding: 12px; gap: 12px; }
+  .pc-photo { width: 72px; height: 90px; }
+  .pc-name { font-size: 17px; }
+  .pc-ev b { font-size: 22px; }
+
+  /* 터치 타깃 확대 */
+  .small-state { padding: 6px 10px; }
+  .pt-chip { padding: 6px 11px; }
+  .back-link { padding: 6px 12px; }
+}

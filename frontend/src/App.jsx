@@ -9,6 +9,7 @@ import StateDetail from "./pages/StateDetail.jsx";
 import StateSummaryTable from "./pages/StateSummaryTable.jsx";
 import RaceDetail from "./pages/RaceDetail.jsx";
 import HouseDetail from "./pages/HouseDetail.jsx";
+import PotusHistory from "./pages/PotusHistory.jsx";
 import {
   getPresidentElections, getPresidentMap, getElections, getOfficeMap,
 } from "./api";
@@ -19,10 +20,12 @@ const OFFICES = [
   { key: "senate", label: "상원" },
   { key: "house", label: "하원" },
   { key: "governor", label: "주지사" },
+  { key: "history", label: "역대 대선" },
 ];
 const TITLE = {
   president: "미국 대통령선거 지도", senate: "미국 상원선거 지도",
   house: "미국 하원선거 지도", governor: "미국 주지사선거 지도",
+  history: "역대 미국 대통령선거",
 };
 
 export default function App() {
@@ -36,6 +39,7 @@ export default function App() {
   // office 변경 → 사이클 목록 로드 (연도는 일단 null 로 리셋해 지도 effect 오발사 방지)
   useEffect(() => {
     setSelected(null); setMapData(null); setCycleYear(null); setError(null);
+    if (office === "history") return;   // 역대 대선 탭은 자체 페이지가 데이터를 관리
     const loader = office === "president" ? getPresidentElections() : getElections(office);
     loader
       .then((cs) => {
@@ -101,16 +105,25 @@ export default function App() {
               </button>
             ))}
           </div>
-          <label>연도&nbsp;</label>
-          <select value={cycleYear ?? ""} onChange={(e) => setCycleYear(Number(e.target.value))}>
-            {cycles.map((c) => (
-              <option key={c.cycle_year} value={c.cycle_year}>{c.cycle_year}</option>
-            ))}
-          </select>
+          {office !== "history" && (
+            <>
+              <label>연도&nbsp;</label>
+              <select value={cycleYear ?? ""} onChange={(e) => setCycleYear(Number(e.target.value))}>
+                {cycles.map((c) => (
+                  <option key={c.cycle_year} value={c.cycle_year}>{c.cycle_year}</option>
+                ))}
+              </select>
+            </>
+          )}
         </div>
       </header>
 
       {error && <div className="error">백엔드 연결 오류: {error}</div>}
+
+      {office === "history" ? (
+        <PotusHistory />
+      ) : (
+        <>
 
       {isPres && mapData?.ec && <ECBar ec={mapData.ec} />}
       {!isPres && mapData?.summary && (
@@ -149,6 +162,8 @@ export default function App() {
           )}
         </aside>
       </main>
+        </>
+      )}
     </div>
   );
 }
