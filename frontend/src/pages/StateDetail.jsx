@@ -77,6 +77,29 @@ export default function StateDetail({ cycleYear, code, name, hasCounty }) {
         </tbody>
       </table>
 
+      {data.ev_split && (
+        <div className="ev-split">
+          <h3 className="sec-title">선거인단 분할 배분
+            {data.ev_split.is_split && <span className="win-tag">분할</span>}
+          </h3>
+          <p className="muted">
+            {name}는 선거구 분할 방식 — 주 전체 승자가 <b>2표</b>(상원 몫)를, 각 하원 선거구 승자가 <b>1표</b>씩 가져갑니다.
+          </p>
+          <ul className="ev-split-list">
+            {data.ev_split.items.map((it, i) => (
+              <li key={i}>
+                <span className="swatch sm" style={{ background: it.color_hex }} />
+                <b>{it.label}</b>
+                <span className="party">{it.abbr} · {it.n}표</span>
+              </li>
+            ))}
+          </ul>
+          <p className="ev-split-sum">
+            합계: {data.ev_split.by_party.map((b) => `${b.abbr} ${b.ev}표`).join(" · ")}
+          </p>
+        </div>
+      )}
+
       {stateAnalysis && (
         <div className="state-analysis">
           <h3 className="sec-title">이 주 결과 분석</h3>

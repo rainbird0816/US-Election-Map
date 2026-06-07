@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { getCounties } from "../api";
 import MapCounty from "../maps/MapCounty.jsx";
+import { shadeByMargin } from "../util/shade";
 
 const fmt = (n) => (n == null ? "—" : Number(n).toLocaleString());
 
@@ -25,7 +26,9 @@ export default function CountyPanel({ office = "president", cycleYear, stateCode
     const colorByCode = {};
     const byCode = {};
     for (const c of counties) {
-      colorByCode[c.code] = c.color_hex;
+      const cs = c.candidates || [];
+      const margin = cs.length > 1 ? cs[0].vote_rate - cs[1].vote_rate : null;
+      colorByCode[c.code] = shadeByMargin(c.color_hex, margin);
       byCode[c.code] = c;
     }
     return { colorByCode, byCode };

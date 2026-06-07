@@ -10,6 +10,7 @@ import HouseDetail from "./pages/HouseDetail.jsx";
 import {
   getPresidentElections, getPresidentMap, getElections, getOfficeMap,
 } from "./api";
+import { shadeByMargin, marginFromTop } from "./util/shade";
 
 const OFFICES = [
   { key: "president", label: "대통령" },
@@ -51,9 +52,11 @@ export default function App() {
     loader.then((d) => { setMapData(d); setError(null); }).catch((e) => setError(String(e)));
   }, [office, cycleYear, cycles]);
 
+  // 채색: 승자 정당색을 '후보간 격차'로 농도 보정(접전=옅게, 안정=진하게).
   const colorByCode = useMemo(() => {
     const m = {};
-    for (const s of mapData?.states || []) m[s.region_code] = s.color_hex;
+    for (const s of mapData?.states || [])
+      m[s.region_code] = shadeByMargin(s.color_hex, marginFromTop(s.top_parties_json));
     return m;
   }, [mapData]);
 

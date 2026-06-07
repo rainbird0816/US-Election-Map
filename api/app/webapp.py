@@ -103,8 +103,12 @@ def president_state(cycle_year: int, code: str):
     )
     ev = q("SELECT ev FROM electoral_votes WHERE state=? AND cycle_year=?",
            (state[0]["state_po"], cycle_year))
+    # ME/NE 선거구 분할 내역(상원몫 2 + 선거구 1씩). 그 외 주는 None.
+    con = _con()
+    ev_split = electoral.split_for_state(con, cycle_year, state[0]["state_po"])
+    con.close()
     return {"state": state[0], "cycle_year": cycle_year,
-            "ev": ev[0]["ev"] if ev else None, "candidates": cands}
+            "ev": ev[0]["ev"] if ev else None, "candidates": cands, "ev_split": ev_split}
 
 
 @api.get("/president/history")

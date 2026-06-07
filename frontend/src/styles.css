@@ -83,6 +83,14 @@ body {
 /* 보궐선거 별도 레이스 */
 .special-race { margin-top: 14px; }
 
+/* ME/NE 선거인단 분할 배분 */
+.ev-split { margin-top: 6px; }
+.ev-split-list { list-style: none; margin: 6px 0; padding: 0; font-size: 13px; }
+.ev-split-list li { display: flex; align-items: center; gap: 8px; padding: 3px 0; }
+.ev-split-list b { min-width: 120px; }
+.ev-split-list .party { color: var(--muted); }
+.ev-split-sum { font-size: 13px; font-weight: 600; margin: 4px 0 0; }
+
 /* layout */
 .layout { display: grid; grid-template-columns: 1.5fr 1fr; gap: 24px; margin-top: 8px; }
 @media (max-width: 900px) { .layout { grid-template-columns: 1fr; } }
@@ -90,6 +98,11 @@ body {
 .detail { min-width: 0; border-left: 1px solid var(--line); padding-left: 20px; }
 .detail.empty, .detail .empty { color: var(--muted); padding-top: 40px; text-align: center; }
 
+.legend-wrap { margin-top: 8px; }
+.legend-grad { display: flex; align-items: center; gap: 6px; margin-top: 6px; font-size: 11px; }
+.legend-grad .grad-bar { width: 90px; height: 10px; border-radius: 5px; display: inline-block;
+  border: 1px solid rgba(0,0,0,.08); }
+.legend-grad .grad-note { margin-left: 2px; }
 .legend { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 8px; font-size: 13px; }
 .legend-item { display: inline-flex; align-items: center; gap: 5px; }
 .swatch { width: 14px; height: 14px; border-radius: 3px; display: inline-block; }
