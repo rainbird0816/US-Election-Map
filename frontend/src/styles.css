@@ -110,8 +110,9 @@ body {
   padding: 4px 10px; cursor: pointer; margin-bottom: 8px; }
 .back-link:hover { background: #dde3ff; }
 
-/* 주별 요약 표 */
+/* 주별 요약 표 — 스크롤 없이 전체 표시 */
 .summary-table td { white-space: nowrap; }
+.county-wrap.full { max-height: none; overflow: visible; }
 .detail { min-width: 0; border-left: 1px solid var(--line); padding-left: 20px; }
 .detail.empty, .detail .empty { color: var(--muted); padding-top: 40px; text-align: center; }
 

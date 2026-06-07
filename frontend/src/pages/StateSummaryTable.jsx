@@ -12,7 +12,7 @@ export default function StateSummaryTable({ states, cycleYear, onSelect }) {
         <span className="ev-badge">{rows.length}개 주</span>
       </h2>
       <p className="hint">행을 클릭하면 해당 주 상세(후보·카운티·추이)가 표시됩니다.</p>
-      <div className="county-wrap">
+      <div className="county-wrap full">
         <table className="cand-table county-table summary-table">
           <thead>
             <tr><th>주</th><th>후보</th><th>정당</th><th className="num">득표수</th><th className="num">득표율</th></tr>

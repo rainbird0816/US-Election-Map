@@ -26,8 +26,43 @@ BASE = 1_000_000
 SPECIAL_BASE = 1_500_000
 
 # 실제 후보가 아닌 집계 행(개표 잔여) — 'Other' 오염 방지용으로 제외.
-NONCAND = {"WRITE-IN", "WRITEIN", "WRITE-INS", "UNDERVOTES", "OVERVOTES",
-           "SPOILED", "BLANK", "BLANK VOTES", "EXHAUSTED", "SCATTERING", "NA"}
+# 공백/하이픈 차이를 흡수하려고 알파벳만 남긴 compact 형태로 비교('OVER VOTES'='OVERVOTES').
+NONCAND_COMPACT = {"WRITEIN", "WRITEINS", "UNDERVOTES", "OVERVOTES", "SPOILED",
+                   "SPOILEDBALLOTS", "BLANK", "BLANKVOTES", "EXHAUSTED",
+                   "EXHAUSTEDBALLOTS", "SCATTERING", "SCATTERINGVOTES", "NA",
+                   "OTHERWRITEINS", "TOTALWRITEINS", "NONE", "NOCANDIDATE"}
+
+
+def _is_noncand(name):
+    key = "".join(ch for ch in (name or "").upper() if ch.isalpha())
+    return key in NONCAND_COMPACT
+
+
+# 소스 파티 결손 보정(party_detailed 공백인 경우만 적용). {(year, state_fips): {이름부분(대문자): party}}.
+#   WY 2020: 전 행 파티 공백. AK 2010: Murkowski 기명(write-in) 당선 — 파티 공백이나 공화로 계수(seat=R).
+PARTY_OVERRIDE = {
+    (2020, "56"): {"LUMMIS": "republican", "BEN DAVID": "democrat"},
+    (2010, "02"): {"MURKOWSKI": "republican"},
+}
+
+# 일반선거 '다음 해 1월' 결선이라 11월 소스에 결과가 없는 경우 — 공식 결선 결과(certified)로 대체.
+#   GA 2020 정규/특별 → 2021-01-05 결선(둘 다 민주 승). (이름, pid, votes), pid 1=DEM·2=REP.
+RUNOFF_RESULT = {
+    (2020, "13", False): ([("Jon Ossoff", 1, 2269923), ("David A. Perdue", 2, 2214979)], 4484902),
+    (2020, "13", True):  ([("Raphael Warnock", 1, 2289113), ("Kelly Loeffler", 2, 2195841)], 4484954),
+}
+
+
+def _fix_party(year, st, name, party):
+    if party:
+        return party
+    ov = PARTY_OVERRIDE.get((year, st))
+    if ov:
+        up = (name or "").upper()
+        for frag, p in ov.items():
+            if frag in up:
+                return p
+    return party
 
 
 def election_day(year):
@@ -65,15 +100,21 @@ def _rows_mit(path, po2fips):
             if (r.get("stage") or "").strip().lower() != "gen":
                 continue
             cand = (r.get("candidate") or "NA").strip()
-            if cand.upper() in NONCAND:
+            if _is_noncand(cand):
                 continue
             votes = r.get("candidatevotes")
             if votes in (None, ""):
                 votes = r.get("votes")
+            year = int(r["year"]); st = fips2(r["state_fips"])
+            party = (r.get("party_detailed") or r.get("party_simplified") or "").lower().strip()
+            # party_simplified 'OTHER' 는 사실상 결손 → override 시도 위해 비움 처리
+            if party == "other":
+                party = ""
+            party = _fix_party(year, st, cand, party)
             yield {
-                "year": int(r["year"]),
-                "st": fips2(r["state_fips"]),
-                "party": (r.get("party_detailed") or r.get("party_simplified") or "").lower().strip(),
+                "year": year,
+                "st": st,
+                "party": party,
                 "cand": cand,
                 "votes": _to_int(votes),
                 "total": _to_int(r.get("totalvotes")),
@@ -94,7 +135,7 @@ def _rows_past(path, po2fips, keep):
             if po not in po2fips:        # NPV(전국 popular vote) 등 가짜 행 제외
                 continue
             cand = (r.get("candidate") or "NA").strip()
-            if cand.upper() in NONCAND:
+            if _is_noncand(cand):
                 continue
             yield {
                 "year": year,
@@ -130,7 +171,9 @@ def load(po2fips):
             if r["total"] > totals[key]:
                 totals[key] = r["total"]
 
-    data = defaultdict(lambda: defaultdict(lambda: defaultdict(lambda: {"votes": 0, "name": "", "_max": -1})))
+    # 후보 단위로 보존(정당 합산하지 않음) — 같은 정당 결선·top-two(예: CA 2016/2018, AK 2022 RCV)에서
+    # 실제 후보별 득표·격차가 100%로 뭉개지지 않도록. 퓨전(같은 이름·여러 정당 라인)은 이미 이름 기준 합산됨.
+    data = defaultdict(lambda: defaultdict(list))   # data[eid][st] = [{name, pid, votes}]
     tot = defaultdict(dict)
     seen = set()
     for (year, st, special, _ro) in races:
@@ -141,15 +184,19 @@ def load(po2fips):
         cands = races[ro_key] if ro_key in races else races[(year, st, special, False)]
         total_key = ro_key if ro_key in races else (year, st, special, False)
         eid = (SPECIAL_BASE if special else BASE) + year
-        for name, c in cands.items():
-            pid = bucket(c["lines"])
-            b = data[eid][st][pid]
-            b["votes"] += c["votes"]
-            if c["votes"] > b["_max"]:
-                b["name"] = name
-                b["_max"] = c["votes"]
+        ro_override = RUNOFF_RESULT.get((year, st, special))
+        if ro_override:                       # 익년 1월 결선 공식 결과로 대체
+            cand_rows, total_ov = ro_override
+            data[eid][st] = [{"name": n, "pid": p, "votes": v} for n, p, v in cand_rows]
+            tot[eid][st] = total_ov
+            continue
+        data[eid][st] = [{"name": name, "pid": bucket(c["lines"]), "votes": c["votes"]}
+                         for name, c in cands.items()]
         tot[eid][st] = totals[total_key]
     return data, tot
+
+
+KEEP_TOP = 6   # 후보 표시 상한 — 그 외 군소후보는 '기타'로 합산
 
 
 def ins_election(cur, eid, year, by_state, totals, special):
@@ -163,20 +210,24 @@ def ins_election(cur, eid, year, by_state, totals, special):
             (eid, OFFICE, f"{year} Senate Elections", year, election_day(year)),
         )
     n = 0
-    for st, buckets in by_state.items():
-        total = totals.get(st) or sum(b["votes"] for b in buckets.values()) or 1
-        win_pid = max(buckets, key=lambda p: buckets[p]["votes"])
-        for pid, b in buckets.items():
-            if b["votes"] == 0 and pid == 4:
-                continue
-            elected = 1 if pid == win_pid else 0
+    for st, cands in by_state.items():
+        cands = sorted((c for c in cands if c["votes"] > 0), key=lambda c: -c["votes"])
+        if not cands:
+            continue
+        total = totals.get(st) or sum(c["votes"] for c in cands) or 1
+        rows = cands[:KEEP_TOP]
+        rest = sum(c["votes"] for c in cands[KEEP_TOP:])
+        if rest > 0:
+            rows.append({"name": "기타", "pid": 4, "votes": rest})
+        for i, c in enumerate(rows):
+            elected = 1 if i == 0 else 0      # 최다 득표 후보(정렬상 첫 행)
             cur.execute(
                 "INSERT INTO candidates(election_id, office, region_code, name, party_id, is_elected) "
-                "VALUES (?,?,?,?,?,?)", (eid, OFFICE, st, b["name"] or "Other", pid, elected))
+                "VALUES (?,?,?,?,?,?)", (eid, OFFICE, st, c["name"] or "Other", c["pid"], elected))
             cid = cur.lastrowid
             cur.execute(
                 "INSERT INTO results(election_id, level, region_code, candidate_id, votes, vote_rate) "
-                "VALUES (?,?,?,?,?,?)", (eid, "state", st, cid, b["votes"], round(b["votes"] / total * 100, 2)))
+                "VALUES (?,?,?,?,?,?)", (eid, "state", st, cid, c["votes"], round(c["votes"] / total * 100, 2)))
             if elected:
                 cur.execute(
                     "INSERT INTO elected_seats(region_code, election_id, office, candidate_id) "
