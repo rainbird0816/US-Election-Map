@@ -95,9 +95,25 @@ CREATE TABLE IF NOT EXISTS senate_class (
   PRIMARY KEY(state, senate_class)
 );
 
+-- 역대 대선(1789-1972) 주별 승리정당 — '역대 대선' 페이지 지도 전용.
+-- 정규 파이프라인(region_election_summary)이 담당하는 1976+ 와 분리. 적재: ingest_president_history.py.
+CREATE TABLE IF NOT EXISTS hist_pres_state (
+  cycle_year   INTEGER,
+  region_code  TEXT,          -- state FIPS
+  state_po     TEXT,
+  state_name   TEXT,
+  winner_party TEXT,          -- 'Republican'/'Democratic'/'Democratic-Republican'/'Federalist'/'Whig'/'Other'
+  top1_rate    REAL,          -- 1위 후보 득표율(있을 때) — 격차 농도용
+  top2_rate    REAL,
+  ev           INTEGER,       -- 그 주의 선거인단(분할 합)
+  total_votes  INTEGER,
+  PRIMARY KEY (cycle_year, region_code)
+);
+
 CREATE INDEX IF NOT EXISTS idx_results_lookup ON results(election_id, level, region_code);
 CREATE INDEX IF NOT EXISTS idx_seats_region   ON elected_seats(region_code);
 CREATE INDEX IF NOT EXISTS idx_summary_region ON region_election_summary(region_code);
 CREATE INDEX IF NOT EXISTS idx_summary_elec   ON region_election_summary(election_id, office);
 CREATE INDEX IF NOT EXISTS idx_cand_election  ON candidates(election_id, region_code);
 CREATE INDEX IF NOT EXISTS idx_ev_year        ON electoral_votes(cycle_year);
+CREATE INDEX IF NOT EXISTS idx_hist_year      ON hist_pres_state(cycle_year);

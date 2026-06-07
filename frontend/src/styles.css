@@ -52,6 +52,7 @@ body {
   content: "270"; position: absolute; top: -15px; left: 50%; transform: translateX(-50%);
   font-size: 10px; color: #111; white-space: nowrap;
 }
+.ec-majority.no-label::after { content: none; }   /* 역대 바: 270 라벨 숨김(과반선만) */
 .ec-foot { font-size: 12px; color: var(--muted); margin-top: 4px; }
 
 /* 선거 노트 (전국 쟁점·분석) */

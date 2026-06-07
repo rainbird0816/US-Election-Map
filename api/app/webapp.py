@@ -45,17 +45,63 @@ def health():
     return {"ok": True}
 
 
+# 역대(<1976) 지도용 정당 라벨 → (한글, 약칭, 색). hist_pres_state.winner_party 값 기준.
+HIST_PARTY = {
+    "Democratic":            ("민주당", "DEM", "#1565C0"),
+    "Republican":            ("공화당", "REP", "#D32F2F"),
+    "Democratic-Republican": ("민주공화당", "DR", "#3C9D6E"),
+    "Federalist":            ("연방당", "FED", "#C9A227"),
+    "Whig":                  ("휘그당", "WHG", "#E08A3C"),
+    "Other":                 ("기타", "OTH", "#9E9E9E"),
+}
+HIST_CUTOFF = 1976   # 이 미만은 hist_pres_state(큐레이션), 이상은 정규 파이프라인
+
+
 @api.get("/president/elections")
 def president_elections():
-    """대선 사이클 목록 (연도 셀렉터용)."""
-    return q("SELECT cycle_year, name, election_date FROM elections "
-             "WHERE type='president' ORDER BY cycle_year")
+    """대선 사이클 목록 (연도 셀렉터용). 역대(1789-1972)까지 합쳐 반환."""
+    modern = q("SELECT cycle_year, name, election_date FROM elections "
+               "WHERE type='president'")
+    hist = q("SELECT DISTINCT cycle_year FROM hist_pres_state ORDER BY cycle_year")
+    out = [{"cycle_year": h["cycle_year"], "name": f"{h['cycle_year']} 대통령선거",
+            "election_date": None} for h in hist] + modern
+    out.sort(key=lambda r: r["cycle_year"])
+    return out
+
+
+def _historical_map(cycle_year: int):
+    """역대(<1976) 주별 승리정당 지도. /president/map 과 같은 형태로 반환.
+    EC 합계·카드 수치는 프론트 큐레이션을 쓰므로 ec=None."""
+    rows = q("""SELECT region_code, state_name AS region_name, state_po,
+                       winner_party, top1_rate, top2_rate, ev
+                FROM hist_pres_state WHERE cycle_year=? ORDER BY state_name""",
+             (cycle_year,))
+    if not rows:
+        raise HTTPException(404, f"no data for cycle {cycle_year}")
+    states = []
+    for r in rows:
+        ko, abbr, color = HIST_PARTY.get(r["winner_party"], HIST_PARTY["Other"])
+        tp = []
+        if r["top1_rate"] is not None:
+            tp.append({"rate": r["top1_rate"]})
+            if r["top2_rate"] is not None:
+                tp.append({"rate": r["top2_rate"]})
+        states.append({
+            "region_code": r["region_code"], "region_name": r["region_name"],
+            "state_po": r["state_po"], "winner_party_id": None,
+            "winner_rate": r["top1_rate"], "top_parties_json": tp,
+            "winner_name": None, "party_name": ko, "abbr": abbr,
+            "color_hex": color, "ev": r["ev"],
+        })
+    return {"ec": None, "states": states, "has_county": False, "historical": True}
 
 
 @api.get("/president/map")
 def president_map(cycle_year: int):
     """주별 승자 정당색 + EC 합계 바. {ec, states:[...]}.
     카운티 데이터 보유 여부(has_county)도 주별로 표시."""
+    if cycle_year < HIST_CUTOFF:
+        return _historical_map(cycle_year)
     rows = q(
         """SELECT s.region_code, rg.name AS region_name, rg.state_po,
                   s.winner_party_id, s.winner_rate, s.top_parties_json,
