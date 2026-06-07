@@ -5,9 +5,14 @@ Vercel 새 Python 빌더는 함수 베이스를 api/ 로 잡고(=/var/task) 그 
 api/ 밖(backend/)에 두면 번들에 포함되지 않는다. import 실패 시 진단 폴백을 노출한다.
 """
 import os
+import sys
 import json
 import pathlib
 import traceback
+
+# 함수 베이스가 api/(=/var/task) 든 레포 루트(/var/task)든 무관하게 app 패키지를 import 할 수 있도록
+# 이 파일이 있는 api/ 디렉터리를 sys.path 맨 앞에 추가(프로젝트 설정 차이로 base가 달라지는 문제 방어).
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 
 app = None
 _err = None
