@@ -25,8 +25,11 @@ export default function StateDetail({ cycleYear, code, name, hasCounty }) {
 
   const cands = data.candidates || [];
 
-  // 득표 추이: 민주·공화 고정 순서가 아니라 '가장 최근 사이클에서 득표율 높은 정당'이 위로.
-  const trend = hist?.trend || [];
+  // 선택 연도까지만 표시(미래 결과 제외).
+  const winnersUpTo = (hist?.winners || []).filter((w) => w.cycle_year <= cycleYear);
+
+  // 득표 추이: 민주·공화 고정 순서가 아니라 '선택 연도에서 득표율 높은 정당'이 위로.
+  const trend = (hist?.trend || []).filter((t) => t.cycle_year <= cycleYear);
   const last = trend[trend.length - 1] || {};
   const SERIES = {
     DEM: { key: "DEM", name: "민주", stroke: "#1565C0" },
@@ -38,7 +41,7 @@ export default function StateDetail({ cycleYear, code, name, hasCounty }) {
 
   // 주별 결과 분석 — DB 산출 데이터로만 구성(사실 기반, 추정 서술 없음).
   const stateAnalysis = (() => {
-    const winners = hist?.winners || [];
+    const winners = winnersUpTo;
     const top2 = [...cands].sort((a, b) => (b.vote_rate || 0) - (a.vote_rate || 0)).slice(0, 2);
     const win = top2[0];
     if (!win) return null;
@@ -149,11 +152,11 @@ export default function StateDetail({ cycleYear, code, name, hasCounty }) {
         </>
       )}
 
-      {hist?.winners?.length > 0 && (
+      {winnersUpTo.length > 0 && (
         <>
-          <h3 className="sec-title">역대 대선 승자</h3>
+          <h3 className="sec-title">역대 대선 승자 <span className="muted">(~{cycleYear})</span></h3>
           <ul className="winners-list">
-            {hist.winners.map((h) => (
+            {winnersUpTo.map((h) => (
               <li key={h.cycle_year}>
                 <span className="yr">{h.cycle_year}</span>
                 <span className="swatch sm" style={{ background: h.color_hex }} />

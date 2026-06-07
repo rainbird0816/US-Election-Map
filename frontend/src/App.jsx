@@ -4,7 +4,9 @@ import ECBar from "./components/ECBar.jsx";
 import ElectionNotes from "./components/ElectionNotes.jsx";
 import OfficeSummary from "./components/OfficeSummary.jsx";
 import Legend from "./components/Legend.jsx";
+import SmallStates from "./components/SmallStates.jsx";
 import StateDetail from "./pages/StateDetail.jsx";
+import StateSummaryTable from "./pages/StateSummaryTable.jsx";
 import RaceDetail from "./pages/RaceDetail.jsx";
 import HouseDetail from "./pages/HouseDetail.jsx";
 import {
@@ -120,13 +122,22 @@ export default function App() {
       <main className="layout">
         <section className="map-pane">
           <MapUS colorByCode={colorByCode} selectedCode={selected?.code} onSelect={onStateClick} />
+          <SmallStates states={mapData?.states} colorByCode={colorByCode}
+            selectedCode={selected?.code} onSelect={onStateClick} />
           <Legend states={mapData?.states} />
           <p className="hint">{hint}</p>
         </section>
 
         <aside className="detail">
+          {selected && (
+            <button className="back-link" onClick={() => setSelected(null)}>← 목록</button>
+          )}
           {!selected ? (
-            <div className="detail empty">주를 클릭하세요.</div>
+            isPres ? (
+              <StateSummaryTable states={mapData?.states} cycleYear={cycleYear} onSelect={onStateClick} />
+            ) : (
+              <div className="detail empty">주를 클릭하세요.</div>
+            )
           ) : isPres ? (
             <StateDetail cycleYear={cycleYear} code={selected.code} name={selected.name}
               hasCounty={mapData?.has_county} />

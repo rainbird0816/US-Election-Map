@@ -18,6 +18,10 @@ SPLITTERS = {"ME", "NE"}   # 선거구 분할 주
 # 선거구 수(상원 몫 2 제외). ME=2, NE=3.
 N_CD = {"ME": 2, "NE": 3}
 
+# 선거구 분할 방식(CD method) 도입 연도. 그 전엔 승자독식이었으므로 분할 표기를 하지 않는다.
+# ME 1972년, NE 1992년 도입. (실제로 선거구가 갈린 첫 사례는 2008년 NE-02.)
+ADOPTED = {"ME": 1972, "NE": 1992}
+
 # 선거구별 대선 승자가 '주 전체 승자'와 달랐던 사례(검증된 역대 기록).
 # {(state_po, cycle_year): {cd번호: 정당명}}. 여기 없는 선거구는 주 전체 승자가 가져감.
 #   NE-02: 2008 Obama, 2020 Biden, 2024 Harris (주 전체는 매번 공화)
@@ -92,8 +96,8 @@ def ec_for_cycle(con, cycle_year) -> dict:
 
 def split_for_state(con, cycle_year: int, state_po: str):
     """ME/NE 주 상세용: 선거구별 EV 배분 내역(정당색·약칭 포함). 그 외 주는 None."""
-    if state_po not in SPLITTERS:
-        return None
+    if state_po not in SPLITTERS or cycle_year < ADOPTED.get(state_po, 0):
+        return None   # 도입 전(NE<1992)은 승자독식 — 분할 내역 표기 안 함
     party = get_state_winners(con, cycle_year).get(state_po)
     ev = get_ev(con, cycle_year).get(state_po, 0)
     if not party or not ev:

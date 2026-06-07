@@ -92,9 +92,26 @@ body {
 .ev-split-sum { font-size: 13px; font-weight: 600; margin: 4px 0 0; }
 
 /* layout */
-.layout { display: grid; grid-template-columns: 1.5fr 1fr; gap: 24px; margin-top: 8px; }
+.layout { display: grid; grid-template-columns: 1.7fr 1fr; gap: 24px; margin-top: 8px; }
 @media (max-width: 900px) { .layout { grid-template-columns: 1fr; } }
 .map-pane { min-width: 0; }
+
+/* 작은 주·DC 클릭 스트립 (지도에서 식별 어려운 주 보조) */
+.small-states { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-top: 8px; }
+.small-states-label { font-size: 11px; color: var(--muted); margin-right: 2px; }
+.small-state { display: inline-flex; align-items: center; gap: 5px; font-size: 12px; font-weight: 600;
+  padding: 3px 8px; border: 1px solid var(--line); border-radius: 6px; background: #fff; cursor: pointer; }
+.small-state:hover { background: #f5f5f5; }
+.small-state.sel { border-color: #111; box-shadow: 0 0 0 1px #111 inset; }
+.small-state .ss-swatch { width: 12px; height: 12px; border-radius: 3px; border: 1px solid rgba(0,0,0,.08); }
+
+/* 우측 패널 목록 복귀 버튼 */
+.back-link { font-size: 12px; color: #335; background: #eef; border: none; border-radius: 8px;
+  padding: 4px 10px; cursor: pointer; margin-bottom: 8px; }
+.back-link:hover { background: #dde3ff; }
+
+/* 주별 요약 표 */
+.summary-table td { white-space: nowrap; }
 .detail { min-width: 0; border-left: 1px solid var(--line); padding-left: 20px; }
 .detail.empty, .detail .empty { color: var(--muted); padding-top: 40px; text-align: center; }
 
