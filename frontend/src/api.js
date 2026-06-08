@@ -28,3 +28,7 @@ export const getHouseDistricts = (cycleYear, stateCode) =>
   get("/house/districts", { cycle_year: cycleYear, state_code: stateCode });
 export const getCounties = (office, cycleYear, stateCode) =>
   get("/counties", { office, cycle_year: cycleYear, state_code: stateCode });
+
+// 주 개관 (정적정보 + 역대 주지사)
+export const getStateOverview = (year) => get("/state/overview", { year });
+export const getStateDetail = (code) => get("/state/detail", { code });

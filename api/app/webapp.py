@@ -428,6 +428,39 @@ def office_counties(office: str, cycle_year: int, state_code: str):
     return {"office": office, "cycle_year": cycle_year, "state_code": state_code, "counties": rows}
 
 
+@api.get("/state/overview")
+def state_overview(year: int):
+    """주 개관 지도+목록: 선택 연도에 각 주의 현역 주지사·정당.
+    정당은 코드만 반환(색·한글은 프런트 content/parties.js). span=슬라이더 연도범위.
+    그해 주(州)가 아니거나(성립 전) 주지사 없으면 governor/party=null → 회색."""
+    states = q(
+        """SELECT sf.region_code, sf.state_po, sf.name, sf.admitted_year,
+             (SELECT gt.governor_name FROM governor_terms gt
+                WHERE gt.region_code=sf.region_code AND gt.start_year<=?
+                  AND (gt.end_year IS NULL OR gt.end_year>=?)
+                ORDER BY gt.start_year DESC LIMIT 1) AS governor,
+             (SELECT gt.party FROM governor_terms gt
+                WHERE gt.region_code=sf.region_code AND gt.start_year<=?
+                  AND (gt.end_year IS NULL OR gt.end_year>=?)
+                ORDER BY gt.start_year DESC LIMIT 1) AS party
+           FROM state_facts sf ORDER BY sf.name""", (year, year, year, year))
+    span = q("SELECT MIN(start_year) AS min, MAX(start_year) AS max FROM governor_terms")[0]
+    return {"year": year, "span": span, "states": states}
+
+
+@api.get("/state/detail")
+def state_detail(code: str):
+    """주 상세: 정적 정보(수도·면적·성립연도·주기) + 전체 역대 주지사 연표."""
+    fact = q("SELECT * FROM state_facts WHERE region_code=?", (code,))
+    if not fact:
+        raise HTTPException(404, f"unknown state: {code}")
+    govs = q(
+        """SELECT governor_name, party, start_year, end_year, ordinal
+           FROM governor_terms WHERE region_code=?
+           ORDER BY start_year, CAST(ordinal AS INTEGER)""", (code,))
+    return {"state": fact[0], "governors": govs}
+
+
 app.include_router(api, prefix="/api")
 if DIST.exists():
     app.mount("/", StaticFiles(directory=str(DIST), html=True), name="static")

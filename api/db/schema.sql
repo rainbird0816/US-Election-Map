@@ -110,6 +110,30 @@ CREATE TABLE IF NOT EXISTS hist_pres_state (
   PRIMARY KEY (cycle_year, region_code)
 );
 
+-- 주 개관 페이지: 정적 정보 + 역대 주지사(건국/성립~현재). 적재: ingest_state_overview.py.
+CREATE TABLE IF NOT EXISTS state_facts (
+  region_code   TEXT PRIMARY KEY,   -- state FIPS(2자리)
+  state_po      TEXT,
+  name          TEXT,
+  capital       TEXT,
+  admitted_year INTEGER,            -- 연방 가입 연도(DC 는 NULL)
+  area_sqmi     INTEGER,
+  flag_file     TEXT                -- Wikimedia 파일명(Special:FilePath 로 해석)
+);
+
+-- 역대 주지사 임기(변동 시점 = 행). end_year NULL = 현직.
+CREATE TABLE IF NOT EXISTS governor_terms (
+  region_code   TEXT,               -- state FIPS
+  state_po      TEXT,
+  governor_name TEXT,
+  party         TEXT,               -- 정규화 코드(content/parties.js PARTY 와 일치)
+  start_year    INTEGER,
+  end_year      INTEGER,
+  ordinal       TEXT
+);
+
+CREATE INDEX IF NOT EXISTS idx_gov_state ON governor_terms(region_code, start_year);
+
 CREATE INDEX IF NOT EXISTS idx_results_lookup ON results(election_id, level, region_code);
 CREATE INDEX IF NOT EXISTS idx_seats_region   ON elected_seats(region_code);
 CREATE INDEX IF NOT EXISTS idx_summary_region ON region_election_summary(region_code);

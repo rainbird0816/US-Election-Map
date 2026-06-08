@@ -10,6 +10,7 @@ import StateSummaryTable from "./pages/StateSummaryTable.jsx";
 import RaceDetail from "./pages/RaceDetail.jsx";
 import HouseDetail from "./pages/HouseDetail.jsx";
 import PotusHistory from "./pages/PotusHistory.jsx";
+import StateOverview from "./pages/StateOverview.jsx";
 import {
   getPresidentElections, getPresidentMap, getElections, getOfficeMap,
 } from "./api";
@@ -21,12 +22,14 @@ const OFFICES = [
   { key: "house", label: "하원" },
   { key: "governor", label: "주지사" },
   { key: "history", label: "역대 대선" },
+  { key: "overview", label: "주 개관" },
 ];
 const TITLE = {
   president: "미국 대통령선거 지도", senate: "미국 상원선거 지도",
   house: "미국 하원선거 지도", governor: "미국 주지사선거 지도",
-  history: "역대 미국 대통령선거",
+  history: "역대 미국 대통령선거", overview: "미국 주(州) 개관",
 };
+const SELF_PAGES = new Set(["history", "overview"]);  // 자체 데이터를 관리하는 탭
 
 export default function App() {
   const [office, setOffice] = useState("president");
@@ -39,7 +42,7 @@ export default function App() {
   // office 변경 → 사이클 목록 로드 (연도는 일단 null 로 리셋해 지도 effect 오발사 방지)
   useEffect(() => {
     setSelected(null); setMapData(null); setCycleYear(null); setError(null);
-    if (office === "history") return;   // 역대 대선 탭은 자체 페이지가 데이터를 관리
+    if (SELF_PAGES.has(office)) return;   // 역대 대선·주 개관 탭은 자체 페이지가 데이터를 관리
     const loader = office === "president" ? getPresidentElections() : getElections(office);
     loader
       .then((cs) => {
@@ -105,7 +108,7 @@ export default function App() {
               </button>
             ))}
           </div>
-          {office !== "history" && (
+          {!SELF_PAGES.has(office) && (
             <>
               <label>연도&nbsp;</label>
               <select value={cycleYear ?? ""} onChange={(e) => setCycleYear(Number(e.target.value))}>
@@ -122,6 +125,8 @@ export default function App() {
 
       {office === "history" ? (
         <PotusHistory />
+      ) : office === "overview" ? (
+        <StateOverview />
       ) : (
         <>
 
