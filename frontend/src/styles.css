@@ -248,6 +248,7 @@ body {
 .ov-list tr { cursor: pointer; }
 .ov-list tbody tr:hover { background: #f6f9ff; }
 .ov-list tr.off { color: var(--muted); }
+.ov-list th.num, .ov-list td.num { text-align: right; font-variant-numeric: tabular-nums; }
 .ovl-state { font-weight: 600; }
 .ovl-party { display: inline-flex; align-items: center; gap: 6px; }
 .gl-dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; flex: 0 0 auto; }
@@ -258,10 +259,57 @@ body {
 .sf-flag { width: 84px; height: 56px; object-fit: cover; border: 1px solid var(--line); border-radius: 6px; flex: 0 0 auto; }
 .sf-name { font-size: 22px; font-weight: 800; }
 .sf-sub { font-size: 13px; color: var(--muted); }
-.sf-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-bottom: 16px; }
+.sf-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 18px; }
 .sf-cell { border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; background: #fff; }
 .sf-cell span { display: block; font-size: 12px; color: var(--muted); margin-bottom: 3px; }
-.sf-cell b { font-size: 16px; }
+.sf-cell b { font-size: 18px; font-weight: 800; }
+.sf-cell .sf-u { font-style: normal; font-size: 12px; font-weight: 600; color: var(--muted); margin-left: 2px; }
+.sf-cell .sf-note { display: block; font-style: normal; font-size: 11px; color: #888; margin-top: 2px; }
+
+/* ── 주 상세: 섹션 공통 ── */
+.sf-sec { margin: 18px 0; }
+.sf-sec-h { font-size: 14px; font-weight: 800; margin: 0 0 10px; padding-left: 8px;
+  border-left: 4px solid var(--ink); }
+.sf-chip { display: inline-block; font-size: 12.5px; background: #f1f4f8; border: 1px solid #e2e8f0;
+  color: #2a3340; border-radius: 999px; padding: 3px 10px; margin: 0 6px 6px 0; }
+
+/* 단일 주 지도 + 핀 */
+.sm-map { border: 1px solid var(--line); border-radius: 12px; background:
+  linear-gradient(180deg,#f7fafd,#eef3f9); overflow: hidden; }
+.sm-map.sm-msg { display: flex; align-items: center; justify-content: center; height: 220px;
+  color: var(--muted); font-size: 13px; }
+.sm-pin-label { font-size: 11px; font-weight: 700; fill: #1a1a1a; paint-order: stroke;
+  stroke: #fff; stroke-width: 3px; stroke-linejoin: round; }
+.sf-lm-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+.sf-lm { display: inline-flex; align-items: center; gap: 6px; font-size: 12.5px; cursor: pointer;
+  background: #fff; border: 1px solid var(--line); border-radius: 999px; padding: 4px 11px; color: #333; }
+.sf-lm:hover, .sf-lm.on { background: #fff0ee; border-color: #f0b3ac; color: #B3261E; }
+.sf-lm-dot { width: 8px; height: 8px; border-radius: 50%; background: #D64545; display: inline-block; }
+
+/* 주요 인물 */
+.sf-people { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+.sf-pf { border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; background: #fff; }
+.sf-pf-h { font-size: 12px; font-weight: 800; color: var(--ink); margin-bottom: 6px;
+  padding-bottom: 5px; border-bottom: 1px solid #f0f0f0; }
+.sf-pf ul { list-style: none; padding: 0; margin: 0; }
+.sf-pf li { font-size: 13px; padding: 3px 0; color: #2a3340; }
+
+/* 공원 */
+.sf-parks { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px; margin-bottom: 8px; }
+.sf-parks-lbl { font-size: 11px; font-weight: 800; color: #fff; border-radius: 6px;
+  padding: 2px 8px; margin-right: 6px; flex: 0 0 auto; }
+.sf-parks-lbl.np { background: #2E7D32; }
+.sf-parks-lbl.sp { background: #6B8E23; }
+
+/* 프로 스포츠 */
+.sf-teams { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+.sf-tg-h { font-size: 12px; font-weight: 800; margin-bottom: 6px; padding-left: 8px;
+  border-left: 3px solid #999; }
+.sf-tg-h.tg-mlb { border-color: #C8102E; }
+.sf-tg-h.tg-nba { border-color: #F58426; }
+.sf-tg-h.tg-nfl { border-color: #013369; }
+.sf-tg-h.tg-nhl { border-color: #111; }
+
 .sf-tl-title { font-size: 15px; font-weight: 700; margin: 6px 0 8px; }
 .gov-list { list-style: none; padding: 0; margin: 0; font-size: 14px; }
 .gov-list li { display: flex; align-items: center; gap: 10px; padding: 6px 6px; border-bottom: 1px solid #f3f3f3; }

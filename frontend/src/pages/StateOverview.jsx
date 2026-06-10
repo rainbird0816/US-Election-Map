@@ -6,6 +6,7 @@ import { getStateOverview } from "../api";
 import { portraitUrl } from "../content/presidents";
 import { POTUS_ADMIN, presidentAt } from "../content/presidents_admin.js";
 import { partyKo, partyColor } from "../content/parties";
+import { STATE_INFO } from "../content/states_info";
 
 const NOW = 2026;            // 기본 연도(현재). span.max 와 일치.
 const noop = () => {};
@@ -62,7 +63,8 @@ export default function StateOverview() {
   const mapStates = useMemo(
     () => states.map((s) => ({ ...s, region_name: s.name })), [states]);
 
-  const nameOf = (code) => states.find((s) => s.region_code === code)?.name || code;
+  const nameOf = (code) =>
+    STATE_INFO[code]?.ko || states.find((s) => s.region_code === code)?.name || code;
   const onState = (code) => setSelected({ code, name: nameOf(code) });
 
   // 주 목록: 이름순, 그해 주가 아니면(주지사 없음) 흐리게 표시.
@@ -139,12 +141,16 @@ export default function StateOverview() {
             <h2 className="ov-h2">주 목록 <span>· {year}년 · {states.filter((s) => s.governor).length}개 주 현역</span></h2>
             <div className="ov-list-wrap">
               <table className="ov-list">
-                <thead><tr><th>주</th><th>주지사</th><th>정당</th></tr></thead>
+                <thead><tr><th>주</th><th className="num">선거인단</th><th className="num">인구(2020)</th><th>주지사</th><th>정당</th></tr></thead>
                 <tbody>
-                  {listed.map((s) => (
+                  {listed.map((s) => {
+                    const info = STATE_INFO[s.region_code];
+                    return (
                     <tr key={s.region_code} className={s.governor ? "" : "off"}
                       onClick={() => onState(s.region_code)}>
-                      <td className="ovl-state">{s.name}</td>
+                      <td className="ovl-state">{info?.ko || s.name}</td>
+                      <td className="num">{info?.ev ?? "—"}</td>
+                      <td className="num">{info?.pop ? info.pop.toLocaleString() : "—"}</td>
                       <td>{s.governor || <span className="muted">—</span>}</td>
                       <td>
                         {s.party
@@ -152,7 +158,7 @@ export default function StateOverview() {
                           : <span className="muted">{s.admitted_year && s.admitted_year > year ? "성립 전" : "—"}</span>}
                       </td>
                     </tr>
-                  ))}
+                  );})}
                 </tbody>
               </table>
             </div>
