@@ -41,6 +41,7 @@ function GovLegend({ states }) {
 
 export default function StateOverview() {
   const [year, setYear] = useState(NOW);
+  const [yearText, setYearText] = useState(String(NOW)); // 상단 연도 직접 입력용(미확정 텍스트)
   const [data, setData] = useState(null);
   const [error, setError] = useState(null);
   const [selected, setSelected] = useState(null); // {code, name}
@@ -50,7 +51,19 @@ export default function StateOverview() {
     getStateOverview(year).then(setData).catch((e) => setError(String(e)));
   }, [year]);
 
+  // 슬라이더·대통령칩 등으로 year 가 바뀌면 입력칸도 동기화.
+  useEffect(() => { setYearText(String(year)); }, [year]);
+
   const span = data?.span || { min: 1769, max: NOW };
+
+  // 입력 확정(엔터/블러): 범위로 보정해 그 연도로 이동. 빈/이상값은 현재 연도로 되돌림.
+  const commitYear = () => {
+    const v = parseInt(yearText, 10);
+    if (Number.isNaN(v)) { setYearText(String(year)); return; }
+    const clamped = Math.max(span.min, Math.min(span.max, v));
+    setYear(clamped);
+    setYearText(String(clamped));
+  };
   const states = data?.states || [];
   const pres = presidentAt(year);
 
@@ -91,7 +104,15 @@ export default function StateOverview() {
             <div className="ov-pres-en muted">해당 연도 대통령 정보 없음</div></div>}
         </div>
         <div className="ov-slider">
-          <div className="ov-year">{year}<span>년</span></div>
+          <div className="ov-year">
+            <input className="ov-year-input" type="number" inputMode="numeric"
+              min={span.min} max={span.max} value={yearText}
+              onChange={(e) => setYearText(e.target.value)}
+              onBlur={commitYear}
+              onKeyDown={(e) => { if (e.key === "Enter") { commitYear(); e.currentTarget.blur(); } }}
+              aria-label="연도 직접 입력" />
+            <span>년</span>
+          </div>
           <input type="range" min={span.min} max={span.max} value={year}
             onChange={(e) => setYear(Number(e.target.value))} />
           <div className="ov-range"><span>{span.min}</span><span>{span.max}</span></div>
