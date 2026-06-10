@@ -96,85 +96,85 @@ export const STATE_INFO = {
         {
           "ko": "휴고 블랙",
           "en": "Hugo Black",
-          "note": "정치·연방대법관"
+          "note": "연방대법관"
         },
         {
           "ko": "콘돌리자 라이스",
           "en": "Condoleezza Rice",
-          "note": "정치·전 국무장관, 버밍햄 출신"
+          "note": "제66대 국무장관, 버밍햄 출신"
         },
         {
           "ko": "조지 월리스",
           "en": "George Wallace",
-          "note": "정치·전 앨라배마 주지사"
+          "note": "전 앨라배마 주지사"
         }
       ],
       "예술·문화": [
         {
           "ko": "행크 윌리엄스",
           "en": "Hank Williams",
-          "note": "음악·컨트리 전설"
+          "note": "컨트리 음악 전설"
         },
         {
           "ko": "냇 킹 콜",
           "en": "Nat King Cole",
-          "note": "음악·재즈/팝 가수"
+          "note": "재즈·팝 가수, 몽고메리 출신"
         },
         {
           "ko": "하퍼 리",
           "en": "Harper Lee",
-          "note": "작가·앵무새 죽이기"
+          "note": "소설 앵무새 죽이기 작가"
         },
         {
           "ko": "라이어널 리치",
           "en": "Lionel Richie",
-          "note": "음악·가수"
+          "note": "가수, 터스키기 출신"
         }
       ],
       "스포츠": [
         {
           "ko": "행크 애런",
           "en": "Hank Aaron",
-          "note": "야구·MLB 홈런왕"
+          "note": "MLB 통산 홈런왕, 모빌 출신"
         },
         {
           "ko": "윌리 메이스",
           "en": "Willie Mays",
-          "note": "야구·MLB 명예의 전당"
+          "note": "MLB 명예의 전당, 웨스트필드 출신"
         },
         {
           "ko": "제시 오언스",
           "en": "Jesse Owens",
-          "note": "육상·1936 올림픽 4관왕"
+          "note": "1936 베를린 올림픽 4관왕"
         },
         {
           "ko": "보 잭슨",
           "en": "Bo Jackson",
-          "note": "미식축구·야구"
+          "note": "미식축구·야구 양대 스타"
         }
       ],
       "과학·기술": [
         {
           "ko": "퍼시 라본 줄리언",
           "en": "Percy Lavon Julian",
-          "note": "화학·약품 합성 선구자"
+          "note": "의약품 합성 화학자, 몽고메리 출신"
         },
         {
           "ko": "조지 워싱턴 카버",
           "en": "George Washington Carver",
-          "note": "농학·식물학자, 터스키기 활동"
+          "note": "농학자, 터스키기 활동"
         }
       ],
       "기업": [
         {
           "ko": "팀 쿡",
           "en": "Tim Cook",
-          "note": "기업·애플 CEO, 모빌 출신"
+          "note": "애플 CEO, 모빌 출신"
         },
         {
-          "ko": "안젤로 브루노",
-          "en": "Angelo Bruno",
-          "note": "기업·소매"
+          "ko": "A. G. 개스턴",
+          "en": "A. G. Gaston",
+          "note": "흑인 기업가, 버밍햄 사업 제국"
         }
       ]
     },
@@ -182,7 +182,7 @@ export const STATE_INFO = {
     "stateParks": [
       "걸프 주립공원 (Gulf State Park)",
       "치하 주립공원 (Cheaha State Park)",
-      "오크 마운틴 주립공원 (Oak Mountain State Park)"
+      "오크마운틴 주립공원 (Oak Mountain State Park)"
     ],
     "teams": {
       "MLB": [],
@@ -316,75 +316,65 @@ export const STATE_INFO = {
         {
           "ko": "세라 페일린",
           "en": "Sarah Palin",
-          "note": "정치·전 알래스카 주지사"
+          "note": "전 알래스카 주지사"
         },
         {
           "ko": "테드 스티븐스",
           "en": "Ted Stevens",
-          "note": "정치·연방 상원의원"
+          "note": "연방 상원의원"
         },
         {
           "ko": "리사 머카우스키",
           "en": "Lisa Murkowski",
-          "note": "정치·연방 상원의원"
+          "note": "연방 상원의원"
         }
       ],
       "예술·문화": [
         {
-          "ko": "제웰",
+          "ko": "주얼",
           "en": "Jewel",
-          "note": "음악·싱어송라이터"
-        },
-        {
-          "ko": "벨라 한손",
-          "en": "Bella Hammond",
-          "note": "예술·원주민 예술가"
+          "note": "싱어송라이터"
         },
         {
           "ko": "시드니 로런스",
           "en": "Sydney Laurence",
-          "note": "예술·풍경화가"
+          "note": "풍경화가, 매킨리산 화폭"
+        },
+        {
+          "ko": "벨라 해먼드",
+          "en": "Bella Hammond",
+          "note": "원주민 출신 활동가·전 주지사 부인"
         }
       ],
       "스포츠": [
         {
-          "ko": "트레이저 윌리엄스",
+          "ko": "트레이전 랭던",
           "en": "Trajan Langdon",
-          "note": "미식축구"
+          "note": "앵커리지 출신 첫 알래스카 NBA 선수"
         },
         {
           "ko": "홀리 브룩스",
           "en": "Holly Brooks",
-          "note": "크로스컨트리 스키"
-        },
-        {
-          "ko": "커크 알키레",
-          "en": "Kirk Alkire",
-          "note": "체조"
+          "note": "크로스컨트리 스키 올림픽 대표"
         }
       ],
       "과학·기술": [
         {
-          "ko": "사이드 모하메드",
-          "en": "Syed Mohammed",
-          "note": "과학·연구"
+          "ko": "순이치 아카소후",
+          "en": "Syun-Ichi Akasofu",
+          "note": "오로라 연구 지구물리학자"
         },
         {
-          "ko": "윌리엄 에건",
-          "en": "William Egan",
-          "note": "의학·초대 주지사이자 의사"
+          "ko": "롭 컬린",
+          "en": "Robb Kulin",
+          "note": "앵커리지 성장 항공우주 엔지니어"
         }
       ],
       "기업": [
         {
           "ko": "로웰 토머스 주니어",
           "en": "Lowell Thomas Jr.",
-          "note": "기업·항공"
-        },
-        {
-          "ko": "밥 깁슨",
-          "en": "Bob Gibson",
-          "note": "기업·관광"
+          "note": "항공·관광 사업가, 전 부지사"
         }
       ]
     },
@@ -401,7 +391,7 @@ export const STATE_INFO = {
     "stateParks": [
       "추가치 주립공원 (Chugach State Park)",
       "데날리 주립공원 (Denali State Park)",
-      "캐치메이크 주립공원 (Kachemak Bay State Park)"
+      "카체마크만 주립공원 (Kachemak Bay State Park)"
     ],
     "teams": {
       "MLB": [],
@@ -543,34 +533,34 @@ export const STATE_INFO = {
         {
           "ko": "배리 골드워터",
           "en": "Barry Goldwater",
-          "note": "정치·연방 상원의원"
+          "note": "연방 상원의원, 피닉스 출신"
         },
         {
           "ko": "존 매케인",
           "en": "John McCain",
-          "note": "정치·연방 상원의원"
+          "note": "연방 상원의원"
         },
         {
           "ko": "샌드라 데이 오코너",
           "en": "Sandra Day O'Connor",
-          "note": "정치·연방대법관"
+          "note": "첫 여성 연방대법관"
         },
         {
           "ko": "세사르 차베스",
           "en": "Cesar Chavez",
-          "note": "정치·노동운동가"
+          "note": "농업 노동운동가, 유마 출신"
         }
       ],
       "예술·문화": [
         {
           "ko": "스티븐 스필버그",
           "en": "Steven Spielberg",
-          "note": "영화·감독, 피닉스 성장"
+          "note": "영화감독, 피닉스 성장"
         },
         {
           "ko": "린다 론스태드",
           "en": "Linda Ronstadt",
-          "note": "음악·가수, 투손 출신"
+          "note": "가수, 투손 출신"
         },
         {
           "ko": "에마 스톤",
@@ -580,48 +570,48 @@ export const STATE_INFO = {
         {
           "ko": "앨리스 쿠퍼",
           "en": "Alice Cooper",
-          "note": "음악·록 뮤지션"
+          "note": "록 뮤지션, 피닉스 거주"
         }
       ],
       "스포츠": [
         {
           "ko": "필 미컬슨",
           "en": "Phil Mickelson",
-          "note": "골프"
+          "note": "골프, 스코츠데일 성장"
         },
         {
-          "ko": "케리 워커",
-          "en": "Kerri Walker",
-          "note": "소프트볼"
+          "ko": "제니 핀치",
+          "en": "Jennie Finch",
+          "note": "소프트볼 올림픽 금메달, 애리조나대 활약"
         },
         {
           "ko": "대니 화이트",
           "en": "Danny White",
-          "note": "미식축구"
+          "note": "NFL 쿼터백, 메사 성장"
         }
       ],
       "과학·기술": [
         {
-          "ko": "앤드루 와일스",
-          "en": "Andrew Wiles",
-          "note": "수학·관련 인물"
-        },
-        {
           "ko": "퍼시벌 로웰",
           "en": "Percival Lowell",
-          "note": "천문·로웰 천문대"
+          "note": "천문학자, 로웰 천문대 설립"
+        },
+        {
+          "ko": "클라이드 톰보",
+          "en": "Clyde Tombaugh",
+          "note": "명왕성 발견, 플래그스태프 로웰 천문대"
         }
       ],
       "기업": [
         {
-          "ko": "헨리 츠코사키",
-          "en": "Henry Tsukosaki",
-          "note": "기업"
-        },
-        {
           "ko": "제리 콜란젤로",
           "en": "Jerry Colangelo",
-          "note": "기업·스포츠 경영"
+          "note": "피닉스 선스·다이아몬드백스 경영"
+        },
+        {
+          "ko": "돈 불타지오",
+          "en": "Don Vultaggio",
+          "note": "애리조나 음료 공동창업자"
         }
       ]
     },
@@ -632,7 +622,7 @@ export const STATE_INFO = {
     ],
     "stateParks": [
       "슬라이드록 주립공원 (Slide Rock State Park)",
-      "캐서린 코브 주립공원 (Catalina State Park)",
+      "카탈리나 주립공원 (Catalina State Park)",
       "로스트더치맨 주립공원 (Lost Dutchman State Park)"
     ],
     "teams": {
@@ -816,80 +806,85 @@ export const STATE_INFO = {
         {
           "ko": "빌 클린턴",
           "en": "Bill Clinton",
-          "note": "정치·제42대 대통령, 호프 출신"
+          "note": "제42대 대통령, 호프 출신"
         },
         {
           "ko": "더글러스 맥아더",
           "en": "Douglas MacArthur",
-          "note": "군인·5성 장군, 리틀록 출신"
+          "note": "육군 원수, 리틀록 출생"
         },
         {
           "ko": "J. 윌리엄 풀브라이트",
           "en": "J. William Fulbright",
-          "note": "정치·연방 상원의원"
+          "note": "연방 상원의원, 풀브라이트 장학금"
         }
       ],
       "예술·문화": [
         {
           "ko": "조니 캐시",
           "en": "Johnny Cash",
-          "note": "음악·컨트리 전설"
+          "note": "컨트리 음악 전설, 킹스랜드 출신"
         },
         {
           "ko": "마야 안젤루",
           "en": "Maya Angelou",
-          "note": "작가·시인"
+          "note": "시인·작가, 스탬프스 성장"
         },
         {
           "ko": "글렌 캠벨",
           "en": "Glen Campbell",
-          "note": "음악·가수"
+          "note": "가수, 빌스토니 출신"
         },
         {
           "ko": "빌리 밥 손턴",
           "en": "Billy Bob Thornton",
-          "note": "배우·감독"
+          "note": "배우·감독, 호트스프링스 성장"
         }
       ],
       "스포츠": [
         {
           "ko": "스코티 피펜",
           "en": "Scottie Pippen",
-          "note": "농구·NBA, 햄버그 출신"
+          "note": "NBA 스타, 햄버그 출신"
         },
         {
           "ko": "브룩스 로빈슨",
           "en": "Brooks Robinson",
-          "note": "야구·MLB, 리틀록 출신"
+          "note": "MLB 명예의 전당, 리틀록 출신"
         },
         {
           "ko": "제리 존스",
           "en": "Jerry Jones",
-          "note": "미식축구·구단주"
+          "note": "댈러스 카우보이스 구단주, 노스리틀록 성장"
         }
       ],
       "과학·기술": [
         {
-          "ko": "존 H. 존슨",
-          "en": "John H. Johnson",
-          "note": "출판·미디어"
+          "ko": "월리스 쿨터",
+          "en": "Wallace H. Coulter",
+          "note": "쿨터 계수기 발명, 매기 성장"
         },
         {
-          "ko": "윌리엄 디트머스",
-          "en": "William Dietmus",
-          "note": "과학·연구"
+          "ko": "프리먼 오언스",
+          "en": "Freeman Owens",
+          "note": "발성영화 기술 발명가, 파인블러프 출신"
         }
       ],
       "기업": [
         {
           "ko": "샘 월턴",
           "en": "Sam Walton",
-          "note": "기업·월마트 창업자"
+          "note": "월마트 창업자"
         },
         {
           "ko": "J. B. 헌트",
           "en": "J. B. Hunt",
-          "note": "기업·물류 창업자"
+          "note": "운송기업 창업자"
+        },
+        {
+          "ko": "존 H. 존슨",
+          "en": "John H. Johnson",
+          "note": "에보니·제트 발행인, 아칸소시티 출신"
         }
       ]
     },
@@ -898,8 +893,8 @@ export const STATE_INFO = {
     ],
     "stateParks": [
       "페티트진 주립공원 (Petit Jean State Park)",
-      "다이아몬드크레이터 주립공원 (Crater of Diamonds State Park)",
-      "디게이바일 주립공원 (DeGray Lake Resort State Park)"
+      "크레이터오브다이아몬즈 주립공원 (Crater of Diamonds State Park)",
+      "디그레이호 리조트 주립공원 (DeGray Lake Resort State Park)"
     ],
     "teams": {
       "MLB": [],
@@ -1075,44 +1070,44 @@ export const STATE_INFO = {
         {
           "ko": "리처드 닉슨",
           "en": "Richard Nixon",
-          "note": "정치·제37대 대통령"
+          "note": "제37대 대통령, 요바린다 출신"
         },
         {
           "ko": "로널드 레이건",
           "en": "Ronald Reagan",
-          "note": "정치·제40대 대통령, 캘리포니아 주지사"
+          "note": "제40대 대통령, 전 캘리포니아 주지사"
         },
         {
           "ko": "카멀라 해리스",
           "en": "Kamala Harris",
-          "note": "정치·부통령, 오클랜드 출신"
+          "note": "제49대 부통령, 오클랜드 출신"
         },
         {
           "ko": "낸시 펠로시",
           "en": "Nancy Pelosi",
-          "note": "정치·전 하원의장"
+          "note": "전 연방 하원의장"
         }
       ],
       "예술·문화": [
         {
           "ko": "레오나르도 디카프리오",
           "en": "Leonardo DiCaprio",
-          "note": "배우, LA 출신"
+          "note": "배우, 로스앤젤레스 출신"
         },
         {
           "ko": "비치 보이스",
           "en": "The Beach Boys",
-          "note": "음악·록 밴드"
+          "note": "록 밴드, 호손 결성"
         },
         {
           "ko": "월트 디즈니",
           "en": "Walt Disney",
-          "note": "애니메이션·관련 인물"
+          "note": "디즈니 창업·애니메이션 거장"
         },
         {
           "ko": "존 스타인벡",
           "en": "John Steinbeck",
-          "note": "작가, 살리나스 출신"
+          "note": "소설가, 살리나스 출신"
         }
       ],
       "스포츠": [
@@ -1124,46 +1119,41 @@ export const STATE_INFO = {
         {
           "ko": "테드 윌리엄스",
           "en": "Ted Williams",
-          "note": "야구·MLB, 샌디에이고 출신"
+          "note": "MLB 전설, 샌디에이고 출신"
         },
         {
           "ko": "비너스·세리나 윌리엄스",
           "en": "Venus and Serena Williams",
-          "note": "테니스, 콤프턴"
+          "note": "테니스, 컴프턴 성장"
         }
       ],
       "과학·기술": [
         {
           "ko": "스티브 잡스",
           "en": "Steve Jobs",
-          "note": "기술·애플 공동창업자"
+          "note": "애플 공동창업자, 샌프란시스코 출신"
         },
         {
           "ko": "고든 무어",
           "en": "Gordon Moore",
-          "note": "기술·인텔 공동창업자"
-        },
-        {
-          "ko": "잭 킬비",
-          "en": "Jack Kilby",
-          "note": "과학·관련 인물"
+          "note": "인텔 공동창업자, 샌프란시스코 출신"
         }
       ],
       "기업": [
         {
-          "ko": "마크 저커버그",
-          "en": "Mark Zuckerberg",
-          "note": "기업·메타, 활동지"
-        },
-        {
           "ko": "래리 페이지",
           "en": "Larry Page",
-          "note": "기업·구글 공동창업자"
+          "note": "구글 공동창업자, 실리콘밸리 창업"
+        },
+        {
+          "ko": "마크 저커버그",
+          "en": "Mark Zuckerberg",
+          "note": "메타 창업자, 캘리포니아 본사"
         },
         {
           "ko": "일론 머스크",
           "en": "Elon Musk",
-          "note": "기업·테슬라, 활동지"
+          "note": "테슬라·스페이스X, 캘리포니아 활동"
         }
       ]
     },
@@ -1179,9 +1169,9 @@ export const STATE_INFO = {
       "피너클스 국립공원 (Pinnacles National Park)"
     ],
     "stateParks": [
-      "빅베이슨 레드우즈 주립공원 (Big Basin Redwoods State Park)",
+      "빅베이슨 레드우드 주립공원 (Big Basin Redwoods State Park)",
       "안자보레고 사막 주립공원 (Anza-Borrego Desert State Park)",
-      "캘러베러스빅트리스 주립공원 (Calaveras Big Trees State Park)"
+      "캘러베러스 빅트리스 주립공원 (Calaveras Big Trees State Park)"
     ],
     "teams": {
       "MLB": [
@@ -1367,19 +1357,19 @@ export const STATE_INFO = {
     "people": {
       "정치": [
         {
-          "ko": "존 케리",
-          "en": "John Kerry",
-          "note": "정치·전 국무장관, 오로라 출신"
-        },
-        {
           "ko": "켄 살라자르",
           "en": "Ken Salazar",
-          "note": "정치·전 내무장관"
+          "note": "전 내무장관, 콜로라도 출신"
         },
         {
           "ko": "팻 슈로더",
           "en": "Pat Schroeder",
-          "note": "정치·연방 하원의원"
+          "note": "연방 하원의원"
+        },
+        {
+          "ko": "존 히켄루퍼",
+          "en": "John Hickenlooper",
+          "note": "연방 상원의원, 전 콜로라도 주지사"
         }
       ],
       "예술·문화": [
@@ -1391,58 +1381,48 @@ export const STATE_INFO = {
         {
           "ko": "트레이 파커",
           "en": "Trey Parker",
-          "note": "애니메이션·사우스파크 공동제작"
-        },
-        {
-          "ko": "제이크 질런홀",
-          "en": "Jake Gyllenhaal",
-          "note": "배우·관련 인물"
+          "note": "사우스파크 공동제작, 코네티핏 출신"
         },
         {
           "ko": "인디아 아리",
-          "en": "India Arie",
-          "note": "음악·가수, 덴버 출신"
+          "en": "India.Arie",
+          "note": "가수, 덴버 출신"
         }
       ],
       "스포츠": [
         {
           "ko": "에이미 밴 다이켄",
           "en": "Amy Van Dyken",
-          "note": "수영·올림픽 금메달리스트"
+          "note": "수영 올림픽 금메달, 잉글우드 출신"
         },
         {
           "ko": "미시 프랭클린",
           "en": "Missy Franklin",
-          "note": "수영·올림픽 금메달리스트"
-        },
-        {
-          "ko": "잭 니콜라우스",
-          "en": "Jack Nicklaus",
-          "note": "골프·관련 인물"
+          "note": "수영 올림픽 금메달, 센테니얼 성장"
         }
       ],
       "과학·기술": [
         {
           "ko": "M. 스콧 카펜터",
           "en": "M. Scott Carpenter",
-          "note": "우주비행사, 볼더 출신"
+          "note": "머큐리 우주비행사, 볼더 출신"
         },
         {
           "ko": "잭 스위거트",
           "en": "Jack Swigert",
-          "note": "우주비행사·아폴로 13"
+          "note": "아폴로 13 우주비행사, 덴버 출신"
         }
       ],
       "기업": [
         {
           "ko": "필립 안슈츠",
           "en": "Philip Anschutz",
-          "note": "기업·미디어/에너지"
+          "note": "미디어·에너지 재벌, 덴버 기반"
         },
         {
-          "ko": "찰스 보든",
-          "en": "Charles Bolden",
-          "note": "기업·관련 인물"
+          "ko": "스티브 엘스",
+          "en": "Steve Ells",
+          "note": "치폴레 창업자, 덴버 1호점"
         }
       ]
     },
@@ -1453,7 +1433,7 @@ export const STATE_INFO = {
       "블랙캐니언오브더거니슨 국립공원 (Black Canyon of the Gunnison National Park)"
     ],
     "stateParks": [
-      "치티니 주립공원 (Chatfield State Park)",
+      "채트필드 주립공원 (Chatfield State Park)",
       "엘도라도캐니언 주립공원 (Eldorado Canyon State Park)",
       "스테이트포레스트 주립공원 (State Forest State Park)"
     ],
@@ -1659,17 +1639,17 @@ export const STATE_INFO = {
         {
           "ko": "조지 W. 부시",
           "en": "George W. Bush",
-          "note": "정치·제43대 대통령, 뉴헤이븐 출생"
+          "note": "제43대 대통령, 뉴헤이븐 출생"
+        },
+        {
+          "ko": "조지프 리버먼",
+          "en": "Joe Lieberman",
+          "note": "연방 상원의원, 2000 부통령 후보, 스탬퍼드 출신"
         },
         {
           "ko": "라이먼 트럼불",
           "en": "Lyman Trumbull",
-          "note": "정치·연방 상원의원"
-        },
-        {
-          "ko": "에비 휴턴",
-          "en": "Abby Houghton",
-          "note": "정치·관련 인물"
+          "note": "콜체스터 출생, 노예제 폐지 수정헌법 주도"
         }
       ],
       "예술·문화": [
@@ -1681,7 +1661,7 @@ export const STATE_INFO = {
         {
           "ko": "마크 트웨인",
           "en": "Mark Twain",
-          "note": "작가·하트퍼드 거주"
+          "note": "작가, 하트퍼드 거주·집필"
         },
         {
           "ko": "메그 라이언",
@@ -1691,55 +1671,50 @@ export const STATE_INFO = {
         {
           "ko": "찰스 아이브스",
           "en": "Charles Ives",
-          "note": "음악·작곡가"
+          "note": "작곡가, 댄버리 출신"
         }
       ],
       "스포츠": [
         {
           "ko": "월터 캠프",
           "en": "Walter Camp",
-          "note": "미식축구·근대 미식축구의 아버지"
+          "note": "근대 미식축구의 아버지, 뉴헤이븐 출신"
         },
         {
-          "ko": "도로시 해멀",
+          "ko": "도로시 해밀",
           "en": "Dorothy Hamill",
-          "note": "피겨스케이팅·올림픽 금메달리스트"
-        },
-        {
-          "ko": "스티브 영",
-          "en": "Steve Young",
-          "note": "미식축구·관련 인물"
+          "note": "피겨스케이팅 올림픽 금메달, 그리니치 성장"
         }
       ],
       "과학·기술": [
         {
           "ko": "찰스 굿이어",
           "en": "Charles Goodyear",
-          "note": "발명·가황 고무"
+          "note": "가황 고무 발명가, 뉴헤이븐 출신"
         },
         {
-          "ko": "이라이 휘트니",
+          "ko": "일라이 휘트니",
           "en": "Eli Whitney",
-          "note": "발명·조면기, 뉴헤이븐 활동"
+          "note": "조면기 발명가, 뉴헤이븐 공장 운영"
         }
       ],
       "기업": [
         {
           "ko": "P. T. 바넘",
           "en": "P. T. Barnum",
-          "note": "기업·흥행, 브리지포트 시장"
+          "note": "흥행 사업가, 브리지포트 시장"
         },
         {
-          "ko": "프레더릭 렌치블러",
+          "ko": "프레더릭 렌치슬러",
           "en": "Frederick Rentschler",
-          "note": "기업·관련 인물"
+          "note": "프랫 앤 휘트니 창업, 하트퍼드"
         }
       ]
     },
     "nationalParks": [],
     "stateParks": [
-      "헐리벅 주립공원 (Hurd State Park)",
-      "기리딘 주립공원 (Gillette Castle State Park)",
+      "허드 주립공원 (Hurd State Park)",
+      "질레트 캐슬 주립공원 (Gillette Castle State Park)",
       "셔우드아일랜드 주립공원 (Sherwood Island State Park)"
     ],
     "teams": {
@@ -1915,60 +1890,70 @@ export const STATE_INFO = {
         {
           "ko": "조 바이든",
           "en": "Joe Biden",
-          "note": "정치·제46대 미국 대통령"
+          "note": "제46대 미국 대통령, 델라웨어 상원의원"
         },
         {
           "ko": "토머스 F. 베이어드",
           "en": "Thomas F. Bayard",
-          "note": "정치·국무장관"
+          "note": "국무장관·상원의원"
         }
       ],
       "예술·문화": [
         {
-          "ko": "헨리 헤임리히",
-          "en": "Henry Heimlich",
-          "note": "의학·하임리히법 고안"
-        },
-        {
           "ko": "발레리 베르티넬리",
           "en": "Valerie Bertinelli",
-          "note": "배우·방송인"
+          "note": "윌밍턴 출신 배우·방송인"
+        },
+        {
+          "ko": "라이언 필립",
+          "en": "Ryan Phillippe",
+          "note": "뉴캐슬 출신 영화배우"
+        },
+        {
+          "ko": "오브리 플라자",
+          "en": "Aubrey Plaza",
+          "note": "윌밍턴 출신 배우·코미디언"
         }
       ],
       "스포츠": [
         {
-          "ko": "주드 라모스",
+          "ko": "주디 존슨",
           "en": "Judy Johnson",
-          "note": "야구·메이저리그 선수"
+          "note": "흑인리그 야구·명예의 전당"
         },
         {
-          "ko": "엘레나 델 던",
+          "ko": "엘레나 델리 던",
           "en": "Elena Delle Donne",
-          "note": "농구·WNBA MVP"
+          "note": "WNBA MVP 농구선수"
         }
       ],
       "과학·기술": [
         {
           "ko": "월리스 캐러더스",
           "en": "Wallace Carothers",
-          "note": "화학·나일론 발명"
+          "note": "나일론을 발명한 화학자"
+        },
+        {
+          "ko": "헨리 하임리히",
+          "en": "Henry Heimlich",
+          "note": "윌밍턴 출신, 하임리히법 고안 의사"
         },
         {
           "ko": "에드워드 G. 버드",
           "en": "Edward G. Budd",
-          "note": "제조업·차량 기술"
+          "note": "스미르나 출신, 강철 차체 제조 선구자"
         }
       ],
       "기업": [
         {
           "ko": "엘레우테르 이레네 뒤퐁",
           "en": "Eleuthère Irénée du Pont",
-          "note": "기업·듀폰 창업주"
+          "note": "듀폰 창업주"
         },
         {
           "ko": "피에르 S. 뒤퐁",
           "en": "Pierre S. du Pont",
-          "note": "기업·듀폰·GM 경영"
+          "note": "듀폰·GM 경영자"
         }
       ]
     },
@@ -2126,69 +2111,65 @@ export const STATE_INFO = {
         {
           "ko": "프레더릭 더글러스",
           "en": "Frederick Douglass",
-          "note": "정치·노예제 폐지운동가"
+          "note": "노예제 폐지운동가, 만년을 DC에서 거주"
         },
         {
           "ko": "엘리너 홈스 노턴",
           "en": "Eleanor Holmes Norton",
-          "note": "정치·DC 하원 대표"
+          "note": "DC 하원 대표"
         }
       ],
       "예술·문화": [
         {
           "ko": "듀크 엘링턴",
           "en": "Duke Ellington",
-          "note": "음악·재즈 거장"
+          "note": "DC 출신 재즈 거장"
         },
         {
           "ko": "마빈 게이",
           "en": "Marvin Gaye",
-          "note": "음악·소울 가수"
+          "note": "DC 출신 소울 가수"
         }
       ],
       "스포츠": [
         {
-          "ko": "케빈 듀랜트",
-          "en": "Kevin Durant",
-          "note": "농구·NBA MVP"
-        },
-        {
           "ko": "엘긴 베일러",
           "en": "Elgin Baylor",
-          "note": "농구·NBA 전설"
+          "note": "DC 출신 NBA 전설"
+        },
+        {
+          "ko": "케빈 듀랜트",
+          "en": "Kevin Durant",
+          "note": "인근 출신 NBA MVP"
         }
       ],
       "과학·기술": [
         {
           "ko": "로버트 C. 위버",
           "en": "Robert C. Weaver",
-          "note": "정책·최초 흑인 각료"
+          "note": "DC 출신, 최초의 흑인 각료"
         },
         {
           "ko": "벤저민 O. 데이비스 주니어",
           "en": "Benjamin O. Davis Jr.",
-          "note": "군사·항공"
+          "note": "DC 출신 공군 장성"
         }
       ],
       "기업": [
         {
           "ko": "캐서린 그레이엄",
           "en": "Katharine Graham",
-          "note": "언론·워싱턴포스트 경영"
+          "note": "워싱턴포스트 발행인"
         },
         {
           "ko": "필립 그레이엄",
           "en": "Philip Graham",
-          "note": "언론·워싱턴포스트"
+          "note": "워싱턴포스트 발행인"
         }
       ]
     },
     "nationalParks": [],
-    "stateParks": [
-      "록 크리크 공원 (Rock Creek Park)",
-      "내셔널 몰 (National Mall)",
-      "이스트 포토맥 공원 (East Potomac Park)"
-    ],
+    "stateParks": [],
     "teams": {
       "MLB": [
         "워싱턴 내셔널스 (Washington Nationals)"
@@ -2342,60 +2323,50 @@ export const STATE_INFO = {
         {
           "ko": "재닛 리노",
           "en": "Janet Reno",
-          "note": "정치·법무장관"
+          "note": "마이애미 출신, 최초의 여성 법무장관"
         },
         {
           "ko": "마코 루비오",
           "en": "Marco Rubio",
-          "note": "정치·상원의원"
+          "note": "마이애미 출신 상원의원"
         }
       ],
       "예술·문화": [
         {
           "ko": "시드니 포이티어",
           "en": "Sidney Poitier",
-          "note": "배우·아카데미상"
+          "note": "마이애미 출신, 최초의 흑인 남우주연상 배우"
         },
         {
           "ko": "글로리아 에스테판",
           "en": "Gloria Estefan",
-          "note": "음악·라틴 팝"
+          "note": "마이애미 활동 라틴 팝 가수"
         }
       ],
       "스포츠": [
         {
           "ko": "크리스 에버트",
           "en": "Chris Evert",
-          "note": "테니스·그랜드슬램 18회"
+          "note": "포트로더데일 출신, 그랜드슬램 18회 테니스선수"
         },
         {
           "ko": "디온 샌더스",
           "en": "Deion Sanders",
-          "note": "미식축구·명예의 전당"
+          "note": "포트마이어스 출신, 명예의 전당 미식축구선수"
         }
       ],
       "과학·기술": [
         {
-          "ko": "존 글렌",
-          "en": "John Glenn",
-          "note": "우주·케네디우주센터 발사"
-        },
-        {
-          "ko": "게리 키스",
-          "en": "Gary Keith",
-          "note": "기술·항공우주"
+          "ko": "존 고리",
+          "en": "John Gorrie",
+          "note": "애펄래치콜라에서 기계식 냉동을 발명한 의사"
         }
       ],
       "기업": [
         {
           "ko": "월리 아모스",
           "en": "Wally Amos",
-          "note": "기업·페이머스 아모스 창업"
-        },
-        {
-          "ko": "제임스 매캘러",
-          "en": "James McAllister",
-          "note": "기업·관광"
+          "note": "페이머스 아모스 쿠키 창업자"
         }
       ]
     },
@@ -2405,9 +2376,9 @@ export const STATE_INFO = {
       "드라이 토투가스 국립공원 (Dry Tortugas National Park)"
     ],
     "stateParks": [
-      "힐스버러 강 주립공원 (Hillsborough River State Park)",
       "존 페니캠프 산호초 주립공원 (John Pennekamp Coral Reef State Park)",
-      "윀키와치 스프링스 주립공원 (Weeki Wachee Springs State Park)"
+      "힐스버러 강 주립공원 (Hillsborough River State Park)",
+      "위키와치 스프링스 주립공원 (Weeki Wachee Springs State Park)"
     ],
     "teams": {
       "MLB": [
@@ -2613,60 +2584,60 @@ export const STATE_INFO = {
         {
           "ko": "지미 카터",
           "en": "Jimmy Carter",
-          "note": "정치·제39대 미국 대통령"
+          "note": "제39대 미국 대통령, 조지아 주지사"
         },
         {
           "ko": "마틴 루서 킹 주니어",
           "en": "Martin Luther King Jr.",
-          "note": "정치·민권운동 지도자"
+          "note": "애틀랜타 출신 민권운동 지도자"
         }
       ],
       "예술·문화": [
         {
           "ko": "레이 찰스",
           "en": "Ray Charles",
-          "note": "음악·소울 거장"
+          "note": "조지아에서 성장한 소울 거장"
         },
         {
           "ko": "줄리아 로버츠",
           "en": "Julia Roberts",
-          "note": "배우·아카데미상"
+          "note": "스마이나 출신, 아카데미 여우주연상 배우"
         }
       ],
       "스포츠": [
         {
           "ko": "행크 에런",
           "en": "Hank Aaron",
-          "note": "야구·홈런왕"
+          "note": "애틀랜타 브레이브스 통산 홈런 기록"
         },
         {
           "ko": "허셜 워커",
           "en": "Herschel Walker",
-          "note": "미식축구·하이즈먼 수상"
+          "note": "조지아대 하이즈먼 수상 미식축구선수"
         }
       ],
       "과학·기술": [
         {
           "ko": "크로퍼드 롱",
           "en": "Crawford Long",
-          "note": "의학·마취 선구자"
+          "note": "마취 수술을 처음 시행한 조지아 출신 의사"
         },
         {
-          "ko": "차일스 매콜리프",
-          "en": "Christa McAuliffe",
-          "note": "기술·항공"
+          "ko": "로니 존슨",
+          "en": "Lonnie Johnson",
+          "note": "애틀랜타 활동, 슈퍼 소커 발명 항공우주 공학자"
         }
       ],
       "기업": [
         {
           "ko": "에이서 캔들러",
           "en": "Asa Candler",
-          "note": "기업·코카콜라 창업"
+          "note": "코카콜라 창업자"
         },
         {
           "ko": "테드 터너",
           "en": "Ted Turner",
-          "note": "기업·CNN 창업"
+          "note": "애틀랜타 기반 CNN 창업자"
         }
       ]
     },
@@ -2674,9 +2645,9 @@ export const STATE_INFO = {
       "컴벌랜드 아일랜드 국립해안 (Cumberland Island National Seashore)"
     ],
     "stateParks": [
-      "타루라 협곡 주립공원 (Tallulah Gorge State Park)",
-      "스톤 마운틴 공원 (Stone Mountain Park)",
-      "프로비던스 캐니언 주립공원 (Providence Canyon State Park)"
+      "탈룰라 협곡 주립공원 (Tallulah Gorge State Park)",
+      "프로비던스 캐니언 주립공원 (Providence Canyon State Park)",
+      "클라우드랜드 캐니언 주립공원 (Cloudland Canyon State Park)"
     ],
     "teams": {
       "MLB": [
@@ -2857,60 +2828,60 @@ export const STATE_INFO = {
         {
           "ko": "버락 오바마",
           "en": "Barack Obama",
-          "note": "정치·제44대 미국 대통령"
+          "note": "호놀룰루 출신 제44대 미국 대통령"
         },
         {
           "ko": "대니얼 이노우에",
           "en": "Daniel Inouye",
-          "note": "정치·상원의원"
+          "note": "하와이 상원의원"
         }
       ],
       "예술·문화": [
         {
           "ko": "베트 미들러",
           "en": "Bette Midler",
-          "note": "배우·가수"
+          "note": "호놀룰루 출신 배우·가수"
         },
         {
           "ko": "이즈리얼 카마카위월레",
           "en": "Israel Kamakawiwoʻole",
-          "note": "음악·하와이안"
+          "note": "하와이안 음악의 상징적 가수"
         }
       ],
       "스포츠": [
         {
           "ko": "미셸 위",
           "en": "Michelle Wie",
-          "note": "골프·LPGA 우승"
+          "note": "호놀룰루 출신 LPGA 우승 골퍼"
         },
         {
           "ko": "BJ 펜",
           "en": "BJ Penn",
-          "note": "격투기·UFC 챔피언"
+          "note": "힐로 출신 UFC 챔피언"
         }
       ],
       "과학·기술": [
         {
           "ko": "엘리슨 오니즈카",
           "en": "Ellison Onizuka",
-          "note": "우주·우주비행사"
+          "note": "코나 출신, 아시아계 최초 우주비행사"
         },
         {
-          "ko": "찰스 리드",
-          "en": "Charles Reed",
-          "note": "과학·해양학"
+          "ko": "찰스 레이시 비치",
+          "en": "Charles Lacy Veach",
+          "note": "호놀룰루를 고향으로 둔 우주비행사"
         }
       ],
       "기업": [
         {
-          "ko": "샌퍼드 돌",
-          "en": "Sanford Dole",
-          "note": "기업·돌 식품 창업"
+          "ko": "제임스 돌",
+          "en": "James Dole",
+          "note": "하와이 파인애플 산업을 일군 돌 식품 창업자"
         },
         {
           "ko": "헨리 J. 카이저",
           "en": "Henry J. Kaiser",
-          "note": "기업·산업가"
+          "note": "하와이 카이를 개발한 산업가"
         }
       ]
     },
@@ -3078,60 +3049,60 @@ export const STATE_INFO = {
         {
           "ko": "프랭크 처치",
           "en": "Frank Church",
-          "note": "정치·상원의원"
+          "note": "보이시 출신 상원의원"
         },
         {
           "ko": "윌리엄 보라",
           "en": "William Borah",
-          "note": "정치·상원의원"
+          "note": "장기 재임 아이다호 상원의원"
         }
       ],
       "예술·문화": [
         {
           "ko": "에즈라 파운드",
           "en": "Ezra Pound",
-          "note": "문학·시인"
+          "note": "헤일리 출신 모더니즘 시인"
         },
         {
-          "ko": "에런 페일러",
+          "ko": "에런 폴",
           "en": "Aaron Paul",
-          "note": "배우"
+          "note": "에밋 출신 배우, 브레이킹 배드"
         }
       ],
       "스포츠": [
         {
           "ko": "하먼 킬러브루",
           "en": "Harmon Killebrew",
-          "note": "야구·홈런왕 명예의 전당"
+          "note": "페이엇 출신, 명예의 전당 홈런 타자"
         },
         {
-          "ko": "제이크 플로레스",
-          "en": "Jake Flores",
-          "note": "스포츠·육상"
+          "ko": "제이크 플러머",
+          "en": "Jake Plummer",
+          "note": "보이시 출신 NFL 쿼터백"
         }
       ],
       "과학·기술": [
         {
           "ko": "필로 판즈워스",
           "en": "Philo Farnsworth",
-          "note": "발명·텔레비전 선구자"
+          "note": "아이다호에서 성장한 텔레비전 발명가"
         },
         {
           "ko": "그레고리 카",
           "en": "Gregory Carr",
-          "note": "기술·자선가"
+          "note": "아이다호폴스 출신 기술 사업가·자선가"
         }
       ],
       "기업": [
         {
-          "ko": "조 알바트슨",
+          "ko": "조 알버트슨",
           "en": "Joe Albertson",
-          "note": "기업·알버트슨 슈퍼마켓 창업"
+          "note": "보이시 기반 알버트슨 슈퍼마켓 창업자"
         },
         {
           "ko": "잭 심플롯",
           "en": "J.R. Simplot",
-          "note": "기업·심플롯 감자"
+          "note": "냉동감자로 성공한 심플롯 창업자"
         }
       ]
     },
@@ -3140,9 +3111,9 @@ export const STATE_INFO = {
       "네즈퍼스 국립역사공원 (Nez Perce National Historical Park)"
     ],
     "stateParks": [
-      "파넬리아 폴스 주립공원 (Ponderosa State Park)",
-      "헤이번 호수 주립공원 (Hayden Lake State Park)",
-      "브루노 듄스 주립공원 (Bruneau Dunes State Park)"
+      "폰데로사 주립공원 (Ponderosa State Park)",
+      "브루노 듄스 주립공원 (Bruneau Dunes State Park)",
+      "헤이번 주립공원 (Heyburn State Park)"
     ],
     "teams": {
       "MLB": [],
@@ -3324,60 +3295,60 @@ export const STATE_INFO = {
         {
           "ko": "에이브러햄 링컨",
           "en": "Abraham Lincoln",
-          "note": "정치·제16대 미국 대통령·일리노이 거주"
+          "note": "스프링필드에서 활동한 제16대 미국 대통령"
         },
         {
           "ko": "버락 오바마",
           "en": "Barack Obama",
-          "note": "정치·일리노이 상원의원"
+          "note": "일리노이 상원의원 출신 대통령"
         }
       ],
       "예술·문화": [
         {
           "ko": "월트 디즈니",
           "en": "Walt Disney",
-          "note": "애니메이션·디즈니 창업"
+          "note": "시카고 출신 디즈니 창업자"
         },
         {
           "ko": "어니스트 헤밍웨이",
           "en": "Ernest Hemingway",
-          "note": "문학·노벨문학상"
+          "note": "오크파크 출신 노벨문학상 작가"
         }
       ],
       "스포츠": [
         {
           "ko": "마이클 조던",
           "en": "Michael Jordan",
-          "note": "농구·시카고 불스 전설"
+          "note": "시카고 불스를 이끈 농구 전설"
         },
         {
           "ko": "딕 버커스",
           "en": "Dick Butkus",
-          "note": "미식축구·명예의 전당"
+          "note": "시카고 출신, 명예의 전당 미식축구선수"
         }
       ],
       "과학·기술": [
         {
           "ko": "엔리코 페르미",
           "en": "Enrico Fermi",
-          "note": "물리·핵반응 선구자"
+          "note": "시카고대에서 최초 핵반응을 이끈 물리학자"
         },
         {
           "ko": "레이 크록",
           "en": "Ray Kroc",
-          "note": "경영·맥도날드 확장"
+          "note": "오크파크 출신, 맥도날드를 확장한 경영자"
         }
       ],
       "기업": [
         {
           "ko": "존 디어",
           "en": "John Deere",
-          "note": "기업·디어 앤 컴퍼니 창업"
+          "note": "일리노이 기반 디어 앤 컴퍼니 창업자"
         },
         {
           "ko": "오프라 윈프리",
           "en": "Oprah Winfrey",
-          "note": "방송·미디어 기업가"
+          "note": "시카고 기반 미디어 기업가"
         }
       ]
     },
@@ -3388,7 +3359,7 @@ export const STATE_INFO = {
     "stateParks": [
       "스타브드 록 주립공원 (Starved Rock State Park)",
       "마티슨 주립공원 (Matthiessen State Park)",
-      "자이언츠 시티 주립공원 (Giant City State Park)"
+      "자이언트 시티 주립공원 (Giant City State Park)"
     ],
     "teams": {
       "MLB": [
@@ -3586,60 +3557,65 @@ export const STATE_INFO = {
         {
           "ko": "벤저민 해리슨",
           "en": "Benjamin Harrison",
-          "note": "정치·제23대 미국 대통령"
+          "note": "제23대 대통령"
         },
         {
           "ko": "마이크 펜스",
           "en": "Mike Pence",
-          "note": "정치·제48대 미국 부통령·인디애나 주지사"
+          "note": "제48대 부통령·전 주지사"
         }
       ],
       "예술·문화": [
         {
           "ko": "마이클 잭슨",
           "en": "Michael Jackson",
-          "note": "음악·팝의 황제, 게리 출신"
+          "note": "팝의 황제, 게리 출생"
         },
         {
           "ko": "데이비드 레터맨",
           "en": "David Letterman",
-          "note": "방송·심야 토크쇼 진행자"
+          "note": "심야 토크쇼 진행자"
         },
         {
           "ko": "커트 보니것",
           "en": "Kurt Vonnegut",
-          "note": "문학·소설가 '제5도살장'"
+          "note": "소설가 '제5도살장'"
+        },
+        {
+          "ko": "콜 포터",
+          "en": "Cole Porter",
+          "note": "작곡가, 페루 출생"
         }
       ],
       "스포츠": [
         {
           "ko": "래리 버드",
           "en": "Larry Bird",
-          "note": "농구·NBA 전설, 인디애나 출신"
+          "note": "NBA 전설, 프렌치릭 출신"
         },
         {
           "ko": "오스카 로버트슨",
           "en": "Oscar Robertson",
-          "note": "농구·NBA 트리플더블의 선구자"
+          "note": "NBA 트리플더블 선구자"
         }
       ],
       "과학·기술": [
         {
           "ko": "윌버 라이트",
           "en": "Wilbur Wright",
-          "note": "항공·라이트 형제 형, 인디애나 출신"
+          "note": "비행기 발명, 밀빌 출생"
         }
       ],
       "기업": [
         {
-          "ko": "콜 포터",
-          "en": "Cole Porter / Eli Lilly",
-          "note": "작곡가) 외 — 일라이 릴리 (제약·인디애나폴리스 본사"
+          "ko": "일라이 릴리",
+          "en": "Eli Lilly",
+          "note": "제약사 일라이 릴리 창업자"
         },
         {
-          "ko": "마들렌 퓨 — 컬럼 인더스트리",
-          "en": "Madelyn Pugh / Cummins",
-          "note": "제조"
+          "ko": "클레시 커민스",
+          "en": "Clessie Cummins",
+          "note": "커민스 디젤엔진 창업자"
         }
       ]
     },
@@ -3831,65 +3807,65 @@ export const STATE_INFO = {
         {
           "ko": "허버트 후버",
           "en": "Herbert Hoover",
-          "note": "정치·제31대 미국 대통령, 웨스트브랜치 출생"
+          "note": "제31대 대통령, 웨스트브랜치 출생"
         },
         {
           "ko": "헨리 A. 월리스",
           "en": "Henry A. Wallace",
-          "note": "정치·제33대 미국 부통령"
+          "note": "제33대 부통령"
         }
       ],
       "예술·문화": [
         {
           "ko": "존 웨인",
           "en": "John Wayne",
-          "note": "영화·서부극 배우, 윈터셋 출생"
+          "note": "서부극 배우, 윈터셋 출생"
         },
         {
           "ko": "그랜트 우드",
           "en": "Grant Wood",
-          "note": "미술·'아메리칸 고딕' 화가"
+          "note": "'아메리칸 고딕' 화가"
         },
         {
           "ko": "빌 브라이슨",
           "en": "Bill Bryson",
-          "note": "문학·여행 작가"
+          "note": "여행 작가, 디모인 출생"
         }
       ],
       "스포츠": [
         {
           "ko": "댄 게이블",
           "en": "Dan Gable",
-          "note": "레슬링·올림픽 금메달리스트"
+          "note": "레슬링 올림픽 금메달리스트"
         },
         {
-          "ko": "케일럽 플랫리 — 셰넌 밀러",
-          "en": "Caleb Plant / Shawn Johnson",
-          "note": ""
+          "ko": "숀 존슨",
+          "en": "Shawn Johnson",
+          "note": "체조 올림픽 금메달리스트"
         }
       ],
       "과학·기술": [
         {
           "ko": "노먼 볼로그",
           "en": "Norman Borlaug",
-          "note": "농학·녹색혁명, 노벨평화상"
+          "note": "녹색혁명·노벨평화상"
         },
         {
           "ko": "조지 워싱턴 카버",
           "en": "George Washington Carver",
-          "note": "농학·식물학자, 아이오와주립대 수학"
+          "note": "식물학자, 아이오와주립대 수학"
         }
       ],
       "기업": [
         {
           "ko": "존 디어",
           "en": "John Deere",
-          "note": "제조·디어 앤드 컴퍼니 트랙터"
+          "note": "디어 앤드 컴퍼니 창업자"
         },
         {
           "ko": "프레더릭 메이태그",
           "en": "Frederick Maytag",
-          "note": "제조·메이태그 가전"
+          "note": "메이태그 가전 창업자"
         }
       ]
     },
@@ -3897,7 +3873,7 @@ export const STATE_INFO = {
     "stateParks": [
       "매콰케타 동굴 주립공원 (Maquoketa Caves State Park)",
       "백본 주립공원 (Backbone State Park)",
-      "레이크 매닝 주립공원 (Lake Manawa State Park)"
+      "레이크 마나와 주립공원 (Lake Manawa State Park)"
     ],
     "teams": {
       "MLB": [],
@@ -4069,65 +4045,75 @@ export const STATE_INFO = {
         {
           "ko": "드와이트 D. 아이젠하워",
           "en": "Dwight D. Eisenhower",
-          "note": "정치·제34대 미국 대통령, 애빌린 성장"
+          "note": "제34대 대통령, 애빌린 성장"
         },
         {
           "ko": "밥 돌",
           "en": "Bob Dole",
-          "note": "정치·연방 상원 다수당 원내대표·대선 후보"
+          "note": "상원 다수당 원내대표·대선 후보"
         }
       ],
       "예술·문화": [
         {
           "ko": "아멜리아 에어하트",
           "en": "Amelia Earhart",
-          "note": "비행·여성 비행 개척자, 애치슨 출생"
+          "note": "여성 비행 개척자, 애치슨 출생"
         },
         {
           "ko": "고든 파크스",
           "en": "Gordon Parks",
-          "note": "사진·영화 감독"
+          "note": "사진가·영화감독"
         },
         {
           "ko": "윌리엄 인지",
           "en": "William Inge",
-          "note": "문학·극작가"
+          "note": "극작가·퓰리처상"
         }
       ],
       "스포츠": [
         {
-          "ko": "월트 체임벌린 — 바버라 — 게일 세이어스",
-          "en": "Wilt Chamberlain / Barry Sanders / Gale Sayers",
-          "note": "미식축구·NFL 명예의 전당"
+          "ko": "윌트 체임벌린",
+          "en": "Wilt Chamberlain",
+          "note": "NBA 전설, 캔자스대 출신"
         },
         {
-          "ko": "존 리겐스",
+          "ko": "배리 샌더스",
+          "en": "Barry Sanders",
+          "note": "NFL 명예의 전당 러닝백, 위치토 출생"
+        },
+        {
+          "ko": "게일 세이어스",
+          "en": "Gale Sayers",
+          "note": "NFL 명예의 전당 러닝백"
+        },
+        {
+          "ko": "존 리긴스",
           "en": "John Riggins",
-          "note": "미식축구·NFL 러닝백"
+          "note": "NFL 러닝백, 센테니아 출생"
         }
       ],
       "과학·기술": [
         {
           "ko": "클라이드 톰보",
           "en": "Clyde Tombaugh",
-          "note": "천문·명왕성 발견자"
+          "note": "명왕성 발견자"
         },
         {
           "ko": "버넌 L. 스미스",
           "en": "Vernon L. Smith",
-          "note": "경제학·노벨경제학상"
+          "note": "노벨경제학상, 위치토 출생"
         }
       ],
       "기업": [
         {
           "ko": "월터 크라이슬러",
           "en": "Walter Chrysler",
-          "note": "자동차·크라이슬러 창업자"
+          "note": "크라이슬러 창업자"
         },
         {
           "ko": "찰스 코크",
           "en": "Charles Koch",
-          "note": "기업·코크 인더스트리"
+          "note": "코크 인더스트리 회장"
         }
       ]
     },
@@ -4326,65 +4312,65 @@ export const STATE_INFO = {
         {
           "ko": "에이브러햄 링컨",
           "en": "Abraham Lincoln",
-          "note": "정치·제16대 미국 대통령, 호젠빌 출생"
+          "note": "제16대 대통령, 호젠빌 출생"
         },
         {
           "ko": "헨리 클레이",
           "en": "Henry Clay",
-          "note": "정치·'위대한 타협가' 상원의원"
+          "note": "'위대한 타협가' 상원의원"
         }
       ],
       "예술·문화": [
         {
           "ko": "조지 클루니",
           "en": "George Clooney",
-          "note": "영화·배우·감독, 렉싱턴 출생"
+          "note": "배우·감독, 렉싱턴 출생"
         },
         {
           "ko": "조니 뎁",
           "en": "Johnny Depp",
-          "note": "영화·배우, 오언즈버러 출생"
+          "note": "배우, 오언즈버러 출생"
         },
         {
           "ko": "헌터 S. 톰슨",
           "en": "Hunter S. Thompson",
-          "note": "문학·곤조 저널리즘"
+          "note": "곤조 저널리즘, 루이빌 출생"
         }
       ],
       "스포츠": [
         {
           "ko": "무하마드 알리",
           "en": "Muhammad Ali",
-          "note": "복싱·전설적 헤비급 챔피언, 루이빌 출생"
+          "note": "복싱 헤비급 챔피언, 루이빌 출생"
         },
         {
           "ko": "대럴 그리피스",
           "en": "Darrell Griffith",
-          "note": "농구·NBA 선수"
+          "note": "NBA 선수, 루이빌 출신"
         }
       ],
       "과학·기술": [
         {
           "ko": "토머스 헌트 모건",
           "en": "Thomas Hunt Morgan",
-          "note": "생물학·유전학, 노벨생리의학상"
+          "note": "유전학·노벨생리의학상, 렉싱턴 출생"
         },
         {
-          "ko": "필 심스 — 너새니얼 섀일러",
-          "en": "Phil Simms / Nathaniel Shaler",
-          "note": "지질학"
+          "ko": "너새니얼 섀일러",
+          "en": "Nathaniel Shaler",
+          "note": "지질학자, 뉴포트 출생"
         }
       ],
       "기업": [
         {
           "ko": "할랜드 샌더스",
           "en": "Harland Sanders",
-          "note": "요식업·KFC 창업자, 커넬 샌더스"
+          "note": "KFC 창업자 커넬 샌더스"
         },
         {
-          "ko": "존 G. 헤이건 — 짐 빔",
-          "en": "John G. Hagen / Jim Beam",
-          "note": "위스키"
+          "ko": "짐 빔",
+          "en": "Jim Beam",
+          "note": "짐 빔 버번 위스키"
         }
       ]
     },
@@ -4392,9 +4378,9 @@ export const STATE_INFO = {
       "매머드케이브 국립공원 (Mammoth Cave National Park)"
     ],
     "stateParks": [
-      "컴벌랜드 폴스 주립공원 (Cumberland Falls State Resort Park)",
+      "컴벌랜드 폭포 주립공원 (Cumberland Falls State Resort Park)",
       "내추럴 브리지 주립공원 (Natural Bridge State Resort Park)",
-      "레드 리버 협곡 주립공원 (Red River Gorge State Park)"
+      "칼터 동굴 주립공원 (Carter Caves State Resort Park)"
     ],
     "teams": {
       "MLB": [],
@@ -4579,67 +4565,72 @@ export const STATE_INFO = {
         {
           "ko": "휴이 롱",
           "en": "Huey Long",
-          "note": "정치·루이지애나 주지사·상원의원"
+          "note": "주지사·상원의원"
         },
         {
           "ko": "재커리 테일러",
           "en": "Zachary Taylor",
-          "note": "정치·제12대 미국 대통령, 루이지애나 성장"
+          "note": "제12대 대통령, 루이지애나 성장"
         }
       ],
       "예술·문화": [
         {
           "ko": "루이 암스트롱",
           "en": "Louis Armstrong",
-          "note": "음악·재즈 트럼펫의 거장, 뉴올리언스 출생"
+          "note": "재즈 트럼펫 거장, 뉴올리언스 출생"
         },
         {
           "ko": "트루먼 커포티",
           "en": "Truman Capote",
-          "note": "문학·소설가 '냉혈한'"
+          "note": "소설가 '냉혈한', 뉴올리언스 출생"
         },
         {
           "ko": "엘런 디제너러스",
           "en": "Ellen DeGeneres",
-          "note": "방송·코미디언·진행자"
+          "note": "코미디언·진행자, 메테리 출생"
         }
       ],
       "스포츠": [
         {
-          "ko": "페이튼 매닝·일라이 매닝",
+          "ko": "페이튼·일라이 매닝",
           "en": "Peyton Manning / Eli Manning",
-          "note": "미식축구·NFL 쿼터백 형제"
+          "note": "NFL 쿼터백 형제, 뉴올리언스 성장"
         },
         {
-          "ko": "테렌스 — 빌 러셀",
-          "en": "Terrence / Bill Russell",
-          "note": "농구·NBA 전설, 먼로 출생"
+          "ko": "빌 러셀",
+          "en": "Bill Russell",
+          "note": "NBA 전설, 웨스트먼로 출생"
+        },
+        {
+          "ko": "칼 말론",
+          "en": "Karl Malone",
+          "note": "NBA 명예의 전당, 서머필드 출생"
         }
       ],
       "과학·기술": [
         {
-          "ko": "앤드루 J. 무어 — 마이클 디바키",
-          "en": "Andrew J. Moore / Michael DeBakey",
-          "note": "의학·심혈관외과 선구자"
+          "ko": "마이클 디바키",
+          "en": "Michael DeBakey",
+          "note": "심혈관외과 선구자, 레이크찰스 출생"
         }
       ],
       "기업": [
         {
           "ko": "톰 베니슨",
           "en": "Tom Benson",
-          "note": "기업·뉴올리언스 세인츠 구단주"
+          "note": "뉴올리언스 세인츠 구단주"
         },
         {
-          "ko": "마이클 디바키 — 폴 프루돔",
-          "en": "Michael DeBakey / Paul Prudhomme",
-          "note": "요리·케이준 요리 대중화"
+          "ko": "폴 프루돔",
+          "en": "Paul Prudhomme",
+          "note": "케이준 요리 대중화 셰프"
         }
       ]
     },
     "nationalParks": [],
     "stateParks": [
-      "포니에르 주립공원 (Fontainebleau State Park)",
-      "치커샤 주립공원 (Chicot State Park)",
+      "퐁텐블로 주립공원 (Fontainebleau State Park)",
+      "치코 주립공원 (Chicot State Park)",
       "그랜드 아일 주립공원 (Grand Isle State Park)"
     ],
     "teams": {
@@ -4834,65 +4825,60 @@ export const STATE_INFO = {
         {
           "ko": "한니발 햄린",
           "en": "Hannibal Hamlin",
-          "note": "정치·제15대 미국 부통령"
+          "note": "제15대 부통령"
         },
         {
           "ko": "마거릿 체이스 스미스",
           "en": "Margaret Chase Smith",
-          "note": "정치·여성 최초 상·하원 양원 의원"
+          "note": "여성 최초 상·하원 양원 의원"
         }
       ],
       "예술·문화": [
         {
           "ko": "스티븐 킹",
           "en": "Stephen King",
-          "note": "문학·공포소설의 거장, 포틀랜드 출생"
+          "note": "공포소설 거장, 포틀랜드 출생"
         },
         {
           "ko": "헨리 워즈워스 롱펠로",
           "en": "Henry Wadsworth Longfellow",
-          "note": "문학·시인"
+          "note": "시인, 포틀랜드 출생"
         },
         {
-          "ko": "위노나 라이더 — 마즈데 — 앤드루 와이어스",
-          "en": "Winona Ryder / Andrew Wyeth",
-          "note": "미술"
+          "ko": "앤드루 와이어스",
+          "en": "Andrew Wyeth",
+          "note": "'크리스티나의 세계' 화가, 쿠싱 작업"
         }
       ],
       "스포츠": [
         {
           "ko": "조앤 베노이트",
           "en": "Joan Benoit",
-          "note": "육상·최초 여자 올림픽 마라톤 금메달"
-        },
-        {
-          "ko": "시리 린들리 — 라리사",
-          "en": "Siri Lindley / Larissa",
-          "note": "트라이애슬론"
+          "note": "최초 여자 올림픽 마라톤 금메달, 케이프엘리자베스 출생"
         }
       ],
       "과학·기술": [
         {
-          "ko": "퍼시벌 로웰",
-          "en": "Percival Lowell",
-          "note": "천문·로웰 천문대 설립자"
+          "ko": "하이럼 맥심",
+          "en": "Hiram Maxim",
+          "note": "기관총 발명가, 생거빌 출생"
         },
         {
-          "ko": "리어나도 — 한슨 — 멜빌 듀이",
-          "en": "Leonardo / Hanson / Melvil Dewey",
-          "note": "도서·듀이 십진분류법"
+          "ko": "체스터 그린우드",
+          "en": "Chester Greenwood",
+          "note": "귀마개 발명가, 파밍턴 출생"
         }
       ],
       "기업": [
         {
-          "ko": "레온 리언우드 빈",
+          "ko": "리언 리언우드 빈",
           "en": "Leon Leonwood Bean",
-          "note": "기업·L.L.빈 창업자"
+          "note": "L.L.빈 창업자"
         },
         {
-          "ko": "버트 셰이비츠 — 록샌",
-          "en": "Burt Shavitz / Roxanne Quimby",
-          "note": "기업·버츠비 공동창업"
+          "ko": "버트 셰이비츠",
+          "en": "Burt Shavitz",
+          "note": "버츠비 공동창업자"
         }
       ]
     },
@@ -4900,7 +4886,7 @@ export const STATE_INFO = {
       "아카디아 국립공원 (Acadia National Park)"
     ],
     "stateParks": [
-      "배스터 주립공원 (캐타딘) (Baxter State Park)",
+      "백스터 주립공원 (Baxter State Park)",
       "캠던 힐스 주립공원 (Camden Hills State Park)",
       "리드 주립공원 (Reid State Park)"
     ],
@@ -5091,65 +5077,65 @@ export const STATE_INFO = {
         {
           "ko": "낸시 펠로시",
           "en": "Nancy Pelosi",
-          "note": "정치·연방 하원의장, 볼티모어 출생"
+          "note": "연방 하원의장, 볼티모어 출생"
         },
         {
           "ko": "서굿 마셜",
           "en": "Thurgood Marshall",
-          "note": "정치·법조·최초 흑인 연방대법관"
+          "note": "최초 흑인 연방대법관, 볼티모어 출생"
         }
       ],
       "예술·문화": [
         {
-          "ko": "이디스 — 프랭크 자파",
-          "en": "Edith / Frank Zappa",
-          "note": "음악·록 뮤지션, 볼티모어 출생"
+          "ko": "프랭크 자파",
+          "en": "Frank Zappa",
+          "note": "록 뮤지션, 볼티모어 출생"
         },
         {
           "ko": "에드거 앨런 포",
           "en": "Edgar Allan Poe",
-          "note": "문학·소설가·시인, 볼티모어 활동"
+          "note": "소설가·시인, 볼티모어 활동·사망"
         },
         {
           "ko": "프레더릭 더글러스",
           "en": "Frederick Douglass",
-          "note": "문학·노예제 폐지론자·연설가"
+          "note": "노예제 폐지론자·연설가, 탤벗 카운티 출생"
         }
       ],
       "스포츠": [
         {
           "ko": "베이브 루스",
           "en": "Babe Ruth",
-          "note": "야구·MLB 전설, 볼티모어 출생"
+          "note": "MLB 전설, 볼티모어 출생"
         },
         {
           "ko": "마이클 펠프스",
           "en": "Michael Phelps",
-          "note": "수영·올림픽 최다 금메달, 볼티모어 출생"
+          "note": "올림픽 최다 금메달 수영, 볼티모어 출생"
         }
       ],
       "과학·기술": [
         {
           "ko": "벤저민 배니커",
           "en": "Benjamin Banneker",
-          "note": "천문·수학·과학자"
+          "note": "천문학자·측량가, 볼티모어 카운티 출생"
         },
         {
-          "ko": "마이오 — 윌리엄 핼스테드",
-          "en": "Mayo / William Halsted",
-          "note": "의학·존스홉킨스 외과 선구자"
+          "ko": "윌리엄 핼스테드",
+          "en": "William Halsted",
+          "note": "존스홉킨스 외과 선구자"
         }
       ],
       "기업": [
         {
           "ko": "케빈 플랭크",
           "en": "Kevin Plank",
-          "note": "기업·언더아머 창업자"
+          "note": "언더아머 창업자"
         },
         {
-          "ko": "토머스 에디슨 — 존 W. 매리어트",
-          "en": "Thomas Edison / John W. Marriott",
-          "note": "기업·메리어트 호텔"
+          "ko": "J. 윌러드 매리어트",
+          "en": "J. Willard Marriott",
+          "note": "메리어트 호텔 창업자, 본사 베서스다"
         }
       ]
     },
@@ -5157,7 +5143,7 @@ export const STATE_INFO = {
       "애서티그섬 국립해안 (Assateague Island National Seashore)"
     ],
     "stateParks": [
-      "스완 하버 — 디프 크리크 레이크 주립공원 (Swan Harbor / Deep Creek Lake State Park)",
+      "딥 크리크 레이크 주립공원 (Deep Creek Lake State Park)",
       "샌디 포인트 주립공원 (Sandy Point State Park)",
       "패텁스코 밸리 주립공원 (Patapsco Valley State Park)"
     ],
@@ -5360,78 +5346,78 @@ export const STATE_INFO = {
         {
           "ko": "존 F. 케네디",
           "en": "John F. Kennedy",
-          "note": "정치·제35대 미국 대통령"
+          "note": "제35대 미국 대통령, 브루클라인 출생"
         },
         {
           "ko": "존 애덤스",
           "en": "John Adams",
-          "note": "정치·제2대 미국 대통령"
+          "note": "제2대 미국 대통령, 브레인트리 출생"
         },
         {
           "ko": "존 퀸시 애덤스",
           "en": "John Quincy Adams",
-          "note": "정치·제6대 미국 대통령"
+          "note": "제6대 미국 대통령"
         }
       ],
       "예술·문화": [
         {
           "ko": "에밀리 디킨슨",
           "en": "Emily Dickinson",
-          "note": "문학·시인"
+          "note": "시인, 애머스트 출생"
         },
         {
           "ko": "닥터 수스",
           "en": "Dr. Seuss",
-          "note": "문학·동화 작가"
+          "note": "동화 작가, 스프링필드 출생"
         },
         {
           "ko": "맷 데이먼",
           "en": "Matt Damon",
-          "note": "영화·배우"
+          "note": "배우, 케임브리지 성장"
         }
       ],
       "스포츠": [
         {
           "ko": "래리 버드",
           "en": "Larry Bird",
-          "note": "NBA·셀틱스 전설"
+          "note": "보스턴 셀틱스 전설"
         },
         {
           "ko": "톰 브래디",
           "en": "Tom Brady",
-          "note": "NFL·패트리어츠 쿼터백"
+          "note": "뉴잉글랜드 패트리어츠 쿼터백"
         }
       ],
       "과학·기술": [
         {
           "ko": "벤저민 프랭클린",
           "en": "Benjamin Franklin",
-          "note": "과학·발명가·정치인"
+          "note": "발명가·정치인, 보스턴 출생"
         },
         {
-          "ko": "로버트 노이스",
-          "en": "Robert Noyce",
-          "note": "기술·인텔 공동창업자"
+          "ko": "버니바 부시",
+          "en": "Vannevar Bush",
+          "note": "공학자, 에버렛 출생·MIT"
         }
       ],
       "기업": [
         {
-          "ko": "존 하버드",
-          "en": "John Harvard",
-          "note": "교육·하버드대 후원자"
-        },
-        {
           "ko": "엘리 휘트니",
           "en": "Eli Whitney",
-          "note": "기업·조면기 발명가"
+          "note": "조면기 발명가, 웨스트버러 출생"
+        },
+        {
+          "ko": "존 하버드",
+          "en": "John Harvard",
+          "note": "찰스타운 정착, 하버드대 후원자"
         }
       ]
     },
     "nationalParks": [],
     "stateParks": [
-      "월든 폰드 주립공원 (Walden Pond State Reservation)",
+      "월든 폰드 주립보호구역 (Walden Pond State Reservation)",
       "마운트 그레이록 주립보호구역 (Mount Greylock State Reservation)",
-      "닉커슨 주립공원 (Nickerson State Park)"
+      "니커슨 주립공원 (Nickerson State Park)"
     ],
     "teams": {
       "MLB": [
@@ -5630,65 +5616,65 @@ export const STATE_INFO = {
         {
           "ko": "제럴드 포드",
           "en": "Gerald Ford",
-          "note": "정치·제38대 미국 대통령"
+          "note": "제38대 미국 대통령, 그랜드래피즈 성장"
         },
         {
           "ko": "미트 롬니",
           "en": "Mitt Romney",
-          "note": "정치·상원의원·대선후보"
+          "note": "상원의원·대선후보, 디트로이트 출생"
         }
       ],
       "예술·문화": [
         {
           "ko": "마돈나",
           "en": "Madonna",
-          "note": "음악·팝 가수"
+          "note": "팝 가수, 베이시티 출생"
         },
         {
           "ko": "스티비 원더",
           "en": "Stevie Wonder",
-          "note": "음악·싱어송라이터"
+          "note": "싱어송라이터, 새기노 출생"
         },
         {
           "ko": "에미넴",
           "en": "Eminem",
-          "note": "음악·래퍼"
+          "note": "래퍼, 디트로이트 성장"
         }
       ],
       "스포츠": [
         {
           "ko": "매직 존슨",
           "en": "Magic Johnson",
-          "note": "NBA·전설적 가드"
+          "note": "전설적 가드, 랜싱 출생"
         },
         {
           "ko": "조 루이스",
           "en": "Joe Louis",
-          "note": "복싱·헤비급 챔피언"
+          "note": "복싱 헤비급 챔피언, 디트로이트 성장"
         }
       ],
       "과학·기술": [
         {
           "ko": "토머스 에디슨",
           "en": "Thomas Edison",
-          "note": "과학·발명가, 미시간 성장"
+          "note": "발명가, 미시간 성장"
         },
         {
           "ko": "래리 페이지",
           "en": "Larry Page",
-          "note": "기술·구글 공동창업자"
+          "note": "구글 공동창업자, 이스트랜싱 출생"
         }
       ],
       "기업": [
         {
           "ko": "헨리 포드",
           "en": "Henry Ford",
-          "note": "기업·포드 자동차 창업자"
+          "note": "포드 자동차 창업자, 디어본 출생"
         },
         {
           "ko": "윌 키스 켈로그",
           "en": "Will Keith Kellogg",
-          "note": "기업·켈로그 창업자"
+          "note": "켈로그 창업자, 배틀크리크 출생"
         }
       ]
     },
@@ -5698,7 +5684,7 @@ export const STATE_INFO = {
     "stateParks": [
       "포큐파인산 야생 주립공원 (Porcupine Mountains Wilderness State Park)",
       "테이콰메논폭포 주립공원 (Tahquamenon Falls State Park)",
-      "할러데일 주립공원 (Holland State Park)"
+      "홀랜드 주립공원 (Holland State Park)"
     ],
     "teams": {
       "MLB": [
@@ -5887,65 +5873,65 @@ export const STATE_INFO = {
         {
           "ko": "휴버트 험프리",
           "en": "Hubert Humphrey",
-          "note": "정치·제38대 미국 부통령"
+          "note": "제38대 미국 부통령, 미니애폴리스 시장"
         },
         {
           "ko": "월터 먼데일",
           "en": "Walter Mondale",
-          "note": "정치·제42대 미국 부통령"
+          "note": "제42대 미국 부통령, 시랜드 출생"
         }
       ],
       "예술·문화": [
         {
           "ko": "프린스",
           "en": "Prince",
-          "note": "음악·싱어송라이터"
+          "note": "싱어송라이터, 미니애폴리스 출생"
         },
         {
           "ko": "밥 딜런",
           "en": "Bob Dylan",
-          "note": "음악·싱어송라이터"
+          "note": "싱어송라이터, 덜루스 출생"
         },
         {
           "ko": "주디 갈런드",
           "en": "Judy Garland",
-          "note": "영화·배우"
+          "note": "배우, 그랜드래피즈 출생"
         }
       ],
       "스포츠": [
         {
           "ko": "케빈 가넷",
           "en": "Kevin Garnett",
-          "note": "NBA·팀버울브스 전설"
+          "note": "미네소타 팀버울브스 전설"
         },
         {
           "ko": "케빈 맥헤일",
           "en": "Kevin McHale",
-          "note": "NBA·명예의 전당"
+          "note": "명예의 전당, 하이빙 출생"
         }
       ],
       "과학·기술": [
         {
           "ko": "윌리엄·찰스 메이오",
           "en": "William and Charles Mayo",
-          "note": "의학·메이오 클리닉 설립"
+          "note": "메이오 클리닉 설립, 로체스터"
         },
         {
           "ko": "시모어 크레이",
           "en": "Seymour Cray",
-          "note": "기술·슈퍼컴퓨터 선구자"
+          "note": "슈퍼컴퓨터 선구자, 치페와폴스"
         }
       ],
       "기업": [
         {
           "ko": "리처드 시어스",
           "en": "Richard Sears",
-          "note": "기업·시어스 창업자"
+          "note": "시어스 창업자, 미니애폴리스 사업 시작"
         },
         {
           "ko": "얼 바켄",
           "en": "Earl Bakken",
-          "note": "기업·메드트로닉 공동창업자"
+          "note": "메드트로닉 공동창업자, 미니애폴리스 출생"
         }
       ]
     },
@@ -5954,7 +5940,7 @@ export const STATE_INFO = {
     ],
     "stateParks": [
       "이타스카 주립공원 (Itasca State Park)",
-      "고스베리폭포 주립공원 (Gooseberry Falls State Park)",
+      "구스베리폭포 주립공원 (Gooseberry Falls State Park)",
       "스플릿록 등대 주립공원 (Split Rock Lighthouse State Park)"
     ],
     "teams": {
@@ -6167,73 +6153,73 @@ export const STATE_INFO = {
         {
           "ko": "하이럼 레벨스",
           "en": "Hiram Revels",
-          "note": "정치·최초 흑인 상원의원"
+          "note": "최초 흑인 상원의원"
         },
         {
           "ko": "트렌트 롯",
           "en": "Trent Lott",
-          "note": "정치·상원 원내대표"
+          "note": "상원 다수당 원내대표"
         }
       ],
       "예술·문화": [
         {
           "ko": "엘비스 프레슬리",
           "en": "Elvis Presley",
-          "note": "음악·로큰롤의 제왕"
+          "note": "로큰롤의 제왕, 투펄로 출생"
         },
         {
           "ko": "윌리엄 포크너",
           "en": "William Faulkner",
-          "note": "문학·노벨문학상"
+          "note": "노벨문학상 작가, 옥스퍼드"
         },
         {
           "ko": "B.B. 킹",
           "en": "B.B. King",
-          "note": "음악·블루스 기타리스트"
+          "note": "블루스 기타리스트, 이타베나 출생"
         },
         {
           "ko": "오프라 윈프리",
           "en": "Oprah Winfrey",
-          "note": "방송·진행자"
+          "note": "방송 진행자, 코시어스코 출생"
         }
       ],
       "스포츠": [
         {
           "ko": "월터 페이튼",
           "en": "Walter Payton",
-          "note": "NFL·러닝백 전설"
+          "note": "NFL 러닝백 전설, 컬럼비아 출생"
         },
         {
           "ko": "제리 라이스",
           "en": "Jerry Rice",
-          "note": "NFL·와이드리시버 전설"
+          "note": "NFL 와이드리시버 전설, 크로퍼드 출생"
         }
       ],
       "과학·기술": [
         {
           "ko": "제임스 D. 하디",
           "en": "James D. Hardy",
-          "note": "의학·최초 폐 이식 집도"
+          "note": "최초 폐 이식 집도, 미시시피대"
         }
       ],
       "기업": [
         {
           "ko": "짐 헨슨",
           "en": "Jim Henson",
-          "note": "기업·머펫 창작자"
+          "note": "머펫 창작자, 리랜드 성장"
         },
         {
-          "ko": "존 그리샴",
-          "en": "John Grisham",
-          "note": "문학·법정소설 작가"
+          "ko": "하틀리 피비",
+          "en": "Hartley Peavey",
+          "note": "피비 일렉트로닉스 창업자, 메리디언 출생"
         }
       ]
     },
     "nationalParks": [],
     "stateParks": [
-      "타이슈오메인고히 주립공원 (Tishomingo State Park)",
+      "티쇼밍고 주립공원 (Tishomingo State Park)",
       "리로이퍼시 주립공원 (Leroy Percy State Park)",
-      "퍼시콰이아 주립공원 (Percy Quin State Park)"
+      "퍼시콴 주립공원 (Percy Quin State Park)"
     ],
     "teams": {
       "MLB": [],
@@ -6426,65 +6412,65 @@ export const STATE_INFO = {
         {
           "ko": "해리 S. 트루먼",
           "en": "Harry S. Truman",
-          "note": "정치·제33대 미국 대통령"
+          "note": "제33대 미국 대통령, 라마 출생"
         },
         {
           "ko": "율리시스 S. 그랜트",
           "en": "Ulysses S. Grant",
-          "note": "정치·제18대 미국 대통령, 거주"
+          "note": "제18대 미국 대통령, 세인트루이스 거주"
         }
       ],
       "예술·문화": [
         {
           "ko": "마크 트웨인",
           "en": "Mark Twain",
-          "note": "문학·소설가"
+          "note": "소설가, 플로리다(미주리) 출생"
         },
         {
           "ko": "월트 디즈니",
           "en": "Walt Disney",
-          "note": "영화·애니메이션 거장"
+          "note": "애니메이션 거장, 마셀린 성장"
         },
         {
           "ko": "척 베리",
           "en": "Chuck Berry",
-          "note": "음악·로큰롤 선구자"
+          "note": "로큰롤 선구자, 세인트루이스 출생"
         }
       ],
       "스포츠": [
         {
           "ko": "야디어 몰리나",
           "en": "Yadier Molina",
-          "note": "MLB·카디널스 포수"
+          "note": "세인트루이스 카디널스 포수"
         },
         {
           "ko": "케이시 스텡걸",
           "en": "Casey Stengel",
-          "note": "MLB·명예의 전당 감독"
+          "note": "명예의 전당 감독, 캔자스시티 출생"
         }
       ],
       "과학·기술": [
         {
           "ko": "조지 워싱턴 카버",
           "en": "George Washington Carver",
-          "note": "과학·식물학자"
+          "note": "식물학자, 다이아몬드 출생"
         },
         {
           "ko": "에드윈 허블",
           "en": "Edwin Hubble",
-          "note": "과학·천문학자"
+          "note": "천문학자, 마시필드 출생"
         }
       ],
       "기업": [
         {
           "ko": "제임스 캐시 페니",
           "en": "James Cash Penney",
-          "note": "기업·JC페니 창업자"
+          "note": "JC페니 창업자, 해밀턴 출생"
         },
         {
           "ko": "조이스 홀",
           "en": "Joyce Hall",
-          "note": "기업·홀마크 창업자"
+          "note": "홀마크 창업자, 캔자스시티 사업"
         }
       ]
     },
@@ -6493,8 +6479,8 @@ export const STATE_INFO = {
     ],
     "stateParks": [
       "엘리펀트록스 주립공원 (Elephant Rocks State Park)",
-      "햐하 통크스 주립공원 (Ha Ha Tonka State Park)",
-      "오나도 호수 주립공원 (Lake of the Ozarks State Park)"
+      "하하통카 주립공원 (Ha Ha Tonka State Park)",
+      "오자크 호수 주립공원 (Lake of the Ozarks State Park)"
     ],
     "teams": {
       "MLB": [
@@ -6666,45 +6652,45 @@ export const STATE_INFO = {
         {
           "ko": "마이크 맨스필드",
           "en": "Mike Mansfield",
-          "note": "정치·상원 다수당 원내대표"
+          "note": "상원 다수당 원내대표, 몬태나 선출"
         },
         {
           "ko": "지넷 랭킨",
           "en": "Jeannette Rankin",
-          "note": "정치·최초 여성 하원의원"
+          "note": "최초 여성 하원의원, 미줄라 출생"
         }
       ],
       "예술·문화": [
         {
           "ko": "게리 쿠퍼",
           "en": "Gary Cooper",
-          "note": "영화·배우"
+          "note": "배우, 헬레나 출생"
         },
         {
           "ko": "데이비드 린치",
           "en": "David Lynch",
-          "note": "영화·감독"
+          "note": "영화감독, 미줄라 출생"
         }
       ],
       "스포츠": [
         {
           "ko": "필 잭슨",
           "en": "Phil Jackson",
-          "note": "NBA·전설적 감독, 몬태나 성장"
+          "note": "전설적 NBA 감독, 몬태나 성장"
         }
       ],
       "과학·기술": [
         {
           "ko": "잭 호너",
           "en": "Jack Horner",
-          "note": "과학·고생물학자"
+          "note": "고생물학자, 셸비 출생"
         }
       ],
       "기업": [
         {
           "ko": "마커스 데일리",
           "en": "Marcus Daly",
-          "note": "기업·아나콘다 구리회사 창업자"
+          "note": "아나콘다 구리회사 창업자, 뷰트"
         }
       ]
     },
@@ -6713,9 +6699,9 @@ export const STATE_INFO = {
       "옐로스톤 국립공원 (Yellowstone National Park)"
     ],
     "stateParks": [
-      "메디슨 버펄로 점프 주립공원 (Madison Buffalo Jump State Park)",
+      "매디슨 버펄로 점프 주립공원 (Madison Buffalo Jump State Park)",
       "루이스앤드클라크 동굴 주립공원 (Lewis and Clark Caverns State Park)",
-      "마쿼라 동굴 주립공원 (Makoshika State Park)"
+      "마코시카 주립공원 (Makoshika State Park)"
     ],
     "teams": {
       "MLB": [],
@@ -6893,67 +6879,67 @@ export const STATE_INFO = {
         {
           "ko": "제럴드 포드",
           "en": "Gerald Ford",
-          "note": "정치·제38대 미국 대통령, 오마하 출생"
+          "note": "제38대 미국 대통령, 오마하 출생"
         },
         {
           "ko": "윌리엄 제닝스 브라이언",
           "en": "William Jennings Bryan",
-          "note": "정치·대선후보·국무장관"
+          "note": "대선후보·국무장관, 네브래스카 정착"
         }
       ],
       "예술·문화": [
         {
           "ko": "프레드 아스테어",
           "en": "Fred Astaire",
-          "note": "영화·배우·댄서"
+          "note": "배우·댄서, 오마하 출생"
         },
         {
           "ko": "헨리 폰다",
           "en": "Henry Fonda",
-          "note": "영화·배우"
+          "note": "배우, 그랜드아일랜드 출생"
         },
         {
           "ko": "말런 브랜도",
           "en": "Marlon Brando",
-          "note": "영화·배우"
+          "note": "배우, 오마하 출생"
         }
       ],
       "스포츠": [
         {
           "ko": "밥 깁슨",
           "en": "Bob Gibson",
-          "note": "MLB·카디널스 투수"
+          "note": "세인트루이스 카디널스 투수, 오마하 출생"
         },
         {
           "ko": "그로버 클리블랜드 알렉산더",
           "en": "Grover Cleveland Alexander",
-          "note": "MLB·명예의 전당 투수"
+          "note": "명예의 전당 투수, 엘바 출생"
         }
       ],
       "과학·기술": [
         {
           "ko": "조지 비들",
           "en": "George Beadle",
-          "note": "과학·노벨생리의학상"
+          "note": "노벨생리의학상, 와후 출생"
         }
       ],
       "기업": [
         {
           "ko": "워런 버핏",
           "en": "Warren Buffett",
-          "note": "기업·버크셔 해서웨이 회장"
+          "note": "버크셔 해서웨이 회장, 오마하 출생"
         },
         {
           "ko": "에드워드 크레이턴",
           "en": "Edward Creighton",
-          "note": "기업·금융·교육 후원자"
+          "note": "금융·교육 후원자, 크레이턴대 설립 기반"
         }
       ]
     },
     "nationalParks": [],
     "stateParks": [
       "인디언 케이브 주립공원 (Indian Cave State Park)",
-      "포니어 주립공원 (Ponca State Park)",
+      "폰카 주립공원 (Ponca State Park)",
       "플랫강 주립공원 (Platte River State Park)"
     ],
     "teams": {
@@ -7127,55 +7113,60 @@ export const STATE_INFO = {
         {
           "ko": "해리 리드",
           "en": "Harry Reid",
-          "note": "정치·전 상원 다수당 원내대표"
+          "note": "전 상원 다수당 원내대표"
         },
         {
           "ko": "팻 매캐런",
           "en": "Pat McCarran",
-          "note": "정치·상원의원, 매캐런 공항 명칭 유래"
+          "note": "상원의원, 라스베이거스 공항 명칭 유래"
         }
       ],
       "예술·문화": [
         {
-          "ko": "지미 킴멜",
-          "en": "Jimmy Kimmel",
-          "note": "방송·심야 토크쇼 진행자"
+          "ko": "브랜던 플라워스",
+          "en": "Brandon Flowers",
+          "note": "더 킬러스 보컬, 헨더슨 출신"
         },
         {
-          "ko": "패니타 무어",
-          "en": "Fannie Moore",
-          "note": "음악·재즈 가수"
+          "ko": "댄 레이놀즈",
+          "en": "Dan Reynolds",
+          "note": "이매진 드래곤스 보컬, 라스베이거스 출신"
+        },
+        {
+          "ko": "브렌든 유리",
+          "en": "Brendon Urie",
+          "note": "패닉! 앳 더 디스코 보컬, 라스베이거스 출신"
         }
       ],
       "스포츠": [
         {
           "ko": "안드레 애거시",
           "en": "Andre Agassi",
-          "note": "테니스·그랜드슬램 8회 우승"
+          "note": "테니스 그랜드슬램 8회 우승, 라스베이거스 출신"
         },
         {
-          "ko": "케일럽 플러레이",
-          "en": "Caleb Dressel",
-          "note": "수영·올림픽 금메달리스트"
+          "ko": "그렉 매덕스",
+          "en": "Greg Maddux",
+          "note": "MLB 명예의 전당 투수, 라스베이거스 성장"
         }
       ],
       "과학·기술": [
         {
-          "ko": "토니 시아",
+          "ko": "토니 셰이",
           "en": "Tony Hsieh",
-          "note": "기술·기업가"
+          "note": "자포스 CEO, 라스베이거스 다운타운 프로젝트"
         }
       ],
       "기업": [
         {
           "ko": "스티브 윈",
           "en": "Steve Wynn",
-          "note": "기업·카지노 리조트 사업가"
+          "note": "카지노 리조트 사업가"
         },
         {
           "ko": "커크 커코리언",
           "en": "Kirk Kerkorian",
-          "note": "기업·MGM 투자가"
+          "note": "MGM 투자가"
         }
       ]
     },
@@ -7185,7 +7176,7 @@ export const STATE_INFO = {
     "stateParks": [
       "밸리 오브 파이어 주립공원 (Valley of Fire State Park)",
       "스프링 마운틴 랜치 주립공원 (Spring Mountain Ranch State Park)",
-      "캐슬 록스 주립공원 (Castle Rocks State Park)"
+      "캐시드럴 고지 주립공원 (Cathedral Gorge State Park)"
     ],
     "teams": {
       "MLB": [],
@@ -7379,55 +7370,55 @@ export const STATE_INFO = {
         {
           "ko": "프랭클린 피어스",
           "en": "Franklin Pierce",
-          "note": "정치·제14대 미국 대통령"
+          "note": "제14대 미국 대통령, 힐스버러 출신"
         },
         {
           "ko": "대니얼 웹스터",
           "en": "Daniel Webster",
-          "note": "정치·정치가·웅변가"
+          "note": "정치가·웅변가, 솔즈베리 출신"
         }
       ],
       "예술·문화": [
         {
           "ko": "댄 브라운",
           "en": "Dan Brown",
-          "note": "문학·《다빈치 코드》 작가"
+          "note": "《다빈치 코드》 작가, 엑서터 출신"
         },
         {
           "ko": "J.D. 샐린저",
           "en": "J.D. Salinger",
-          "note": "문학·《호밀밭의 파수꾼》 작가"
+          "note": "《호밀밭의 파수꾼》 작가, 코니시 거주"
         },
         {
-          "ko": "세스 메이어스",
+          "ko": "세스 마이어스",
           "en": "Seth Meyers",
-          "note": "방송·코미디언"
+          "note": "코미디언·심야 토크쇼 진행자, 베드퍼드 성장"
         }
       ],
       "스포츠": [
         {
-          "ko": "캐리 로",
-          "en": "Carrie Lou",
-          "note": "피겨스케이팅·올림픽 선수"
+          "ko": "케이틀린 얀코우스카스",
+          "en": "Caitlin Yankowskas",
+          "note": "피겨 페어 미국 챔피언, 내슈아 출신"
         },
         {
-          "ko": "밥 테와스버리",
+          "ko": "밥 튝스베리",
           "en": "Bob Tewksbury",
-          "note": "야구·MLB 투수"
+          "note": "MLB 투수, 콩코드 출신"
         }
       ],
       "과학·기술": [
         {
           "ko": "앨런 셰퍼드",
           "en": "Alan Shepard",
-          "note": "우주·미국 최초의 우주비행사"
+          "note": "미국 최초의 우주비행사, 데리 출신"
         }
       ],
       "기업": [
         {
           "ko": "딘 케이먼",
           "en": "Dean Kamen",
-          "note": "기업·세그웨이 발명가"
+          "note": "세그웨이 발명가, 맨체스터 거점"
         }
       ]
     },
@@ -7625,67 +7616,67 @@ export const STATE_INFO = {
         {
           "ko": "그로버 클리블랜드",
           "en": "Grover Cleveland",
-          "note": "정치·제22·24대 미국 대통령"
+          "note": "제22·24대 미국 대통령, 콜드웰 출신"
         },
         {
-          "ko": "프랭크 허그",
+          "ko": "프랭크 헤이그",
           "en": "Frank Hague",
-          "note": "정치·뉴저지 주지사"
+          "note": "저지시티 시장, 강력한 정치 머신"
         }
       ],
       "예술·문화": [
         {
           "ko": "프랭크 시나트라",
           "en": "Frank Sinatra",
-          "note": "음악·전설적 가수"
+          "note": "전설적 가수, 호보컨 출신"
         },
         {
           "ko": "브루스 스프링스틴",
           "en": "Bruce Springsteen",
-          "note": "음악·록 음악가"
+          "note": "록 음악가, 롱브랜치 출신"
         },
         {
           "ko": "메릴 스트립",
           "en": "Meryl Streep",
-          "note": "영화·아카데미 다관왕 배우"
+          "note": "아카데미 다관왕 배우, 서밋 출신"
         }
       ],
       "스포츠": [
         {
-          "ko": "셰킬 오닐",
+          "ko": "샤킬 오닐",
           "en": "Shaquille O'Neal",
-          "note": "농구·NBA 명예의 전당"
+          "note": "NBA 명예의 전당, 뉴어크 출신"
         },
         {
           "ko": "마이크 트라웃",
           "en": "Mike Trout",
-          "note": "야구·MLB MVP"
+          "note": "MLB MVP, 밀빌 출신"
         }
       ],
       "과학·기술": [
         {
           "ko": "토머스 에디슨",
           "en": "Thomas Edison",
-          "note": "발명·전구·축음기 발명가"
+          "note": "전구·축음기 발명, 멘로파크 연구소"
         },
         {
           "ko": "앨버트 아인슈타인",
           "en": "Albert Einstein",
-          "note": "물리학·프린스턴 활동, 노벨상"
+          "note": "프린스턴 고등연구소 활동, 노벨물리학상"
         }
       ],
       "기업": [
         {
-          "ko": "말콤 포브스",
+          "ko": "맬컴 포브스",
           "en": "Malcolm Forbes",
-          "note": "기업·포브스 발행인"
+          "note": "《포브스》 발행인"
         }
       ]
     },
     "nationalParks": [],
     "stateParks": [
       "리버티 주립공원 (Liberty State Park)",
-      "하이포인트 주립공원 (High Point State Park)",
+      "하이 포인트 주립공원 (High Point State Park)",
       "아일랜드 비치 주립공원 (Island Beach State Park)"
     ],
     "teams": {
@@ -7850,50 +7841,55 @@ export const STATE_INFO = {
         {
           "ko": "빌 리처드슨",
           "en": "Bill Richardson",
-          "note": "정치·뉴멕시코 주지사·UN 대사"
+          "note": "뉴멕시코 주지사·UN 대사"
         },
         {
           "ko": "데니스 차베스",
           "en": "Dennis Chavez",
-          "note": "정치·상원의원"
+          "note": "히스패닉 최초의 장기 재임 상원의원"
         }
       ],
       "예술·문화": [
         {
           "ko": "조지아 오키프",
           "en": "Georgia O'Keeffe",
-          "note": "미술·화가"
+          "note": "화가, 뉴멕시코 풍경 작품으로 유명"
         },
         {
           "ko": "데미 무어",
           "en": "Demi Moore",
-          "note": "영화·배우"
+          "note": "배우, 로즈웰 출신"
         }
       ],
       "스포츠": [
         {
           "ko": "홀리 홈",
           "en": "Holly Holm",
-          "note": "격투기·UFC 챔피언"
+          "note": "UFC 챔피언, 앨버커키 출신"
         },
         {
-          "ko": "로니 루",
-          "en": "Ronnie Lou",
-          "note": "야구·MLB 선수"
+          "ko": "랠프 카이너",
+          "en": "Ralph Kiner",
+          "note": "MLB 명예의 전당 외야수, 산타리타 출신"
+        },
+        {
+          "ko": "알렉스 브레그먼",
+          "en": "Alex Bregman",
+          "note": "MLB 올스타 내야수, 앨버커키 출신"
         }
       ],
       "과학·기술": [
         {
           "ko": "로버트 오펜하이머",
           "en": "Robert Oppenheimer",
-          "note": "물리학·로스앨러모스 맨해튼 계획 주도"
+          "note": "로스앨러모스 맨해튼 계획 주도"
         }
       ],
       "기업": [
         {
           "ko": "콘래드 힐튼",
           "en": "Conrad Hilton",
-          "note": "기업·힐튼 호텔 창업자"
+          "note": "힐튼 호텔 창업자, 샌안토니오 출신"
         }
       ]
     },
@@ -7904,7 +7900,7 @@ export const STATE_INFO = {
     "stateParks": [
       "엘리펀트 뷰트 호수 주립공원 (Elephant Butte Lake State Park)",
       "시티 오브 록스 주립공원 (City of Rocks State Park)",
-      "리오그란데 협곡 주립공원 (Rio Grande Gorge State Park)"
+      "보텀리스 레이크스 주립공원 (Bottomless Lakes State Park)"
     ],
     "teams": {
       "MLB": [],
@@ -8093,65 +8089,65 @@ export const STATE_INFO = {
         {
           "ko": "프랭클린 D. 루스벨트",
           "en": "Franklin D. Roosevelt",
-          "note": "정치·제32대 미국 대통령"
+          "note": "제32대 미국 대통령, 하이드파크 출신"
         },
         {
           "ko": "시어도어 루스벨트",
           "en": "Theodore Roosevelt",
-          "note": "정치·제26대 미국 대통령"
+          "note": "제26대 미국 대통령, 뉴욕시 출신"
         },
         {
           "ko": "힐러리 클린턴",
           "en": "Hillary Clinton",
-          "note": "정치·국무장관·대선 후보"
+          "note": "국무장관·뉴욕주 상원의원·대선 후보"
         }
       ],
       "예술·문화": [
         {
           "ko": "조지 거슈윈",
           "en": "George Gershwin",
-          "note": "음악·작곡가"
+          "note": "작곡가, 브루클린 출신"
         },
         {
           "ko": "마틴 스코세이지",
           "en": "Martin Scorsese",
-          "note": "영화·감독"
+          "note": "영화감독, 뉴욕시 출신"
         },
         {
           "ko": "레이디 가가",
           "en": "Lady Gaga",
-          "note": "음악·가수"
+          "note": "가수, 맨해튼 출신"
         }
       ],
       "스포츠": [
         {
           "ko": "루 게릭",
           "en": "Lou Gehrig",
-          "note": "야구·뉴욕 양키스 전설"
+          "note": "뉴욕 양키스 전설, 뉴욕시 출신"
         },
         {
           "ko": "마이크 타이슨",
           "en": "Mike Tyson",
-          "note": "복싱·세계 챔피언"
+          "note": "복싱 세계 챔피언, 브루클린 출신"
         }
       ],
       "과학·기술": [
         {
           "ko": "리처드 파인먼",
           "en": "Richard Feynman",
-          "note": "물리학·노벨물리학상"
+          "note": "노벨물리학상, 퀸스 출신"
         }
       ],
       "기업": [
         {
           "ko": "존 D. 록펠러",
           "en": "John D. Rockefeller",
-          "note": "기업·스탠더드 오일 창업자"
+          "note": "스탠더드 오일 창업자"
         },
         {
           "ko": "마이클 블룸버그",
           "en": "Michael Bloomberg",
-          "note": "기업·블룸버그 창업자·뉴욕 시장"
+          "note": "블룸버그 창업자·뉴욕 시장"
         }
       ]
     },
@@ -8159,7 +8155,7 @@ export const STATE_INFO = {
     "stateParks": [
       "나이아가라 폭포 주립공원 (Niagara Falls State Park)",
       "레치워스 주립공원 (Letchworth State Park)",
-      "몬타우크 포인트 주립공원 (Montauk Point State Park)"
+      "몬탁 포인트 주립공원 (Montauk Point State Park)"
     ],
     "teams": {
       "MLB": [
@@ -8358,50 +8354,55 @@ export const STATE_INFO = {
         {
           "ko": "제임스 K. 포크",
           "en": "James K. Polk",
-          "note": "정치·제11대 미국 대통령"
+          "note": "제11대 미국 대통령, 메클렌버그 카운티 출신"
         },
         {
           "ko": "앤드루 존슨",
           "en": "Andrew Johnson",
-          "note": "정치·제17대 미국 대통령"
+          "note": "제17대 미국 대통령, 롤리 출신"
         }
       ],
       "예술·문화": [
         {
-          "ko": "닉 조나스",
-          "en": "Nick Jonas",
-          "note": "음악·가수"
+          "ko": "니나 시몬",
+          "en": "Nina Simone",
+          "note": "재즈·소울 가수, 트라이언 출신"
+        },
+        {
+          "ko": "존 콜트레인",
+          "en": "John Coltrane",
+          "note": "재즈 색소포니스트, 햄릿 출신"
         },
         {
           "ko": "마야 안젤루",
           "en": "Maya Angelou",
-          "note": "문학·시인·작가"
+          "note": "시인·작가, 웨이크포레스트대 교수로 윈스턴세일럼 거주"
         }
       ],
       "스포츠": [
         {
           "ko": "마이클 조던",
           "en": "Michael Jordan",
-          "note": "농구·NBA 전설, NC 출신·대학"
+          "note": "NBA 전설, 윌밍턴 성장·노스캐롤라이나대"
         },
         {
           "ko": "리처드 페티",
           "en": "Richard Petty",
-          "note": "자동차경주·NASCAR 전설"
+          "note": "NASCAR 전설, 레벨크로스 출신"
         }
       ],
       "과학·기술": [
         {
           "ko": "라이트 형제",
           "en": "Wright Brothers",
-          "note": "항공·세계 최초 동력 비행, 키티호크"
+          "note": "세계 최초 동력 비행, 키티호크"
         }
       ],
       "기업": [
         {
           "ko": "제임스 뷰캐넌 듀크",
           "en": "James Buchanan Duke",
-          "note": "기업·아메리칸 토바코 창업자"
+          "note": "아메리칸 토바코 창업자, 더럼 출신"
         }
       ]
     },
@@ -8410,7 +8411,7 @@ export const STATE_INFO = {
     ],
     "stateParks": [
       "마운트 미첼 주립공원 (Mount Mitchell State Park)",
-      "해머콕스 마운틴 주립공원 (Hanging Rock State Park)",
+      "행잉 록 주립공원 (Hanging Rock State Park)",
       "조던 호수 주립휴양지 (Jordan Lake State Recreation Area)"
     ],
     "teams": {
@@ -8580,55 +8581,55 @@ export const STATE_INFO = {
         {
           "ko": "바이런 도건",
           "en": "Byron Dorgan",
-          "note": "정치·상원의원"
+          "note": "상원의원, 디킨슨 출신"
         },
         {
           "ko": "켄트 콘래드",
           "en": "Kent Conrad",
-          "note": "정치·상원의원"
+          "note": "상원의원, 비스마크 출신"
         }
       ],
       "예술·문화": [
         {
           "ko": "페기 리",
           "en": "Peggy Lee",
-          "note": "음악·재즈 가수"
+          "note": "재즈 가수, 잭슨 출신"
         },
         {
           "ko": "루이스 라무르",
           "en": "Louis L'Amour",
-          "note": "문학·서부 소설가"
+          "note": "서부 소설가, 제임스타운 출신"
         },
         {
           "ko": "조시 두하멜",
           "en": "Josh Duhamel",
-          "note": "영화·배우"
+          "note": "배우, 마이놋 출신"
         }
       ],
       "스포츠": [
         {
           "ko": "필 잭슨",
           "en": "Phil Jackson",
-          "note": "농구·NBA 명장 감독"
+          "note": "NBA 명장 감독, 윌리스턴 성장·노스다코타대"
         },
         {
-          "ko": "칼 멀로니",
-          "en": "Carl Mahlue",
-          "note": "육상·올림픽 선수"
+          "ko": "로저 매리스",
+          "en": "Roger Maris",
+          "note": "1961년 한 시즌 61홈런, 파고 성장"
         }
       ],
       "과학·기술": [
         {
-          "ko": "에로 사리넨",
-          "en": "Eero Saarinen",
-          "note": "건축·미국 디자인, 노스다코타 관련 작품"
+          "ko": "해리 나이퀴스트",
+          "en": "Harry Nyquist",
+          "note": "정보이론 기초 정립, 노스다코타대 졸업"
         }
       ],
       "기업": [
         {
-          "ko": "해럴드 슈에이퍼",
+          "ko": "해럴드 셰이퍼",
           "en": "Harold Schafer",
-          "note": "기업·실리콘 제조 기업가"
+          "note": "골드씰 제품 창업자, 메도라 복원 후원"
         }
       ]
     },
@@ -8637,7 +8638,7 @@ export const STATE_INFO = {
     ],
     "stateParks": [
       "포트 에이브러햄 링컨 주립공원 (Fort Abraham Lincoln State Park)",
-      "레이크 사카케이위아 주립공원 (Lake Sakakawea State Park)",
+      "레이크 사카카위아 주립공원 (Lake Sakakawea State Park)",
       "터틀 리버 주립공원 (Turtle River State Park)"
     ],
     "teams": {
@@ -8827,75 +8828,80 @@ export const STATE_INFO = {
         {
           "ko": "윌리엄 매킨리",
           "en": "William McKinley",
-          "note": "정치·제25대 미국 대통령"
+          "note": "제25대 미국 대통령"
         },
         {
           "ko": "율리시스 S. 그랜트",
           "en": "Ulysses S. Grant",
-          "note": "정치·제18대 미국 대통령"
+          "note": "제18대 미국 대통령"
+        },
+        {
+          "ko": "윌리엄 H. 태프트",
+          "en": "William Howard Taft",
+          "note": "제27대 대통령·연방대법원장"
         },
         {
           "ko": "존 글렌",
           "en": "John Glenn",
-          "note": "정치·우주비행사 출신 연방 상원의원"
+          "note": "우주비행사 출신 연방 상원의원"
         }
       ],
       "예술·문화": [
         {
           "ko": "토니 모리슨",
           "en": "Toni Morrison",
-          "note": "문학·노벨문학상 수상 소설가"
+          "note": "노벨문학상 수상 소설가, 로레인 출생"
         },
         {
           "ko": "스티븐 스필버그",
           "en": "Steven Spielberg",
-          "note": "영화·신시내티 출생 감독"
+          "note": "신시내티 출생 영화감독"
         },
         {
           "ko": "할리 베리",
           "en": "Halle Berry",
-          "note": "영화·아카데미 여우주연상 배우"
+          "note": "아카데미 여우주연상 배우"
         }
       ],
       "스포츠": [
         {
           "ko": "제시 오언스",
           "en": "Jesse Owens",
-          "note": "육상·1936 베를린 올림픽 4관왕"
+          "note": "1936 베를린 올림픽 육상 4관왕"
         },
         {
           "ko": "르브론 제임스",
           "en": "LeBron James",
-          "note": "농구·NBA 4회 우승"
+          "note": "애크런 출신 NBA 4회 우승"
         }
       ],
       "과학·기술": [
         {
           "ko": "토머스 에디슨",
           "en": "Thomas Edison",
-          "note": "발명·전구·축음기"
+          "note": "밀란 출생 발명가, 전구·축음기"
         },
         {
           "ko": "라이트 형제",
           "en": "Wright Brothers",
-          "note": "항공·최초 동력 비행기"
+          "note": "데이턴 거점 최초 동력 비행"
         },
         {
           "ko": "닐 암스트롱",
           "en": "Neil Armstrong",
-          "note": "우주·인류 최초 달 착륙"
+          "note": "와파코네타 출신, 인류 최초 달 착륙"
         }
       ],
       "기업": [
         {
           "ko": "존 D. 록펠러",
           "en": "John D. Rockefeller",
-          "note": "기업·스탠더드오일 창업"
+          "note": "스탠더드오일 창업, 클리블랜드 거점"
         },
         {
-          "ko": "할랜드 샌더스 식 영향 외 — 로저 펜스키",
+          "ko": "로저 펜스키",
           "en": "Roger Penske",
-          "note": "기업·펜스키 자동차그룹"
+          "note": "셰이커하이츠 출신, 펜스키 그룹 창업"
         }
       ]
     },
@@ -9073,65 +9079,70 @@ export const STATE_INFO = {
         {
           "ko": "칼 앨버트",
           "en": "Carl Albert",
-          "note": "정치·미국 하원의장"
+          "note": "제46대 미국 하원의장"
         },
         {
           "ko": "프레드 해리스",
           "en": "Fred Harris",
-          "note": "정치·연방 상원의원"
+          "note": "연방 상원의원·대선 후보"
         }
       ],
       "예술·문화": [
         {
           "ko": "윌 로저스",
           "en": "Will Rogers",
-          "note": "공연·코미디언·배우"
+          "note": "오올로가 출신 유머작가·배우"
         },
         {
           "ko": "랠프 엘리슨",
           "en": "Ralph Ellison",
-          "note": "문학·《보이지 않는 인간》 작가"
+          "note": "오클라호마시티 출생, 《보이지 않는 인간》"
         },
         {
-          "ko": "갈랜드 외 — 칼리 게리스 외 가스 브룩스",
+          "ko": "가스 브룩스",
           "en": "Garth Brooks",
-          "note": "음악·컨트리 가수"
+          "note": "털사 출신 컨트리 음악 가수"
         }
       ],
       "스포츠": [
         {
           "ko": "짐 소프",
           "en": "Jim Thorpe",
-          "note": "육상·올림픽 다종목 금메달리스트"
+          "note": "올림픽 다종목 금메달리스트"
         },
         {
           "ko": "미키 맨틀",
           "en": "Mickey Mantle",
-          "note": "야구·MLB 명예의 전당"
+          "note": "스패비노 출신 MLB 명예의 전당"
         }
       ],
       "과학·기술": [
         {
-          "ko": "쉐넌 루시드",
+          "ko": "섀넌 루시드",
           "en": "Shannon Lucid",
-          "note": "우주·미국 여성 우주비행사"
+          "note": "여성 우주비행사, 장기 우주체류 기록"
         },
         {
           "ko": "토머스 P. 스태퍼드",
           "en": "Thomas P. Stafford",
-          "note": "우주·아폴로 10호 사령관"
+          "note": "위더링턴 출신 아폴로 10호 사령관"
         }
       ],
       "기업": [
         {
-          "ko": "필립스 형제",
-          "en": "Phillips Brothers",
-          "note": "기업·필립스 석유 창업"
+          "ko": "샘 월턴",
+          "en": "Sam Walton",
+          "note": "킹피셔 출생, 월마트 창업"
         },
         {
           "ko": "T. 분 피컨스",
           "en": "T. Boone Pickens",
-          "note": "기업·석유 투자가"
+          "note": "홀덴빌 출신 석유 투자가"
+        },
+        {
+          "ko": "프랭크 필립스",
+          "en": "Frank Phillips",
+          "note": "필립스 석유 공동창업, 바틀즈빌"
         }
       ]
     },
@@ -9332,65 +9343,60 @@ export const STATE_INFO = {
         {
           "ko": "마크 햇필드",
           "en": "Mark Hatfield",
-          "note": "정치·연방 상원의원·전 주지사"
+          "note": "연방 상원의원·전 주지사"
         },
         {
           "ko": "톰 매콜",
           "en": "Tom McCall",
-          "note": "정치·환경보호 추진 주지사"
+          "note": "환경보호 추진 주지사"
         }
       ],
       "예술·문화": [
         {
           "ko": "맷 그레이닝",
           "en": "Matt Groening",
-          "note": "만화·《심슨 가족》 창작자"
+          "note": "포틀랜드 출생, 《심슨 가족》 창작자"
         },
         {
           "ko": "비벌리 클리어리",
           "en": "Beverly Cleary",
-          "note": "문학·아동문학 작가"
+          "note": "맥민빌 출생 아동문학 작가"
         },
         {
-          "ko": "라이언 고슬링 외 — 사노 외 캐리 브라운스타인",
-          "en": "Carrie Brownstein",
-          "note": "음악·밴드 슬리터키니"
+          "ko": "에스페란사 스폴딩",
+          "en": "Esperanza Spalding",
+          "note": "포틀랜드 출신 재즈 베이시스트·그래미 수상"
         }
       ],
       "스포츠": [
         {
           "ko": "댄 오브라이언",
           "en": "Dan O'Brien",
-          "note": "육상·올림픽 10종 금메달"
+          "note": "올림픽 10종경기 금메달"
         },
         {
           "ko": "테리 베이커",
           "en": "Terry Baker",
-          "note": "미식축구·하이즈먼 트로피"
+          "note": "하이즈먼 트로피 수상 쿼터백"
         }
       ],
       "과학·기술": [
         {
           "ko": "라이너스 폴링",
           "en": "Linus Pauling",
-          "note": "화학·노벨화학상·노벨평화상 수상"
-        },
-        {
-          "ko": "더그 엥겔바트 영향 외 — 호머 데이븐포트",
-          "en": "Homer Davenport",
-          "note": "만화·언론"
+          "note": "포틀랜드 출생, 노벨화학상·노벨평화상 수상"
         }
       ],
       "기업": [
         {
           "ko": "필 나이트",
           "en": "Phil Knight",
-          "note": "기업·나이키 공동창업"
+          "note": "포틀랜드 출신, 나이키 공동창업"
         },
         {
           "ko": "빌 보워먼",
           "en": "Bill Bowerman",
-          "note": "기업·나이키 공동창업"
+          "note": "오리건대 육상 코치, 나이키 공동창업"
         }
       ]
     },
@@ -9592,75 +9598,75 @@ export const STATE_INFO = {
         {
           "ko": "벤저민 프랭클린",
           "en": "Benjamin Franklin",
-          "note": "정치·미국 건국의 아버지"
+          "note": "미국 건국의 아버지, 필라델피아 활동"
         },
         {
           "ko": "조 바이든",
           "en": "Joe Biden",
-          "note": "정치·제46대 미국 대통령"
+          "note": "스크랜턴 출생, 제46대 미국 대통령"
         },
         {
           "ko": "제임스 뷰캐넌",
           "en": "James Buchanan",
-          "note": "정치·제15대 미국 대통령"
+          "note": "제15대 미국 대통령"
         }
       ],
       "예술·문화": [
         {
           "ko": "앤디 워홀",
           "en": "Andy Warhol",
-          "note": "미술·팝아트 거장"
+          "note": "피츠버그 출생 팝아트 거장"
         },
         {
           "ko": "메리 카사트",
           "en": "Mary Cassatt",
-          "note": "미술·인상파 화가"
+          "note": "앨러게니시티 출생 인상파 화가"
         },
         {
           "ko": "윌 스미스",
           "en": "Will Smith",
-          "note": "영화·필라델피아 출신 배우"
+          "note": "필라델피아 출신 배우·래퍼"
         }
       ],
       "스포츠": [
         {
           "ko": "윌트 체임벌린",
           "en": "Wilt Chamberlain",
-          "note": "농구·NBA 100점 기록"
+          "note": "필라델피아 출신, NBA 한 경기 100점"
         },
         {
           "ko": "조 몬태나",
           "en": "Joe Montana",
-          "note": "미식축구·NFL 명예의 전당"
+          "note": "뉴이글 출신 NFL 명예의 전당 쿼터백"
         }
       ],
       "과학·기술": [
         {
-          "ko": "조나스 소크",
+          "ko": "조너스 소크",
           "en": "Jonas Salk",
-          "note": "의학·소아마비 백신 개발"
+          "note": "피츠버그대 소아마비 백신 개발"
         },
         {
           "ko": "레이철 카슨",
           "en": "Rachel Carson",
-          "note": "생물학·《침묵의 봄》 저자"
+          "note": "스프링데일 출생, 《침묵의 봄》 저자"
         }
       ],
       "기업": [
         {
           "ko": "앤드루 카네기",
           "en": "Andrew Carnegie",
-          "note": "기업·카네기 철강"
+          "note": "피츠버그 거점 카네기 철강"
         },
         {
           "ko": "밀턴 허쉬",
           "en": "Milton Hershey",
-          "note": "기업·허쉬 초콜릿 창업"
+          "note": "데리타운십 출생, 허쉬 초콜릿 창업"
         },
         {
           "ko": "헨리 J. 하인즈",
           "en": "Henry J. Heinz",
-          "note": "기업·H. J. 하인즈 창업"
+          "note": "피츠버그 출신, H. J. 하인즈 창업"
         }
       ]
     },
@@ -9869,72 +9875,72 @@ export const STATE_INFO = {
         {
           "ko": "로저 윌리엄스",
           "en": "Roger Williams",
-          "note": "정치·로드아일랜드 식민지 창설자"
+          "note": "로드아일랜드 식민지 창설자"
         },
         {
           "ko": "존 O. 패스토어",
           "en": "John O. Pastore",
-          "note": "정치·연방 상원의원"
+          "note": "최초의 이탈리아계 연방 상원의원·주지사"
         }
       ],
       "예술·문화": [
         {
           "ko": "H. P. 러브크래프트",
           "en": "H. P. Lovecraft",
-          "note": "문학·괴기소설 작가"
+          "note": "프로비던스 출생 괴기소설 작가"
         },
         {
           "ko": "조지 M. 코핸",
           "en": "George M. Cohan",
-          "note": "공연·뮤지컬 작곡가"
+          "note": "프로비던스 출생 뮤지컬 작곡가"
         },
         {
           "ko": "비올라 데이비스",
           "en": "Viola Davis",
-          "note": "영화·아카데미 수상 배우"
+          "note": "센트럴폴스 성장, 아카데미 수상 배우"
         }
       ],
       "스포츠": [
         {
           "ko": "냅 라조이",
           "en": "Nap Lajoie",
-          "note": "야구·MLB 명예의 전당"
+          "note": "우언삭 출신 MLB 명예의 전당"
         },
         {
           "ko": "로코 발델리",
           "en": "Rocco Baldelli",
-          "note": "야구·MLB 감독"
+          "note": "우언삭 출신 MLB 감독"
         }
       ],
       "과학·기술": [
         {
           "ko": "조지 H. 코를리스",
           "en": "George H. Corliss",
-          "note": "공학·코를리스 증기기관"
+          "note": "프로비던스 거점, 코를리스 증기기관"
         },
         {
-          "ko": "토머스 텍스터 외 — 메리 디킨슨 외",
-          "en": "Mary Dickinson",
-          "note": "과학·연구"
+          "ko": "재커라이아 앨런",
+          "en": "Zachariah Allen",
+          "note": "프로비던스 출생 발명가·온풍 난방기"
         }
       ],
       "기업": [
         {
           "ko": "새뮤얼 슬레이터",
           "en": "Samuel Slater",
-          "note": "기업·미국 산업혁명의 아버지"
+          "note": "포터킷 방직공장, 미국 산업혁명의 아버지"
         },
         {
-          "ko": "시어도어 프랜시스 그린",
-          "en": "Theodore Francis Green",
-          "note": "기업·정치·은행가"
+          "ko": "조너선 넬슨",
+          "en": "Jonathan Nelson",
+          "note": "프로비던스 출신, 프로비던스 에쿼티 창업"
         }
       ]
     },
     "nationalParks": [],
     "stateParks": [
       "콜트 주립공원 (Colt State Park)",
-      "린컨우즈 주립공원 (Lincoln Woods State Park)",
+      "링컨우즈 주립공원 (Lincoln Woods State Park)",
       "비버테일 주립공원 (Beavertail State Park)"
     ],
     "teams": {
@@ -10119,70 +10125,70 @@ export const STATE_INFO = {
         {
           "ko": "앤드루 잭슨",
           "en": "Andrew Jackson",
-          "note": "정치·제7대 미국 대통령"
+          "note": "왁스호 지역 출생, 제7대 미국 대통령"
         },
         {
           "ko": "존 C. 칼훈",
           "en": "John C. Calhoun",
-          "note": "정치·제7대 미국 부통령"
+          "note": "애브빌 출생, 제7대 미국 부통령"
         },
         {
           "ko": "스트롬 서먼드",
           "en": "Strom Thurmond",
-          "note": "정치·최장수 연방 상원의원"
+          "note": "최장수 연방 상원의원·전 주지사"
         }
       ],
       "예술·문화": [
         {
           "ko": "디지 길레스피",
           "en": "Dizzy Gillespie",
-          "note": "음악·재즈 트럼펫 거장"
+          "note": "치로 출생 재즈 트럼펫 거장"
         },
         {
           "ko": "제임스 브라운",
           "en": "James Brown",
-          "note": "음악·소울의 대부"
+          "note": "소울의 대부, 사우스캐롤라이나 성장"
         },
         {
-          "ko": "치코 코리아 외 — 비올라 외 크리스 록",
+          "ko": "크리스 록",
           "en": "Chris Rock",
-          "note": "코미디·배우"
+          "note": "앤드루스 출생 코미디언·배우"
         }
       ],
       "스포츠": [
         {
           "ko": "조 프레이저",
           "en": "Joe Frazier",
-          "note": "복싱·헤비급 챔피언"
+          "note": "뷰포트 출생 헤비급 복싱 챔피언"
         },
         {
           "ko": "케빈 가넷",
           "en": "Kevin Garnett",
-          "note": "농구·NBA MVP"
+          "note": "그린빌 출신 NBA MVP"
         }
       ],
       "과학·기술": [
         {
           "ko": "찰스 H. 타운스",
           "en": "Charles H. Townes",
-          "note": "물리·노벨물리학상·레이저 개발"
+          "note": "그린빌 출생, 노벨물리학상·레이저 개발"
         },
         {
-          "ko": "키티 콜 외 — 로널드 맥네어",
+          "ko": "로널드 맥네어",
           "en": "Ronald McNair",
-          "note": "우주·NASA 우주비행사"
+          "note": "레이크시티 출생 물리학자·NASA 우주비행사"
         }
       ],
       "기업": [
         {
-          "ko": "에드 노매스 외 — 안나 캘훈 외",
-          "en": "Anna Calhoun",
-          "note": "기업·실업가"
+          "ko": "달라 무어",
+          "en": "Darla Moore",
+          "note": "레이크시티 출생 투자가·자선가"
         },
         {
-          "ko": "다든 외 — 로버트 G. 홀",
-          "en": "Robert G. Hall",
-          "note": "기업·실업가"
+          "ko": "애니타 주커",
+          "en": "Anita Zucker",
+          "note": "찰스턴 거점 인터테크 그룹 회장"
         }
       ]
     },
@@ -10192,7 +10198,7 @@ export const STATE_INFO = {
     "stateParks": [
       "테이블록 주립공원 (Table Rock State Park)",
       "헌팅턴비치 주립공원 (Huntington Beach State Park)",
-      "캐사르스헤드 주립공원 (Caesars Head State Park)"
+      "시저스헤드 주립공원 (Caesars Head State Park)"
     ],
     "teams": {
       "MLB": [],
@@ -10357,65 +10363,60 @@ export const STATE_INFO = {
         {
           "ko": "조지 맥거번",
           "en": "George McGovern",
-          "note": "정치·연방 상원의원·대선 후보"
+          "note": "연방 상원의원·1972 대선 후보"
         },
         {
           "ko": "톰 대슐",
           "en": "Tom Daschle",
-          "note": "정치·연방 상원 원내대표"
+          "note": "애버딘 출신 연방 상원 원내대표"
         },
         {
-          "ko": "휴버트 험프리 외 — 칼 먼트",
+          "ko": "칼 먼트",
           "en": "Karl Mundt",
-          "note": "정치·연방 상원의원"
+          "note": "험볼트 출생 연방 상원의원"
         }
       ],
       "예술·문화": [
         {
           "ko": "로라 잉걸스 와일더",
           "en": "Laura Ingalls Wilder",
-          "note": "문학·《초원의 집》 작가"
+          "note": "디스멧 거주, 《초원의 집》 작가"
         },
         {
-          "ko": "크레이지 호스 외 — 메리 하트",
+          "ko": "메리 하트",
           "en": "Mary Hart",
-          "note": "방송·진행자"
+          "note": "수폴스 출신 방송 진행자"
         }
       ],
       "스포츠": [
         {
           "ko": "마이크 밀러",
           "en": "Mike Miller",
-          "note": "농구·NBA 우승"
+          "note": "미첼 출신 NBA 우승·올해의 신인"
         },
         {
           "ko": "벡키 해먼",
           "en": "Becky Hammon",
-          "note": "농구·WNBA·코치"
+          "note": "래피드시티 출신 WNBA 스타·코치"
         }
       ],
       "과학·기술": [
         {
           "ko": "어니스트 로런스",
           "en": "Ernest Lawrence",
-          "note": "물리·노벨물리학상·사이클로트론 발명"
-        },
-        {
-          "ko": "굿슬 외 — 에마누엘 헤르틀라인",
-          "en": "Emmanuel Hertlein",
-          "note": "과학·연구"
+          "note": "캔턴 출생, 노벨물리학상·사이클로트론 발명"
         }
       ],
       "기업": [
         {
           "ko": "T. 데니 샌포드",
           "en": "T. Denny Sanford",
-          "note": "기업·금융·자선가"
+          "note": "수폴스 거점 금융가·자선가"
         },
         {
-          "ko": "피에르 외 — 잭 빌리언",
-          "en": "Jack Billion",
-          "note": "기업·실업가"
+          "ko": "앨 뉴하스",
+          "en": "Al Neuharth",
+          "note": "유리카 출생, 《USA 투데이》 창간"
         }
       ]
     },
@@ -10426,7 +10427,7 @@ export const STATE_INFO = {
     "stateParks": [
       "커스터 주립공원 (Custer State Park)",
       "팰리세이즈 주립공원 (Palisades State Park)",
-      "베어부트 주립공원 (Bear Butte State Park)"
+      "베어뷰트 주립공원 (Bear Butte State Park)"
     ],
     "teams": {
       "MLB": [],
@@ -10626,65 +10627,65 @@ export const STATE_INFO = {
         {
           "ko": "앤드루 잭슨",
           "en": "Andrew Jackson",
-          "note": "정치·제7대 대통령"
-        },
-        {
-          "ko": "앨 고어",
-          "en": "Al Gore",
-          "note": "정치·제45대 부통령"
+          "note": "제7대 대통령"
         },
         {
           "ko": "제임스 K. 포크",
           "en": "James K. Polk",
-          "note": "정치·제11대 대통령"
+          "note": "제11대 대통령"
+        },
+        {
+          "ko": "앨 고어",
+          "en": "Al Gore",
+          "note": "제45대 부통령"
         }
       ],
       "예술·문화": [
         {
           "ko": "돌리 파튼",
           "en": "Dolly Parton",
-          "note": "음악·컨트리 가수"
+          "note": "컨트리 음악 가수"
         },
         {
           "ko": "아레사 프랭클린",
           "en": "Aretha Franklin",
-          "note": "음악·소울 여왕"
+          "note": "멤피스 출신 소울 가수"
+        },
+        {
+          "ko": "티나 터너",
+          "en": "Tina Turner",
+          "note": "넛부시 출신 록 가수"
         },
         {
           "ko": "모건 프리먼",
           "en": "Morgan Freeman",
-          "note": "영화·배우"
+          "note": "멤피스 출신 배우"
         }
       ],
       "스포츠": [
         {
-          "ko": "페이턴 매닝",
-          "en": "Peyton Manning",
-          "note": "미식축구·쿼터백"
-        },
-        {
           "ko": "윌마 루돌프",
           "en": "Wilma Rudolph",
-          "note": "육상·올림픽 금메달"
+          "note": "클라크스빌 출신 육상 금메달"
+        },
+        {
+          "ko": "페이턴 매닝",
+          "en": "Peyton Manning",
+          "note": "테네시대·미식축구 쿼터백"
         }
       ],
       "과학·기술": [
         {
-          "ko": "프레더릭 매키니",
-          "en": "Frederick McKinney",
-          "note": "의학·연구자"
-        },
-        {
-          "ko": "윌리엄 스타",
-          "en": "William Star",
-          "note": "과학·물리학"
+          "ko": "마크 딘",
+          "en": "Mark Dean",
+          "note": "PC 아키텍처 개발 IBM 펠로"
         }
       ],
       "기업": [
         {
           "ko": "프레드 스미스",
           "en": "Fred Smith",
-          "note": "FedEx 창업자"
+          "note": "페덱스 창업자"
         },
         {
           "ko": "켐몬스 윌슨",
@@ -10698,8 +10699,8 @@ export const STATE_INFO = {
     ],
     "stateParks": [
       "폴크리크폴스 주립공원 (Fall Creek Falls State Park)",
-      "라디언트 마운틴 주립공원 (Radnor Lake State Park)",
-      "롤리오브룩스 주립공원 (Rock Island State Park)"
+      "래드너호 주립공원 (Radnor Lake State Park)",
+      "록아일랜드 주립공원 (Rock Island State Park)"
     ],
     "teams": {
       "MLB": [],
@@ -10886,65 +10887,65 @@ export const STATE_INFO = {
         {
           "ko": "린든 B. 존슨",
           "en": "Lyndon B. Johnson",
-          "note": "정치·제36대 대통령"
+          "note": "제36대 대통령"
         },
         {
           "ko": "조지 W. 부시",
           "en": "George W. Bush",
-          "note": "정치·제43대 대통령"
+          "note": "제43대 대통령"
         },
         {
           "ko": "샘 휴스턴",
           "en": "Sam Houston",
-          "note": "정치·텍사스 공화국 대통령"
+          "note": "텍사스 공화국 대통령"
         }
       ],
       "예술·문화": [
         {
           "ko": "비욘세",
           "en": "Beyoncé",
-          "note": "음악·가수"
+          "note": "휴스턴 출신 가수"
         },
         {
           "ko": "셀레나",
           "en": "Selena",
-          "note": "음악·테하노 가수"
+          "note": "테하노 음악 가수"
         },
         {
           "ko": "매슈 매코너히",
           "en": "Matthew McConaughey",
-          "note": "영화·배우"
+          "note": "배우"
         }
       ],
       "스포츠": [
         {
           "ko": "놀란 라이언",
           "en": "Nolan Ryan",
-          "note": "야구·투수"
+          "note": "야구 투수"
         },
         {
           "ko": "벤 호건",
           "en": "Ben Hogan",
-          "note": "골프·선수"
+          "note": "골프 선수"
         }
       ],
       "과학·기술": [
         {
-          "ko": "마이클 델",
-          "en": "Michael Dell",
-          "note": "기술·델 창업자"
-        },
-        {
           "ko": "잭 킬비",
           "en": "Jack Kilby",
-          "note": "전자·집적회로 발명"
+          "note": "집적회로 발명·노벨상"
+        },
+        {
+          "ko": "마이클 델",
+          "en": "Michael Dell",
+          "note": "델 창업자"
         }
       ],
       "기업": [
         {
           "ko": "하워드 휴스",
           "en": "Howard Hughes",
-          "note": "기업·항공·영화"
+          "note": "휴스턴 출신 항공·영화 거물"
         },
         {
           "ko": "T. 분 피컨스",
@@ -10954,7 +10955,7 @@ export const STATE_INFO = {
         {
           "ko": "마크 큐반",
           "en": "Mark Cuban",
-          "note": "기업·투자가"
+          "note": "투자가·구단주"
         }
       ]
     },
@@ -10963,8 +10964,8 @@ export const STATE_INFO = {
       "과달루페산맥 (Guadalupe Mountains)"
     ],
     "stateParks": [
-      "엔샨티드록 주립공원 (Enchanted Rock State Natural Area)",
-      "팰러두로캐니언 주립공원 (Palo Duro Canyon State Park)",
+      "인챈티드록 주립자연구역 (Enchanted Rock State Natural Area)",
+      "팰로듀로캐니언 주립공원 (Palo Duro Canyon State Park)",
       "빅벤드랜치 주립공원 (Big Bend Ranch State Park)"
     ],
     "teams": {
@@ -11148,67 +11149,62 @@ export const STATE_INFO = {
     "people": {
       "정치": [
         {
+          "ko": "브리검 영",
+          "en": "Brigham Young",
+          "note": "초대 유타 준주지사·종교 지도자"
+        },
+        {
           "ko": "미트 롬니",
           "en": "Mitt Romney",
-          "note": "정치·상원의원"
+          "note": "상원의원·전 주지사"
         },
         {
           "ko": "오린 해치",
           "en": "Orrin Hatch",
-          "note": "정치·상원의원"
-        },
-        {
-          "ko": "브리검 영",
-          "en": "Brigham Young",
-          "note": "종교·정치 지도자"
+          "note": "최장수 공화당 상원의원"
         }
       ],
       "예술·문화": [
         {
           "ko": "도니 오스먼드",
           "en": "Donny Osmond",
-          "note": "음악·가수"
+          "note": "오그던 출신 가수"
         },
         {
           "ko": "로버트 레드퍼드",
           "en": "Robert Redford",
-          "note": "영화·배우·감독"
+          "note": "선댄스 설립 배우·감독"
         }
       ],
       "스포츠": [
         {
           "ko": "존 스탁턴",
           "en": "John Stockton",
-          "note": "농구·유타 재즈"
+          "note": "유타 재즈 가드"
         },
         {
           "ko": "칼 말론",
           "en": "Karl Malone",
-          "note": "농구·유타 재즈"
+          "note": "유타 재즈 포워드"
         }
       ],
       "과학·기술": [
         {
           "ko": "필로 판즈워스",
           "en": "Philo Farnsworth",
-          "note": "발명·전자 텔레비전"
+          "note": "전자식 텔레비전 발명가"
         },
         {
           "ko": "놀런 부시넬",
           "en": "Nolan Bushnell",
-          "note": "기술·아타리 창업자"
+          "note": "아타리 창업자"
         }
       ],
       "기업": [
         {
-          "ko": "조지프 스미스",
-          "en": "Joseph Smith",
-          "note": "종교 창시자"
-        },
-        {
           "ko": "제임스 르보이 소렌슨",
           "en": "James LeVoy Sorenson",
-          "note": "기업·의료기기"
+          "note": "의료기기 사업가"
         }
       ]
     },
@@ -11220,9 +11216,9 @@ export const STATE_INFO = {
       "캐피톨리프 (Capitol Reef)"
     ],
     "stateParks": [
-      "딘트벨리 주립공원 (Dead Horse Point State Park)",
-      "안텔로프섬 주립공원 (Antelope Island State Park)",
-      "골든스파이크 주립공원 (Golden Spike State Park)"
+      "데드호스포인트 주립공원 (Dead Horse Point State Park)",
+      "앤털로프섬 주립공원 (Antelope Island State Park)",
+      "골든스파이크 사적지 (Golden Spike National Historical Park)"
     ],
     "teams": {
       "MLB": [],
@@ -11421,71 +11417,66 @@ export const STATE_INFO = {
         {
           "ko": "캘빈 쿨리지",
           "en": "Calvin Coolidge",
-          "note": "정치·제30대 대통령"
-        },
-        {
-          "ko": "버니 샌더스",
-          "en": "Bernie Sanders",
-          "note": "정치·상원의원"
+          "note": "버몬트 출신 제30대 대통령"
         },
         {
           "ko": "체스터 A. 아서",
           "en": "Chester A. Arthur",
-          "note": "정치·제21대 대통령"
+          "note": "버몬트 출신 제21대 대통령"
+        },
+        {
+          "ko": "버니 샌더스",
+          "en": "Bernie Sanders",
+          "note": "상원의원"
         }
       ],
       "예술·문화": [
         {
-          "ko": "루디야드 키플링",
-          "en": "Rudyard Kipling",
-          "note": "문학·작가, 거주"
-        },
-        {
           "ko": "노먼 록웰",
           "en": "Norman Rockwell",
-          "note": "미술·화가, 거주"
+          "note": "아링턴 거주 삽화가"
+        },
+        {
+          "ko": "루디야드 키플링",
+          "en": "Rudyard Kipling",
+          "note": "브래틀버로 거주 작가"
         }
       ],
       "스포츠": [
         {
           "ko": "안드레아 미드 로런스",
           "en": "Andrea Mead Lawrence",
-          "note": "스키·올림픽 2관왕"
+          "note": "알파인스키 올림픽 2관왕"
         },
         {
           "ko": "빌리 키더",
           "en": "Billy Kidd",
-          "note": "스키·올림픽 금메달"
+          "note": "알파인스키 올림픽 메달리스트"
         }
       ],
       "과학·기술": [
         {
           "ko": "존 듀이",
           "en": "John Dewey",
-          "note": "철학·교육학자"
+          "note": "벌링턴 출신 철학·교육학자"
         },
         {
           "ko": "엘리샤 오티스",
           "en": "Elisha Otis",
-          "note": "발명·엘리베이터"
+          "note": "엘리베이터 안전장치 발명가"
         }
       ],
       "기업": [
         {
-          "ko": "벤 코언과 제리 그린필드",
+          "ko": "벤 코언·제리 그린필드",
           "en": "Ben Cohen and Jerry Greenfield",
           "note": "벤앤제리스 창업자"
-        },
-        {
-          "ko": "존 디어",
-          "en": "John Deere",
-          "note": "제조·트랙터 창업자"
         }
       ]
     },
     "nationalParks": [],
     "stateParks": [
-      "스모글러스노치 주립공원 (Smugglers' Notch State Park)",
+      "스머글러스노치 주립공원 (Smugglers' Notch State Park)",
       "그랜드아일 주립공원 (Grand Isle State Park)",
       "마운트필로 주립공원 (Mount Philo State Park)"
     ],
@@ -11686,70 +11677,65 @@ export const STATE_INFO = {
         {
           "ko": "조지 워싱턴",
           "en": "George Washington",
-          "note": "정치·초대 대통령"
+          "note": "초대 대통령"
         },
         {
           "ko": "토머스 제퍼슨",
           "en": "Thomas Jefferson",
-          "note": "정치·제3대 대통령"
+          "note": "제3대 대통령"
         },
         {
           "ko": "제임스 매디슨",
           "en": "James Madison",
-          "note": "정치·제4대 대통령"
+          "note": "제4대 대통령"
         }
       ],
       "예술·문화": [
         {
-          "ko": "에드거 앨런 포",
-          "en": "Edgar Allan Poe",
-          "note": "문학·작가"
-        },
-        {
           "ko": "엘라 피츠제럴드",
           "en": "Ella Fitzgerald",
-          "note": "음악·재즈 가수"
+          "note": "뉴포트뉴스 출신 재즈 가수"
         },
         {
-          "ko": "팰 윌리엄스",
+          "ko": "퍼렐 윌리엄스",
           "en": "Pharrell Williams",
-          "note": "음악·가수"
+          "note": "버지니아비치 출신 가수·프로듀서"
+        },
+        {
+          "ko": "부커 T. 워싱턴",
+          "en": "Booker T. Washington",
+          "note": "프랭클린 카운티 출신 교육자"
         }
       ],
       "스포츠": [
         {
           "ko": "아서 애시",
           "en": "Arthur Ashe",
-          "note": "테니스·선수"
+          "note": "리치먼드 출신 테니스 선수"
         },
         {
           "ko": "모지스 말론",
           "en": "Moses Malone",
-          "note": "농구·선수"
+          "note": "농구 선수"
         }
       ],
       "과학·기술": [
         {
           "ko": "사이러스 매코믹",
           "en": "Cyrus McCormick",
-          "note": "발명·수확기"
+          "note": "기계식 수확기 발명가"
         },
         {
           "ko": "월터 리드",
           "en": "Walter Reed",
-          "note": "의학·황열병 연구"
+          "note": "황열병 매개체 규명 의학자"
         }
       ],
       "기업": [
         {
-          "ko": "부커 T. 워싱턴",
-          "en": "Booker T. Washington",
-          "note": "교육·사상가"
-        },
-        {
-          "ko": "리처드 셰리던",
-          "en": "Richard Sheridan",
-          "note": "기업가"
+          "ko": "R. J. 레이놀즈",
+          "en": "R. J. Reynolds",
+          "note": "R.J.레이놀즈 담배 창업자"
         }
       ]
     },
@@ -11758,7 +11744,7 @@ export const STATE_INFO = {
     ],
     "stateParks": [
       "퍼스트랜딩 주립공원 (First Landing State Park)",
-      "더글러스호 주립공원 (Douthat State Park)",
+      "다우댓 주립공원 (Douthat State Park)",
       "내추럴브리지 주립공원 (Natural Bridge State Park)"
     ],
     "teams": {
@@ -11925,70 +11911,70 @@ export const STATE_INFO = {
         {
           "ko": "워런 매그너슨",
           "en": "Warren Magnuson",
-          "note": "정치·상원의원"
+          "note": "상원의원"
         },
         {
           "ko": "토머스 폴리",
           "en": "Thomas Foley",
-          "note": "정치·하원의장"
+          "note": "스포캔 출신 하원의장"
         },
         {
           "ko": "게리 로크",
           "en": "Gary Locke",
-          "note": "정치·주지사·대사"
+          "note": "주지사·주중대사"
         }
       ],
       "예술·문화": [
         {
           "ko": "지미 헨드릭스",
           "en": "Jimi Hendrix",
-          "note": "음악·기타리스트"
+          "note": "시애틀 출신 기타리스트"
         },
         {
           "ko": "커트 코베인",
           "en": "Kurt Cobain",
-          "note": "음악·너바나"
+          "note": "애버딘 출신 너바나 보컬"
         },
         {
           "ko": "브루스 리",
           "en": "Bruce Lee",
-          "note": "영화·무술가, 거주"
+          "note": "시애틀 거주·안장"
         }
       ],
       "스포츠": [
         {
           "ko": "존 스탁턴",
           "en": "John Stockton",
-          "note": "농구·선수"
+          "note": "스포캔 출신 농구 선수"
         },
         {
-          "ko": "애프릴 로스",
+          "ko": "에이프릴 로스",
           "en": "April Ross",
-          "note": "배구·올림픽"
+          "note": "비치발리볼 올림픽 메달리스트"
         }
       ],
       "과학·기술": [
         {
           "ko": "빌 게이츠",
           "en": "Bill Gates",
-          "note": "기술·마이크로소프트 창업자"
+          "note": "시애틀 출신 마이크로소프트 창업자"
         },
         {
           "ko": "폴 앨런",
           "en": "Paul Allen",
-          "note": "기술·마이크로소프트 공동창업자"
+          "note": "시애틀 출신 마이크로소프트 공동창업자"
         }
       ],
       "기업": [
         {
           "ko": "제프 베이조스",
           "en": "Jeff Bezos",
-          "note": "아마존 창업자"
+          "note": "시애틀서 아마존 창업"
         },
         {
           "ko": "하워드 슐츠",
           "en": "Howard Schultz",
-          "note": "스타벅스 CEO"
+          "note": "스타벅스 전 CEO"
         }
       ]
     },
@@ -11998,9 +11984,9 @@ export const STATE_INFO = {
       "노스캐스케이드 (North Cascades)"
     ],
     "stateParks": [
-      "데셉션패스 주립공원 (Deception Pass State Park)",
+      "디셉션패스 주립공원 (Deception Pass State Park)",
       "케이프디스어포인트먼트 주립공원 (Cape Disappointment State Park)",
-      "리코노클루스 주립공원 (Lake Wenatchee State Park)"
+      "레이크워네치 주립공원 (Lake Wenatchee State Park)"
     ],
     "teams": {
       "MLB": [
@@ -12199,70 +12185,65 @@ export const STATE_INFO = {
         {
           "ko": "로버트 버드",
           "en": "Robert Byrd",
-          "note": "정치·최장수 상원의원"
+          "note": "최장수 상원의원"
         },
         {
           "ko": "조 맨친",
           "en": "Joe Manchin",
-          "note": "정치·상원의원"
+          "note": "상원의원·전 주지사"
         },
         {
           "ko": "사이러스 밴스",
           "en": "Cyrus Vance",
-          "note": "정치·국무장관"
+          "note": "클라크스버그 출신 국무장관"
         }
       ],
       "예술·문화": [
         {
+          "ko": "펄 벅",
+          "en": "Pearl S. Buck",
+          "note": "힐스버러 출신 노벨문학상 작가"
+        },
+        {
           "ko": "돈 노츠",
           "en": "Don Knotts",
-          "note": "영화·배우"
+          "note": "모건타운 출신 배우"
         },
         {
           "ko": "브래드 페이즐리",
           "en": "Brad Paisley",
-          "note": "음악·컨트리 가수"
-        },
-        {
-          "ko": "펄 벅",
-          "en": "Pearl S. Buck",
-          "note": "문학·노벨상 작가"
+          "note": "컨트리 음악 가수"
         }
       ],
       "스포츠": [
         {
           "ko": "제리 웨스트",
           "en": "Jerry West",
-          "note": "농구·NBA 로고"
+          "note": "NBA 로고 모델 농구 선수"
         },
         {
           "ko": "랜디 모스",
           "en": "Randy Moss",
-          "note": "미식축구·선수"
+          "note": "미식축구 와이드리시버"
         }
       ],
       "과학·기술": [
         {
-          "ko": "체스터 메릴",
-          "en": "Chester Merrill",
-          "note": "과학·연구자"
-        },
-        {
           "ko": "캐서린 존슨",
           "en": "Katherine Johnson",
-          "note": "수학·NASA"
+          "note": "화이트설퍼스프링스 출신 NASA 수학자"
+        },
+        {
+          "ko": "제임스 럼지",
+          "en": "James Rumsey",
+          "note": "증기선 추진 발명가"
         }
       ],
       "기업": [
         {
           "ko": "마이클 오언스",
           "en": "Michael Owens",
-          "note": "제조·유리 제병기 발명"
-        },
-        {
-          "ko": "헨리 게스트 키니",
-          "en": "Henry Guest Kinney",
-          "note": "기업가"
+          "note": "자동 유리병 제조기 발명·사업가"
         }
       ]
     },
@@ -12272,7 +12253,7 @@ export const STATE_INFO = {
     "stateParks": [
       "블랙워터폴스 주립공원 (Blackwater Falls State Park)",
       "쿠퍼스록 주립삼림 (Coopers Rock State Forest)",
-      "할리어호 주립공원 (Hawks Nest State Park)"
+      "호크스네스트 주립공원 (Hawks Nest State Park)"
     ],
     "teams": {
       "MLB": [],
@@ -12465,58 +12446,58 @@ export const STATE_INFO = {
         {
           "ko": "로버트 라폴레트",
           "en": "Robert La Follette",
-          "note": "정치·진보주의 주지사"
+          "note": "진보주의 주지사·상원의원"
         },
         {
           "ko": "조지프 매카시",
           "en": "Joseph McCarthy",
-          "note": "정치·상원의원"
+          "note": "상원의원"
         },
         {
           "ko": "타미 볼드윈",
           "en": "Tammy Baldwin",
-          "note": "정치·상원의원"
+          "note": "상원의원"
         }
       ],
       "예술·문화": [
         {
           "ko": "프랭크 로이드 라이트",
           "en": "Frank Lloyd Wright",
-          "note": "건축·건축가"
+          "note": "리칠랜드센터 출신 건축가"
         },
         {
           "ko": "오슨 웰스",
           "en": "Orson Welles",
-          "note": "영화·감독·배우"
+          "note": "커노샤 출신 감독·배우"
         },
         {
           "ko": "조지아 오키프",
           "en": "Georgia O'Keeffe",
-          "note": "미술·화가"
+          "note": "선프레리 출신 화가"
         }
       ],
       "스포츠": [
         {
           "ko": "에런 로저스",
           "en": "Aaron Rodgers",
-          "note": "미식축구·쿼터백"
+          "note": "그린베이 패커스 쿼터백"
         },
         {
           "ko": "에릭 헤이든",
           "en": "Eric Heiden",
-          "note": "스피드스케이팅·올림픽"
+          "note": "스피드스케이팅 올림픽 5관왕"
         }
       ],
       "과학·기술": [
         {
           "ko": "존 바딘",
           "en": "John Bardeen",
-          "note": "물리학·노벨상 2회"
+          "note": "매디슨 출신 노벨물리학상 2회 수상"
         },
         {
           "ko": "존 뮤어",
           "en": "John Muir",
-          "note": "자연·환경운동가"
+          "note": "환경운동가·국립공원 운동"
         }
       ],
       "기업": [
@@ -12528,15 +12509,15 @@ export const STATE_INFO = {
         {
           "ko": "존 마이클 콜러",
           "en": "John Michael Kohler",
-          "note": "콜러 제조 창업자"
+          "note": "콜러컴퍼니 창업자"
         }
       ]
     },
     "nationalParks": [],
     "stateParks": [
-      "디버럴스레이크 주립공원 (Devil's Lake State Park)",
+      "데블스레이크 주립공원 (Devil's Lake State Park)",
       "페닌슐라 주립공원 (Peninsula State Park)",
-      "위스콘신델스 주변 주립공원 (Wisconsin Dells State Parks)"
+      "마이로스트레인지 주립공원 (Mirror Lake State Park)"
     ],
     "teams": {
       "MLB": [
@@ -12713,65 +12694,55 @@ export const STATE_INFO = {
         {
           "ko": "딕 체니",
           "en": "Dick Cheney",
-          "note": "정치·제46대 부통령"
+          "note": "제46대 부통령"
         },
         {
           "ko": "앨런 심프슨",
           "en": "Alan Simpson",
-          "note": "정치·상원의원"
+          "note": "상원의원"
         },
         {
-          "ko": "넬리 태일로 로스",
+          "ko": "넬리 테일로 로스",
           "en": "Nellie Tayloe Ross",
-          "note": "정치·최초 여성 주지사"
+          "note": "미국 최초 여성 주지사"
         }
       ],
       "예술·문화": [
         {
           "ko": "잭슨 폴록",
           "en": "Jackson Pollock",
-          "note": "미술·추상화가"
+          "note": "코디 출신 추상표현주의 화가"
         },
         {
           "ko": "패트리샤 매클라클런",
           "en": "Patricia MacLachlan",
-          "note": "문학·작가"
+          "note": "샤이엔 출신 아동문학 작가"
         }
       ],
       "스포츠": [
         {
-          "ko": "랜디 데인스",
-          "en": "Randy Deines",
-          "note": "로데오·선수"
+          "ko": "크리스 르두",
+          "en": "Chris LeDoux",
+          "note": "로데오 챔피언·컨트리 가수"
         },
         {
-          "ko": "마일스 그레고리",
-          "en": "Miles Gregory",
-          "note": "스포츠·선수"
+          "ko": "조 알렉산더",
+          "en": "Joe Alexander",
+          "note": "로데오 월드 챔피언"
         }
       ],
       "과학·기술": [
         {
           "ko": "존 콜터",
           "en": "John Colter",
-          "note": "탐험·옐로스톤 발견"
-        },
-        {
-          "ko": "토머스 몰스워스",
-          "en": "Thomas Moran",
-          "note": "과학·연구자"
+          "note": "옐로스톤 일대 탐험가"
         }
       ],
       "기업": [
         {
-          "ko": "존 보즈먼",
-          "en": "John Bozeman",
-          "note": "개척·기업가"
-        },
-        {
           "ko": "프랜시스 워런",
-          "en": "Francis Warren",
-          "note": "정치·목축 사업가"
+          "en": "Francis E. Warren",
+          "note": "축산 사업가·초대 주지사"
         }
       ]
     },
@@ -12780,8 +12751,8 @@ export const STATE_INFO = {
       "그랜드티턴 (Grand Teton)"
     ],
     "stateParks": [
-      "커트굴치 주립공원 (Curt Gowdy State Park)",
-      "보이시리버 주립공원 (Boysen State Park)",
+      "커트가우디 주립공원 (Curt Gowdy State Park)",
+      "보이슨 주립공원 (Boysen State Park)",
       "글렌도 주립공원 (Glendo State Park)"
     ],
     "teams": {

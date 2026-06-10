@@ -1,0 +1,201 @@
+{
+ "10": {
+  "people": {
+   "정치": [
+    {"ko": "조 바이든", "en": "Joe Biden", "note": "제46대 미국 대통령, 델라웨어 상원의원"},
+    {"ko": "토머스 F. 베이어드", "en": "Thomas F. Bayard", "note": "국무장관·상원의원"}
+   ],
+   "예술·문화": [
+    {"ko": "발레리 베르티넬리", "en": "Valerie Bertinelli", "note": "윌밍턴 출신 배우·방송인"},
+    {"ko": "라이언 필립", "en": "Ryan Phillippe", "note": "뉴캐슬 출신 영화배우"},
+    {"ko": "오브리 플라자", "en": "Aubrey Plaza", "note": "윌밍턴 출신 배우·코미디언"}
+   ],
+   "스포츠": [
+    {"ko": "주디 존슨", "en": "Judy Johnson", "note": "흑인리그 야구·명예의 전당"},
+    {"ko": "엘레나 델리 던", "en": "Elena Delle Donne", "note": "WNBA MVP 농구선수"}
+   ],
+   "과학·기술": [
+    {"ko": "월리스 캐러더스", "en": "Wallace Carothers", "note": "나일론을 발명한 화학자"},
+    {"ko": "헨리 하임리히", "en": "Henry Heimlich", "note": "윌밍턴 출신, 하임리히법 고안 의사"},
+    {"ko": "에드워드 G. 버드", "en": "Edward G. Budd", "note": "스미르나 출신, 강철 차체 제조 선구자"}
+   ],
+   "기업": [
+    {"ko": "엘레우테르 이레네 뒤퐁", "en": "Eleuthère Irénée du Pont", "note": "듀폰 창업주"},
+    {"ko": "피에르 S. 뒤퐁", "en": "Pierre S. du Pont", "note": "듀폰·GM 경영자"}
+   ]
+  },
+  "stateParks": [
+   {"ko": "케이프 헨로픈 주립공원", "en": "Cape Henlopen State Park"},
+   {"ko": "브랜디와인 크리크 주립공원", "en": "Brandywine Creek State Park"},
+   {"ko": "화이트 클레이 크리크 주립공원", "en": "White Clay Creek State Park"}
+  ]
+ },
+ "11": {
+  "people": {
+   "정치": [
+    {"ko": "프레더릭 더글러스", "en": "Frederick Douglass", "note": "노예제 폐지운동가, 만년을 DC에서 거주"},
+    {"ko": "엘리너 홈스 노턴", "en": "Eleanor Holmes Norton", "note": "DC 하원 대표"}
+   ],
+   "예술·문화": [
+    {"ko": "듀크 엘링턴", "en": "Duke Ellington", "note": "DC 출신 재즈 거장"},
+    {"ko": "마빈 게이", "en": "Marvin Gaye", "note": "DC 출신 소울 가수"}
+   ],
+   "스포츠": [
+    {"ko": "엘긴 베일러", "en": "Elgin Baylor", "note": "DC 출신 NBA 전설"},
+    {"ko": "케빈 듀랜트", "en": "Kevin Durant", "note": "인근 출신 NBA MVP"}
+   ],
+   "과학·기술": [
+    {"ko": "로버트 C. 위버", "en": "Robert C. Weaver", "note": "DC 출신, 최초의 흑인 각료"},
+    {"ko": "벤저민 O. 데이비스 주니어", "en": "Benjamin O. Davis Jr.", "note": "DC 출신 공군 장성"}
+   ],
+   "기업": [
+    {"ko": "캐서린 그레이엄", "en": "Katharine Graham", "note": "워싱턴포스트 발행인"},
+    {"ko": "필립 그레이엄", "en": "Philip Graham", "note": "워싱턴포스트 발행인"}
+   ]
+  },
+  "stateParks": []
+ },
+ "12": {
+  "people": {
+   "정치": [
+    {"ko": "재닛 리노", "en": "Janet Reno", "note": "마이애미 출신, 최초의 여성 법무장관"},
+    {"ko": "마코 루비오", "en": "Marco Rubio", "note": "마이애미 출신 상원의원"}
+   ],
+   "예술·문화": [
+    {"ko": "시드니 포이티어", "en": "Sidney Poitier", "note": "마이애미 출신, 최초의 흑인 남우주연상 배우"},
+    {"ko": "글로리아 에스테판", "en": "Gloria Estefan", "note": "마이애미 활동 라틴 팝 가수"}
+   ],
+   "스포츠": [
+    {"ko": "크리스 에버트", "en": "Chris Evert", "note": "포트로더데일 출신, 그랜드슬램 18회 테니스선수"},
+    {"ko": "디온 샌더스", "en": "Deion Sanders", "note": "포트마이어스 출신, 명예의 전당 미식축구선수"}
+   ],
+   "과학·기술": [
+    {"ko": "존 고리", "en": "John Gorrie", "note": "애펄래치콜라에서 기계식 냉동을 발명한 의사"}
+   ],
+   "기업": [
+    {"ko": "월리 아모스", "en": "Wally Amos", "note": "페이머스 아모스 쿠키 창업자"}
+   ]
+  },
+  "stateParks": [
+   {"ko": "존 페니캠프 산호초 주립공원", "en": "John Pennekamp Coral Reef State Park"},
+   {"ko": "힐스버러 강 주립공원", "en": "Hillsborough River State Park"},
+   {"ko": "위키와치 스프링스 주립공원", "en": "Weeki Wachee Springs State Park"}
+  ]
+ },
+ "13": {
+  "people": {
+   "정치": [
+    {"ko": "지미 카터", "en": "Jimmy Carter", "note": "제39대 미국 대통령, 조지아 주지사"},
+    {"ko": "마틴 루서 킹 주니어", "en": "Martin Luther King Jr.", "note": "애틀랜타 출신 민권운동 지도자"}
+   ],
+   "예술·문화": [
+    {"ko": "레이 찰스", "en": "Ray Charles", "note": "조지아에서 성장한 소울 거장"},
+    {"ko": "줄리아 로버츠", "en": "Julia Roberts", "note": "스마이나 출신, 아카데미 여우주연상 배우"}
+   ],
+   "스포츠": [
+    {"ko": "행크 에런", "en": "Hank Aaron", "note": "애틀랜타 브레이브스 통산 홈런 기록"},
+    {"ko": "허셜 워커", "en": "Herschel Walker", "note": "조지아대 하이즈먼 수상 미식축구선수"}
+   ],
+   "과학·기술": [
+    {"ko": "크로퍼드 롱", "en": "Crawford Long", "note": "마취 수술을 처음 시행한 조지아 출신 의사"},
+    {"ko": "로니 존슨", "en": "Lonnie Johnson", "note": "애틀랜타 활동, 슈퍼 소커 발명 항공우주 공학자"}
+   ],
+   "기업": [
+    {"ko": "에이서 캔들러", "en": "Asa Candler", "note": "코카콜라 창업자"},
+    {"ko": "테드 터너", "en": "Ted Turner", "note": "애틀랜타 기반 CNN 창업자"}
+   ]
+  },
+  "stateParks": [
+   {"ko": "탈룰라 협곡 주립공원", "en": "Tallulah Gorge State Park"},
+   {"ko": "프로비던스 캐니언 주립공원", "en": "Providence Canyon State Park"},
+   {"ko": "클라우드랜드 캐니언 주립공원", "en": "Cloudland Canyon State Park"}
+  ]
+ },
+ "15": {
+  "people": {
+   "정치": [
+    {"ko": "버락 오바마", "en": "Barack Obama", "note": "호놀룰루 출신 제44대 미국 대통령"},
+    {"ko": "대니얼 이노우에", "en": "Daniel Inouye", "note": "하와이 상원의원"}
+   ],
+   "예술·문화": [
+    {"ko": "베트 미들러", "en": "Bette Midler", "note": "호놀룰루 출신 배우·가수"},
+    {"ko": "이즈리얼 카마카위월레", "en": "Israel Kamakawiwoʻole", "note": "하와이안 음악의 상징적 가수"}
+   ],
+   "스포츠": [
+    {"ko": "미셸 위", "en": "Michelle Wie", "note": "호놀룰루 출신 LPGA 우승 골퍼"},
+    {"ko": "BJ 펜", "en": "BJ Penn", "note": "힐로 출신 UFC 챔피언"}
+   ],
+   "과학·기술": [
+    {"ko": "엘리슨 오니즈카", "en": "Ellison Onizuka", "note": "코나 출신, 아시아계 최초 우주비행사"},
+    {"ko": "찰스 레이시 비치", "en": "Charles Lacy Veach", "note": "호놀룰루를 고향으로 둔 우주비행사"}
+   ],
+   "기업": [
+    {"ko": "제임스 돌", "en": "James Dole", "note": "하와이 파인애플 산업을 일군 돌 식품 창업자"},
+    {"ko": "헨리 J. 카이저", "en": "Henry J. Kaiser", "note": "하와이 카이를 개발한 산업가"}
+   ]
+  },
+  "stateParks": [
+   {"ko": "나팔리 코스트 주립공원", "en": "Nā Pali Coast State Park"},
+   {"ko": "와이메아 캐니언 주립공원", "en": "Waimea Canyon State Park"},
+   {"ko": "이아오 밸리 주립공원", "en": "ʻĪao Valley State Park"}
+  ]
+ },
+ "16": {
+  "people": {
+   "정치": [
+    {"ko": "프랭크 처치", "en": "Frank Church", "note": "보이시 출신 상원의원"},
+    {"ko": "윌리엄 보라", "en": "William Borah", "note": "장기 재임 아이다호 상원의원"}
+   ],
+   "예술·문화": [
+    {"ko": "에즈라 파운드", "en": "Ezra Pound", "note": "헤일리 출신 모더니즘 시인"},
+    {"ko": "에런 폴", "en": "Aaron Paul", "note": "에밋 출신 배우, 브레이킹 배드"}
+   ],
+   "스포츠": [
+    {"ko": "하먼 킬러브루", "en": "Harmon Killebrew", "note": "페이엇 출신, 명예의 전당 홈런 타자"},
+    {"ko": "제이크 플러머", "en": "Jake Plummer", "note": "보이시 출신 NFL 쿼터백"}
+   ],
+   "과학·기술": [
+    {"ko": "필로 판즈워스", "en": "Philo Farnsworth", "note": "아이다호에서 성장한 텔레비전 발명가"},
+    {"ko": "그레고리 카", "en": "Gregory Carr", "note": "아이다호폴스 출신 기술 사업가·자선가"}
+   ],
+   "기업": [
+    {"ko": "조 알버트슨", "en": "Joe Albertson", "note": "보이시 기반 알버트슨 슈퍼마켓 창업자"},
+    {"ko": "잭 심플롯", "en": "J.R. Simplot", "note": "냉동감자로 성공한 심플롯 창업자"}
+   ]
+  },
+  "stateParks": [
+   {"ko": "폰데로사 주립공원", "en": "Ponderosa State Park"},
+   {"ko": "브루노 듄스 주립공원", "en": "Bruneau Dunes State Park"},
+   {"ko": "헤이번 주립공원", "en": "Heyburn State Park"}
+  ]
+ },
+ "17": {
+  "people": {
+   "정치": [
+    {"ko": "에이브러햄 링컨", "en": "Abraham Lincoln", "note": "스프링필드에서 활동한 제16대 미국 대통령"},
+    {"ko": "버락 오바마", "en": "Barack Obama", "note": "일리노이 상원의원 출신 대통령"}
+   ],
+   "예술·문화": [
+    {"ko": "월트 디즈니", "en": "Walt Disney", "note": "시카고 출신 디즈니 창업자"},
+    {"ko": "어니스트 헤밍웨이", "en": "Ernest Hemingway", "note": "오크파크 출신 노벨문학상 작가"}
+   ],
+   "스포츠": [
+    {"ko": "마이클 조던", "en": "Michael Jordan", "note": "시카고 불스를 이끈 농구 전설"},
+    {"ko": "딕 버커스", "en": "Dick Butkus", "note": "시카고 출신, 명예의 전당 미식축구선수"}
+   ],
+   "과학·기술": [
+    {"ko": "엔리코 페르미", "en": "Enrico Fermi", "note": "시카고대에서 최초 핵반응을 이끈 물리학자"},
+    {"ko": "레이 크록", "en": "Ray Kroc", "note": "오크파크 출신, 맥도날드를 확장한 경영자"}
+   ],
+   "기업": [
+    {"ko": "존 디어", "en": "John Deere", "note": "일리노이 기반 디어 앤 컴퍼니 창업자"},
+    {"ko": "오프라 윈프리", "en": "Oprah Winfrey", "note": "시카고 기반 미디어 기업가"}
+   ]
+  },
+  "stateParks": [
+   {"ko": "스타브드 록 주립공원", "en": "Starved Rock State Park"},
+   {"ko": "마티슨 주립공원", "en": "Matthiessen State Park"},
+   {"ko": "자이언트 시티 주립공원", "en": "Giant City State Park"}
+  ]
+ }
+}

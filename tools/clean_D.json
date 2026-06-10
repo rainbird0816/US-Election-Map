@@ -1,0 +1,208 @@
+{
+ "25": {
+  "people": {
+   "정치": [
+    { "ko": "존 F. 케네디", "en": "John F. Kennedy", "note": "제35대 미국 대통령, 브루클라인 출생" },
+    { "ko": "존 애덤스", "en": "John Adams", "note": "제2대 미국 대통령, 브레인트리 출생" },
+    { "ko": "존 퀸시 애덤스", "en": "John Quincy Adams", "note": "제6대 미국 대통령" }
+   ],
+   "예술·문화": [
+    { "ko": "에밀리 디킨슨", "en": "Emily Dickinson", "note": "시인, 애머스트 출생" },
+    { "ko": "닥터 수스", "en": "Dr. Seuss", "note": "동화 작가, 스프링필드 출생" },
+    { "ko": "맷 데이먼", "en": "Matt Damon", "note": "배우, 케임브리지 성장" }
+   ],
+   "스포츠": [
+    { "ko": "래리 버드", "en": "Larry Bird", "note": "보스턴 셀틱스 전설" },
+    { "ko": "톰 브래디", "en": "Tom Brady", "note": "뉴잉글랜드 패트리어츠 쿼터백" }
+   ],
+   "과학·기술": [
+    { "ko": "벤저민 프랭클린", "en": "Benjamin Franklin", "note": "발명가·정치인, 보스턴 출생" },
+    { "ko": "버니바 부시", "en": "Vannevar Bush", "note": "공학자, 에버렛 출생·MIT" }
+   ],
+   "기업": [
+    { "ko": "엘리 휘트니", "en": "Eli Whitney", "note": "조면기 발명가, 웨스트버러 출생" },
+    { "ko": "존 하버드", "en": "John Harvard", "note": "찰스타운 정착, 하버드대 후원자" }
+   ]
+  },
+  "stateParks": [
+   { "ko": "월든 폰드 주립보호구역", "en": "Walden Pond State Reservation" },
+   { "ko": "마운트 그레이록 주립보호구역", "en": "Mount Greylock State Reservation" },
+   { "ko": "니커슨 주립공원", "en": "Nickerson State Park" }
+  ]
+ },
+ "26": {
+  "people": {
+   "정치": [
+    { "ko": "제럴드 포드", "en": "Gerald Ford", "note": "제38대 미국 대통령, 그랜드래피즈 성장" },
+    { "ko": "미트 롬니", "en": "Mitt Romney", "note": "상원의원·대선후보, 디트로이트 출생" }
+   ],
+   "예술·문화": [
+    { "ko": "마돈나", "en": "Madonna", "note": "팝 가수, 베이시티 출생" },
+    { "ko": "스티비 원더", "en": "Stevie Wonder", "note": "싱어송라이터, 새기노 출생" },
+    { "ko": "에미넴", "en": "Eminem", "note": "래퍼, 디트로이트 성장" }
+   ],
+   "스포츠": [
+    { "ko": "매직 존슨", "en": "Magic Johnson", "note": "전설적 가드, 랜싱 출생" },
+    { "ko": "조 루이스", "en": "Joe Louis", "note": "복싱 헤비급 챔피언, 디트로이트 성장" }
+   ],
+   "과학·기술": [
+    { "ko": "토머스 에디슨", "en": "Thomas Edison", "note": "발명가, 미시간 성장" },
+    { "ko": "래리 페이지", "en": "Larry Page", "note": "구글 공동창업자, 이스트랜싱 출생" }
+   ],
+   "기업": [
+    { "ko": "헨리 포드", "en": "Henry Ford", "note": "포드 자동차 창업자, 디어본 출생" },
+    { "ko": "윌 키스 켈로그", "en": "Will Keith Kellogg", "note": "켈로그 창업자, 배틀크리크 출생" }
+   ]
+  },
+  "stateParks": [
+   { "ko": "포큐파인산 야생 주립공원", "en": "Porcupine Mountains Wilderness State Park" },
+   { "ko": "테이콰메논폭포 주립공원", "en": "Tahquamenon Falls State Park" },
+   { "ko": "홀랜드 주립공원", "en": "Holland State Park" }
+  ]
+ },
+ "27": {
+  "people": {
+   "정치": [
+    { "ko": "휴버트 험프리", "en": "Hubert Humphrey", "note": "제38대 미국 부통령, 미니애폴리스 시장" },
+    { "ko": "월터 먼데일", "en": "Walter Mondale", "note": "제42대 미국 부통령, 시랜드 출생" }
+   ],
+   "예술·문화": [
+    { "ko": "프린스", "en": "Prince", "note": "싱어송라이터, 미니애폴리스 출생" },
+    { "ko": "밥 딜런", "en": "Bob Dylan", "note": "싱어송라이터, 덜루스 출생" },
+    { "ko": "주디 갈런드", "en": "Judy Garland", "note": "배우, 그랜드래피즈 출생" }
+   ],
+   "스포츠": [
+    { "ko": "케빈 가넷", "en": "Kevin Garnett", "note": "미네소타 팀버울브스 전설" },
+    { "ko": "케빈 맥헤일", "en": "Kevin McHale", "note": "명예의 전당, 하이빙 출생" }
+   ],
+   "과학·기술": [
+    { "ko": "윌리엄·찰스 메이오", "en": "William and Charles Mayo", "note": "메이오 클리닉 설립, 로체스터" },
+    { "ko": "시모어 크레이", "en": "Seymour Cray", "note": "슈퍼컴퓨터 선구자, 치페와폴스" }
+   ],
+   "기업": [
+    { "ko": "리처드 시어스", "en": "Richard Sears", "note": "시어스 창업자, 미니애폴리스 사업 시작" },
+    { "ko": "얼 바켄", "en": "Earl Bakken", "note": "메드트로닉 공동창업자, 미니애폴리스 출생" }
+   ]
+  },
+  "stateParks": [
+   { "ko": "이타스카 주립공원", "en": "Itasca State Park" },
+   { "ko": "구스베리폭포 주립공원", "en": "Gooseberry Falls State Park" },
+   { "ko": "스플릿록 등대 주립공원", "en": "Split Rock Lighthouse State Park" }
+  ]
+ },
+ "28": {
+  "people": {
+   "정치": [
+    { "ko": "하이럼 레벨스", "en": "Hiram Revels", "note": "최초 흑인 상원의원" },
+    { "ko": "트렌트 롯", "en": "Trent Lott", "note": "상원 다수당 원내대표" }
+   ],
+   "예술·문화": [
+    { "ko": "엘비스 프레슬리", "en": "Elvis Presley", "note": "로큰롤의 제왕, 투펄로 출생" },
+    { "ko": "윌리엄 포크너", "en": "William Faulkner", "note": "노벨문학상 작가, 옥스퍼드" },
+    { "ko": "B.B. 킹", "en": "B.B. King", "note": "블루스 기타리스트, 이타베나 출생" },
+    { "ko": "오프라 윈프리", "en": "Oprah Winfrey", "note": "방송 진행자, 코시어스코 출생" }
+   ],
+   "스포츠": [
+    { "ko": "월터 페이튼", "en": "Walter Payton", "note": "NFL 러닝백 전설, 컬럼비아 출생" },
+    { "ko": "제리 라이스", "en": "Jerry Rice", "note": "NFL 와이드리시버 전설, 크로퍼드 출생" }
+   ],
+   "과학·기술": [
+    { "ko": "제임스 D. 하디", "en": "James D. Hardy", "note": "최초 폐 이식 집도, 미시시피대" }
+   ],
+   "기업": [
+    { "ko": "짐 헨슨", "en": "Jim Henson", "note": "머펫 창작자, 리랜드 성장" },
+    { "ko": "하틀리 피비", "en": "Hartley Peavey", "note": "피비 일렉트로닉스 창업자, 메리디언 출생" }
+   ]
+  },
+  "stateParks": [
+   { "ko": "티쇼밍고 주립공원", "en": "Tishomingo State Park" },
+   { "ko": "리로이퍼시 주립공원", "en": "Leroy Percy State Park" },
+   { "ko": "퍼시콴 주립공원", "en": "Percy Quin State Park" }
+  ]
+ },
+ "29": {
+  "people": {
+   "정치": [
+    { "ko": "해리 S. 트루먼", "en": "Harry S. Truman", "note": "제33대 미국 대통령, 라마 출생" },
+    { "ko": "율리시스 S. 그랜트", "en": "Ulysses S. Grant", "note": "제18대 미국 대통령, 세인트루이스 거주" }
+   ],
+   "예술·문화": [
+    { "ko": "마크 트웨인", "en": "Mark Twain", "note": "소설가, 플로리다(미주리) 출생" },
+    { "ko": "월트 디즈니", "en": "Walt Disney", "note": "애니메이션 거장, 마셀린 성장" },
+    { "ko": "척 베리", "en": "Chuck Berry", "note": "로큰롤 선구자, 세인트루이스 출생" }
+   ],
+   "스포츠": [
+    { "ko": "야디어 몰리나", "en": "Yadier Molina", "note": "세인트루이스 카디널스 포수" },
+    { "ko": "케이시 스텡걸", "en": "Casey Stengel", "note": "명예의 전당 감독, 캔자스시티 출생" }
+   ],
+   "과학·기술": [
+    { "ko": "조지 워싱턴 카버", "en": "George Washington Carver", "note": "식물학자, 다이아몬드 출생" },
+    { "ko": "에드윈 허블", "en": "Edwin Hubble", "note": "천문학자, 마시필드 출생" }
+   ],
+   "기업": [
+    { "ko": "제임스 캐시 페니", "en": "James Cash Penney", "note": "JC페니 창업자, 해밀턴 출생" },
+    { "ko": "조이스 홀", "en": "Joyce Hall", "note": "홀마크 창업자, 캔자스시티 사업" }
+   ]
+  },
+  "stateParks": [
+   { "ko": "엘리펀트록스 주립공원", "en": "Elephant Rocks State Park" },
+   { "ko": "하하통카 주립공원", "en": "Ha Ha Tonka State Park" },
+   { "ko": "오자크 호수 주립공원", "en": "Lake of the Ozarks State Park" }
+  ]
+ },
+ "30": {
+  "people": {
+   "정치": [
+    { "ko": "마이크 맨스필드", "en": "Mike Mansfield", "note": "상원 다수당 원내대표, 몬태나 선출" },
+    { "ko": "지넷 랭킨", "en": "Jeannette Rankin", "note": "최초 여성 하원의원, 미줄라 출생" }
+   ],
+   "예술·문화": [
+    { "ko": "게리 쿠퍼", "en": "Gary Cooper", "note": "배우, 헬레나 출생" },
+    { "ko": "데이비드 린치", "en": "David Lynch", "note": "영화감독, 미줄라 출생" }
+   ],
+   "스포츠": [
+    { "ko": "필 잭슨", "en": "Phil Jackson", "note": "전설적 NBA 감독, 몬태나 성장" }
+   ],
+   "과학·기술": [
+    { "ko": "잭 호너", "en": "Jack Horner", "note": "고생물학자, 셸비 출생" }
+   ],
+   "기업": [
+    { "ko": "마커스 데일리", "en": "Marcus Daly", "note": "아나콘다 구리회사 창업자, 뷰트" }
+   ]
+  },
+  "stateParks": [
+   { "ko": "매디슨 버펄로 점프 주립공원", "en": "Madison Buffalo Jump State Park" },
+   { "ko": "루이스앤드클라크 동굴 주립공원", "en": "Lewis and Clark Caverns State Park" },
+   { "ko": "마코시카 주립공원", "en": "Makoshika State Park" }
+  ]
+ },
+ "31": {
+  "people": {
+   "정치": [
+    { "ko": "제럴드 포드", "en": "Gerald Ford", "note": "제38대 미국 대통령, 오마하 출생" },
+    { "ko": "윌리엄 제닝스 브라이언", "en": "William Jennings Bryan", "note": "대선후보·국무장관, 네브래스카 정착" }
+   ],
+   "예술·문화": [
+    { "ko": "프레드 아스테어", "en": "Fred Astaire", "note": "배우·댄서, 오마하 출생" },
+    { "ko": "헨리 폰다", "en": "Henry Fonda", "note": "배우, 그랜드아일랜드 출생" },
+    { "ko": "말런 브랜도", "en": "Marlon Brando", "note": "배우, 오마하 출생" }
+   ],
+   "스포츠": [
+    { "ko": "밥 깁슨", "en": "Bob Gibson", "note": "세인트루이스 카디널스 투수, 오마하 출생" },
+    { "ko": "그로버 클리블랜드 알렉산더", "en": "Grover Cleveland Alexander", "note": "명예의 전당 투수, 엘바 출생" }
+   ],
+   "과학·기술": [
+    { "ko": "조지 비들", "en": "George Beadle", "note": "노벨생리의학상, 와후 출생" }
+   ],
+   "기업": [
+    { "ko": "워런 버핏", "en": "Warren Buffett", "note": "버크셔 해서웨이 회장, 오마하 출생" },
+    { "ko": "에드워드 크레이턴", "en": "Edward Creighton", "note": "금융·교육 후원자, 크레이턴대 설립 기반" }
+   ]
+  },
+  "stateParks": [
+   { "ko": "인디언 케이브 주립공원", "en": "Indian Cave State Park" },
+   { "ko": "폰카 주립공원", "en": "Ponca State Park" },
+   { "ko": "플랫강 주립공원", "en": "Platte River State Park" }
+  ]
+ }
+}

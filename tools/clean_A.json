@@ -1,0 +1,232 @@
+{
+ "01": {
+  "people": {
+   "정치": [
+    {"ko":"휴고 블랙","en":"Hugo Black","note":"연방대법관"},
+    {"ko":"콘돌리자 라이스","en":"Condoleezza Rice","note":"제66대 국무장관, 버밍햄 출신"},
+    {"ko":"조지 월리스","en":"George Wallace","note":"전 앨라배마 주지사"}
+   ],
+   "예술·문화": [
+    {"ko":"행크 윌리엄스","en":"Hank Williams","note":"컨트리 음악 전설"},
+    {"ko":"냇 킹 콜","en":"Nat King Cole","note":"재즈·팝 가수, 몽고메리 출신"},
+    {"ko":"하퍼 리","en":"Harper Lee","note":"소설 앵무새 죽이기 작가"},
+    {"ko":"라이어널 리치","en":"Lionel Richie","note":"가수, 터스키기 출신"}
+   ],
+   "스포츠": [
+    {"ko":"행크 애런","en":"Hank Aaron","note":"MLB 통산 홈런왕, 모빌 출신"},
+    {"ko":"윌리 메이스","en":"Willie Mays","note":"MLB 명예의 전당, 웨스트필드 출신"},
+    {"ko":"제시 오언스","en":"Jesse Owens","note":"1936 베를린 올림픽 4관왕"},
+    {"ko":"보 잭슨","en":"Bo Jackson","note":"미식축구·야구 양대 스타"}
+   ],
+   "과학·기술": [
+    {"ko":"퍼시 라본 줄리언","en":"Percy Lavon Julian","note":"의약품 합성 화학자, 몽고메리 출신"},
+    {"ko":"조지 워싱턴 카버","en":"George Washington Carver","note":"농학자, 터스키기 활동"}
+   ],
+   "기업": [
+    {"ko":"팀 쿡","en":"Tim Cook","note":"애플 CEO, 모빌 출신"},
+    {"ko":"A. G. 개스턴","en":"A. G. Gaston","note":"흑인 기업가, 버밍햄 사업 제국"}
+   ]
+  },
+  "stateParks": [
+   {"ko":"걸프 주립공원","en":"Gulf State Park"},
+   {"ko":"치하 주립공원","en":"Cheaha State Park"},
+   {"ko":"오크마운틴 주립공원","en":"Oak Mountain State Park"}
+  ]
+ },
+ "02": {
+  "people": {
+   "정치": [
+    {"ko":"세라 페일린","en":"Sarah Palin","note":"전 알래스카 주지사"},
+    {"ko":"테드 스티븐스","en":"Ted Stevens","note":"연방 상원의원"},
+    {"ko":"리사 머카우스키","en":"Lisa Murkowski","note":"연방 상원의원"}
+   ],
+   "예술·문화": [
+    {"ko":"주얼","en":"Jewel","note":"싱어송라이터"},
+    {"ko":"시드니 로런스","en":"Sydney Laurence","note":"풍경화가, 매킨리산 화폭"},
+    {"ko":"벨라 해먼드","en":"Bella Hammond","note":"원주민 출신 활동가·전 주지사 부인"}
+   ],
+   "스포츠": [
+    {"ko":"트레이전 랭던","en":"Trajan Langdon","note":"앵커리지 출신 첫 알래스카 NBA 선수"},
+    {"ko":"홀리 브룩스","en":"Holly Brooks","note":"크로스컨트리 스키 올림픽 대표"}
+   ],
+   "과학·기술": [
+    {"ko":"순이치 아카소후","en":"Syun-Ichi Akasofu","note":"오로라 연구 지구물리학자"},
+    {"ko":"롭 컬린","en":"Robb Kulin","note":"앵커리지 성장 항공우주 엔지니어"}
+   ],
+   "기업": [
+    {"ko":"로웰 토머스 주니어","en":"Lowell Thomas Jr.","note":"항공·관광 사업가, 전 부지사"}
+   ]
+  },
+  "stateParks": [
+   {"ko":"추가치 주립공원","en":"Chugach State Park"},
+   {"ko":"데날리 주립공원","en":"Denali State Park"},
+   {"ko":"카체마크만 주립공원","en":"Kachemak Bay State Park"}
+  ]
+ },
+ "04": {
+  "people": {
+   "정치": [
+    {"ko":"배리 골드워터","en":"Barry Goldwater","note":"연방 상원의원, 피닉스 출신"},
+    {"ko":"존 매케인","en":"John McCain","note":"연방 상원의원"},
+    {"ko":"샌드라 데이 오코너","en":"Sandra Day O'Connor","note":"첫 여성 연방대법관"},
+    {"ko":"세사르 차베스","en":"Cesar Chavez","note":"농업 노동운동가, 유마 출신"}
+   ],
+   "예술·문화": [
+    {"ko":"스티븐 스필버그","en":"Steven Spielberg","note":"영화감독, 피닉스 성장"},
+    {"ko":"린다 론스태드","en":"Linda Ronstadt","note":"가수, 투손 출신"},
+    {"ko":"에마 스톤","en":"Emma Stone","note":"배우, 스코츠데일 출신"},
+    {"ko":"앨리스 쿠퍼","en":"Alice Cooper","note":"록 뮤지션, 피닉스 거주"}
+   ],
+   "스포츠": [
+    {"ko":"필 미컬슨","en":"Phil Mickelson","note":"골프, 스코츠데일 성장"},
+    {"ko":"제니 핀치","en":"Jennie Finch","note":"소프트볼 올림픽 금메달, 애리조나대 활약"},
+    {"ko":"대니 화이트","en":"Danny White","note":"NFL 쿼터백, 메사 성장"}
+   ],
+   "과학·기술": [
+    {"ko":"퍼시벌 로웰","en":"Percival Lowell","note":"천문학자, 로웰 천문대 설립"},
+    {"ko":"클라이드 톰보","en":"Clyde Tombaugh","note":"명왕성 발견, 플래그스태프 로웰 천문대"}
+   ],
+   "기업": [
+    {"ko":"제리 콜란젤로","en":"Jerry Colangelo","note":"피닉스 선스·다이아몬드백스 경영"},
+    {"ko":"돈 불타지오","en":"Don Vultaggio","note":"애리조나 음료 공동창업자"}
+   ]
+  },
+  "stateParks": [
+   {"ko":"슬라이드록 주립공원","en":"Slide Rock State Park"},
+   {"ko":"카탈리나 주립공원","en":"Catalina State Park"},
+   {"ko":"로스트더치맨 주립공원","en":"Lost Dutchman State Park"}
+  ]
+ },
+ "05": {
+  "people": {
+   "정치": [
+    {"ko":"빌 클린턴","en":"Bill Clinton","note":"제42대 대통령, 호프 출신"},
+    {"ko":"더글러스 맥아더","en":"Douglas MacArthur","note":"육군 원수, 리틀록 출생"},
+    {"ko":"J. 윌리엄 풀브라이트","en":"J. William Fulbright","note":"연방 상원의원, 풀브라이트 장학금"}
+   ],
+   "예술·문화": [
+    {"ko":"조니 캐시","en":"Johnny Cash","note":"컨트리 음악 전설, 킹스랜드 출신"},
+    {"ko":"마야 안젤루","en":"Maya Angelou","note":"시인·작가, 스탬프스 성장"},
+    {"ko":"글렌 캠벨","en":"Glen Campbell","note":"가수, 빌스토니 출신"},
+    {"ko":"빌리 밥 손턴","en":"Billy Bob Thornton","note":"배우·감독, 호트스프링스 성장"}
+   ],
+   "스포츠": [
+    {"ko":"스코티 피펜","en":"Scottie Pippen","note":"NBA 스타, 햄버그 출신"},
+    {"ko":"브룩스 로빈슨","en":"Brooks Robinson","note":"MLB 명예의 전당, 리틀록 출신"},
+    {"ko":"제리 존스","en":"Jerry Jones","note":"댈러스 카우보이스 구단주, 노스리틀록 성장"}
+   ],
+   "과학·기술": [
+    {"ko":"월리스 쿨터","en":"Wallace H. Coulter","note":"쿨터 계수기 발명, 매기 성장"},
+    {"ko":"프리먼 오언스","en":"Freeman Owens","note":"발성영화 기술 발명가, 파인블러프 출신"}
+   ],
+   "기업": [
+    {"ko":"샘 월턴","en":"Sam Walton","note":"월마트 창업자"},
+    {"ko":"J. B. 헌트","en":"J. B. Hunt","note":"운송기업 창업자"},
+    {"ko":"존 H. 존슨","en":"John H. Johnson","note":"에보니·제트 발행인, 아칸소시티 출신"}
+   ]
+  },
+  "stateParks": [
+   {"ko":"페티트진 주립공원","en":"Petit Jean State Park"},
+   {"ko":"크레이터오브다이아몬즈 주립공원","en":"Crater of Diamonds State Park"},
+   {"ko":"디그레이호 리조트 주립공원","en":"DeGray Lake Resort State Park"}
+  ]
+ },
+ "06": {
+  "people": {
+   "정치": [
+    {"ko":"리처드 닉슨","en":"Richard Nixon","note":"제37대 대통령, 요바린다 출신"},
+    {"ko":"로널드 레이건","en":"Ronald Reagan","note":"제40대 대통령, 전 캘리포니아 주지사"},
+    {"ko":"카멀라 해리스","en":"Kamala Harris","note":"제49대 부통령, 오클랜드 출신"},
+    {"ko":"낸시 펠로시","en":"Nancy Pelosi","note":"전 연방 하원의장"}
+   ],
+   "예술·문화": [
+    {"ko":"레오나르도 디카프리오","en":"Leonardo DiCaprio","note":"배우, 로스앤젤레스 출신"},
+    {"ko":"비치 보이스","en":"The Beach Boys","note":"록 밴드, 호손 결성"},
+    {"ko":"월트 디즈니","en":"Walt Disney","note":"디즈니 창업·애니메이션 거장"},
+    {"ko":"존 스타인벡","en":"John Steinbeck","note":"소설가, 살리나스 출신"}
+   ],
+   "스포츠": [
+    {"ko":"타이거 우즈","en":"Tiger Woods","note":"골프, 사이프러스 출신"},
+    {"ko":"테드 윌리엄스","en":"Ted Williams","note":"MLB 전설, 샌디에이고 출신"},
+    {"ko":"비너스·세리나 윌리엄스","en":"Venus and Serena Williams","note":"테니스, 컴프턴 성장"}
+   ],
+   "과학·기술": [
+    {"ko":"스티브 잡스","en":"Steve Jobs","note":"애플 공동창업자, 샌프란시스코 출신"},
+    {"ko":"고든 무어","en":"Gordon Moore","note":"인텔 공동창업자, 샌프란시스코 출신"}
+   ],
+   "기업": [
+    {"ko":"래리 페이지","en":"Larry Page","note":"구글 공동창업자, 실리콘밸리 창업"},
+    {"ko":"마크 저커버그","en":"Mark Zuckerberg","note":"메타 창업자, 캘리포니아 본사"},
+    {"ko":"일론 머스크","en":"Elon Musk","note":"테슬라·스페이스X, 캘리포니아 활동"}
+   ]
+  },
+  "stateParks": [
+   {"ko":"빅베이슨 레드우드 주립공원","en":"Big Basin Redwoods State Park"},
+   {"ko":"안자보레고 사막 주립공원","en":"Anza-Borrego Desert State Park"},
+   {"ko":"캘러베러스 빅트리스 주립공원","en":"Calaveras Big Trees State Park"}
+  ]
+ },
+ "08": {
+  "people": {
+   "정치": [
+    {"ko":"켄 살라자르","en":"Ken Salazar","note":"전 내무장관, 콜로라도 출신"},
+    {"ko":"팻 슈로더","en":"Pat Schroeder","note":"연방 하원의원"},
+    {"ko":"존 히켄루퍼","en":"John Hickenlooper","note":"연방 상원의원, 전 콜로라도 주지사"}
+   ],
+   "예술·문화": [
+    {"ko":"팀 앨런","en":"Tim Allen","note":"배우, 덴버 출신"},
+    {"ko":"트레이 파커","en":"Trey Parker","note":"사우스파크 공동제작, 코네티핏 출신"},
+    {"ko":"인디아 아리","en":"India.Arie","note":"가수, 덴버 출신"}
+   ],
+   "스포츠": [
+    {"ko":"에이미 밴 다이켄","en":"Amy Van Dyken","note":"수영 올림픽 금메달, 잉글우드 출신"},
+    {"ko":"미시 프랭클린","en":"Missy Franklin","note":"수영 올림픽 금메달, 센테니얼 성장"}
+   ],
+   "과학·기술": [
+    {"ko":"M. 스콧 카펜터","en":"M. Scott Carpenter","note":"머큐리 우주비행사, 볼더 출신"},
+    {"ko":"잭 스위거트","en":"Jack Swigert","note":"아폴로 13 우주비행사, 덴버 출신"}
+   ],
+   "기업": [
+    {"ko":"필립 안슈츠","en":"Philip Anschutz","note":"미디어·에너지 재벌, 덴버 기반"},
+    {"ko":"스티브 엘스","en":"Steve Ells","note":"치폴레 창업자, 덴버 1호점"}
+   ]
+  },
+  "stateParks": [
+   {"ko":"채트필드 주립공원","en":"Chatfield State Park"},
+   {"ko":"엘도라도캐니언 주립공원","en":"Eldorado Canyon State Park"},
+   {"ko":"스테이트포레스트 주립공원","en":"State Forest State Park"}
+  ]
+ },
+ "09": {
+  "people": {
+   "정치": [
+    {"ko":"조지 W. 부시","en":"George W. Bush","note":"제43대 대통령, 뉴헤이븐 출생"},
+    {"ko":"조지프 리버먼","en":"Joe Lieberman","note":"연방 상원의원, 2000 부통령 후보, 스탬퍼드 출신"},
+    {"ko":"라이먼 트럼불","en":"Lyman Trumbull","note":"콜체스터 출생, 노예제 폐지 수정헌법 주도"}
+   ],
+   "예술·문화": [
+    {"ko":"캐서린 헵번","en":"Katharine Hepburn","note":"배우, 하트퍼드 출신"},
+    {"ko":"마크 트웨인","en":"Mark Twain","note":"작가, 하트퍼드 거주·집필"},
+    {"ko":"메그 라이언","en":"Meg Ryan","note":"배우, 페어필드 출신"},
+    {"ko":"찰스 아이브스","en":"Charles Ives","note":"작곡가, 댄버리 출신"}
+   ],
+   "스포츠": [
+    {"ko":"월터 캠프","en":"Walter Camp","note":"근대 미식축구의 아버지, 뉴헤이븐 출신"},
+    {"ko":"도로시 해밀","en":"Dorothy Hamill","note":"피겨스케이팅 올림픽 금메달, 그리니치 성장"}
+   ],
+   "과학·기술": [
+    {"ko":"찰스 굿이어","en":"Charles Goodyear","note":"가황 고무 발명가, 뉴헤이븐 출신"},
+    {"ko":"일라이 휘트니","en":"Eli Whitney","note":"조면기 발명가, 뉴헤이븐 공장 운영"}
+   ],
+   "기업": [
+    {"ko":"P. T. 바넘","en":"P. T. Barnum","note":"흥행 사업가, 브리지포트 시장"},
+    {"ko":"프레더릭 렌치슬러","en":"Frederick Rentschler","note":"프랫 앤 휘트니 창업, 하트퍼드"}
+   ]
+  },
+  "stateParks": [
+   {"ko":"허드 주립공원","en":"Hurd State Park"},
+   {"ko":"질레트 캐슬 주립공원","en":"Gillette Castle State Park"},
+   {"ko":"셔우드아일랜드 주립공원","en":"Sherwood Island State Park"}
+  ]
+ }
+}

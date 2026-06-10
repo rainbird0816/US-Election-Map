@@ -18,6 +18,14 @@ def biling(ko_list, en_list):
         out.append(f"{k} ({e})" if e and e != k else k)
     return out
 
+def biling_obj(objs):
+    """[{ko, en}] → ['한글 (English)']."""
+    out = []
+    for o in objs or []:
+        k = o.get("ko", ""); e = (o.get("en") or "").strip()
+        out.append(f"{k} ({e})" if e and e != k else k)
+    return out
+
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 AUG_DIR = ROOT / "tools"
 OUT = ROOT / "frontend" / "src" / "content" / "states_info.js"
@@ -69,6 +77,17 @@ for tag in "ABCDEFG":
 if emiss:
     print("경고: 누락된 en 배치", emiss)
 
+# 정제(clean_*.json): 검증된 인물·주립공원으로 덮어쓰기. {fips:{people:{field:[{ko,en,note}]}, stateParks:[{ko,en}]}}
+clean = {}
+clmiss = []
+for tag in "ABCDEFG":
+    p = AUG_DIR / f"clean_{tag}.json"
+    if not p.exists():
+        clmiss.append(tag); continue
+    clean.update(json.loads(p.read_text(encoding="utf-8")))
+if clmiss:
+    print("경고: 누락된 clean 배치(미정제 → en 폴백)", clmiss)
+
 # 주기 변천(flag_hist_*.json): {fips: {flags:[{from,to,file,label}]}}
 flaghist = {}
 fmiss = []
@@ -107,15 +126,20 @@ for fips, b in BASE.items():
     city_en = e.get("citiesEn", [])
     cities = [{**c, "en": (city_en[i] if i < len(city_en) else None)}
               for i, c in enumerate(g.get("cities", []))]
-    # 주요 인물: {ko, en, note} 구조화
-    people_en = e.get("peopleEn", {})
-    people = {}
-    for field, arr in a.get("people", {}).items():
-        ens = people_en.get(field, [])
-        people[field] = []
-        for i, s in enumerate(arr):
-            ko, note = split_person(s)
-            people[field].append({"ko": ko, "en": (ens[i] if i < len(ens) else None), "note": note})
+    # 주요 인물: 정제본(clean) 우선, 없으면 aug+en 구조화
+    cl = clean.get(fips, {})
+    if cl.get("people"):
+        people = {field: [{"ko": p.get("ko"), "en": p.get("en"), "note": p.get("note", "")}
+                          for p in arr]
+                  for field, arr in cl["people"].items()}
+    else:
+        people_en = e.get("peopleEn", {})
+        people = {}
+        for field, arr in a.get("people", {}).items():
+            ens = people_en.get(field, [])
+            people[field] = [
+                {"ko": (sp := split_person(s))[0], "en": (ens[i] if i < len(ens) else None), "note": sp[1]}
+                for i, s in enumerate(arr)]
     evy = ev_by.get(fips, {})
     flags = sorted(flaghist.get(fips, {}).get("flags", []), key=lambda x: x["from"])
     rec[fips] = {
@@ -127,7 +151,8 @@ for fips, b in BASE.items():
         "census": {str(y): cen[y] for y in sorted(cen)},
         "people": people,
         "nationalParks": biling(a.get("nationalParks", []), e.get("nationalParksEn", [])),
-        "stateParks": biling(a.get("stateParks", []), e.get("stateParksEn", [])),
+        "stateParks": (biling_obj(cl["stateParks"]) if cl.get("stateParks") is not None
+                       else biling(a.get("stateParks", []), e.get("stateParksEn", []))),
         "teams": {lg: biling(ts, e.get("teamsEn", {}).get(lg, []))
                   for lg, ts in a.get("teams", {}).items()},
         "landmarks": landmarks,
@@ -169,6 +194,7 @@ no_flag = [rec[f]["po"] for f in rec if not rec[f]["flags"]]
 multi_flag = sum(1 for f in rec if len(rec[f]["flags"]) > 1)
 print(f"도시누락 {no_city} · EV누락 {no_ev} · cats길이불일치 {bad_cat}")
 print(f"주기누락 {no_flag} · 변천(2기+) {multi_flag}개 주")
+print(f"인물·공원 정제 적용: {len(clean)}개 주")
 print(f"census 연도: {CENSUS_YEARS}")
 print(f"EV 연도: {EV_YEARS[0]}~{EV_YEARS[-1]} ({len(EV_YEARS)}개)")
 

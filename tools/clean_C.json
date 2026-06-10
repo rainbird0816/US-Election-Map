@@ -1,0 +1,213 @@
+{
+ "18": {
+  "people": {
+   "정치": [
+    {"ko":"벤저민 해리슨","en":"Benjamin Harrison","note":"제23대 대통령"},
+    {"ko":"마이크 펜스","en":"Mike Pence","note":"제48대 부통령·전 주지사"}
+   ],
+   "예술·문화": [
+    {"ko":"마이클 잭슨","en":"Michael Jackson","note":"팝의 황제, 게리 출생"},
+    {"ko":"데이비드 레터맨","en":"David Letterman","note":"심야 토크쇼 진행자"},
+    {"ko":"커트 보니것","en":"Kurt Vonnegut","note":"소설가 '제5도살장'"},
+    {"ko":"콜 포터","en":"Cole Porter","note":"작곡가, 페루 출생"}
+   ],
+   "스포츠": [
+    {"ko":"래리 버드","en":"Larry Bird","note":"NBA 전설, 프렌치릭 출신"},
+    {"ko":"오스카 로버트슨","en":"Oscar Robertson","note":"NBA 트리플더블 선구자"}
+   ],
+   "과학·기술": [
+    {"ko":"윌버 라이트","en":"Wilbur Wright","note":"비행기 발명, 밀빌 출생"}
+   ],
+   "기업": [
+    {"ko":"일라이 릴리","en":"Eli Lilly","note":"제약사 일라이 릴리 창업자"},
+    {"ko":"클레시 커민스","en":"Clessie Cummins","note":"커민스 디젤엔진 창업자"}
+   ]
+  },
+  "stateParks": [
+   {"ko":"브라운 카운티 주립공원","en":"Brown County State Park"},
+   {"ko":"터키 런 주립공원","en":"Turkey Run State Park"},
+   {"ko":"맥코믹스 크릭 주립공원","en":"McCormick's Creek State Park"}
+  ]
+ },
+ "19": {
+  "people": {
+   "정치": [
+    {"ko":"허버트 후버","en":"Herbert Hoover","note":"제31대 대통령, 웨스트브랜치 출생"},
+    {"ko":"헨리 A. 월리스","en":"Henry A. Wallace","note":"제33대 부통령"}
+   ],
+   "예술·문화": [
+    {"ko":"존 웨인","en":"John Wayne","note":"서부극 배우, 윈터셋 출생"},
+    {"ko":"그랜트 우드","en":"Grant Wood","note":"'아메리칸 고딕' 화가"},
+    {"ko":"빌 브라이슨","en":"Bill Bryson","note":"여행 작가, 디모인 출생"}
+   ],
+   "스포츠": [
+    {"ko":"댄 게이블","en":"Dan Gable","note":"레슬링 올림픽 금메달리스트"},
+    {"ko":"숀 존슨","en":"Shawn Johnson","note":"체조 올림픽 금메달리스트"}
+   ],
+   "과학·기술": [
+    {"ko":"노먼 볼로그","en":"Norman Borlaug","note":"녹색혁명·노벨평화상"},
+    {"ko":"조지 워싱턴 카버","en":"George Washington Carver","note":"식물학자, 아이오와주립대 수학"}
+   ],
+   "기업": [
+    {"ko":"존 디어","en":"John Deere","note":"디어 앤드 컴퍼니 창업자"},
+    {"ko":"프레더릭 메이태그","en":"Frederick Maytag","note":"메이태그 가전 창업자"}
+   ]
+  },
+  "stateParks": [
+   {"ko":"매콰케타 동굴 주립공원","en":"Maquoketa Caves State Park"},
+   {"ko":"백본 주립공원","en":"Backbone State Park"},
+   {"ko":"레이크 마나와 주립공원","en":"Lake Manawa State Park"}
+  ]
+ },
+ "20": {
+  "people": {
+   "정치": [
+    {"ko":"드와이트 D. 아이젠하워","en":"Dwight D. Eisenhower","note":"제34대 대통령, 애빌린 성장"},
+    {"ko":"밥 돌","en":"Bob Dole","note":"상원 다수당 원내대표·대선 후보"}
+   ],
+   "예술·문화": [
+    {"ko":"아멜리아 에어하트","en":"Amelia Earhart","note":"여성 비행 개척자, 애치슨 출생"},
+    {"ko":"고든 파크스","en":"Gordon Parks","note":"사진가·영화감독"},
+    {"ko":"윌리엄 인지","en":"William Inge","note":"극작가·퓰리처상"}
+   ],
+   "스포츠": [
+    {"ko":"윌트 체임벌린","en":"Wilt Chamberlain","note":"NBA 전설, 캔자스대 출신"},
+    {"ko":"배리 샌더스","en":"Barry Sanders","note":"NFL 명예의 전당 러닝백, 위치토 출생"},
+    {"ko":"게일 세이어스","en":"Gale Sayers","note":"NFL 명예의 전당 러닝백"},
+    {"ko":"존 리긴스","en":"John Riggins","note":"NFL 러닝백, 센테니아 출생"}
+   ],
+   "과학·기술": [
+    {"ko":"클라이드 톰보","en":"Clyde Tombaugh","note":"명왕성 발견자"},
+    {"ko":"버넌 L. 스미스","en":"Vernon L. Smith","note":"노벨경제학상, 위치토 출생"}
+   ],
+   "기업": [
+    {"ko":"월터 크라이슬러","en":"Walter Chrysler","note":"크라이슬러 창업자"},
+    {"ko":"찰스 코크","en":"Charles Koch","note":"코크 인더스트리 회장"}
+   ]
+  },
+  "stateParks": [
+   {"ko":"투론토 주립공원","en":"Toronto State Park"},
+   {"ko":"엘크 시티 주립공원","en":"Elk City State Park"},
+   {"ko":"클린턴 주립공원","en":"Clinton State Park"}
+  ]
+ },
+ "21": {
+  "people": {
+   "정치": [
+    {"ko":"에이브러햄 링컨","en":"Abraham Lincoln","note":"제16대 대통령, 호젠빌 출생"},
+    {"ko":"헨리 클레이","en":"Henry Clay","note":"'위대한 타협가' 상원의원"}
+   ],
+   "예술·문화": [
+    {"ko":"조지 클루니","en":"George Clooney","note":"배우·감독, 렉싱턴 출생"},
+    {"ko":"조니 뎁","en":"Johnny Depp","note":"배우, 오언즈버러 출생"},
+    {"ko":"헌터 S. 톰슨","en":"Hunter S. Thompson","note":"곤조 저널리즘, 루이빌 출생"}
+   ],
+   "스포츠": [
+    {"ko":"무하마드 알리","en":"Muhammad Ali","note":"복싱 헤비급 챔피언, 루이빌 출생"},
+    {"ko":"대럴 그리피스","en":"Darrell Griffith","note":"NBA 선수, 루이빌 출신"}
+   ],
+   "과학·기술": [
+    {"ko":"토머스 헌트 모건","en":"Thomas Hunt Morgan","note":"유전학·노벨생리의학상, 렉싱턴 출생"},
+    {"ko":"너새니얼 섀일러","en":"Nathaniel Shaler","note":"지질학자, 뉴포트 출생"}
+   ],
+   "기업": [
+    {"ko":"할랜드 샌더스","en":"Harland Sanders","note":"KFC 창업자 커넬 샌더스"},
+    {"ko":"짐 빔","en":"Jim Beam","note":"짐 빔 버번 위스키"}
+   ]
+  },
+  "stateParks": [
+   {"ko":"컴벌랜드 폭포 주립공원","en":"Cumberland Falls State Resort Park"},
+   {"ko":"내추럴 브리지 주립공원","en":"Natural Bridge State Resort Park"},
+   {"ko":"칼터 동굴 주립공원","en":"Carter Caves State Resort Park"}
+  ]
+ },
+ "22": {
+  "people": {
+   "정치": [
+    {"ko":"휴이 롱","en":"Huey Long","note":"주지사·상원의원"},
+    {"ko":"재커리 테일러","en":"Zachary Taylor","note":"제12대 대통령, 루이지애나 성장"}
+   ],
+   "예술·문화": [
+    {"ko":"루이 암스트롱","en":"Louis Armstrong","note":"재즈 트럼펫 거장, 뉴올리언스 출생"},
+    {"ko":"트루먼 커포티","en":"Truman Capote","note":"소설가 '냉혈한', 뉴올리언스 출생"},
+    {"ko":"엘런 디제너러스","en":"Ellen DeGeneres","note":"코미디언·진행자, 메테리 출생"}
+   ],
+   "스포츠": [
+    {"ko":"페이튼·일라이 매닝","en":"Peyton Manning / Eli Manning","note":"NFL 쿼터백 형제, 뉴올리언스 성장"},
+    {"ko":"빌 러셀","en":"Bill Russell","note":"NBA 전설, 웨스트먼로 출생"},
+    {"ko":"칼 말론","en":"Karl Malone","note":"NBA 명예의 전당, 서머필드 출생"}
+   ],
+   "과학·기술": [
+    {"ko":"마이클 디바키","en":"Michael DeBakey","note":"심혈관외과 선구자, 레이크찰스 출생"}
+   ],
+   "기업": [
+    {"ko":"톰 베니슨","en":"Tom Benson","note":"뉴올리언스 세인츠 구단주"},
+    {"ko":"폴 프루돔","en":"Paul Prudhomme","note":"케이준 요리 대중화 셰프"}
+   ]
+  },
+  "stateParks": [
+   {"ko":"퐁텐블로 주립공원","en":"Fontainebleau State Park"},
+   {"ko":"치코 주립공원","en":"Chicot State Park"},
+   {"ko":"그랜드 아일 주립공원","en":"Grand Isle State Park"}
+  ]
+ },
+ "23": {
+  "people": {
+   "정치": [
+    {"ko":"한니발 햄린","en":"Hannibal Hamlin","note":"제15대 부통령"},
+    {"ko":"마거릿 체이스 스미스","en":"Margaret Chase Smith","note":"여성 최초 상·하원 양원 의원"}
+   ],
+   "예술·문화": [
+    {"ko":"스티븐 킹","en":"Stephen King","note":"공포소설 거장, 포틀랜드 출생"},
+    {"ko":"헨리 워즈워스 롱펠로","en":"Henry Wadsworth Longfellow","note":"시인, 포틀랜드 출생"},
+    {"ko":"앤드루 와이어스","en":"Andrew Wyeth","note":"'크리스티나의 세계' 화가, 쿠싱 작업"}
+   ],
+   "스포츠": [
+    {"ko":"조앤 베노이트","en":"Joan Benoit","note":"최초 여자 올림픽 마라톤 금메달, 케이프엘리자베스 출생"}
+   ],
+   "과학·기술": [
+    {"ko":"하이럼 맥심","en":"Hiram Maxim","note":"기관총 발명가, 생거빌 출생"},
+    {"ko":"체스터 그린우드","en":"Chester Greenwood","note":"귀마개 발명가, 파밍턴 출생"}
+   ],
+   "기업": [
+    {"ko":"리언 리언우드 빈","en":"Leon Leonwood Bean","note":"L.L.빈 창업자"},
+    {"ko":"버트 셰이비츠","en":"Burt Shavitz","note":"버츠비 공동창업자"}
+   ]
+  },
+  "stateParks": [
+   {"ko":"백스터 주립공원","en":"Baxter State Park"},
+   {"ko":"캠던 힐스 주립공원","en":"Camden Hills State Park"},
+   {"ko":"리드 주립공원","en":"Reid State Park"}
+  ]
+ },
+ "24": {
+  "people": {
+   "정치": [
+    {"ko":"낸시 펠로시","en":"Nancy Pelosi","note":"연방 하원의장, 볼티모어 출생"},
+    {"ko":"서굿 마셜","en":"Thurgood Marshall","note":"최초 흑인 연방대법관, 볼티모어 출생"}
+   ],
+   "예술·문화": [
+    {"ko":"프랭크 자파","en":"Frank Zappa","note":"록 뮤지션, 볼티모어 출생"},
+    {"ko":"에드거 앨런 포","en":"Edgar Allan Poe","note":"소설가·시인, 볼티모어 활동·사망"},
+    {"ko":"프레더릭 더글러스","en":"Frederick Douglass","note":"노예제 폐지론자·연설가, 탤벗 카운티 출생"}
+   ],
+   "스포츠": [
+    {"ko":"베이브 루스","en":"Babe Ruth","note":"MLB 전설, 볼티모어 출생"},
+    {"ko":"마이클 펠프스","en":"Michael Phelps","note":"올림픽 최다 금메달 수영, 볼티모어 출생"}
+   ],
+   "과학·기술": [
+    {"ko":"벤저민 배니커","en":"Benjamin Banneker","note":"천문학자·측량가, 볼티모어 카운티 출생"},
+    {"ko":"윌리엄 핼스테드","en":"William Halsted","note":"존스홉킨스 외과 선구자"}
+   ],
+   "기업": [
+    {"ko":"케빈 플랭크","en":"Kevin Plank","note":"언더아머 창업자"},
+    {"ko":"J. 윌러드 매리어트","en":"J. Willard Marriott","note":"메리어트 호텔 창업자, 본사 베서스다"}
+   ]
+  },
+  "stateParks": [
+   {"ko":"딥 크리크 레이크 주립공원","en":"Deep Creek Lake State Park"},
+   {"ko":"샌디 포인트 주립공원","en":"Sandy Point State Park"},
+   {"ko":"패텁스코 밸리 주립공원","en":"Patapsco Valley State Park"}
+  ]
+ }
+}

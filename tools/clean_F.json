@@ -1,0 +1,217 @@
+{
+ "39": {
+  "people": {
+   "정치": [
+    {"ko": "윌리엄 매킨리", "en": "William McKinley", "note": "제25대 미국 대통령"},
+    {"ko": "율리시스 S. 그랜트", "en": "Ulysses S. Grant", "note": "제18대 미국 대통령"},
+    {"ko": "윌리엄 H. 태프트", "en": "William Howard Taft", "note": "제27대 대통령·연방대법원장"},
+    {"ko": "존 글렌", "en": "John Glenn", "note": "우주비행사 출신 연방 상원의원"}
+   ],
+   "예술·문화": [
+    {"ko": "토니 모리슨", "en": "Toni Morrison", "note": "노벨문학상 수상 소설가, 로레인 출생"},
+    {"ko": "스티븐 스필버그", "en": "Steven Spielberg", "note": "신시내티 출생 영화감독"},
+    {"ko": "할리 베리", "en": "Halle Berry", "note": "아카데미 여우주연상 배우"}
+   ],
+   "스포츠": [
+    {"ko": "제시 오언스", "en": "Jesse Owens", "note": "1936 베를린 올림픽 육상 4관왕"},
+    {"ko": "르브론 제임스", "en": "LeBron James", "note": "애크런 출신 NBA 4회 우승"}
+   ],
+   "과학·기술": [
+    {"ko": "토머스 에디슨", "en": "Thomas Edison", "note": "밀란 출생 발명가, 전구·축음기"},
+    {"ko": "라이트 형제", "en": "Wright Brothers", "note": "데이턴 거점 최초 동력 비행"},
+    {"ko": "닐 암스트롱", "en": "Neil Armstrong", "note": "와파코네타 출신, 인류 최초 달 착륙"}
+   ],
+   "기업": [
+    {"ko": "존 D. 록펠러", "en": "John D. Rockefeller", "note": "스탠더드오일 창업, 클리블랜드 거점"},
+    {"ko": "로저 펜스키", "en": "Roger Penske", "note": "셰이커하이츠 출신, 펜스키 그룹 창업"}
+   ]
+  },
+  "stateParks": [
+   {"ko": "호킹힐스 주립공원", "en": "Hocking Hills State Park"},
+   {"ko": "마우미베이 주립공원", "en": "Maumee Bay State Park"},
+   {"ko": "리틀미아미 주립공원", "en": "Little Miami State Park"}
+  ]
+ },
+ "40": {
+  "people": {
+   "정치": [
+    {"ko": "칼 앨버트", "en": "Carl Albert", "note": "제46대 미국 하원의장"},
+    {"ko": "프레드 해리스", "en": "Fred Harris", "note": "연방 상원의원·대선 후보"}
+   ],
+   "예술·문화": [
+    {"ko": "윌 로저스", "en": "Will Rogers", "note": "오올로가 출신 유머작가·배우"},
+    {"ko": "랠프 엘리슨", "en": "Ralph Ellison", "note": "오클라호마시티 출생, 《보이지 않는 인간》"},
+    {"ko": "가스 브룩스", "en": "Garth Brooks", "note": "털사 출신 컨트리 음악 가수"}
+   ],
+   "스포츠": [
+    {"ko": "짐 소프", "en": "Jim Thorpe", "note": "올림픽 다종목 금메달리스트"},
+    {"ko": "미키 맨틀", "en": "Mickey Mantle", "note": "스패비노 출신 MLB 명예의 전당"}
+   ],
+   "과학·기술": [
+    {"ko": "섀넌 루시드", "en": "Shannon Lucid", "note": "여성 우주비행사, 장기 우주체류 기록"},
+    {"ko": "토머스 P. 스태퍼드", "en": "Thomas P. Stafford", "note": "위더링턴 출신 아폴로 10호 사령관"}
+   ],
+   "기업": [
+    {"ko": "샘 월턴", "en": "Sam Walton", "note": "킹피셔 출생, 월마트 창업"},
+    {"ko": "T. 분 피컨스", "en": "T. Boone Pickens", "note": "홀덴빌 출신 석유 투자가"},
+    {"ko": "프랭크 필립스", "en": "Frank Phillips", "note": "필립스 석유 공동창업, 바틀즈빌"}
+   ]
+  },
+  "stateParks": [
+   {"ko": "비버스벤드 주립공원", "en": "Beavers Bend State Park"},
+   {"ko": "로버스케이브 주립공원", "en": "Robbers Cave State Park"},
+   {"ko": "그레이트솔트플레인스 주립공원", "en": "Great Salt Plains State Park"}
+  ]
+ },
+ "41": {
+  "people": {
+   "정치": [
+    {"ko": "마크 햇필드", "en": "Mark Hatfield", "note": "연방 상원의원·전 주지사"},
+    {"ko": "톰 매콜", "en": "Tom McCall", "note": "환경보호 추진 주지사"}
+   ],
+   "예술·문화": [
+    {"ko": "맷 그레이닝", "en": "Matt Groening", "note": "포틀랜드 출생, 《심슨 가족》 창작자"},
+    {"ko": "비벌리 클리어리", "en": "Beverly Cleary", "note": "맥민빌 출생 아동문학 작가"},
+    {"ko": "에스페란사 스폴딩", "en": "Esperanza Spalding", "note": "포틀랜드 출신 재즈 베이시스트·그래미 수상"}
+   ],
+   "스포츠": [
+    {"ko": "댄 오브라이언", "en": "Dan O'Brien", "note": "올림픽 10종경기 금메달"},
+    {"ko": "테리 베이커", "en": "Terry Baker", "note": "하이즈먼 트로피 수상 쿼터백"}
+   ],
+   "과학·기술": [
+    {"ko": "라이너스 폴링", "en": "Linus Pauling", "note": "포틀랜드 출생, 노벨화학상·노벨평화상 수상"}
+   ],
+   "기업": [
+    {"ko": "필 나이트", "en": "Phil Knight", "note": "포틀랜드 출신, 나이키 공동창업"},
+    {"ko": "빌 보워먼", "en": "Bill Bowerman", "note": "오리건대 육상 코치, 나이키 공동창업"}
+   ]
+  },
+  "stateParks": [
+   {"ko": "에콜라 주립공원", "en": "Ecola State Park"},
+   {"ko": "실버폴스 주립공원", "en": "Silver Falls State Park"},
+   {"ko": "스미스록 주립공원", "en": "Smith Rock State Park"}
+  ]
+ },
+ "42": {
+  "people": {
+   "정치": [
+    {"ko": "벤저민 프랭클린", "en": "Benjamin Franklin", "note": "미국 건국의 아버지, 필라델피아 활동"},
+    {"ko": "조 바이든", "en": "Joe Biden", "note": "스크랜턴 출생, 제46대 미국 대통령"},
+    {"ko": "제임스 뷰캐넌", "en": "James Buchanan", "note": "제15대 미국 대통령"}
+   ],
+   "예술·문화": [
+    {"ko": "앤디 워홀", "en": "Andy Warhol", "note": "피츠버그 출생 팝아트 거장"},
+    {"ko": "메리 카사트", "en": "Mary Cassatt", "note": "앨러게니시티 출생 인상파 화가"},
+    {"ko": "윌 스미스", "en": "Will Smith", "note": "필라델피아 출신 배우·래퍼"}
+   ],
+   "스포츠": [
+    {"ko": "윌트 체임벌린", "en": "Wilt Chamberlain", "note": "필라델피아 출신, NBA 한 경기 100점"},
+    {"ko": "조 몬태나", "en": "Joe Montana", "note": "뉴이글 출신 NFL 명예의 전당 쿼터백"}
+   ],
+   "과학·기술": [
+    {"ko": "조너스 소크", "en": "Jonas Salk", "note": "피츠버그대 소아마비 백신 개발"},
+    {"ko": "레이철 카슨", "en": "Rachel Carson", "note": "스프링데일 출생, 《침묵의 봄》 저자"}
+   ],
+   "기업": [
+    {"ko": "앤드루 카네기", "en": "Andrew Carnegie", "note": "피츠버그 거점 카네기 철강"},
+    {"ko": "밀턴 허쉬", "en": "Milton Hershey", "note": "데리타운십 출생, 허쉬 초콜릿 창업"},
+    {"ko": "헨리 J. 하인즈", "en": "Henry J. Heinz", "note": "피츠버그 출신, H. J. 하인즈 창업"}
+   ]
+  },
+  "stateParks": [
+   {"ko": "오하이오파일 주립공원", "en": "Ohiopyle State Park"},
+   {"ko": "리케츠글렌 주립공원", "en": "Ricketts Glen State Park"},
+   {"ko": "프레스크아일 주립공원", "en": "Presque Isle State Park"}
+  ]
+ },
+ "44": {
+  "people": {
+   "정치": [
+    {"ko": "로저 윌리엄스", "en": "Roger Williams", "note": "로드아일랜드 식민지 창설자"},
+    {"ko": "존 O. 패스토어", "en": "John O. Pastore", "note": "최초의 이탈리아계 연방 상원의원·주지사"}
+   ],
+   "예술·문화": [
+    {"ko": "H. P. 러브크래프트", "en": "H. P. Lovecraft", "note": "프로비던스 출생 괴기소설 작가"},
+    {"ko": "조지 M. 코핸", "en": "George M. Cohan", "note": "프로비던스 출생 뮤지컬 작곡가"},
+    {"ko": "비올라 데이비스", "en": "Viola Davis", "note": "센트럴폴스 성장, 아카데미 수상 배우"}
+   ],
+   "스포츠": [
+    {"ko": "냅 라조이", "en": "Nap Lajoie", "note": "우언삭 출신 MLB 명예의 전당"},
+    {"ko": "로코 발델리", "en": "Rocco Baldelli", "note": "우언삭 출신 MLB 감독"}
+   ],
+   "과학·기술": [
+    {"ko": "조지 H. 코를리스", "en": "George H. Corliss", "note": "프로비던스 거점, 코를리스 증기기관"},
+    {"ko": "재커라이아 앨런", "en": "Zachariah Allen", "note": "프로비던스 출생 발명가·온풍 난방기"}
+   ],
+   "기업": [
+    {"ko": "새뮤얼 슬레이터", "en": "Samuel Slater", "note": "포터킷 방직공장, 미국 산업혁명의 아버지"},
+    {"ko": "조너선 넬슨", "en": "Jonathan Nelson", "note": "프로비던스 출신, 프로비던스 에쿼티 창업"}
+   ]
+  },
+  "stateParks": [
+   {"ko": "콜트 주립공원", "en": "Colt State Park"},
+   {"ko": "링컨우즈 주립공원", "en": "Lincoln Woods State Park"},
+   {"ko": "비버테일 주립공원", "en": "Beavertail State Park"}
+  ]
+ },
+ "45": {
+  "people": {
+   "정치": [
+    {"ko": "앤드루 잭슨", "en": "Andrew Jackson", "note": "왁스호 지역 출생, 제7대 미국 대통령"},
+    {"ko": "존 C. 칼훈", "en": "John C. Calhoun", "note": "애브빌 출생, 제7대 미국 부통령"},
+    {"ko": "스트롬 서먼드", "en": "Strom Thurmond", "note": "최장수 연방 상원의원·전 주지사"}
+   ],
+   "예술·문화": [
+    {"ko": "디지 길레스피", "en": "Dizzy Gillespie", "note": "치로 출생 재즈 트럼펫 거장"},
+    {"ko": "제임스 브라운", "en": "James Brown", "note": "소울의 대부, 사우스캐롤라이나 성장"},
+    {"ko": "크리스 록", "en": "Chris Rock", "note": "앤드루스 출생 코미디언·배우"}
+   ],
+   "스포츠": [
+    {"ko": "조 프레이저", "en": "Joe Frazier", "note": "뷰포트 출생 헤비급 복싱 챔피언"},
+    {"ko": "케빈 가넷", "en": "Kevin Garnett", "note": "그린빌 출신 NBA MVP"}
+   ],
+   "과학·기술": [
+    {"ko": "찰스 H. 타운스", "en": "Charles H. Townes", "note": "그린빌 출생, 노벨물리학상·레이저 개발"},
+    {"ko": "로널드 맥네어", "en": "Ronald McNair", "note": "레이크시티 출생 물리학자·NASA 우주비행사"}
+   ],
+   "기업": [
+    {"ko": "달라 무어", "en": "Darla Moore", "note": "레이크시티 출생 투자가·자선가"},
+    {"ko": "애니타 주커", "en": "Anita Zucker", "note": "찰스턴 거점 인터테크 그룹 회장"}
+   ]
+  },
+  "stateParks": [
+   {"ko": "테이블록 주립공원", "en": "Table Rock State Park"},
+   {"ko": "헌팅턴비치 주립공원", "en": "Huntington Beach State Park"},
+   {"ko": "시저스헤드 주립공원", "en": "Caesars Head State Park"}
+  ]
+ },
+ "46": {
+  "people": {
+   "정치": [
+    {"ko": "조지 맥거번", "en": "George McGovern", "note": "연방 상원의원·1972 대선 후보"},
+    {"ko": "톰 대슐", "en": "Tom Daschle", "note": "애버딘 출신 연방 상원 원내대표"},
+    {"ko": "칼 먼트", "en": "Karl Mundt", "note": "험볼트 출생 연방 상원의원"}
+   ],
+   "예술·문화": [
+    {"ko": "로라 잉걸스 와일더", "en": "Laura Ingalls Wilder", "note": "디스멧 거주, 《초원의 집》 작가"},
+    {"ko": "메리 하트", "en": "Mary Hart", "note": "수폴스 출신 방송 진행자"}
+   ],
+   "스포츠": [
+    {"ko": "마이크 밀러", "en": "Mike Miller", "note": "미첼 출신 NBA 우승·올해의 신인"},
+    {"ko": "벡키 해먼", "en": "Becky Hammon", "note": "래피드시티 출신 WNBA 스타·코치"}
+   ],
+   "과학·기술": [
+    {"ko": "어니스트 로런스", "en": "Ernest Lawrence", "note": "캔턴 출생, 노벨물리학상·사이클로트론 발명"}
+   ],
+   "기업": [
+    {"ko": "T. 데니 샌포드", "en": "T. Denny Sanford", "note": "수폴스 거점 금융가·자선가"},
+    {"ko": "앨 뉴하스", "en": "Al Neuharth", "note": "유리카 출생, 《USA 투데이》 창간"}
+   ]
+  },
+  "stateParks": [
+   {"ko": "커스터 주립공원", "en": "Custer State Park"},
+   {"ko": "팰리세이즈 주립공원", "en": "Palisades State Park"},
+   {"ko": "베어뷰트 주립공원", "en": "Bear Butte State Park"}
+  ]
+ }
+}
