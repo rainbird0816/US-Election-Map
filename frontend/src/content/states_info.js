@@ -184,6 +184,14 @@ export const STATE_INFO = {
         "lng": -88.0399
       }
     ],
+    "flags": [
+      {
+        "from": 1895,
+        "to": null,
+        "file": "Flag of Alabama.svg",
+        "label": "1895–현재 (성앤드루 십자)"
+      }
+    ],
     "popRank": 24,
     "areaRank": 30
   },
@@ -327,6 +335,14 @@ export const STATE_INFO = {
         "name": "주노",
         "lat": 58.3019,
         "lng": -134.4197
+      }
+    ],
+    "flags": [
+      {
+        "from": 1927,
+        "to": null,
+        "file": "Flag of Alaska.svg",
+        "label": "1927 채택·1959 주기 (북두칠성·북극성)"
       }
     ],
     "popRank": 48,
@@ -500,6 +516,14 @@ export const STATE_INFO = {
         "name": "스코츠데일",
         "lat": 33.4942,
         "lng": -111.9261
+      }
+    ],
+    "flags": [
+      {
+        "from": 1917,
+        "to": null,
+        "file": "Flag of Arizona.svg",
+        "label": "1917–현재"
       }
     ],
     "popRank": 14,
@@ -680,6 +704,26 @@ export const STATE_INFO = {
         "name": "스프링데일",
         "lat": 36.1867,
         "lng": -94.1288
+      }
+    ],
+    "flags": [
+      {
+        "from": 1913,
+        "to": 1923,
+        "file": "Flag_of_Arkansas_(1913–1923).svg",
+        "label": "1913–1923 (별 3개)"
+      },
+      {
+        "from": 1923,
+        "to": 1924,
+        "file": "Flag_of_Arkansas_(1923).svg",
+        "label": "1923–1924 (별 4개·남부연합 추가)"
+      },
+      {
+        "from": 1924,
+        "to": null,
+        "file": "Flag of Arkansas.svg",
+        "label": "1924–현재 (현행 별 배치)"
       }
     ],
     "popRank": 33,
@@ -897,6 +941,14 @@ export const STATE_INFO = {
         "lng": -121.8863
       }
     ],
+    "flags": [
+      {
+        "from": 1911,
+        "to": null,
+        "file": "Flag of California.svg",
+        "label": "1911 채택·1953 규격 표준화 (베어 플래그)"
+      }
+    ],
     "popRank": 1,
     "areaRank": 3
   },
@@ -1078,6 +1130,26 @@ export const STATE_INFO = {
         "name": "볼더",
         "lat": 40.015,
         "lng": -105.2705
+      }
+    ],
+    "flags": [
+      {
+        "from": 1907,
+        "to": 1911,
+        "file": "Flag_of_Colorado_(1907–1911).svg",
+        "label": "1907–1911 (주 인장 도안)"
+      },
+      {
+        "from": 1911,
+        "to": 1964,
+        "file": "Flag_of_Colorado_(1911–1964).svg",
+        "label": "1911–1964 (카슨 도안)"
+      },
+      {
+        "from": 1964,
+        "to": null,
+        "file": "Flag of Colorado.svg",
+        "label": "1964–현재"
       }
     ],
     "popRank": 21,
@@ -1263,6 +1335,14 @@ export const STATE_INFO = {
         "name": "스탬퍼드",
         "lat": 41.0534,
         "lng": -73.5387
+      }
+    ],
+    "flags": [
+      {
+        "from": 1897,
+        "to": null,
+        "file": "Flag of Connecticut.svg",
+        "label": "1897–현재 (포도나무 방패)"
       }
     ],
     "popRank": 29,
@@ -1452,6 +1532,14 @@ export const STATE_INFO = {
         "lng": -75.076
       }
     ],
+    "flags": [
+      {
+        "from": 1913,
+        "to": null,
+        "file": "Flag of Delaware.svg",
+        "label": "1913–현재"
+      }
+    ],
     "popRank": 45,
     "areaRank": 49
   },
@@ -1590,6 +1678,14 @@ export const STATE_INFO = {
       }
     ],
     "cities": [],
+    "flags": [
+      {
+        "from": 1938,
+        "to": null,
+        "file": "Flag of Washington, D.C.svg",
+        "label": "1938–현재"
+      }
+    ],
     "popRank": null,
     "areaRank": null
   },
@@ -1787,6 +1883,20 @@ export const STATE_INFO = {
         "lng": -84.2807
       }
     ],
+    "flags": [
+      {
+        "from": 1868,
+        "to": 1900,
+        "file": "Flag of Florida (1868–1900).svg",
+        "label": "1868–1900 (흰 바탕에 주 인장)"
+      },
+      {
+        "from": 1900,
+        "to": null,
+        "file": "Flag of Florida.svg",
+        "label": "1900–현재 (적색 성안드레 십자 추가)"
+      }
+    ],
     "popRank": 3,
     "areaRank": 22
   },
@@ -1979,6 +2089,50 @@ export const STATE_INFO = {
         "lng": -84.9877
       }
     ],
+    "flags": [
+      {
+        "from": 1879,
+        "to": 1902,
+        "file": "Flag of the State of Georgia (1879–1902).svg",
+        "label": "1879–1902 (최초 공식기)"
+      },
+      {
+        "from": 1902,
+        "to": 1906,
+        "file": "Flag of the State of Georgia (1902–1906).svg",
+        "label": "1902–1906"
+      },
+      {
+        "from": 1906,
+        "to": 1920,
+        "file": "Flag of the State of Georgia (1906–1920).svg",
+        "label": "1906–1920"
+      },
+      {
+        "from": 1920,
+        "to": 1956,
+        "file": "Flag of the State of Georgia (1920–1956).svg",
+        "label": "1920–1956 (주 인장)"
+      },
+      {
+        "from": 1956,
+        "to": 2001,
+        "file": "Flag of the State of Georgia (1956–2001).svg",
+        "label": "1956–2001 (남부연합 전투기 포함)"
+      },
+      {
+        "from": 2001,
+        "to": 2003,
+        "file": "Flag of the State of Georgia (2001–2003).svg",
+        "label": "2001–2003 (역대 기 모음)"
+      },
+      {
+        "from": 2003,
+        "to": null,
+        "file": "Flag of the State of Georgia.svg",
+        "label": "2003–현재"
+      }
+    ],
     "popRank": 8,
     "areaRank": 24
   },
@@ -2122,6 +2276,14 @@ export const STATE_INFO = {
         "name": "카훌루이",
         "lat": 20.8893,
         "lng": -156.4729
+      }
+    ],
+    "flags": [
+      {
+        "from": 1845,
+        "to": null,
+        "file": "Flag of Hawaii.svg",
+        "label": "1845–현재"
       }
     ],
     "popRank": 40,
@@ -2285,6 +2447,14 @@ export const STATE_INFO = {
         "name": "아이다호폴스",
         "lat": 43.4666,
         "lng": -112.0341
+      }
+    ],
+    "flags": [
+      {
+        "from": 1907,
+        "to": null,
+        "file": "Flag of Idaho.svg",
+        "label": "1907–현재"
       }
     ],
     "popRank": 38,
@@ -2484,6 +2654,20 @@ export const STATE_INFO = {
         "lng": -89.094
       }
     ],
+    "flags": [
+      {
+        "from": 1915,
+        "to": 1970,
+        "file": "Flag of Illinois (1915–1969).svg",
+        "label": "1915–1969 (주 이름 없음)"
+      },
+      {
+        "from": 1970,
+        "to": null,
+        "file": "Flag of Illinois.svg",
+        "label": "1970–현재 (주 이름 추가)"
+      }
+    ],
     "popRank": 6,
     "areaRank": 25
   },
@@ -2681,6 +2865,14 @@ export const STATE_INFO = {
         "lng": -86.118
       }
     ],
+    "flags": [
+      {
+        "from": 1917,
+        "to": null,
+        "file": "Flag of Indiana.svg",
+        "label": "1917–현재"
+      }
+    ],
     "popRank": 17,
     "areaRank": 38
   },
@@ -2862,6 +3054,14 @@ export const STATE_INFO = {
         "lng": -91.5302
       }
     ],
+    "flags": [
+      {
+        "from": 1921,
+        "to": null,
+        "file": "Flag of Iowa.svg",
+        "label": "1921–현재"
+      }
+    ],
     "popRank": 31,
     "areaRank": 26
   },
@@ -3037,6 +3237,14 @@ export const STATE_INFO = {
         "name": "올레이스",
         "lat": 38.8814,
         "lng": -94.8191
+      }
+    ],
+    "flags": [
+      {
+        "from": 1927,
+        "to": null,
+        "file": "Flag of Kansas.svg",
+        "label": "1927–현재"
       }
     ],
     "popRank": 35,
@@ -3233,6 +3441,14 @@ export const STATE_INFO = {
         "lng": -84.8733
       }
     ],
+    "flags": [
+      {
+        "from": 1918,
+        "to": null,
+        "file": "Flag of Kentucky.svg",
+        "label": "1918–현재"
+      }
+    ],
     "popRank": 26,
     "areaRank": 37
   },
@@ -3422,6 +3638,14 @@ export const STATE_INFO = {
         "name": "레이크찰스",
         "lat": 30.2266,
         "lng": -93.2174
+      }
+    ],
+    "flags": [
+      {
+        "from": 1912,
+        "to": null,
+        "file": "Flag of Louisiana.svg",
+        "label": "1912–현재"
       }
     ],
     "popRank": 25,
@@ -3617,6 +3841,14 @@ export const STATE_INFO = {
         "name": "오거스타",
         "lat": 44.3106,
         "lng": -69.7795
+      }
+    ],
+    "flags": [
+      {
+        "from": 1909,
+        "to": null,
+        "file": "Flag of Maine.svg",
+        "label": "1909–현재"
       }
     ],
     "popRank": 42,
@@ -3823,6 +4055,14 @@ export const STATE_INFO = {
         "lng": -76.4922
       }
     ],
+    "flags": [
+      {
+        "from": 1904,
+        "to": null,
+        "file": "Flag of Maryland.svg",
+        "label": "1904–현재"
+      }
+    ],
     "popRank": 18,
     "areaRank": 42
   },
@@ -4025,6 +4265,20 @@ export const STATE_INFO = {
         "lng": -71.3162
       }
     ],
+    "flags": [
+      {
+        "from": 1908,
+        "to": 1971,
+        "file": "Flag of Massachusetts (1908–1971).svg",
+        "label": "1908년 제정(뒷면 인디언 도안 포함)"
+      },
+      {
+        "from": 1971,
+        "to": null,
+        "file": "Flag of Massachusetts.svg",
+        "label": "현재 매사추세츠 주기(1971년 앞·뒷면 통일)"
+      }
+    ],
     "popRank": 15,
     "areaRank": 44
   },
@@ -4223,6 +4477,20 @@ export const STATE_INFO = {
         "lng": -84.5555
       }
     ],
+    "flags": [
+      {
+        "from": 1865,
+        "to": 1911,
+        "file": "Flag of Michigan (1865–1911, obverse).svg",
+        "label": "1865년 제정(앞면 주 문장)"
+      },
+      {
+        "from": 1911,
+        "to": null,
+        "file": "Flag of Michigan.svg",
+        "label": "현재 미시간 주기(1911년 제정)"
+      }
+    ],
     "popRank": 10,
     "areaRank": 11
   },
@@ -4409,6 +4677,32 @@ export const STATE_INFO = {
         "name": "블루밍턴",
         "lat": 44.8408,
         "lng": -93.2983
+      }
+    ],
+    "flags": [
+      {
+        "from": 1893,
+        "to": 1957,
+        "file": "Flag of Minnesota (1893–1957).svg",
+        "label": "1893년 최초 주기"
+      },
+      {
+        "from": 1957,
+        "to": 1983,
+        "file": "Flag of Minnesota (1957–1983).svg",
+        "label": "1957년 개정기(양면 통일)"
+      },
+      {
+        "from": 1983,
+        "to": 2024,
+        "file": "Flag of Minnesota (1983–2024).svg",
+        "label": "1983년 개정기(주 인장)"
+      },
+      {
+        "from": 2024,
+        "to": null,
+        "file": "Flag of Minnesota.svg",
+        "label": "현재 미네소타 주기(2024년 새 도안)"
       }
     ],
     "popRank": 22,
@@ -4598,6 +4892,20 @@ export const STATE_INFO = {
         "name": "해티스버그",
         "lat": 31.3271,
         "lng": -89.2903
+      }
+    ],
+    "flags": [
+      {
+        "from": 1894,
+        "to": 2020,
+        "file": "Flag of Mississippi (1996–2020).svg",
+        "label": "1894년 제정기(남부연합 전투기 도안)"
+      },
+      {
+        "from": 2021,
+        "to": null,
+        "file": "Flag of Mississippi.svg",
+        "label": "현재 미시시피 주기(뉴 매그놀리아, 2021년)"
       }
     ],
     "popRank": 34,
@@ -4799,6 +5107,14 @@ export const STATE_INFO = {
         "lng": -92.1735
       }
     ],
+    "flags": [
+      {
+        "from": 1913,
+        "to": null,
+        "file": "Flag of Missouri.svg",
+        "label": "미주리 주기(1913년 제정)"
+      }
+    ],
     "popRank": 19,
     "areaRank": 21
   },
@@ -4964,6 +5280,20 @@ export const STATE_INFO = {
         "name": "헬레나",
         "lat": 46.5891,
         "lng": -112.0391
+      }
+    ],
+    "flags": [
+      {
+        "from": 1905,
+        "to": 1981,
+        "file": "Flag of Montana (1905–1981).svg",
+        "label": "1905년 제정기(주 이름 없음)"
+      },
+      {
+        "from": 1981,
+        "to": null,
+        "file": "Flag of Montana.svg",
+        "label": "현재 몬태나 주기(1981년 주 이름 추가)"
       }
     ],
     "popRank": 44,
@@ -5138,6 +5468,14 @@ export const STATE_INFO = {
         "name": "커니",
         "lat": 40.6995,
         "lng": -99.0817
+      }
+    ],
+    "flags": [
+      {
+        "from": 1925,
+        "to": null,
+        "file": "Flag of Nebraska.svg",
+        "label": "네브래스카 주기(1925년 제정, 1963년 주기로 지정)"
       }
     ],
     "popRank": 37,
@@ -5318,6 +5656,14 @@ export const STATE_INFO = {
         "name": "카슨시티",
         "lat": 39.1638,
         "lng": -119.7674
+      }
+    ],
+    "flags": [
+      {
+        "from": 1929,
+        "to": null,
+        "file": "Flag of Nevada.svg",
+        "label": "현행 (1929년 제정, 1991년 문구 수정)"
       }
     ],
     "popRank": 32,
@@ -5509,6 +5855,14 @@ export const STATE_INFO = {
         "name": "포츠머스",
         "lat": 43.0718,
         "lng": -70.7626
+      }
+    ],
+    "flags": [
+      {
+        "from": 1909,
+        "to": null,
+        "file": "Flag of New Hampshire.svg",
+        "label": "현행 (1909년 제정, 1932년 표준화)"
       }
     ],
     "popRank": 41,
@@ -5705,6 +6059,14 @@ export const STATE_INFO = {
         "lng": -74.7597
       }
     ],
+    "flags": [
+      {
+        "from": 1896,
+        "to": null,
+        "file": "Flag of New Jersey.svg",
+        "label": "현행 (1896년 제정)"
+      }
+    ],
     "popRank": 11,
     "areaRank": 47
   },
@@ -5868,6 +6230,14 @@ export const STATE_INFO = {
         "name": "로즈웰",
         "lat": 33.3943,
         "lng": -104.523
+      }
+    ],
+    "flags": [
+      {
+        "from": 1925,
+        "to": null,
+        "file": "Flag of New Mexico.svg",
+        "label": "현행 지아 태양 깃발 (1925년)"
       }
     ],
     "popRank": 36,
@@ -6072,6 +6442,14 @@ export const STATE_INFO = {
         "lng": -73.7562
       }
     ],
+    "flags": [
+      {
+        "from": 1901,
+        "to": null,
+        "file": "Flag of New York.svg",
+        "label": "현행 (1901년 청색 바탕, 2020년 표어 추가)"
+      }
+    ],
     "popRank": 4,
     "areaRank": 27
   },
@@ -6269,6 +6647,14 @@ export const STATE_INFO = {
         "lng": -80.2442
       }
     ],
+    "flags": [
+      {
+        "from": 1885,
+        "to": null,
+        "file": "Flag of North Carolina.svg",
+        "label": "현행 (1885년 제정)"
+      }
+    ],
     "popRank": 9,
     "areaRank": 28
   },
@@ -6433,6 +6819,14 @@ export const STATE_INFO = {
         "name": "웨스트파고",
         "lat": 46.8747,
         "lng": -96.9003
+      }
+    ],
+    "flags": [
+      {
+        "from": 1911,
+        "to": null,
+        "file": "Flag of North Dakota.svg",
+        "label": "현행 (1911년 제정)"
       }
     ],
     "popRank": 47,
@@ -6641,6 +7035,14 @@ export const STATE_INFO = {
         "lng": -84.1916
       }
     ],
+    "flags": [
+      {
+        "from": 1902,
+        "to": null,
+        "file": "Flag of Ohio.svg",
+        "label": "오하이오 주기 (1902~현재, 버지 형태)"
+      }
+    ],
     "popRank": 7,
     "areaRank": 34
   },
@@ -6796,6 +7198,38 @@ export const STATE_INFO = {
         "name": "로턴",
         "lat": 34.6036,
         "lng": -98.3959
+      }
+    ],
+    "flags": [
+      {
+        "from": 1911,
+        "to": 1925,
+        "file": "Flag of Oklahoma (1911–1925).svg",
+        "label": "초대 주기 (붉은 바탕에 흰 별·숫자 46)"
+      },
+      {
+        "from": 1925,
+        "to": 1941,
+        "file": "Flag of Oklahoma (1925–1941).svg",
+        "label": "오세이지 방패 도안 (문구 없음)"
+      },
+      {
+        "from": 1941,
+        "to": 1988,
+        "file": "Flag of Oklahoma (1941–1988).svg",
+        "label": "‘OKLAHOMA’ 문구 추가"
+      },
+      {
+        "from": 1988,
+        "to": 2006,
+        "file": "Flag of Oklahoma (1988–2006).svg",
+        "label": "1988년 개정 도안"
+      },
+      {
+        "from": 2006,
+        "to": null,
+        "file": "Flag of Oklahoma.svg",
+        "label": "현행 주기 (2006년 규격 표준화)"
       }
     ],
     "popRank": 28,
@@ -6977,6 +7411,14 @@ export const STATE_INFO = {
         "name": "벤드",
         "lat": 44.0582,
         "lng": -121.3153
+      }
+    ],
+    "flags": [
+      {
+        "from": 1925,
+        "to": null,
+        "file": "Flag of Oregon.svg",
+        "label": "오리건 주기 (1925~현재, 양면기)"
       }
     ],
     "popRank": 27,
@@ -7185,6 +7627,14 @@ export const STATE_INFO = {
         "lng": -76.8867
       }
     ],
+    "flags": [
+      {
+        "from": 1907,
+        "to": null,
+        "file": "Flag of Pennsylvania.svg",
+        "label": "펜실베이니아 주기 (1907~현재)"
+      }
+    ],
     "popRank": 5,
     "areaRank": 33
   },
@@ -7372,6 +7822,26 @@ export const STATE_INFO = {
         "lng": -71.3128
       }
     ],
+    "flags": [
+      {
+        "from": 1877,
+        "to": 1882,
+        "file": "Flag of Rhode Island (1877–1882).svg",
+        "label": "초대 주기 (붉은 방패·닻·별 38개)"
+      },
+      {
+        "from": 1882,
+        "to": 1897,
+        "file": "Flag of Rhode Island (1882–1897).svg",
+        "label": "푸른 바탕 금빛 닻 도안"
+      },
+      {
+        "from": 1897,
+        "to": null,
+        "file": "Flag of Rhode Island.svg",
+        "label": "현행 주기 (금빛 닻·별 13개·HOPE)"
+      }
+    ],
     "popRank": 43,
     "areaRank": 50
   },
@@ -7557,6 +8027,14 @@ export const STATE_INFO = {
         "lng": -78.8867
       }
     ],
+    "flags": [
+      {
+        "from": 1861,
+        "to": null,
+        "file": "Flag of South Carolina.svg",
+        "label": "사우스캐롤라이나 주기 (1861~현재, 팔메토·초승달)"
+      }
+    ],
     "popRank": 23,
     "areaRank": 40
   },
@@ -7726,6 +8204,26 @@ export const STATE_INFO = {
         "name": "피어",
         "lat": 44.3683,
         "lng": -100.351
+      }
+    ],
+    "flags": [
+      {
+        "from": 1909,
+        "to": 1963,
+        "file": "Flag of South Dakota (1909–1963).svg",
+        "label": "초대 주기 (태양·주 인장 양면)"
+      },
+      {
+        "from": 1963,
+        "to": 1992,
+        "file": "Flag of South Dakota (1963–1992).svg",
+        "label": "1963년 단면 통합 도안"
+      },
+      {
+        "from": 1992,
+        "to": null,
+        "file": "Flag of South Dakota.svg",
+        "label": "현행 주기 (‘러시모어의 주’ 문구)"
       }
     ],
     "popRank": 46,
@@ -7926,6 +8424,20 @@ export const STATE_INFO = {
         "name": "클락스빌",
         "lat": 36.5298,
         "lng": -87.3595
+      }
+    ],
+    "flags": [
+      {
+        "from": 1897,
+        "to": 1905,
+        "file": "Flag of Tennessee (1897–1905).svg",
+        "label": "1897년 첫 공식기(삼색 사선)"
+      },
+      {
+        "from": 1905,
+        "to": null,
+        "file": "Flag of Tennessee.svg",
+        "label": "1905년 현행기(별 세 개)"
       }
     ],
     "popRank": 16,
@@ -8129,6 +8641,14 @@ export const STATE_INFO = {
         "lng": -97.3308
       }
     ],
+    "flags": [
+      {
+        "from": 1839,
+        "to": null,
+        "file": "Flag of Texas.svg",
+        "label": "론스타기(1839, 1933 재채택)"
+      }
+    ],
     "popRank": 2,
     "areaRank": 2
   },
@@ -8306,6 +8826,20 @@ export const STATE_INFO = {
         "name": "오렘",
         "lat": 40.2969,
         "lng": -111.6946
+      }
+    ],
+    "flags": [
+      {
+        "from": 1913,
+        "to": 2024,
+        "file": "Flag of Utah (2011–2024).svg",
+        "label": "구 주기(1913~2024, 2011 수정)"
+      },
+      {
+        "from": 2024,
+        "to": null,
+        "file": "Flag of Utah.svg",
+        "label": "2024년 신 벌집기"
       }
     ],
     "popRank": 30,
@@ -8498,6 +9032,26 @@ export const STATE_INFO = {
         "name": "베닝턴",
         "lat": 42.8781,
         "lng": -73.1968
+      }
+    ],
+    "flags": [
+      {
+        "from": 1804,
+        "to": 1837,
+        "file": "Flag of Vermont (1804–1837).svg",
+        "label": "1804년 첫 주기(별·줄무늬 17)"
+      },
+      {
+        "from": 1837,
+        "to": 1923,
+        "file": "Flag of Vermont (1837–1923).svg",
+        "label": "1837년 줄무늬·문장기"
+      },
+      {
+        "from": 1923,
+        "to": null,
+        "file": "Flag of Vermont.svg",
+        "label": "1923년 현행기(문장·청색)"
       }
     ],
     "popRank": 49,
@@ -8693,6 +9247,14 @@ export const STATE_INFO = {
         "lng": -77.091
       }
     ],
+    "flags": [
+      {
+        "from": 1912,
+        "to": null,
+        "file": "Flag of Virginia.svg",
+        "label": "현행 주기(1912 채택)"
+      }
+    ],
     "popRank": 12,
     "areaRank": 35
   },
@@ -8879,6 +9441,20 @@ export const STATE_INFO = {
         "lng": -122.6615
       }
     ],
+    "flags": [
+      {
+        "from": 1923,
+        "to": 1967,
+        "file": "Flag of Washington (1923–1967).png",
+        "label": "구 주기(1923~1967)"
+      },
+      {
+        "from": 1967,
+        "to": null,
+        "file": "Flag of Washington.svg",
+        "label": "1967년 현행기(인장 개정)"
+      }
+    ],
     "popRank": 13,
     "areaRank": 18
   },
@@ -9063,6 +9639,26 @@ export const STATE_INFO = {
         "name": "휠링",
         "lat": 40.064,
         "lng": -80.7209
+      }
+    ],
+    "flags": [
+      {
+        "from": 1905,
+        "to": 1907,
+        "file": "Flag of West Virginia (1905–1907).svg",
+        "label": "1905년 첫 주기"
+      },
+      {
+        "from": 1907,
+        "to": 1929,
+        "file": "Flag of West Virginia (1907-1929).svg",
+        "label": "1907년 개정기"
+      },
+      {
+        "from": 1929,
+        "to": null,
+        "file": "Flag of West Virginia.svg",
+        "label": "1929년 현행기"
       }
     ],
     "popRank": 39,
@@ -9256,6 +9852,20 @@ export const STATE_INFO = {
         "lng": -87.7829
       }
     ],
+    "flags": [
+      {
+        "from": 1913,
+        "to": 1981,
+        "file": "Flag of Wisconsin (1913–1981).svg",
+        "label": "구 주기(1913~1981, 글자 없음)"
+      },
+      {
+        "from": 1981,
+        "to": null,
+        "file": "Flag of Wisconsin.svg",
+        "label": "1979년 개정(WISCONSIN·1848 추가)"
+      }
+    ],
     "popRank": 20,
     "areaRank": 23
   },
@@ -9425,6 +10035,14 @@ export const STATE_INFO = {
         "name": "잭슨",
         "lat": 43.4799,
         "lng": -110.7624
+      }
+    ],
+    "flags": [
+      {
+        "from": 1917,
+        "to": null,
+        "file": "Flag of Wyoming.svg",
+        "label": "현행 주기(1917 채택)"
       }
     ],
     "popRank": 50,

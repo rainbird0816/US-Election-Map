@@ -45,6 +45,17 @@ for tag in "ABCDEFG":
 if gmiss:
     print("경고: 누락된 geo 배치", gmiss)
 
+# 주기 변천(flag_hist_*.json): {fips: {flags:[{from,to,file,label}]}}
+flaghist = {}
+fmiss = []
+for tag in "ABCDEFG":
+    p = AUG_DIR / f"flag_hist_{tag}.json"
+    if not p.exists():
+        fmiss.append(tag); continue
+    flaghist.update(json.loads(p.read_text(encoding="utf-8")))
+if fmiss:
+    print("경고: 누락된 flag_hist 배치", fmiss)
+
 # EV 타임라인(ev_by_year.json): {fips: {연도: ev}}
 ev_path = AUG_DIR / "ev_by_year.json"
 ev_by = {}
@@ -66,6 +77,7 @@ for fips, b in BASE.items():
     landmarks = [{**lm, "cat": (cats[i] if i < len(cats) else "관광체험")}
                  for i, lm in enumerate(lms)]
     evy = ev_by.get(fips, {})
+    flags = sorted(flaghist.get(fips, {}).get("flags", []), key=lambda x: x["from"])
     rec[fips] = {
         "po": b["po"], "ko": b["ko"], "en": b["en"],
         "cap": b["cap"], "capEn": CAP_EN.get(fips),
@@ -79,6 +91,7 @@ for fips, b in BASE.items():
         "teams": a.get("teams", {}),
         "landmarks": landmarks,
         "cities": g.get("cities", []),
+        "flags": flags,
     }
 
 # census 2020 = pop2020 정합성 검증
@@ -111,7 +124,10 @@ no_city = [rec[f]["po"] for f in rec if not rec[f]["cities"]]
 no_ev = [rec[f]["po"] for f in rec if not rec[f]["evByYear"]]
 bad_cat = [rec[f]["po"] for f in rec if len(geo.get(f, {}).get("cats", [])) != len(rec[f]["landmarks"]) and rec[f]["landmarks"]]
 print(f"주 {len(rec)}개 · 인구누락 {no_pop} · 랜드마크누락 {no_lm} · census누락 {no_cen}")
+no_flag = [rec[f]["po"] for f in rec if not rec[f]["flags"]]
+multi_flag = sum(1 for f in rec if len(rec[f]["flags"]) > 1)
 print(f"도시누락 {no_city} · EV누락 {no_ev} · cats길이불일치 {bad_cat}")
+print(f"주기누락 {no_flag} · 변천(2기+) {multi_flag}개 주")
 print(f"census 연도: {CENSUS_YEARS}")
 print(f"EV 연도: {EV_YEARS[0]}~{EV_YEARS[-1]} ({len(EV_YEARS)}개)")
 

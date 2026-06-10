@@ -16,6 +16,15 @@ export function evAt(code, year) {
   return { value, evYear };
 }
 
+// 주기 변천 연동: 선택 연도에 시행 중이던 주기(채택연도 from <= year 중 가장 최근).
+// flags 는 빌드 시 from 오름차순 정렬됨. 첫 공식 주기 채택 이전이면 null.
+export function flagAt(code, year) {
+  const flags = STATE_INFO[code]?.flags || [];
+  let pick = null;
+  for (const fl of flags) { if (fl.from <= year) pick = fl; else break; }
+  return pick;
+}
+
 // 선택 연도에 적용되는 인구조사 연도. 첫 조사(보통 1790) 이전이면 null.
 export function applicableCensus(year) {
   let pick = null;

@@ -3,7 +3,7 @@ import { getStateDetail } from "../api";
 import { portraitUrl } from "../content/presidents";
 import { partyKo, partyColor } from "../content/parties";
 import { STATE_INFO } from "../content/states_info";
-import { popAt, popRankAt, evAt } from "../content/census";
+import { popAt, popRankAt, evAt, flagAt } from "../content/census";
 import StateMap, { LANDMARK_CATS } from "../maps/StateMap.jsx";
 
 // 주기(州旗) — 로드 실패 시 숨김.
@@ -48,6 +48,8 @@ export default function StateFactPanel({ code, name, year, onBack }) {
   const popInfo = popAt(code, year);            // {value, censusYear}
   const rankInfo = popRankAt(code, year);       // {rank, of, censusYear}
   const evInfo = evAt(code, year);              // {value, evYear}
+  const flag = flagAt(code, year);              // {file, label, from, to} | null
+  const flagCount = info?.flags?.length || 0;
 
   return (
     <div className="state-fact">
@@ -55,10 +57,18 @@ export default function StateFactPanel({ code, name, year, onBack }) {
       {error && <div className="error">불러오기 오류: {error}</div>}
 
       <div className="sf-head">
-        <Flag file={f?.flag_file} name={title} />
+        {flag
+          ? <Flag file={flag.file} name={title} key={flag.file} />
+          : <div className="sf-flag sf-flag-none">당시<br />공식 주기<br />없음</div>}
         <div>
           <div className="sf-name">{title}</div>
           <div className="sf-sub">{info?.en || f?.name} · {f?.state_po || info?.po}</div>
+          {flag?.label && (
+            <div className="sf-flaglabel">
+              주기 {flag.label}{flag.to == null ? " (현행)" : ""}
+              {flagCount > 1 && <span className="sf-flagn"> · 역대 {flagCount}기</span>}
+            </div>
+          )}
         </div>
       </div>
 

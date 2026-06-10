@@ -1,0 +1,44 @@
+{
+ "25": {
+  "flags": [
+   { "from": 1908, "to": 1971, "file": "Flag of Massachusetts (1908–1971).svg", "label": "1908년 제정(뒷면 인디언 도안 포함)" },
+   { "from": 1971, "to": null, "file": "Flag of Massachusetts.svg", "label": "현재 매사추세츠 주기(1971년 앞·뒷면 통일)" }
+  ]
+ },
+ "26": {
+  "flags": [
+   { "from": 1865, "to": 1911, "file": "Flag of Michigan (1865–1911, obverse).svg", "label": "1865년 제정(앞면 주 문장)" },
+   { "from": 1911, "to": null, "file": "Flag of Michigan.svg", "label": "현재 미시간 주기(1911년 제정)" }
+  ]
+ },
+ "27": {
+  "flags": [
+   { "from": 1893, "to": 1957, "file": "Flag of Minnesota (1893–1957).svg", "label": "1893년 최초 주기" },
+   { "from": 1957, "to": 1983, "file": "Flag of Minnesota (1957–1983).svg", "label": "1957년 개정기(양면 통일)" },
+   { "from": 1983, "to": 2024, "file": "Flag of Minnesota (1983–2024).svg", "label": "1983년 개정기(주 인장)" },
+   { "from": 2024, "to": null, "file": "Flag of Minnesota.svg", "label": "현재 미네소타 주기(2024년 새 도안)" }
+  ]
+ },
+ "28": {
+  "flags": [
+   { "from": 1894, "to": 2020, "file": "Flag of Mississippi (1996–2020).svg", "label": "1894년 제정기(남부연합 전투기 도안)" },
+   { "from": 2021, "to": null, "file": "Flag of Mississippi.svg", "label": "현재 미시시피 주기(뉴 매그놀리아, 2021년)" }
+  ]
+ },
+ "29": {
+  "flags": [
+   { "from": 1913, "to": null, "file": "Flag of Missouri.svg", "label": "미주리 주기(1913년 제정)" }
+  ]
+ },
+ "30": {
+  "flags": [
+   { "from": 1905, "to": 1981, "file": "Flag of Montana (1905–1981).svg", "label": "1905년 제정기(주 이름 없음)" },
+   { "from": 1981, "to": null, "file": "Flag of Montana.svg", "label": "현재 몬태나 주기(1981년 주 이름 추가)" }
+  ]
+ },
+ "31": {
+  "flags": [
+   { "from": 1925, "to": null, "file": "Flag of Nebraska.svg", "label": "네브래스카 주기(1925년 제정, 1963년 주기로 지정)" }
+  ]
+ }
+}

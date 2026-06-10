@@ -1,0 +1,37 @@
+{
+ "32": {
+  "flags": [
+   { "from": 1929, "to": null, "file": "Flag of Nevada.svg", "label": "현행 (1929년 제정, 1991년 문구 수정)" }
+  ]
+ },
+ "33": {
+  "flags": [
+   { "from": 1909, "to": null, "file": "Flag of New Hampshire.svg", "label": "현행 (1909년 제정, 1932년 표준화)" }
+  ]
+ },
+ "34": {
+  "flags": [
+   { "from": 1896, "to": null, "file": "Flag of New Jersey.svg", "label": "현행 (1896년 제정)" }
+  ]
+ },
+ "35": {
+  "flags": [
+   { "from": 1925, "to": null, "file": "Flag of New Mexico.svg", "label": "현행 지아 태양 깃발 (1925년)" }
+  ]
+ },
+ "36": {
+  "flags": [
+   { "from": 1901, "to": null, "file": "Flag of New York.svg", "label": "현행 (1901년 청색 바탕, 2020년 표어 추가)" }
+  ]
+ },
+ "37": {
+  "flags": [
+   { "from": 1885, "to": null, "file": "Flag of North Carolina.svg", "label": "현행 (1885년 제정)" }
+  ]
+ },
+ "38": {
+  "flags": [
+   { "from": 1911, "to": null, "file": "Flag of North Dakota.svg", "label": "현행 (1911년 제정)" }
+  ]
+ }
+}

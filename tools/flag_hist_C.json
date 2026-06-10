@@ -1,0 +1,37 @@
+{
+ "18": {
+  "flags": [
+   { "from": 1917, "to": null, "file": "Flag of Indiana.svg", "label": "1917–현재" }
+  ]
+ },
+ "19": {
+  "flags": [
+   { "from": 1921, "to": null, "file": "Flag of Iowa.svg", "label": "1921–현재" }
+  ]
+ },
+ "20": {
+  "flags": [
+   { "from": 1927, "to": null, "file": "Flag of Kansas.svg", "label": "1927–현재" }
+  ]
+ },
+ "21": {
+  "flags": [
+   { "from": 1918, "to": null, "file": "Flag of Kentucky.svg", "label": "1918–현재" }
+  ]
+ },
+ "22": {
+  "flags": [
+   { "from": 1912, "to": null, "file": "Flag of Louisiana.svg", "label": "1912–현재" }
+  ]
+ },
+ "23": {
+  "flags": [
+   { "from": 1909, "to": null, "file": "Flag of Maine.svg", "label": "1909–현재" }
+  ]
+ },
+ "24": {
+  "flags": [
+   { "from": 1904, "to": null, "file": "Flag of Maryland.svg", "label": "1904–현재" }
+  ]
+ }
+}

@@ -1,0 +1,55 @@
+{
+ "47": {
+  "flags": [
+   {"from": 1897, "to": 1905, "file": "Flag of Tennessee (1897–1905).svg", "label": "1897년 첫 공식기(삼색 사선)"},
+   {"from": 1905, "to": null, "file": "Flag of Tennessee.svg", "label": "1905년 현행기(별 세 개)"}
+  ]
+ },
+ "48": {
+  "flags": [
+   {"from": 1839, "to": null, "file": "Flag of Texas.svg", "label": "론스타기(1839, 1933 재채택)"}
+  ]
+ },
+ "49": {
+  "flags": [
+   {"from": 1913, "to": 2024, "file": "Flag of Utah (2011–2024).svg", "label": "구 주기(1913~2024, 2011 수정)"},
+   {"from": 2024, "to": null, "file": "Flag of Utah.svg", "label": "2024년 신 벌집기"}
+  ]
+ },
+ "50": {
+  "flags": [
+   {"from": 1804, "to": 1837, "file": "Flag of Vermont (1804–1837).svg", "label": "1804년 첫 주기(별·줄무늬 17)"},
+   {"from": 1837, "to": 1923, "file": "Flag of Vermont (1837–1923).svg", "label": "1837년 줄무늬·문장기"},
+   {"from": 1923, "to": null, "file": "Flag of Vermont.svg", "label": "1923년 현행기(문장·청색)"}
+  ]
+ },
+ "51": {
+  "flags": [
+   {"from": 1912, "to": null, "file": "Flag of Virginia.svg", "label": "현행 주기(1912 채택)"}
+  ]
+ },
+ "53": {
+  "flags": [
+   {"from": 1923, "to": 1967, "file": "Flag of Washington (1923–1967).png", "label": "구 주기(1923~1967)"},
+   {"from": 1967, "to": null, "file": "Flag of Washington.svg", "label": "1967년 현행기(인장 개정)"}
+  ]
+ },
+ "54": {
+  "flags": [
+   {"from": 1905, "to": 1907, "file": "Flag of West Virginia (1905–1907).svg", "label": "1905년 첫 주기"},
+   {"from": 1907, "to": 1929, "file": "Flag of West Virginia (1907-1929).svg", "label": "1907년 개정기"},
+   {"from": 1929, "to": null, "file": "Flag of West Virginia.svg", "label": "1929년 현행기"}
+  ]
+ },
+ "55": {
+  "flags": [
+   {"from": 1913, "to": 1981, "file": "Flag of Wisconsin (1913–1981).svg", "label": "구 주기(1913~1981, 글자 없음)"},
+   {"from": 1981, "to": null, "file": "Flag of Wisconsin.svg", "label": "1979년 개정(WISCONSIN·1848 추가)"}
+  ]
+ },
+ "56": {
+  "flags": [
+   {"from": 1917, "to": null, "file": "Flag of Wyoming.svg", "label": "현행 주기(1917 채택)"}
+  ]
+ }
+}

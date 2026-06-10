@@ -1,0 +1,45 @@
+{
+ "10": {
+  "flags": [
+   {"from": 1913, "to": null, "file": "Flag of Delaware.svg", "label": "1913–현재"}
+  ]
+ },
+ "11": {
+  "flags": [
+   {"from": 1938, "to": null, "file": "Flag of Washington, D.C.svg", "label": "1938–현재"}
+  ]
+ },
+ "12": {
+  "flags": [
+   {"from": 1868, "to": 1900, "file": "Flag of Florida (1868–1900).svg", "label": "1868–1900 (흰 바탕에 주 인장)"},
+   {"from": 1900, "to": null, "file": "Flag of Florida.svg", "label": "1900–현재 (적색 성안드레 십자 추가)"}
+  ]
+ },
+ "13": {
+  "flags": [
+   {"from": 1879, "to": 1902, "file": "Flag of the State of Georgia (1879–1902).svg", "label": "1879–1902 (최초 공식기)"},
+   {"from": 1902, "to": 1906, "file": "Flag of the State of Georgia (1902–1906).svg", "label": "1902–1906"},
+   {"from": 1906, "to": 1920, "file": "Flag of the State of Georgia (1906–1920).svg", "label": "1906–1920"},
+   {"from": 1920, "to": 1956, "file": "Flag of the State of Georgia (1920–1956).svg", "label": "1920–1956 (주 인장)"},
+   {"from": 1956, "to": 2001, "file": "Flag of the State of Georgia (1956–2001).svg", "label": "1956–2001 (남부연합 전투기 포함)"},
+   {"from": 2001, "to": 2003, "file": "Flag of the State of Georgia (2001–2003).svg", "label": "2001–2003 (역대 기 모음)"},
+   {"from": 2003, "to": null, "file": "Flag of the State of Georgia.svg", "label": "2003–현재"}
+  ]
+ },
+ "15": {
+  "flags": [
+   {"from": 1845, "to": null, "file": "Flag of Hawaii.svg", "label": "1845–현재"}
+  ]
+ },
+ "16": {
+  "flags": [
+   {"from": 1907, "to": null, "file": "Flag of Idaho.svg", "label": "1907–현재"}
+  ]
+ },
+ "17": {
+  "flags": [
+   {"from": 1915, "to": 1970, "file": "Flag of Illinois (1915–1969).svg", "label": "1915–1969 (주 이름 없음)"},
+   {"from": 1970, "to": null, "file": "Flag of Illinois.svg", "label": "1970–현재 (주 이름 추가)"}
+  ]
+ }
+}
