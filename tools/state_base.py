@@ -53,3 +53,18 @@ BASE = {
     "55": {"po":"WI","ko":"위스콘신","en":"Wisconsin","cap":"매디슨","adm":1848,"order":30,"area":65498,"ev":10},
     "56": {"po":"WY","ko":"와이오밍","en":"Wyoming","cap":"샤이엔","adm":1890,"order":44,"area":97818,"ev":3},
 }
+
+# 주도 영문명(병기용). 키=FIPS.
+CAP_EN = {
+    "01":"Montgomery","02":"Juneau","04":"Phoenix","05":"Little Rock","06":"Sacramento",
+    "08":"Denver","09":"Hartford","10":"Dover","11":"Washington, D.C.","12":"Tallahassee",
+    "13":"Atlanta","15":"Honolulu","16":"Boise","17":"Springfield","18":"Indianapolis",
+    "19":"Des Moines","20":"Topeka","21":"Frankfort","22":"Baton Rouge","23":"Augusta",
+    "24":"Annapolis","25":"Boston","26":"Lansing","27":"Saint Paul","28":"Jackson",
+    "29":"Jefferson City","30":"Helena","31":"Lincoln","32":"Carson City","33":"Concord",
+    "34":"Trenton","35":"Santa Fe","36":"Albany","37":"Raleigh","38":"Bismarck",
+    "39":"Columbus","40":"Oklahoma City","41":"Salem","42":"Harrisburg","44":"Providence",
+    "45":"Columbia","46":"Pierre","47":"Nashville","48":"Austin","49":"Salt Lake City",
+    "50":"Montpelier","51":"Richmond","53":"Olympia","54":"Charleston","55":"Madison",
+    "56":"Cheyenne",
+}

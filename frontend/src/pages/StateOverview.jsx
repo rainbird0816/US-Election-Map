@@ -7,6 +7,7 @@ import { portraitUrl } from "../content/presidents";
 import { POTUS_ADMIN, presidentAt } from "../content/presidents_admin.js";
 import { partyKo, partyColor } from "../content/parties";
 import { STATE_INFO } from "../content/states_info";
+import { popAt, applicableCensus } from "../content/census";
 
 const NOW = 2026;            // 기본 연도(현재). span.max 와 일치.
 const noop = () => {};
@@ -66,6 +67,7 @@ export default function StateOverview() {
   };
   const states = data?.states || [];
   const pres = presidentAt(year);
+  const censusYear = applicableCensus(year);   // 그해 적용 인구조사 연도(목록 헤더 표기)
 
   const colorByCode = useMemo(() => {
     const m = {};
@@ -162,16 +164,17 @@ export default function StateOverview() {
             <h2 className="ov-h2">주 목록 <span>· {year}년 · {states.filter((s) => s.governor).length}개 주 현역</span></h2>
             <div className="ov-list-wrap">
               <table className="ov-list">
-                <thead><tr><th>주</th><th className="num">선거인단</th><th className="num">인구(2020)</th><th>주지사</th><th>정당</th></tr></thead>
+                <thead><tr><th>주</th><th className="num">선거인단</th><th className="num">인구{censusYear ? `(${censusYear} 조사)` : ""}</th><th>주지사</th><th>정당</th></tr></thead>
                 <tbody>
                   {listed.map((s) => {
                     const info = STATE_INFO[s.region_code];
+                    const p = popAt(s.region_code, year).value;
                     return (
                     <tr key={s.region_code} className={s.governor ? "" : "off"}
                       onClick={() => onState(s.region_code)}>
                       <td className="ovl-state">{info?.ko || s.name}</td>
                       <td className="num">{info?.ev ?? "—"}</td>
-                      <td className="num">{info?.pop ? info.pop.toLocaleString() : "—"}</td>
+                      <td className="num">{p != null ? p.toLocaleString() : "—"}</td>
                       <td>{s.governor || <span className="muted">—</span>}</td>
                       <td>
                         {s.party

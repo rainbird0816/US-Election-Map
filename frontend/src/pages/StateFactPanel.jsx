@@ -3,6 +3,7 @@ import { getStateDetail } from "../api";
 import { portraitUrl } from "../content/presidents";
 import { partyKo, partyColor } from "../content/parties";
 import { STATE_INFO } from "../content/states_info";
+import { popAt, popRankAt } from "../content/census";
 import StateMap from "../maps/StateMap.jsx";
 
 // 주기(州旗) — 로드 실패 시 숨김.
@@ -43,6 +44,9 @@ export default function StateFactPanel({ code, name, year, onBack }) {
   const title = info?.ko || f?.name || name;
   const peopleFields = info ? Object.entries(info.people || {}).filter(([, v]) => v?.length) : [];
   const landmarks = info?.landmarks || [];
+  const capText = info?.capEn ? `${info.capEn}(${info.cap})` : (info?.cap || f?.capital || "—");
+  const popInfo = popAt(code, year);            // {value, censusYear}
+  const rankInfo = popRankAt(code, year);       // {rank, of, censusYear}
 
   return (
     <div className="state-fact">
@@ -59,14 +63,16 @@ export default function StateFactPanel({ code, name, year, onBack }) {
 
       {/* ── 핵심 지표 ── */}
       <div className="sf-grid">
-        <div className="sf-cell"><span>주도</span><b>{info?.cap || f?.capital || "—"}</b></div>
+        <div className="sf-cell"><span>주도</span><b>{capText}</b></div>
         <div className="sf-cell"><span>선거인단</span><b>{info?.ev ?? "—"}<i className="sf-u">표</i></b></div>
         <div className="sf-cell"><span>연방 가입</span>
           <b>{info?.adm ? `${info.adm}년` : (f?.state_po === "DC" ? "주 아님" : "—")}</b>
           {info?.order && <i className="sf-note">{info.order}번째 가입</i>}</div>
-        <div className="sf-cell"><span>인구 (2020)</span>
-          <b>{nf(info?.pop)}</b>
-          {info?.popRank && <i className="sf-note">전국 {info.popRank}위</i>}</div>
+        <div className="sf-cell"><span>인구{popInfo.censusYear ? ` · ${popInfo.censusYear} 조사` : ""}</span>
+          <b>{nf(popInfo.value)}</b>
+          {rankInfo.rank
+            ? <i className="sf-note">전국 {rankInfo.rank}위</i>
+            : (popInfo.value == null && <i className="sf-note">해당 연도 조사 없음</i>)}</div>
         <div className="sf-cell"><span>면적</span>
           <b>{nf(info?.area || f?.area_sqmi)}<i className="sf-u">mi²</i></b>
           {info?.areaRank && <i className="sf-note">전국 {info.areaRank}위</i>}</div>
