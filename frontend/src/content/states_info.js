@@ -93,36 +93,96 @@ export const STATE_INFO = {
     },
     "people": {
       "정치": [
-        "휴고 블랙 (정치·연방대법관)",
-        "콘돌리자 라이스 (정치·전 국무장관, 버밍햄 출신)",
-        "조지 월리스 (정치·전 앨라배마 주지사)"
+        {
+          "ko": "휴고 블랙",
+          "en": "Hugo Black",
+          "note": "정치·연방대법관"
+        },
+        {
+          "ko": "콘돌리자 라이스",
+          "en": "Condoleezza Rice",
+          "note": "정치·전 국무장관, 버밍햄 출신"
+        },
+        {
+          "ko": "조지 월리스",
+          "en": "George Wallace",
+          "note": "정치·전 앨라배마 주지사"
+        }
       ],
       "예술·문화": [
-        "행크 윌리엄스 (음악·컨트리 전설)",
-        "냇 킹 콜 (음악·재즈/팝 가수)",
-        "하퍼 리 (작가·앵무새 죽이기)",
-        "라이어널 리치 (음악·가수)"
+        {
+          "ko": "행크 윌리엄스",
+          "en": "Hank Williams",
+          "note": "음악·컨트리 전설"
+        },
+        {
+          "ko": "냇 킹 콜",
+          "en": "Nat King Cole",
+          "note": "음악·재즈/팝 가수"
+        },
+        {
+          "ko": "하퍼 리",
+          "en": "Harper Lee",
+          "note": "작가·앵무새 죽이기"
+        },
+        {
+          "ko": "라이어널 리치",
+          "en": "Lionel Richie",
+          "note": "음악·가수"
+        }
       ],
       "스포츠": [
-        "행크 애런 (야구·MLB 홈런왕)",
-        "윌리 메이스 (야구·MLB 명예의 전당)",
-        "제시 오언스 (육상·1936 올림픽 4관왕)",
-        "보 잭슨 (미식축구·야구)"
+        {
+          "ko": "행크 애런",
+          "en": "Hank Aaron",
+          "note": "야구·MLB 홈런왕"
+        },
+        {
+          "ko": "윌리 메이스",
+          "en": "Willie Mays",
+          "note": "야구·MLB 명예의 전당"
+        },
+        {
+          "ko": "제시 오언스",
+          "en": "Jesse Owens",
+          "note": "육상·1936 올림픽 4관왕"
+        },
+        {
+          "ko": "보 잭슨",
+          "en": "Bo Jackson",
+          "note": "미식축구·야구"
+        }
       ],
       "과학·기술": [
-        "퍼시 라본 줄리언 (화학·약품 합성 선구자)",
-        "조지 워싱턴 카버 (농학·식물학자, 터스키기 활동)"
+        {
+          "ko": "퍼시 라본 줄리언",
+          "en": "Percy Lavon Julian",
+          "note": "화학·약품 합성 선구자"
+        },
+        {
+          "ko": "조지 워싱턴 카버",
+          "en": "George Washington Carver",
+          "note": "농학·식물학자, 터스키기 활동"
+        }
       ],
       "기업": [
-        "팀 쿡 (기업·애플 CEO, 모빌 출신)",
-        "안젤로 브루노 (기업·소매)"
+        {
+          "ko": "팀 쿡",
+          "en": "Tim Cook",
+          "note": "기업·애플 CEO, 모빌 출신"
+        },
+        {
+          "ko": "안젤로 브루노",
+          "en": "Angelo Bruno",
+          "note": "기업·소매"
+        }
       ]
     },
     "nationalParks": [],
     "stateParks": [
-      "걸프 주립공원",
-      "치하 주립공원",
-      "오크 마운틴 주립공원"
+      "걸프 주립공원 (Gulf State Park)",
+      "치하 주립공원 (Cheaha State Park)",
+      "오크 마운틴 주립공원 (Oak Mountain State Park)"
     ],
     "teams": {
       "MLB": [],
@@ -135,53 +195,62 @@ export const STATE_INFO = {
         "name": "미국 우주로켓 센터",
         "lat": 34.7113,
         "lng": -86.6549,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "U.S. Space & Rocket Center"
       },
       {
         "name": "앨라배마주 의사당",
         "lat": 32.3777,
         "lng": -86.3,
-        "cat": "건축도시"
+        "cat": "건축도시",
+        "en": "Alabama State Capitol"
       },
       {
         "name": "버밍햄 시민권 연구소",
         "lat": 33.5165,
         "lng": -86.8147,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "Birmingham Civil Rights Institute"
       },
       {
         "name": "걸프 쇼어스 해변",
         "lat": 30.246,
         "lng": -87.7008,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Gulf Shores Beach"
       },
       {
         "name": "벌컨 동상",
         "lat": 33.4889,
         "lng": -86.7997,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "Vulcan Statue"
       }
     ],
     "cities": [
       {
         "name": "헌츠빌",
         "lat": 34.7304,
-        "lng": -86.5861
+        "lng": -86.5861,
+        "en": "Huntsville"
       },
       {
         "name": "버밍햄",
         "lat": 33.5186,
-        "lng": -86.8104
+        "lng": -86.8104,
+        "en": "Birmingham"
       },
       {
         "name": "몽고메리",
         "lat": 32.3668,
-        "lng": -86.3
+        "lng": -86.3,
+        "en": "Montgomery"
       },
       {
         "name": "모빌",
         "lat": 30.6954,
-        "lng": -88.0399
+        "lng": -88.0399,
+        "en": "Mobile"
       }
     ],
     "flags": [
@@ -244,43 +313,95 @@ export const STATE_INFO = {
     },
     "people": {
       "정치": [
-        "세라 페일린 (정치·전 알래스카 주지사)",
-        "테드 스티븐스 (정치·연방 상원의원)",
-        "리사 머카우스키 (정치·연방 상원의원)"
+        {
+          "ko": "세라 페일린",
+          "en": "Sarah Palin",
+          "note": "정치·전 알래스카 주지사"
+        },
+        {
+          "ko": "테드 스티븐스",
+          "en": "Ted Stevens",
+          "note": "정치·연방 상원의원"
+        },
+        {
+          "ko": "리사 머카우스키",
+          "en": "Lisa Murkowski",
+          "note": "정치·연방 상원의원"
+        }
       ],
       "예술·문화": [
-        "제웰 (음악·싱어송라이터)",
-        "벨라 한손 (예술·원주민 예술가)",
-        "시드니 로런스 (예술·풍경화가)"
+        {
+          "ko": "제웰",
+          "en": "Jewel",
+          "note": "음악·싱어송라이터"
+        },
+        {
+          "ko": "벨라 한손",
+          "en": "Bella Hammond",
+          "note": "예술·원주민 예술가"
+        },
+        {
+          "ko": "시드니 로런스",
+          "en": "Sydney Laurence",
+          "note": "예술·풍경화가"
+        }
       ],
       "스포츠": [
-        "트레이저 윌리엄스 (미식축구)",
-        "홀리 브룩스 (크로스컨트리 스키)",
-        "커크 알키레 (체조)"
+        {
+          "ko": "트레이저 윌리엄스",
+          "en": "Trajan Langdon",
+          "note": "미식축구"
+        },
+        {
+          "ko": "홀리 브룩스",
+          "en": "Holly Brooks",
+          "note": "크로스컨트리 스키"
+        },
+        {
+          "ko": "커크 알키레",
+          "en": "Kirk Alkire",
+          "note": "체조"
+        }
       ],
       "과학·기술": [
-        "사이드 모하메드 (과학·연구)",
-        "윌리엄 에건 (의학·초대 주지사이자 의사)"
+        {
+          "ko": "사이드 모하메드",
+          "en": "Syed Mohammed",
+          "note": "과학·연구"
+        },
+        {
+          "ko": "윌리엄 에건",
+          "en": "William Egan",
+          "note": "의학·초대 주지사이자 의사"
+        }
       ],
       "기업": [
-        "로웰 토머스 주니어 (기업·항공)",
-        "밥 깁슨 (기업·관광)"
+        {
+          "ko": "로웰 토머스 주니어",
+          "en": "Lowell Thomas Jr.",
+          "note": "기업·항공"
+        },
+        {
+          "ko": "밥 깁슨",
+          "en": "Bob Gibson",
+          "note": "기업·관광"
+        }
       ]
     },
     "nationalParks": [
-      "디날리 국립공원",
-      "글레이셔베이 국립공원",
-      "게이츠오브디아크틱 국립공원",
-      "케나이피오르드 국립공원",
-      "코북밸리 국립공원",
-      "레이크클라크 국립공원",
-      "랭걸-세인트일라이어스 국립공원",
-      "카트마이 국립공원"
+      "디날리 국립공원 (Denali National Park)",
+      "글레이셔베이 국립공원 (Glacier Bay National Park)",
+      "게이츠오브디아크틱 국립공원 (Gates of the Arctic National Park)",
+      "케나이피오르드 국립공원 (Kenai Fjords National Park)",
+      "코북밸리 국립공원 (Kobuk Valley National Park)",
+      "레이크클라크 국립공원 (Lake Clark National Park)",
+      "랭걸-세인트일라이어스 국립공원 (Wrangell-St. Elias National Park)",
+      "카트마이 국립공원 (Katmai National Park)"
     ],
     "stateParks": [
-      "추가치 주립공원",
-      "데날리 주립공원",
-      "캐치메이크 주립공원"
+      "추가치 주립공원 (Chugach State Park)",
+      "데날리 주립공원 (Denali State Park)",
+      "캐치메이크 주립공원 (Kachemak Bay State Park)"
     ],
     "teams": {
       "MLB": [],
@@ -293,48 +414,56 @@ export const STATE_INFO = {
         "name": "디날리산",
         "lat": 63.0692,
         "lng": -151.007,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Denali"
       },
       {
         "name": "멘덴홀 빙하",
         "lat": 58.4197,
         "lng": -134.5453,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Mendenhall Glacier"
       },
       {
         "name": "글레이셔베이 국립공원",
         "lat": 58.6658,
         "lng": -136.9002,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Glacier Bay National Park"
       },
       {
         "name": "앵커리지 시내",
         "lat": 61.2181,
         "lng": -149.9003,
-        "cat": "건축도시"
+        "cat": "건축도시",
+        "en": "Downtown Anchorage"
       },
       {
         "name": "케나이피오르드 국립공원",
         "lat": 59.9219,
         "lng": -149.65,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Kenai Fjords National Park"
       }
     ],
     "cities": [
       {
         "name": "앵커리지",
         "lat": 61.2181,
-        "lng": -149.9003
+        "lng": -149.9003,
+        "en": "Anchorage"
       },
       {
         "name": "페어뱅크스",
         "lat": 64.8378,
-        "lng": -147.7164
+        "lng": -147.7164,
+        "en": "Fairbanks"
       },
       {
         "name": "주노",
         "lat": 58.3019,
-        "lng": -134.4197
+        "lng": -134.4197,
+        "en": "Juneau"
       }
     ],
     "flags": [
@@ -411,50 +540,110 @@ export const STATE_INFO = {
     },
     "people": {
       "정치": [
-        "배리 골드워터 (정치·연방 상원의원)",
-        "존 매케인 (정치·연방 상원의원)",
-        "샌드라 데이 오코너 (정치·연방대법관)",
-        "세사르 차베스 (정치·노동운동가)"
+        {
+          "ko": "배리 골드워터",
+          "en": "Barry Goldwater",
+          "note": "정치·연방 상원의원"
+        },
+        {
+          "ko": "존 매케인",
+          "en": "John McCain",
+          "note": "정치·연방 상원의원"
+        },
+        {
+          "ko": "샌드라 데이 오코너",
+          "en": "Sandra Day O'Connor",
+          "note": "정치·연방대법관"
+        },
+        {
+          "ko": "세사르 차베스",
+          "en": "Cesar Chavez",
+          "note": "정치·노동운동가"
+        }
       ],
       "예술·문화": [
-        "스티븐 스필버그 (영화·감독, 피닉스 성장)",
-        "린다 론스태드 (음악·가수, 투손 출신)",
-        "에마 스톤 (배우, 스코츠데일 출신)",
-        "앨리스 쿠퍼 (음악·록 뮤지션)"
+        {
+          "ko": "스티븐 스필버그",
+          "en": "Steven Spielberg",
+          "note": "영화·감독, 피닉스 성장"
+        },
+        {
+          "ko": "린다 론스태드",
+          "en": "Linda Ronstadt",
+          "note": "음악·가수, 투손 출신"
+        },
+        {
+          "ko": "에마 스톤",
+          "en": "Emma Stone",
+          "note": "배우, 스코츠데일 출신"
+        },
+        {
+          "ko": "앨리스 쿠퍼",
+          "en": "Alice Cooper",
+          "note": "음악·록 뮤지션"
+        }
       ],
       "스포츠": [
-        "필 미컬슨 (골프)",
-        "케리 워커 (소프트볼)",
-        "대니 화이트 (미식축구)"
+        {
+          "ko": "필 미컬슨",
+          "en": "Phil Mickelson",
+          "note": "골프"
+        },
+        {
+          "ko": "케리 워커",
+          "en": "Kerri Walker",
+          "note": "소프트볼"
+        },
+        {
+          "ko": "대니 화이트",
+          "en": "Danny White",
+          "note": "미식축구"
+        }
       ],
       "과학·기술": [
-        "앤드루 와일스 (수학·관련 인물)",
-        "퍼시벌 로웰 (천문·로웰 천문대)"
+        {
+          "ko": "앤드루 와일스",
+          "en": "Andrew Wiles",
+          "note": "수학·관련 인물"
+        },
+        {
+          "ko": "퍼시벌 로웰",
+          "en": "Percival Lowell",
+          "note": "천문·로웰 천문대"
+        }
       ],
       "기업": [
-        "헨리 츠코사키 (기업)",
-        "제리 콜란젤로 (기업·스포츠 경영)"
+        {
+          "ko": "헨리 츠코사키",
+          "en": "Henry Tsukosaki",
+          "note": "기업"
+        },
+        {
+          "ko": "제리 콜란젤로",
+          "en": "Jerry Colangelo",
+          "note": "기업·스포츠 경영"
+        }
       ]
     },
     "nationalParks": [
-      "그랜드캐니언 국립공원",
-      "퍼트리파이드포레스트 국립공원",
-      "사와로 국립공원"
+      "그랜드캐니언 국립공원 (Grand Canyon National Park)",
+      "퍼트리파이드포레스트 국립공원 (Petrified Forest National Park)",
+      "사와로 국립공원 (Saguaro National Park)"
     ],
     "stateParks": [
-      "슬라이드록 주립공원",
-      "캐서린 코브 주립공원",
-      "로스트더치맨 주립공원"
+      "슬라이드록 주립공원 (Slide Rock State Park)",
+      "캐서린 코브 주립공원 (Catalina State Park)",
+      "로스트더치맨 주립공원 (Lost Dutchman State Park)"
     ],
     "teams": {
       "MLB": [
-        "애리조나 다이아몬드백스"
+        "애리조나 다이아몬드백스 (Arizona Diamondbacks)"
       ],
       "NBA": [
-        "피닉스 선즈"
+        "피닉스 선즈 (Phoenix Suns)"
       ],
       "NFL": [
-        "애리조나 카디널스"
+        "애리조나 카디널스 (Arizona Cardinals)"
       ],
       "NHL": []
     },
@@ -463,59 +652,69 @@ export const STATE_INFO = {
         "name": "그랜드캐니언",
         "lat": 36.1069,
         "lng": -112.1129,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Grand Canyon"
       },
       {
         "name": "앤털로프 캐니언",
         "lat": 36.8619,
         "lng": -111.3743,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Antelope Canyon"
       },
       {
         "name": "호스슈 벤드",
         "lat": 36.8791,
         "lng": -111.5104,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Horseshoe Bend"
       },
       {
         "name": "모뉴먼트밸리",
         "lat": 36.998,
         "lng": -110.0985,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Monument Valley"
       },
       {
         "name": "세도나 레드록",
         "lat": 34.8697,
         "lng": -111.761,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Sedona Red Rocks"
       },
       {
         "name": "후버댐",
         "lat": 36.0161,
         "lng": -114.7377,
-        "cat": "건축도시"
+        "cat": "건축도시",
+        "en": "Hoover Dam"
       }
     ],
     "cities": [
       {
         "name": "피닉스",
         "lat": 33.4484,
-        "lng": -112.074
+        "lng": -112.074,
+        "en": "Phoenix"
       },
       {
         "name": "투손",
         "lat": 32.2226,
-        "lng": -110.9747
+        "lng": -110.9747,
+        "en": "Tucson"
       },
       {
         "name": "메사",
         "lat": 33.4152,
-        "lng": -111.8315
+        "lng": -111.8315,
+        "en": "Mesa"
       },
       {
         "name": "스코츠데일",
         "lat": 33.4942,
-        "lng": -111.9261
+        "lng": -111.9261,
+        "en": "Scottsdale"
       }
     ],
     "flags": [
@@ -614,37 +813,93 @@ export const STATE_INFO = {
     },
     "people": {
       "정치": [
-        "빌 클린턴 (정치·제42대 대통령, 호프 출신)",
-        "더글러스 맥아더 (군인·5성 장군, 리틀록 출신)",
-        "J. 윌리엄 풀브라이트 (정치·연방 상원의원)"
+        {
+          "ko": "빌 클린턴",
+          "en": "Bill Clinton",
+          "note": "정치·제42대 대통령, 호프 출신"
+        },
+        {
+          "ko": "더글러스 맥아더",
+          "en": "Douglas MacArthur",
+          "note": "군인·5성 장군, 리틀록 출신"
+        },
+        {
+          "ko": "J. 윌리엄 풀브라이트",
+          "en": "J. William Fulbright",
+          "note": "정치·연방 상원의원"
+        }
       ],
       "예술·문화": [
-        "조니 캐시 (음악·컨트리 전설)",
-        "마야 안젤루 (작가·시인)",
-        "글렌 캠벨 (음악·가수)",
-        "빌리 밥 손턴 (배우·감독)"
+        {
+          "ko": "조니 캐시",
+          "en": "Johnny Cash",
+          "note": "음악·컨트리 전설"
+        },
+        {
+          "ko": "마야 안젤루",
+          "en": "Maya Angelou",
+          "note": "작가·시인"
+        },
+        {
+          "ko": "글렌 캠벨",
+          "en": "Glen Campbell",
+          "note": "음악·가수"
+        },
+        {
+          "ko": "빌리 밥 손턴",
+          "en": "Billy Bob Thornton",
+          "note": "배우·감독"
+        }
       ],
       "스포츠": [
-        "스코티 피펜 (농구·NBA, 햄버그 출신)",
-        "브룩스 로빈슨 (야구·MLB, 리틀록 출신)",
-        "제리 존스 (미식축구·구단주)"
+        {
+          "ko": "스코티 피펜",
+          "en": "Scottie Pippen",
+          "note": "농구·NBA, 햄버그 출신"
+        },
+        {
+          "ko": "브룩스 로빈슨",
+          "en": "Brooks Robinson",
+          "note": "야구·MLB, 리틀록 출신"
+        },
+        {
+          "ko": "제리 존스",
+          "en": "Jerry Jones",
+          "note": "미식축구·구단주"
+        }
       ],
       "과학·기술": [
-        "존 H. 존슨 (출판·미디어)",
-        "윌리엄 디트머스 (과학·연구)"
+        {
+          "ko": "존 H. 존슨",
+          "en": "John H. Johnson",
+          "note": "출판·미디어"
+        },
+        {
+          "ko": "윌리엄 디트머스",
+          "en": "William Dietmus",
+          "note": "과학·연구"
+        }
       ],
       "기업": [
-        "샘 월턴 (기업·월마트 창업자)",
-        "J. B. 헌트 (기업·물류 창업자)"
+        {
+          "ko": "샘 월턴",
+          "en": "Sam Walton",
+          "note": "기업·월마트 창업자"
+        },
+        {
+          "ko": "J. B. 헌트",
+          "en": "J. B. Hunt",
+          "note": "기업·물류 창업자"
+        }
       ]
     },
     "nationalParks": [
-      "핫스프링스 국립공원"
+      "핫스프링스 국립공원 (Hot Springs National Park)"
     ],
     "stateParks": [
-      "페티트진 주립공원",
-      "다이아몬드크레이터 주립공원",
-      "디게이바일 주립공원"
+      "페티트진 주립공원 (Petit Jean State Park)",
+      "다이아몬드크레이터 주립공원 (Crater of Diamonds State Park)",
+      "디게이바일 주립공원 (DeGray Lake Resort State Park)"
     ],
     "teams": {
       "MLB": [],
@@ -657,53 +912,62 @@ export const STATE_INFO = {
         "name": "핫스프링스 국립공원",
         "lat": 34.5217,
         "lng": -93.0424,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Hot Springs National Park"
       },
       {
         "name": "다이아몬드크레이터 주립공원",
         "lat": 34.0334,
         "lng": -93.6709,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Crater of Diamonds State Park"
       },
       {
         "name": "리틀록 센트럴 고등학교",
         "lat": 34.7363,
         "lng": -92.298,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "Little Rock Central High School"
       },
       {
         "name": "클린턴 대통령 도서관",
         "lat": 34.747,
         "lng": -92.2603,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "Clinton Presidential Library"
       },
       {
         "name": "버펄로 국립강",
         "lat": 36.0312,
         "lng": -92.8754,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Buffalo National River"
       }
     ],
     "cities": [
       {
         "name": "리틀록",
         "lat": 34.7465,
-        "lng": -92.2896
+        "lng": -92.2896,
+        "en": "Little Rock"
       },
       {
         "name": "페이엇빌",
         "lat": 36.0626,
-        "lng": -94.1574
+        "lng": -94.1574,
+        "en": "Fayetteville"
       },
       {
         "name": "포트스미스",
         "lat": 35.3859,
-        "lng": -94.3985
+        "lng": -94.3985,
+        "en": "Fort Smith"
       },
       {
         "name": "스프링데일",
         "lat": 36.1867,
-        "lng": -94.1288
+        "lng": -94.1288,
+        "en": "Springdale"
       }
     ],
     "flags": [
@@ -808,72 +1072,140 @@ export const STATE_INFO = {
     },
     "people": {
       "정치": [
-        "리처드 닉슨 (정치·제37대 대통령)",
-        "로널드 레이건 (정치·제40대 대통령, 캘리포니아 주지사)",
-        "카멀라 해리스 (정치·부통령, 오클랜드 출신)",
-        "낸시 펠로시 (정치·전 하원의장)"
+        {
+          "ko": "리처드 닉슨",
+          "en": "Richard Nixon",
+          "note": "정치·제37대 대통령"
+        },
+        {
+          "ko": "로널드 레이건",
+          "en": "Ronald Reagan",
+          "note": "정치·제40대 대통령, 캘리포니아 주지사"
+        },
+        {
+          "ko": "카멀라 해리스",
+          "en": "Kamala Harris",
+          "note": "정치·부통령, 오클랜드 출신"
+        },
+        {
+          "ko": "낸시 펠로시",
+          "en": "Nancy Pelosi",
+          "note": "정치·전 하원의장"
+        }
       ],
       "예술·문화": [
-        "레오나르도 디카프리오 (배우, LA 출신)",
-        "비치 보이스 (음악·록 밴드)",
-        "월트 디즈니 (애니메이션·관련 인물)",
-        "존 스타인벡 (작가, 살리나스 출신)"
+        {
+          "ko": "레오나르도 디카프리오",
+          "en": "Leonardo DiCaprio",
+          "note": "배우, LA 출신"
+        },
+        {
+          "ko": "비치 보이스",
+          "en": "The Beach Boys",
+          "note": "음악·록 밴드"
+        },
+        {
+          "ko": "월트 디즈니",
+          "en": "Walt Disney",
+          "note": "애니메이션·관련 인물"
+        },
+        {
+          "ko": "존 스타인벡",
+          "en": "John Steinbeck",
+          "note": "작가, 살리나스 출신"
+        }
       ],
       "스포츠": [
-        "타이거 우즈 (골프, 사이프러스 출신)",
-        "테드 윌리엄스 (야구·MLB, 샌디에이고 출신)",
-        "비너스·세리나 윌리엄스 (테니스, 콤프턴)"
+        {
+          "ko": "타이거 우즈",
+          "en": "Tiger Woods",
+          "note": "골프, 사이프러스 출신"
+        },
+        {
+          "ko": "테드 윌리엄스",
+          "en": "Ted Williams",
+          "note": "야구·MLB, 샌디에이고 출신"
+        },
+        {
+          "ko": "비너스·세리나 윌리엄스",
+          "en": "Venus and Serena Williams",
+          "note": "테니스, 콤프턴"
+        }
       ],
       "과학·기술": [
-        "스티브 잡스 (기술·애플 공동창업자)",
-        "고든 무어 (기술·인텔 공동창업자)",
-        "잭 킬비 (과학·관련 인물)"
+        {
+          "ko": "스티브 잡스",
+          "en": "Steve Jobs",
+          "note": "기술·애플 공동창업자"
+        },
+        {
+          "ko": "고든 무어",
+          "en": "Gordon Moore",
+          "note": "기술·인텔 공동창업자"
+        },
+        {
+          "ko": "잭 킬비",
+          "en": "Jack Kilby",
+          "note": "과학·관련 인물"
+        }
       ],
       "기업": [
-        "마크 저커버그 (기업·메타, 활동지)",
-        "래리 페이지 (기업·구글 공동창업자)",
-        "일론 머스크 (기업·테슬라, 활동지)"
+        {
+          "ko": "마크 저커버그",
+          "en": "Mark Zuckerberg",
+          "note": "기업·메타, 활동지"
+        },
+        {
+          "ko": "래리 페이지",
+          "en": "Larry Page",
+          "note": "기업·구글 공동창업자"
+        },
+        {
+          "ko": "일론 머스크",
+          "en": "Elon Musk",
+          "note": "기업·테슬라, 활동지"
+        }
       ]
     },
     "nationalParks": [
-      "요세미티 국립공원",
-      "세쿼이아 국립공원",
-      "킹스캐니언 국립공원",
-      "데스밸리 국립공원",
-      "조슈아트리 국립공원",
-      "레드우드 국립공원",
-      "래슨화산 국립공원",
-      "채널아일랜즈 국립공원",
-      "피너클스 국립공원"
+      "요세미티 국립공원 (Yosemite National Park)",
+      "세쿼이아 국립공원 (Sequoia National Park)",
+      "킹스캐니언 국립공원 (Kings Canyon National Park)",
+      "데스밸리 국립공원 (Death Valley National Park)",
+      "조슈아트리 국립공원 (Joshua Tree National Park)",
+      "레드우드 국립공원 (Redwood National Park)",
+      "래슨화산 국립공원 (Lassen Volcanic National Park)",
+      "채널아일랜즈 국립공원 (Channel Islands National Park)",
+      "피너클스 국립공원 (Pinnacles National Park)"
     ],
     "stateParks": [
-      "빅베이슨 레드우즈 주립공원",
-      "안자보레고 사막 주립공원",
-      "캘러베러스빅트리스 주립공원"
+      "빅베이슨 레드우즈 주립공원 (Big Basin Redwoods State Park)",
+      "안자보레고 사막 주립공원 (Anza-Borrego Desert State Park)",
+      "캘러베러스빅트리스 주립공원 (Calaveras Big Trees State Park)"
     ],
     "teams": {
       "MLB": [
-        "LA 다저스",
-        "샌프란시스코 자이언츠",
-        "샌디에이고 파드리스",
-        "LA 에인절스",
-        "오클랜드 애슬레틱스"
+        "LA 다저스 (Los Angeles Dodgers)",
+        "샌프란시스코 자이언츠 (San Francisco Giants)",
+        "샌디에이고 파드리스 (San Diego Padres)",
+        "LA 에인절스 (Los Angeles Angels)",
+        "오클랜드 애슬레틱스 (Oakland Athletics)"
       ],
       "NBA": [
-        "LA 레이커스",
-        "LA 클리퍼스",
-        "골든스테이트 워리어스",
-        "새크라멘토 킹스"
+        "LA 레이커스 (Los Angeles Lakers)",
+        "LA 클리퍼스 (Los Angeles Clippers)",
+        "골든스테이트 워리어스 (Golden State Warriors)",
+        "새크라멘토 킹스 (Sacramento Kings)"
       ],
       "NFL": [
-        "LA 램스",
-        "LA 차저스",
-        "샌프란시스코 포티나이너스"
+        "LA 램스 (Los Angeles Rams)",
+        "LA 차저스 (Los Angeles Chargers)",
+        "샌프란시스코 포티나이너스 (San Francisco 49ers)"
       ],
       "NHL": [
-        "LA 킹스",
-        "애너하임 덕스",
-        "산호세 샤크스"
+        "LA 킹스 (Los Angeles Kings)",
+        "애너하임 덕스 (Anaheim Ducks)",
+        "산호세 샤크스 (San Jose Sharks)"
       ]
     },
     "landmarks": [
@@ -881,64 +1213,75 @@ export const STATE_INFO = {
         "name": "골든게이트교",
         "lat": 37.8199,
         "lng": -122.4783,
-        "cat": "건축도시"
+        "cat": "건축도시",
+        "en": "Golden Gate Bridge"
       },
       {
         "name": "할리우드 사인",
         "lat": 34.1341,
         "lng": -118.3215,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "Hollywood Sign"
       },
       {
         "name": "요세미티 국립공원",
         "lat": 37.8651,
         "lng": -119.5383,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Yosemite National Park"
       },
       {
         "name": "디즈니랜드",
         "lat": 33.8121,
         "lng": -117.919,
-        "cat": "관광체험"
+        "cat": "관광체험",
+        "en": "Disneyland"
       },
       {
         "name": "앨커트래즈섬",
         "lat": 37.8267,
         "lng": -122.423,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "Alcatraz Island"
       },
       {
         "name": "데스밸리 국립공원",
         "lat": 36.5054,
         "lng": -117.0794,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Death Valley National Park"
       }
     ],
     "cities": [
       {
         "name": "로스앤젤레스",
         "lat": 34.0522,
-        "lng": -118.2437
+        "lng": -118.2437,
+        "en": "Los Angeles"
       },
       {
         "name": "샌디에이고",
         "lat": 32.7157,
-        "lng": -117.1611
+        "lng": -117.1611,
+        "en": "San Diego"
       },
       {
         "name": "샌프란시스코",
         "lat": 37.7749,
-        "lng": -122.4194
+        "lng": -122.4194,
+        "en": "San Francisco"
       },
       {
         "name": "새크라멘토",
         "lat": 38.5816,
-        "lng": -121.4944
+        "lng": -121.4944,
+        "en": "Sacramento"
       },
       {
         "name": "산호세",
         "lat": 37.3382,
-        "lng": -121.8863
+        "lng": -121.8863,
+        "en": "San Jose"
       }
     ],
     "flags": [
@@ -1023,53 +1366,109 @@ export const STATE_INFO = {
     },
     "people": {
       "정치": [
-        "존 케리 (정치·전 국무장관, 오로라 출신)",
-        "켄 살라자르 (정치·전 내무장관)",
-        "팻 슈로더 (정치·연방 하원의원)"
+        {
+          "ko": "존 케리",
+          "en": "John Kerry",
+          "note": "정치·전 국무장관, 오로라 출신"
+        },
+        {
+          "ko": "켄 살라자르",
+          "en": "Ken Salazar",
+          "note": "정치·전 내무장관"
+        },
+        {
+          "ko": "팻 슈로더",
+          "en": "Pat Schroeder",
+          "note": "정치·연방 하원의원"
+        }
       ],
       "예술·문화": [
-        "팀 앨런 (배우, 덴버 출신)",
-        "트레이 파커 (애니메이션·사우스파크 공동제작)",
-        "제이크 질런홀 (배우·관련 인물)",
-        "인디아 아리 (음악·가수, 덴버 출신)"
+        {
+          "ko": "팀 앨런",
+          "en": "Tim Allen",
+          "note": "배우, 덴버 출신"
+        },
+        {
+          "ko": "트레이 파커",
+          "en": "Trey Parker",
+          "note": "애니메이션·사우스파크 공동제작"
+        },
+        {
+          "ko": "제이크 질런홀",
+          "en": "Jake Gyllenhaal",
+          "note": "배우·관련 인물"
+        },
+        {
+          "ko": "인디아 아리",
+          "en": "India Arie",
+          "note": "음악·가수, 덴버 출신"
+        }
       ],
       "스포츠": [
-        "에이미 밴 다이켄 (수영·올림픽 금메달리스트)",
-        "미시 프랭클린 (수영·올림픽 금메달리스트)",
-        "잭 니콜라우스 (골프·관련 인물)"
+        {
+          "ko": "에이미 밴 다이켄",
+          "en": "Amy Van Dyken",
+          "note": "수영·올림픽 금메달리스트"
+        },
+        {
+          "ko": "미시 프랭클린",
+          "en": "Missy Franklin",
+          "note": "수영·올림픽 금메달리스트"
+        },
+        {
+          "ko": "잭 니콜라우스",
+          "en": "Jack Nicklaus",
+          "note": "골프·관련 인물"
+        }
       ],
       "과학·기술": [
-        "M. 스콧 카펜터 (우주비행사, 볼더 출신)",
-        "잭 스위거트 (우주비행사·아폴로 13)"
+        {
+          "ko": "M. 스콧 카펜터",
+          "en": "M. Scott Carpenter",
+          "note": "우주비행사, 볼더 출신"
+        },
+        {
+          "ko": "잭 스위거트",
+          "en": "Jack Swigert",
+          "note": "우주비행사·아폴로 13"
+        }
       ],
       "기업": [
-        "필립 안슈츠 (기업·미디어/에너지)",
-        "찰스 보든 (기업·관련 인물)"
+        {
+          "ko": "필립 안슈츠",
+          "en": "Philip Anschutz",
+          "note": "기업·미디어/에너지"
+        },
+        {
+          "ko": "찰스 보든",
+          "en": "Charles Bolden",
+          "note": "기업·관련 인물"
+        }
       ]
     },
     "nationalParks": [
-      "로키마운틴 국립공원",
-      "메사베르데 국립공원",
-      "그레이트샌드듄스 국립공원",
-      "블랙캐니언오브더거니슨 국립공원"
+      "로키마운틴 국립공원 (Rocky Mountain National Park)",
+      "메사베르데 국립공원 (Mesa Verde National Park)",
+      "그레이트샌드듄스 국립공원 (Great Sand Dunes National Park)",
+      "블랙캐니언오브더거니슨 국립공원 (Black Canyon of the Gunnison National Park)"
     ],
     "stateParks": [
-      "치티니 주립공원",
-      "엘도라도캐니언 주립공원",
-      "스테이트포레스트 주립공원"
+      "치티니 주립공원 (Chatfield State Park)",
+      "엘도라도캐니언 주립공원 (Eldorado Canyon State Park)",
+      "스테이트포레스트 주립공원 (State Forest State Park)"
     ],
     "teams": {
       "MLB": [
-        "콜로라도 로키스"
+        "콜로라도 로키스 (Colorado Rockies)"
       ],
       "NBA": [
-        "덴버 너기츠"
+        "덴버 너기츠 (Denver Nuggets)"
       ],
       "NFL": [
-        "덴버 브롱코스"
+        "덴버 브롱코스 (Denver Broncos)"
       ],
       "NHL": [
-        "콜로라도 애벌랜치"
+        "콜로라도 애벌랜치 (Colorado Avalanche)"
       ]
     },
     "landmarks": [
@@ -1077,59 +1476,69 @@ export const STATE_INFO = {
         "name": "레드록스 원형극장",
         "lat": 39.6655,
         "lng": -105.2057,
-        "cat": "관광체험"
+        "cat": "관광체험",
+        "en": "Red Rocks Amphitheatre"
       },
       {
         "name": "로키마운틴 국립공원",
         "lat": 40.3428,
         "lng": -105.6836,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Rocky Mountain National Park"
       },
       {
         "name": "가든오브더갓즈",
         "lat": 38.8784,
         "lng": -104.8697,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Garden of the Gods"
       },
       {
         "name": "메사베르데 국립공원",
         "lat": 37.2309,
         "lng": -108.4618,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Mesa Verde National Park"
       },
       {
         "name": "파이크스피크",
         "lat": 38.8409,
         "lng": -105.0423,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Pikes Peak"
       },
       {
         "name": "콜로라도주 의사당",
         "lat": 39.7392,
         "lng": -104.9847,
-        "cat": "건축도시"
+        "cat": "건축도시",
+        "en": "Colorado State Capitol"
       }
     ],
     "cities": [
       {
         "name": "덴버",
         "lat": 39.7392,
-        "lng": -104.9903
+        "lng": -104.9903,
+        "en": "Denver"
       },
       {
         "name": "콜로라도스프링스",
         "lat": 38.8339,
-        "lng": -104.8214
+        "lng": -104.8214,
+        "en": "Colorado Springs"
       },
       {
         "name": "오로라",
         "lat": 39.7294,
-        "lng": -104.8319
+        "lng": -104.8319,
+        "en": "Aurora"
       },
       {
         "name": "볼더",
         "lat": 40.015,
-        "lng": -105.2705
+        "lng": -105.2705,
+        "en": "Boulder"
       }
     ],
     "flags": [
@@ -1247,35 +1656,91 @@ export const STATE_INFO = {
     },
     "people": {
       "정치": [
-        "조지 W. 부시 (정치·제43대 대통령, 뉴헤이븐 출생)",
-        "라이먼 트럼불 (정치·연방 상원의원)",
-        "에비 휴턴 (정치·관련 인물)"
+        {
+          "ko": "조지 W. 부시",
+          "en": "George W. Bush",
+          "note": "정치·제43대 대통령, 뉴헤이븐 출생"
+        },
+        {
+          "ko": "라이먼 트럼불",
+          "en": "Lyman Trumbull",
+          "note": "정치·연방 상원의원"
+        },
+        {
+          "ko": "에비 휴턴",
+          "en": "Abby Houghton",
+          "note": "정치·관련 인물"
+        }
       ],
       "예술·문화": [
-        "캐서린 헵번 (배우, 하트퍼드 출신)",
-        "마크 트웨인 (작가·하트퍼드 거주)",
-        "메그 라이언 (배우, 페어필드 출신)",
-        "찰스 아이브스 (음악·작곡가)"
+        {
+          "ko": "캐서린 헵번",
+          "en": "Katharine Hepburn",
+          "note": "배우, 하트퍼드 출신"
+        },
+        {
+          "ko": "마크 트웨인",
+          "en": "Mark Twain",
+          "note": "작가·하트퍼드 거주"
+        },
+        {
+          "ko": "메그 라이언",
+          "en": "Meg Ryan",
+          "note": "배우, 페어필드 출신"
+        },
+        {
+          "ko": "찰스 아이브스",
+          "en": "Charles Ives",
+          "note": "음악·작곡가"
+        }
       ],
       "스포츠": [
-        "월터 캠프 (미식축구·근대 미식축구의 아버지)",
-        "도로시 해멀 (피겨스케이팅·올림픽 금메달리스트)",
-        "스티브 영 (미식축구·관련 인물)"
+        {
+          "ko": "월터 캠프",
+          "en": "Walter Camp",
+          "note": "미식축구·근대 미식축구의 아버지"
+        },
+        {
+          "ko": "도로시 해멀",
+          "en": "Dorothy Hamill",
+          "note": "피겨스케이팅·올림픽 금메달리스트"
+        },
+        {
+          "ko": "스티브 영",
+          "en": "Steve Young",
+          "note": "미식축구·관련 인물"
+        }
       ],
       "과학·기술": [
-        "찰스 굿이어 (발명·가황 고무)",
-        "이라이 휘트니 (발명·조면기, 뉴헤이븐 활동)"
+        {
+          "ko": "찰스 굿이어",
+          "en": "Charles Goodyear",
+          "note": "발명·가황 고무"
+        },
+        {
+          "ko": "이라이 휘트니",
+          "en": "Eli Whitney",
+          "note": "발명·조면기, 뉴헤이븐 활동"
+        }
       ],
       "기업": [
-        "P. T. 바넘 (기업·흥행, 브리지포트 시장)",
-        "프레더릭 렌치블러 (기업·관련 인물)"
+        {
+          "ko": "P. T. 바넘",
+          "en": "P. T. Barnum",
+          "note": "기업·흥행, 브리지포트 시장"
+        },
+        {
+          "ko": "프레더릭 렌치블러",
+          "en": "Frederick Rentschler",
+          "note": "기업·관련 인물"
+        }
       ]
     },
     "nationalParks": [],
     "stateParks": [
-      "헐리벅 주립공원",
-      "기리딘 주립공원",
-      "셔우드아일랜드 주립공원"
+      "헐리벅 주립공원 (Hurd State Park)",
+      "기리딘 주립공원 (Gillette Castle State Park)",
+      "셔우드아일랜드 주립공원 (Sherwood Island State Park)"
     ],
     "teams": {
       "MLB": [],
@@ -1288,53 +1753,62 @@ export const STATE_INFO = {
         "name": "예일 대학교",
         "lat": 41.3163,
         "lng": -72.9223,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "Yale University"
       },
       {
         "name": "마크 트웨인 하우스",
         "lat": 41.767,
         "lng": -72.7008,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "Mark Twain House"
       },
       {
         "name": "코네티컷주 의사당",
         "lat": 41.7637,
         "lng": -72.6823,
-        "cat": "건축도시"
+        "cat": "건축도시",
+        "en": "Connecticut State Capitol"
       },
       {
         "name": "미스틱 항구",
         "lat": 41.3543,
         "lng": -71.9665,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "Mystic Seaport"
       },
       {
         "name": "길렛 캐슬 주립공원",
         "lat": 41.422,
         "lng": -72.4271,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Gillette Castle State Park"
       }
     ],
     "cities": [
       {
         "name": "브리지포트",
         "lat": 41.1865,
-        "lng": -73.1952
+        "lng": -73.1952,
+        "en": "Bridgeport"
       },
       {
         "name": "뉴헤이븐",
         "lat": 41.3083,
-        "lng": -72.9279
+        "lng": -72.9279,
+        "en": "New Haven"
       },
       {
         "name": "하트퍼드",
         "lat": 41.7658,
-        "lng": -72.6734
+        "lng": -72.6734,
+        "en": "Hartford"
       },
       {
         "name": "스탬퍼드",
         "lat": 41.0534,
-        "lng": -73.5387
+        "lng": -73.5387,
+        "en": "Stamford"
       }
     ],
     "flags": [
@@ -1438,33 +1912,73 @@ export const STATE_INFO = {
     },
     "people": {
       "정치": [
-        "조 바이든 (정치·제46대 미국 대통령)",
-        "토머스 F. 베이어드 (정치·국무장관)"
+        {
+          "ko": "조 바이든",
+          "en": "Joe Biden",
+          "note": "정치·제46대 미국 대통령"
+        },
+        {
+          "ko": "토머스 F. 베이어드",
+          "en": "Thomas F. Bayard",
+          "note": "정치·국무장관"
+        }
       ],
       "예술·문화": [
-        "헨리 헤임리히 (의학·하임리히법 고안)",
-        "발레리 베르티넬리 (배우·방송인)"
+        {
+          "ko": "헨리 헤임리히",
+          "en": "Henry Heimlich",
+          "note": "의학·하임리히법 고안"
+        },
+        {
+          "ko": "발레리 베르티넬리",
+          "en": "Valerie Bertinelli",
+          "note": "배우·방송인"
+        }
       ],
       "스포츠": [
-        "주드 라모스 (야구·메이저리그 선수)",
-        "엘레나 델 던 (농구·WNBA MVP)"
+        {
+          "ko": "주드 라모스",
+          "en": "Judy Johnson",
+          "note": "야구·메이저리그 선수"
+        },
+        {
+          "ko": "엘레나 델 던",
+          "en": "Elena Delle Donne",
+          "note": "농구·WNBA MVP"
+        }
       ],
       "과학·기술": [
-        "월리스 캐러더스 (화학·나일론 발명)",
-        "에드워드 G. 버드 (제조업·차량 기술)"
+        {
+          "ko": "월리스 캐러더스",
+          "en": "Wallace Carothers",
+          "note": "화학·나일론 발명"
+        },
+        {
+          "ko": "에드워드 G. 버드",
+          "en": "Edward G. Budd",
+          "note": "제조업·차량 기술"
+        }
       ],
       "기업": [
-        "엘레우테르 이레네 뒤퐁 (기업·듀폰 창업주)",
-        "피에르 S. 뒤퐁 (기업·듀폰·GM 경영)"
+        {
+          "ko": "엘레우테르 이레네 뒤퐁",
+          "en": "Eleuthère Irénée du Pont",
+          "note": "기업·듀폰 창업주"
+        },
+        {
+          "ko": "피에르 S. 뒤퐁",
+          "en": "Pierre S. du Pont",
+          "note": "기업·듀폰·GM 경영"
+        }
       ]
     },
     "nationalParks": [
-      "퍼스트 스테이트 국립역사공원"
+      "퍼스트 스테이트 국립역사공원 (First State National Historical Park)"
     ],
     "stateParks": [
-      "케이프 헨로픈 주립공원",
-      "브랜디와인 크리크 주립공원",
-      "화이트 클레이 크리크 주립공원"
+      "케이프 헨로픈 주립공원 (Cape Henlopen State Park)",
+      "브랜디와인 크리크 주립공원 (Brandywine Creek State Park)",
+      "화이트 클레이 크리크 주립공원 (White Clay Creek State Park)"
     ],
     "teams": {
       "MLB": [],
@@ -1477,59 +1991,69 @@ export const STATE_INFO = {
         "name": "케이프 헨로픈 등대",
         "lat": 38.7847,
         "lng": -75.0894,
-        "cat": "건축도시"
+        "cat": "건축도시",
+        "en": "Cape Henlopen Lighthouse"
       },
       {
         "name": "뒤퐁 본사(윌밍턴)",
         "lat": 39.7459,
         "lng": -75.5466,
-        "cat": "건축도시"
+        "cat": "건축도시",
+        "en": "DuPont Headquarters (Wilmington)"
       },
       {
         "name": "올드 뉴캐슬 코트하우스",
         "lat": 39.662,
         "lng": -75.5663,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "Old New Castle Court House"
       },
       {
         "name": "레호보스비치",
         "lat": 38.7209,
         "lng": -75.076,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Rehoboth Beach"
       },
       {
         "name": "델라웨어 주의사당(도버)",
         "lat": 39.1573,
         "lng": -75.5193,
-        "cat": "건축도시"
+        "cat": "건축도시",
+        "en": "Delaware State Capitol (Dover)"
       },
       {
         "name": "윈터투어 박물관",
         "lat": 39.8062,
         "lng": -75.598,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "Winterthur Museum"
       }
     ],
     "cities": [
       {
         "name": "윌밍턴",
         "lat": 39.7459,
-        "lng": -75.5466
+        "lng": -75.5466,
+        "en": "Wilmington"
       },
       {
         "name": "도버",
         "lat": 39.1582,
-        "lng": -75.5244
+        "lng": -75.5244,
+        "en": "Dover"
       },
       {
         "name": "뉴어크",
         "lat": 39.6837,
-        "lng": -75.7497
+        "lng": -75.7497,
+        "en": "Newark"
       },
       {
         "name": "레호보스비치",
         "lat": 38.7209,
-        "lng": -75.076
+        "lng": -75.076,
+        "en": "Rehoboth Beach"
       }
     ],
     "flags": [
@@ -1599,44 +2123,84 @@ export const STATE_INFO = {
     },
     "people": {
       "정치": [
-        "프레더릭 더글러스 (정치·노예제 폐지운동가)",
-        "엘리너 홈스 노턴 (정치·DC 하원 대표)"
+        {
+          "ko": "프레더릭 더글러스",
+          "en": "Frederick Douglass",
+          "note": "정치·노예제 폐지운동가"
+        },
+        {
+          "ko": "엘리너 홈스 노턴",
+          "en": "Eleanor Holmes Norton",
+          "note": "정치·DC 하원 대표"
+        }
       ],
       "예술·문화": [
-        "듀크 엘링턴 (음악·재즈 거장)",
-        "마빈 게이 (음악·소울 가수)"
+        {
+          "ko": "듀크 엘링턴",
+          "en": "Duke Ellington",
+          "note": "음악·재즈 거장"
+        },
+        {
+          "ko": "마빈 게이",
+          "en": "Marvin Gaye",
+          "note": "음악·소울 가수"
+        }
       ],
       "스포츠": [
-        "케빈 듀랜트 (농구·NBA MVP)",
-        "엘긴 베일러 (농구·NBA 전설)"
+        {
+          "ko": "케빈 듀랜트",
+          "en": "Kevin Durant",
+          "note": "농구·NBA MVP"
+        },
+        {
+          "ko": "엘긴 베일러",
+          "en": "Elgin Baylor",
+          "note": "농구·NBA 전설"
+        }
       ],
       "과학·기술": [
-        "로버트 C. 위버 (정책·최초 흑인 각료)",
-        "벤저민 O. 데이비스 주니어 (군사·항공)"
+        {
+          "ko": "로버트 C. 위버",
+          "en": "Robert C. Weaver",
+          "note": "정책·최초 흑인 각료"
+        },
+        {
+          "ko": "벤저민 O. 데이비스 주니어",
+          "en": "Benjamin O. Davis Jr.",
+          "note": "군사·항공"
+        }
       ],
       "기업": [
-        "캐서린 그레이엄 (언론·워싱턴포스트 경영)",
-        "필립 그레이엄 (언론·워싱턴포스트)"
+        {
+          "ko": "캐서린 그레이엄",
+          "en": "Katharine Graham",
+          "note": "언론·워싱턴포스트 경영"
+        },
+        {
+          "ko": "필립 그레이엄",
+          "en": "Philip Graham",
+          "note": "언론·워싱턴포스트"
+        }
       ]
     },
     "nationalParks": [],
     "stateParks": [
-      "록 크리크 공원",
-      "내셔널 몰",
-      "이스트 포토맥 공원"
+      "록 크리크 공원 (Rock Creek Park)",
+      "내셔널 몰 (National Mall)",
+      "이스트 포토맥 공원 (East Potomac Park)"
     ],
     "teams": {
       "MLB": [
-        "워싱턴 내셔널스"
+        "워싱턴 내셔널스 (Washington Nationals)"
       ],
       "NBA": [
-        "워싱턴 위저즈"
+        "워싱턴 위저즈 (Washington Wizards)"
       ],
       "NFL": [
-        "워싱턴 커맨더스"
+        "워싱턴 커맨더스 (Washington Commanders)"
       ],
       "NHL": [
-        "워싱턴 캐피털스"
+        "워싱턴 캐피털스 (Washington Capitals)"
       ]
     },
     "landmarks": [
@@ -1644,37 +2208,43 @@ export const STATE_INFO = {
         "name": "백악관",
         "lat": 38.8977,
         "lng": -77.0365,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "White House"
       },
       {
         "name": "워싱턴 기념탑",
         "lat": 38.8895,
         "lng": -77.0353,
-        "cat": "건축도시"
+        "cat": "건축도시",
+        "en": "Washington Monument"
       },
       {
         "name": "링컨 기념관",
         "lat": 38.8893,
         "lng": -77.0502,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "Lincoln Memorial"
       },
       {
         "name": "미국 국회의사당",
         "lat": 38.8899,
         "lng": -77.0091,
-        "cat": "건축도시"
+        "cat": "건축도시",
+        "en": "United States Capitol"
       },
       {
         "name": "스미스소니언 박물관",
         "lat": 38.8913,
         "lng": -77.0261,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "Smithsonian Institution"
       },
       {
         "name": "제퍼슨 기념관",
         "lat": 38.8814,
         "lng": -77.0365,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "Jefferson Memorial"
       }
     ],
     "cities": [],
@@ -1769,53 +2339,93 @@ export const STATE_INFO = {
     },
     "people": {
       "정치": [
-        "재닛 리노 (정치·법무장관)",
-        "마코 루비오 (정치·상원의원)"
+        {
+          "ko": "재닛 리노",
+          "en": "Janet Reno",
+          "note": "정치·법무장관"
+        },
+        {
+          "ko": "마코 루비오",
+          "en": "Marco Rubio",
+          "note": "정치·상원의원"
+        }
       ],
       "예술·문화": [
-        "시드니 포이티어 (배우·아카데미상)",
-        "글로리아 에스테판 (음악·라틴 팝)"
+        {
+          "ko": "시드니 포이티어",
+          "en": "Sidney Poitier",
+          "note": "배우·아카데미상"
+        },
+        {
+          "ko": "글로리아 에스테판",
+          "en": "Gloria Estefan",
+          "note": "음악·라틴 팝"
+        }
       ],
       "스포츠": [
-        "크리스 에버트 (테니스·그랜드슬램 18회)",
-        "디온 샌더스 (미식축구·명예의 전당)"
+        {
+          "ko": "크리스 에버트",
+          "en": "Chris Evert",
+          "note": "테니스·그랜드슬램 18회"
+        },
+        {
+          "ko": "디온 샌더스",
+          "en": "Deion Sanders",
+          "note": "미식축구·명예의 전당"
+        }
       ],
       "과학·기술": [
-        "존 글렌 (우주·케네디우주센터 발사)",
-        "게리 키스 (기술·항공우주)"
+        {
+          "ko": "존 글렌",
+          "en": "John Glenn",
+          "note": "우주·케네디우주센터 발사"
+        },
+        {
+          "ko": "게리 키스",
+          "en": "Gary Keith",
+          "note": "기술·항공우주"
+        }
       ],
       "기업": [
-        "월리 아모스 (기업·페이머스 아모스 창업)",
-        "제임스 매캘러 (기업·관광)"
+        {
+          "ko": "월리 아모스",
+          "en": "Wally Amos",
+          "note": "기업·페이머스 아모스 창업"
+        },
+        {
+          "ko": "제임스 매캘러",
+          "en": "James McAllister",
+          "note": "기업·관광"
+        }
       ]
     },
     "nationalParks": [
-      "에버글레이즈 국립공원",
-      "비스케인 국립공원",
-      "드라이 토투가스 국립공원"
+      "에버글레이즈 국립공원 (Everglades National Park)",
+      "비스케인 국립공원 (Biscayne National Park)",
+      "드라이 토투가스 국립공원 (Dry Tortugas National Park)"
     ],
     "stateParks": [
-      "힐스버러 강 주립공원",
-      "존 페니캠프 산호초 주립공원",
-      "윀키와치 스프링스 주립공원"
+      "힐스버러 강 주립공원 (Hillsborough River State Park)",
+      "존 페니캠프 산호초 주립공원 (John Pennekamp Coral Reef State Park)",
+      "윀키와치 스프링스 주립공원 (Weeki Wachee Springs State Park)"
     ],
     "teams": {
       "MLB": [
-        "마이애미 말린스",
-        "탬파베이 레이스"
+        "마이애미 말린스 (Miami Marlins)",
+        "탬파베이 레이스 (Tampa Bay Rays)"
       ],
       "NBA": [
-        "마이애미 히트",
-        "올랜도 매직"
+        "마이애미 히트 (Miami Heat)",
+        "올랜도 매직 (Orlando Magic)"
       ],
       "NFL": [
-        "마이애미 돌핀스",
-        "잭슨빌 재규어스",
-        "탬파베이 버커니어스"
+        "마이애미 돌핀스 (Miami Dolphins)",
+        "잭슨빌 재규어스 (Jacksonville Jaguars)",
+        "탬파베이 버커니어스 (Tampa Bay Buccaneers)"
       ],
       "NHL": [
-        "플로리다 팬서스",
-        "탬파베이 라이트닝"
+        "플로리다 팬서스 (Florida Panthers)",
+        "탬파베이 라이트닝 (Tampa Bay Lightning)"
       ]
     },
     "landmarks": [
@@ -1823,64 +2433,75 @@ export const STATE_INFO = {
         "name": "월트 디즈니 월드(올랜도)",
         "lat": 28.3852,
         "lng": -81.5639,
-        "cat": "관광체험"
+        "cat": "관광체험",
+        "en": "Walt Disney World (Orlando)"
       },
       {
         "name": "케네디 우주센터",
         "lat": 28.5728,
         "lng": -80.649,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "Kennedy Space Center"
       },
       {
         "name": "마이애미 비치",
         "lat": 25.7907,
         "lng": -80.13,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Miami Beach"
       },
       {
         "name": "에버글레이즈 국립공원",
         "lat": 25.2866,
         "lng": -80.8987,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Everglades National Park"
       },
       {
         "name": "키웨스트",
         "lat": 24.5551,
         "lng": -81.78,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Key West"
       },
       {
         "name": "플로리다 주의사당(탤러해시)",
         "lat": 30.4383,
         "lng": -84.2807,
-        "cat": "건축도시"
+        "cat": "건축도시",
+        "en": "Florida State Capitol (Tallahassee)"
       }
     ],
     "cities": [
       {
         "name": "잭슨빌",
         "lat": 30.3322,
-        "lng": -81.6557
+        "lng": -81.6557,
+        "en": "Jacksonville"
       },
       {
         "name": "마이애미",
         "lat": 25.7617,
-        "lng": -80.1918
+        "lng": -80.1918,
+        "en": "Miami"
       },
       {
         "name": "탬파",
         "lat": 27.9506,
-        "lng": -82.4572
+        "lng": -82.4572,
+        "en": "Tampa"
       },
       {
         "name": "올랜도",
         "lat": 28.5383,
-        "lng": -81.3792
+        "lng": -81.3792,
+        "en": "Orlando"
       },
       {
         "name": "탤러해시",
         "lat": 30.4383,
-        "lng": -84.2807
+        "lng": -84.2807,
+        "en": "Tallahassee"
       }
     ],
     "flags": [
@@ -1989,43 +2610,83 @@ export const STATE_INFO = {
     },
     "people": {
       "정치": [
-        "지미 카터 (정치·제39대 미국 대통령)",
-        "마틴 루서 킹 주니어 (정치·민권운동 지도자)"
+        {
+          "ko": "지미 카터",
+          "en": "Jimmy Carter",
+          "note": "정치·제39대 미국 대통령"
+        },
+        {
+          "ko": "마틴 루서 킹 주니어",
+          "en": "Martin Luther King Jr.",
+          "note": "정치·민권운동 지도자"
+        }
       ],
       "예술·문화": [
-        "레이 찰스 (음악·소울 거장)",
-        "줄리아 로버츠 (배우·아카데미상)"
+        {
+          "ko": "레이 찰스",
+          "en": "Ray Charles",
+          "note": "음악·소울 거장"
+        },
+        {
+          "ko": "줄리아 로버츠",
+          "en": "Julia Roberts",
+          "note": "배우·아카데미상"
+        }
       ],
       "스포츠": [
-        "행크 에런 (야구·홈런왕)",
-        "허셜 워커 (미식축구·하이즈먼 수상)"
+        {
+          "ko": "행크 에런",
+          "en": "Hank Aaron",
+          "note": "야구·홈런왕"
+        },
+        {
+          "ko": "허셜 워커",
+          "en": "Herschel Walker",
+          "note": "미식축구·하이즈먼 수상"
+        }
       ],
       "과학·기술": [
-        "크로퍼드 롱 (의학·마취 선구자)",
-        "차일스 매콜리프 (기술·항공)"
+        {
+          "ko": "크로퍼드 롱",
+          "en": "Crawford Long",
+          "note": "의학·마취 선구자"
+        },
+        {
+          "ko": "차일스 매콜리프",
+          "en": "Christa McAuliffe",
+          "note": "기술·항공"
+        }
       ],
       "기업": [
-        "에이서 캔들러 (기업·코카콜라 창업)",
-        "테드 터너 (기업·CNN 창업)"
+        {
+          "ko": "에이서 캔들러",
+          "en": "Asa Candler",
+          "note": "기업·코카콜라 창업"
+        },
+        {
+          "ko": "테드 터너",
+          "en": "Ted Turner",
+          "note": "기업·CNN 창업"
+        }
       ]
     },
     "nationalParks": [
-      "컴벌랜드 아일랜드 국립해안"
+      "컴벌랜드 아일랜드 국립해안 (Cumberland Island National Seashore)"
     ],
     "stateParks": [
-      "타루라 협곡 주립공원",
-      "스톤 마운틴 공원",
-      "프로비던스 캐니언 주립공원"
+      "타루라 협곡 주립공원 (Tallulah Gorge State Park)",
+      "스톤 마운틴 공원 (Stone Mountain Park)",
+      "프로비던스 캐니언 주립공원 (Providence Canyon State Park)"
     ],
     "teams": {
       "MLB": [
-        "애틀랜타 브레이브스"
+        "애틀랜타 브레이브스 (Atlanta Braves)"
       ],
       "NBA": [
-        "애틀랜타 호크스"
+        "애틀랜타 호크스 (Atlanta Hawks)"
       ],
       "NFL": [
-        "애틀랜타 팰컨스"
+        "애틀랜타 팰컨스 (Atlanta Falcons)"
       ],
       "NHL": []
     },
@@ -2034,59 +2695,69 @@ export const STATE_INFO = {
         "name": "스톤 마운틴",
         "lat": 33.8053,
         "lng": -84.1452,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Stone Mountain"
       },
       {
         "name": "조지아 주의사당(애틀랜타)",
         "lat": 33.749,
         "lng": -84.388,
-        "cat": "건축도시"
+        "cat": "건축도시",
+        "en": "Georgia State Capitol (Atlanta)"
       },
       {
         "name": "마틴 루서 킹 주니어 국립역사공원",
         "lat": 33.7553,
         "lng": -84.3733,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "Martin Luther King Jr. National Historical Park"
       },
       {
         "name": "사바나 역사지구",
         "lat": 32.0809,
         "lng": -81.0912,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "Savannah Historic District"
       },
       {
         "name": "월드 오브 코카콜라",
         "lat": 33.7627,
         "lng": -84.3927,
-        "cat": "관광체험"
+        "cat": "관광체험",
+        "en": "World of Coca-Cola"
       },
       {
         "name": "타루라 협곡",
         "lat": 34.7398,
         "lng": -83.3924,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Tallulah Gorge"
       }
     ],
     "cities": [
       {
         "name": "애틀랜타",
         "lat": 33.749,
-        "lng": -84.388
+        "lng": -84.388,
+        "en": "Atlanta"
       },
       {
         "name": "사바나",
         "lat": 32.0809,
-        "lng": -81.0912
+        "lng": -81.0912,
+        "en": "Savannah"
       },
       {
         "name": "오거스타",
         "lat": 33.4735,
-        "lng": -82.0105
+        "lng": -82.0105,
+        "en": "Augusta"
       },
       {
         "name": "컬럼버스",
         "lat": 32.461,
-        "lng": -84.9877
+        "lng": -84.9877,
+        "en": "Columbus"
       }
     ],
     "flags": [
@@ -2183,34 +2854,74 @@ export const STATE_INFO = {
     },
     "people": {
       "정치": [
-        "버락 오바마 (정치·제44대 미국 대통령)",
-        "대니얼 이노우에 (정치·상원의원)"
+        {
+          "ko": "버락 오바마",
+          "en": "Barack Obama",
+          "note": "정치·제44대 미국 대통령"
+        },
+        {
+          "ko": "대니얼 이노우에",
+          "en": "Daniel Inouye",
+          "note": "정치·상원의원"
+        }
       ],
       "예술·문화": [
-        "베트 미들러 (배우·가수)",
-        "이즈리얼 카마카위월레 (음악·하와이안)"
+        {
+          "ko": "베트 미들러",
+          "en": "Bette Midler",
+          "note": "배우·가수"
+        },
+        {
+          "ko": "이즈리얼 카마카위월레",
+          "en": "Israel Kamakawiwoʻole",
+          "note": "음악·하와이안"
+        }
       ],
       "스포츠": [
-        "미셸 위 (골프·LPGA 우승)",
-        "BJ 펜 (격투기·UFC 챔피언)"
+        {
+          "ko": "미셸 위",
+          "en": "Michelle Wie",
+          "note": "골프·LPGA 우승"
+        },
+        {
+          "ko": "BJ 펜",
+          "en": "BJ Penn",
+          "note": "격투기·UFC 챔피언"
+        }
       ],
       "과학·기술": [
-        "엘리슨 오니즈카 (우주·우주비행사)",
-        "찰스 리드 (과학·해양학)"
+        {
+          "ko": "엘리슨 오니즈카",
+          "en": "Ellison Onizuka",
+          "note": "우주·우주비행사"
+        },
+        {
+          "ko": "찰스 리드",
+          "en": "Charles Reed",
+          "note": "과학·해양학"
+        }
       ],
       "기업": [
-        "샌퍼드 돌 (기업·돌 식품 창업)",
-        "헨리 J. 카이저 (기업·산업가)"
+        {
+          "ko": "샌퍼드 돌",
+          "en": "Sanford Dole",
+          "note": "기업·돌 식품 창업"
+        },
+        {
+          "ko": "헨리 J. 카이저",
+          "en": "Henry J. Kaiser",
+          "note": "기업·산업가"
+        }
       ]
     },
     "nationalParks": [
-      "하와이 화산 국립공원",
-      "할레아칼라 국립공원"
+      "하와이 화산 국립공원 (Hawaiʻi Volcanoes National Park)",
+      "할레아칼라 국립공원 (Haleakalā National Park)"
     ],
     "stateParks": [
-      "나팔리 코스트 주립공원",
-      "와이메아 캐니언 주립공원",
-      "이아오 밸리 주립공원"
+      "나팔리 코스트 주립공원 (Nā Pali Coast State Park)",
+      "와이메아 캐니언 주립공원 (Waimea Canyon State Park)",
+      "이아오 밸리 주립공원 (ʻĪao Valley State Park)"
     ],
     "teams": {
       "MLB": [],
@@ -2223,59 +2934,69 @@ export const STATE_INFO = {
         "name": "와이키키 해변",
         "lat": 21.2767,
         "lng": -157.827,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Waikiki Beach"
       },
       {
         "name": "진주만(USS 애리조나 기념관)",
         "lat": 21.3649,
         "lng": -157.9501,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "Pearl Harbor (USS Arizona Memorial)"
       },
       {
         "name": "하와이 화산 국립공원",
         "lat": 19.4194,
         "lng": -155.2885,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Hawaiʻi Volcanoes National Park"
       },
       {
         "name": "다이아몬드 헤드",
         "lat": 21.262,
         "lng": -157.8055,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Diamond Head"
       },
       {
         "name": "할레아칼라 정상",
         "lat": 20.7097,
         "lng": -156.2533,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Haleakalā Summit"
       },
       {
         "name": "하와이 주의사당(호놀룰루)",
         "lat": 21.3071,
         "lng": -157.8576,
-        "cat": "건축도시"
+        "cat": "건축도시",
+        "en": "Hawaii State Capitol (Honolulu)"
       }
     ],
     "cities": [
       {
         "name": "호놀룰루",
         "lat": 21.3069,
-        "lng": -157.8583
+        "lng": -157.8583,
+        "en": "Honolulu"
       },
       {
         "name": "힐로",
         "lat": 19.7297,
-        "lng": -155.09
+        "lng": -155.09,
+        "en": "Hilo"
       },
       {
         "name": "카일루아",
         "lat": 21.4022,
-        "lng": -157.7394
+        "lng": -157.7394,
+        "en": "Kailua"
       },
       {
         "name": "카훌루이",
         "lat": 20.8893,
-        "lng": -156.4729
+        "lng": -156.4729,
+        "en": "Kahului"
       }
     ],
     "flags": [
@@ -2354,34 +3075,74 @@ export const STATE_INFO = {
     },
     "people": {
       "정치": [
-        "프랭크 처치 (정치·상원의원)",
-        "윌리엄 보라 (정치·상원의원)"
+        {
+          "ko": "프랭크 처치",
+          "en": "Frank Church",
+          "note": "정치·상원의원"
+        },
+        {
+          "ko": "윌리엄 보라",
+          "en": "William Borah",
+          "note": "정치·상원의원"
+        }
       ],
       "예술·문화": [
-        "에즈라 파운드 (문학·시인)",
-        "에런 페일러 (배우)"
+        {
+          "ko": "에즈라 파운드",
+          "en": "Ezra Pound",
+          "note": "문학·시인"
+        },
+        {
+          "ko": "에런 페일러",
+          "en": "Aaron Paul",
+          "note": "배우"
+        }
       ],
       "스포츠": [
-        "하먼 킬러브루 (야구·홈런왕 명예의 전당)",
-        "제이크 플로레스 (스포츠·육상)"
+        {
+          "ko": "하먼 킬러브루",
+          "en": "Harmon Killebrew",
+          "note": "야구·홈런왕 명예의 전당"
+        },
+        {
+          "ko": "제이크 플로레스",
+          "en": "Jake Flores",
+          "note": "스포츠·육상"
+        }
       ],
       "과학·기술": [
-        "필로 판즈워스 (발명·텔레비전 선구자)",
-        "그레고리 카 (기술·자선가)"
+        {
+          "ko": "필로 판즈워스",
+          "en": "Philo Farnsworth",
+          "note": "발명·텔레비전 선구자"
+        },
+        {
+          "ko": "그레고리 카",
+          "en": "Gregory Carr",
+          "note": "기술·자선가"
+        }
       ],
       "기업": [
-        "조 알바트슨 (기업·알버트슨 슈퍼마켓 창업)",
-        "잭 심플롯 (기업·심플롯 감자)"
+        {
+          "ko": "조 알바트슨",
+          "en": "Joe Albertson",
+          "note": "기업·알버트슨 슈퍼마켓 창업"
+        },
+        {
+          "ko": "잭 심플롯",
+          "en": "J.R. Simplot",
+          "note": "기업·심플롯 감자"
+        }
       ]
     },
     "nationalParks": [
-      "옐로스톤 국립공원(일부)",
-      "네즈퍼스 국립역사공원"
+      "옐로스톤 국립공원(일부) (Yellowstone National Park (partial))",
+      "네즈퍼스 국립역사공원 (Nez Perce National Historical Park)"
     ],
     "stateParks": [
-      "파넬리아 폴스 주립공원",
-      "헤이번 호수 주립공원",
-      "브루노 듄스 주립공원"
+      "파넬리아 폴스 주립공원 (Ponderosa State Park)",
+      "헤이번 호수 주립공원 (Hayden Lake State Park)",
+      "브루노 듄스 주립공원 (Bruneau Dunes State Park)"
     ],
     "teams": {
       "MLB": [],
@@ -2394,59 +3155,69 @@ export const STATE_INFO = {
         "name": "소투스 국가휴양지",
         "lat": 43.9387,
         "lng": -114.5934,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Sawtooth National Recreation Area"
       },
       {
         "name": "크레이터스 오브 더 문 국가기념물",
         "lat": 43.4166,
         "lng": -113.5167,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Craters of the Moon National Monument"
       },
       {
         "name": "헬스 캐니언",
         "lat": 45.2476,
         "lng": -116.705,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Hells Canyon"
       },
       {
         "name": "아이다호 주의사당(보이시)",
         "lat": 43.6177,
         "lng": -116.1996,
-        "cat": "건축도시"
+        "cat": "건축도시",
+        "en": "Idaho State Capitol (Boise)"
       },
       {
         "name": "선밸리 리조트",
         "lat": 43.696,
         "lng": -114.3517,
-        "cat": "관광체험"
+        "cat": "관광체험",
+        "en": "Sun Valley Resort"
       },
       {
         "name": "쇼쇼니 폭포",
         "lat": 42.5938,
         "lng": -114.4007,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Shoshone Falls"
       }
     ],
     "cities": [
       {
         "name": "보이시",
         "lat": 43.615,
-        "lng": -116.2023
+        "lng": -116.2023,
+        "en": "Boise"
       },
       {
         "name": "메리디언",
         "lat": 43.6121,
-        "lng": -116.3915
+        "lng": -116.3915,
+        "en": "Meridian"
       },
       {
         "name": "낸파",
         "lat": 43.5407,
-        "lng": -116.5635
+        "lng": -116.5635,
+        "en": "Nampa"
       },
       {
         "name": "아이다호폴스",
         "lat": 43.4666,
-        "lng": -112.0341
+        "lng": -112.0341,
+        "en": "Idaho Falls"
       }
     ],
     "flags": [
@@ -2550,48 +3321,88 @@ export const STATE_INFO = {
     },
     "people": {
       "정치": [
-        "에이브러햄 링컨 (정치·제16대 미국 대통령·일리노이 거주)",
-        "버락 오바마 (정치·일리노이 상원의원)"
+        {
+          "ko": "에이브러햄 링컨",
+          "en": "Abraham Lincoln",
+          "note": "정치·제16대 미국 대통령·일리노이 거주"
+        },
+        {
+          "ko": "버락 오바마",
+          "en": "Barack Obama",
+          "note": "정치·일리노이 상원의원"
+        }
       ],
       "예술·문화": [
-        "월트 디즈니 (애니메이션·디즈니 창업)",
-        "어니스트 헤밍웨이 (문학·노벨문학상)"
+        {
+          "ko": "월트 디즈니",
+          "en": "Walt Disney",
+          "note": "애니메이션·디즈니 창업"
+        },
+        {
+          "ko": "어니스트 헤밍웨이",
+          "en": "Ernest Hemingway",
+          "note": "문학·노벨문학상"
+        }
       ],
       "스포츠": [
-        "마이클 조던 (농구·시카고 불스 전설)",
-        "딕 버커스 (미식축구·명예의 전당)"
+        {
+          "ko": "마이클 조던",
+          "en": "Michael Jordan",
+          "note": "농구·시카고 불스 전설"
+        },
+        {
+          "ko": "딕 버커스",
+          "en": "Dick Butkus",
+          "note": "미식축구·명예의 전당"
+        }
       ],
       "과학·기술": [
-        "엔리코 페르미 (물리·핵반응 선구자)",
-        "레이 크록 (경영·맥도날드 확장)"
+        {
+          "ko": "엔리코 페르미",
+          "en": "Enrico Fermi",
+          "note": "물리·핵반응 선구자"
+        },
+        {
+          "ko": "레이 크록",
+          "en": "Ray Kroc",
+          "note": "경영·맥도날드 확장"
+        }
       ],
       "기업": [
-        "존 디어 (기업·디어 앤 컴퍼니 창업)",
-        "오프라 윈프리 (방송·미디어 기업가)"
+        {
+          "ko": "존 디어",
+          "en": "John Deere",
+          "note": "기업·디어 앤 컴퍼니 창업"
+        },
+        {
+          "ko": "오프라 윈프리",
+          "en": "Oprah Winfrey",
+          "note": "방송·미디어 기업가"
+        }
       ]
     },
     "nationalParks": [
-      "링컨 홈 국립역사지",
-      "풀먼 국립역사공원"
+      "링컨 홈 국립역사지 (Lincoln Home National Historic Site)",
+      "풀먼 국립역사공원 (Pullman National Historical Park)"
     ],
     "stateParks": [
-      "스타브드 록 주립공원",
-      "마티슨 주립공원",
-      "자이언츠 시티 주립공원"
+      "스타브드 록 주립공원 (Starved Rock State Park)",
+      "마티슨 주립공원 (Matthiessen State Park)",
+      "자이언츠 시티 주립공원 (Giant City State Park)"
     ],
     "teams": {
       "MLB": [
-        "시카고 컵스",
-        "시카고 화이트삭스"
+        "시카고 컵스 (Chicago Cubs)",
+        "시카고 화이트삭스 (Chicago White Sox)"
       ],
       "NBA": [
-        "시카고 불스"
+        "시카고 불스 (Chicago Bulls)"
       ],
       "NFL": [
-        "시카고 베어스"
+        "시카고 베어스 (Chicago Bears)"
       ],
       "NHL": [
-        "시카고 블랙호크스"
+        "시카고 블랙호크스 (Chicago Blackhawks)"
       ]
     },
     "landmarks": [
@@ -2599,59 +3410,69 @@ export const STATE_INFO = {
         "name": "윌리스 타워(시어스 타워)",
         "lat": 41.8789,
         "lng": -87.6359,
-        "cat": "건축도시"
+        "cat": "건축도시",
+        "en": "Willis Tower (Sears Tower)"
       },
       {
         "name": "밀레니엄 공원(클라우드 게이트)",
         "lat": 41.8826,
         "lng": -87.6233,
-        "cat": "건축도시"
+        "cat": "건축도시",
+        "en": "Millennium Park (Cloud Gate)"
       },
       {
         "name": "네이비 피어",
         "lat": 41.8917,
         "lng": -87.6086,
-        "cat": "관광체험"
+        "cat": "관광체험",
+        "en": "Navy Pier"
       },
       {
         "name": "일리노이 주의사당(스프링필드)",
         "lat": 39.7989,
         "lng": -89.6545,
-        "cat": "건축도시"
+        "cat": "건축도시",
+        "en": "Illinois State Capitol (Springfield)"
       },
       {
         "name": "링컨 묘소(스프링필드)",
         "lat": 39.8242,
         "lng": -89.6562,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "Lincoln Tomb (Springfield)"
       },
       {
         "name": "아트 인스티튜트 오브 시카고",
         "lat": 41.8796,
         "lng": -87.6237,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "Art Institute of Chicago"
       }
     ],
     "cities": [
       {
         "name": "시카고",
         "lat": 41.8781,
-        "lng": -87.6298
+        "lng": -87.6298,
+        "en": "Chicago"
       },
       {
         "name": "오로라",
         "lat": 41.7606,
-        "lng": -88.3201
+        "lng": -88.3201,
+        "en": "Aurora"
       },
       {
         "name": "스프링필드",
         "lat": 39.7817,
-        "lng": -89.6501
+        "lng": -89.6501,
+        "en": "Springfield"
       },
       {
         "name": "록퍼드",
         "lat": 42.2711,
-        "lng": -89.094
+        "lng": -89.094,
+        "en": "Rockford"
       }
     ],
     "flags": [
@@ -2762,41 +3583,81 @@ export const STATE_INFO = {
     },
     "people": {
       "정치": [
-        "벤저민 해리슨 (정치·제23대 미국 대통령)",
-        "마이크 펜스 (정치·제48대 미국 부통령·인디애나 주지사)"
+        {
+          "ko": "벤저민 해리슨",
+          "en": "Benjamin Harrison",
+          "note": "정치·제23대 미국 대통령"
+        },
+        {
+          "ko": "마이크 펜스",
+          "en": "Mike Pence",
+          "note": "정치·제48대 미국 부통령·인디애나 주지사"
+        }
       ],
       "예술·문화": [
-        "마이클 잭슨 (음악·팝의 황제, 게리 출신)",
-        "데이비드 레터맨 (방송·심야 토크쇼 진행자)",
-        "커트 보니것 (문학·소설가 '제5도살장')"
+        {
+          "ko": "마이클 잭슨",
+          "en": "Michael Jackson",
+          "note": "음악·팝의 황제, 게리 출신"
+        },
+        {
+          "ko": "데이비드 레터맨",
+          "en": "David Letterman",
+          "note": "방송·심야 토크쇼 진행자"
+        },
+        {
+          "ko": "커트 보니것",
+          "en": "Kurt Vonnegut",
+          "note": "문학·소설가 '제5도살장'"
+        }
       ],
       "스포츠": [
-        "래리 버드 (농구·NBA 전설, 인디애나 출신)",
-        "오스카 로버트슨 (농구·NBA 트리플더블의 선구자)"
+        {
+          "ko": "래리 버드",
+          "en": "Larry Bird",
+          "note": "농구·NBA 전설, 인디애나 출신"
+        },
+        {
+          "ko": "오스카 로버트슨",
+          "en": "Oscar Robertson",
+          "note": "농구·NBA 트리플더블의 선구자"
+        }
       ],
       "과학·기술": [
-        "윌버 라이트 (항공·라이트 형제 형, 인디애나 출신)"
+        {
+          "ko": "윌버 라이트",
+          "en": "Wilbur Wright",
+          "note": "항공·라이트 형제 형, 인디애나 출신"
+        }
       ],
       "기업": [
-        "콜 포터 (작곡가) 외 — 일라이 릴리 (제약·인디애나폴리스 본사)",
-        "마들렌 퓨 — 컬럼 인더스트리 (제조)"
+        {
+          "ko": "콜 포터",
+          "en": "Cole Porter / Eli Lilly",
+          "note": "작곡가) 외 — 일라이 릴리 (제약·인디애나폴리스 본사"
+        },
+        {
+          "ko": "마들렌 퓨 — 컬럼 인더스트리",
+          "en": "Madelyn Pugh / Cummins",
+          "note": "제조"
+        }
       ]
     },
     "nationalParks": [
-      "인디애나 듄스 국립공원"
+      "인디애나 듄스 국립공원 (Indiana Dunes National Park)"
     ],
     "stateParks": [
-      "브라운 카운티 주립공원",
-      "터키 런 주립공원",
-      "맥코믹스 크릭 주립공원"
+      "브라운 카운티 주립공원 (Brown County State Park)",
+      "터키 런 주립공원 (Turkey Run State Park)",
+      "맥코믹스 크릭 주립공원 (McCormick's Creek State Park)"
     ],
     "teams": {
       "MLB": [],
       "NBA": [
-        "인디애나 페이서스"
+        "인디애나 페이서스 (Indiana Pacers)"
       ],
       "NFL": [
-        "인디애나폴리스 콜츠"
+        "인디애나폴리스 콜츠 (Indianapolis Colts)"
       ],
       "NHL": []
     },
@@ -2805,64 +3666,75 @@ export const STATE_INFO = {
         "name": "인디애나폴리스 모터 스피드웨이",
         "lat": 39.795,
         "lng": -86.2346,
-        "cat": "관광체험"
+        "cat": "관광체험",
+        "en": "Indianapolis Motor Speedway"
       },
       {
         "name": "인디애나 주 의사당",
         "lat": 39.7684,
         "lng": -86.1623,
-        "cat": "건축도시"
+        "cat": "건축도시",
+        "en": "Indiana State Capitol"
       },
       {
         "name": "전쟁기념탑 (솔저스 앤드 세일러스 모뉴먼트)",
         "lat": 39.7691,
         "lng": -86.1581,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "Soldiers and Sailors Monument"
       },
       {
         "name": "인디애나 듄스 국립공원",
         "lat": 41.6533,
         "lng": -87.0524,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Indiana Dunes National Park"
       },
       {
         "name": "노트르담 대학교 (골든 돔)",
         "lat": 41.7052,
         "lng": -86.2353,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "University of Notre Dame"
       },
       {
         "name": "웨스트 베이든 스프링스 호텔",
         "lat": 38.5664,
         "lng": -86.6133,
-        "cat": "건축도시"
+        "cat": "건축도시",
+        "en": "West Baden Springs Hotel"
       }
     ],
     "cities": [
       {
         "name": "인디애나폴리스",
         "lat": 39.7684,
-        "lng": -86.1581
+        "lng": -86.1581,
+        "en": "Indianapolis"
       },
       {
         "name": "포트웨인",
         "lat": 41.0793,
-        "lng": -85.1394
+        "lng": -85.1394,
+        "en": "Fort Wayne"
       },
       {
         "name": "에반스빌",
         "lat": 37.9716,
-        "lng": -87.5711
+        "lng": -87.5711,
+        "en": "Evansville"
       },
       {
         "name": "사우스벤드",
         "lat": 41.6764,
-        "lng": -86.252
+        "lng": -86.252,
+        "en": "South Bend"
       },
       {
         "name": "카멀",
         "lat": 39.9784,
-        "lng": -86.118
+        "lng": -86.118,
+        "en": "Carmel"
       }
     ],
     "flags": [
@@ -2956,32 +3828,76 @@ export const STATE_INFO = {
     },
     "people": {
       "정치": [
-        "허버트 후버 (정치·제31대 미국 대통령, 웨스트브랜치 출생)",
-        "헨리 A. 월리스 (정치·제33대 미국 부통령)"
+        {
+          "ko": "허버트 후버",
+          "en": "Herbert Hoover",
+          "note": "정치·제31대 미국 대통령, 웨스트브랜치 출생"
+        },
+        {
+          "ko": "헨리 A. 월리스",
+          "en": "Henry A. Wallace",
+          "note": "정치·제33대 미국 부통령"
+        }
       ],
       "예술·문화": [
-        "존 웨인 (영화·서부극 배우, 윈터셋 출생)",
-        "그랜트 우드 (미술·'아메리칸 고딕' 화가)",
-        "빌 브라이슨 (문학·여행 작가)"
+        {
+          "ko": "존 웨인",
+          "en": "John Wayne",
+          "note": "영화·서부극 배우, 윈터셋 출생"
+        },
+        {
+          "ko": "그랜트 우드",
+          "en": "Grant Wood",
+          "note": "미술·'아메리칸 고딕' 화가"
+        },
+        {
+          "ko": "빌 브라이슨",
+          "en": "Bill Bryson",
+          "note": "문학·여행 작가"
+        }
       ],
       "스포츠": [
-        "댄 게이블 (레슬링·올림픽 금메달리스트)",
-        "케일럽 플랫리 — 셰넌 밀러"
+        {
+          "ko": "댄 게이블",
+          "en": "Dan Gable",
+          "note": "레슬링·올림픽 금메달리스트"
+        },
+        {
+          "ko": "케일럽 플랫리 — 셰넌 밀러",
+          "en": "Caleb Plant / Shawn Johnson",
+          "note": ""
+        }
       ],
       "과학·기술": [
-        "노먼 볼로그 (농학·녹색혁명, 노벨평화상)",
-        "조지 워싱턴 카버 (농학·식물학자, 아이오와주립대 수학)"
+        {
+          "ko": "노먼 볼로그",
+          "en": "Norman Borlaug",
+          "note": "농학·녹색혁명, 노벨평화상"
+        },
+        {
+          "ko": "조지 워싱턴 카버",
+          "en": "George Washington Carver",
+          "note": "농학·식물학자, 아이오와주립대 수학"
+        }
       ],
       "기업": [
-        "존 디어 (제조·디어 앤드 컴퍼니 트랙터)",
-        "프레더릭 메이태그 (제조·메이태그 가전)"
+        {
+          "ko": "존 디어",
+          "en": "John Deere",
+          "note": "제조·디어 앤드 컴퍼니 트랙터"
+        },
+        {
+          "ko": "프레더릭 메이태그",
+          "en": "Frederick Maytag",
+          "note": "제조·메이태그 가전"
+        }
       ]
     },
     "nationalParks": [],
     "stateParks": [
-      "매콰케타 동굴 주립공원",
-      "백본 주립공원",
-      "레이크 매닝 주립공원"
+      "매콰케타 동굴 주립공원 (Maquoketa Caves State Park)",
+      "백본 주립공원 (Backbone State Park)",
+      "레이크 매닝 주립공원 (Lake Manawa State Park)"
     ],
     "teams": {
       "MLB": [],
@@ -2994,64 +3910,75 @@ export const STATE_INFO = {
         "name": "아이오와 주 의사당",
         "lat": 41.5912,
         "lng": -93.6034,
-        "cat": "건축도시"
+        "cat": "건축도시",
+        "en": "Iowa State Capitol"
       },
       {
         "name": "이펙트 다리 (매디슨 카운티의 다리)",
         "lat": 41.3097,
         "lng": -94.0083,
-        "cat": "건축도시"
+        "cat": "건축도시",
+        "en": "Bridges of Madison County"
       },
       {
         "name": "허버트 후버 대통령 도서관·박물관",
         "lat": 41.6709,
         "lng": -91.3504,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "Herbert Hoover Presidential Library and Museum"
       },
       {
         "name": "필즈 오브 드림스 (영화 촬영지)",
         "lat": 42.4972,
         "lng": -90.5512,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "Field of Dreams Movie Site"
       },
       {
         "name": "이펙트 그로토 오브 더 리뎀션",
         "lat": 43.3622,
         "lng": -94.223,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "Grotto of the Redemption"
       },
       {
         "name": "매콰케타 동굴 주립공원",
         "lat": 42.1108,
         "lng": -90.7757,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Maquoketa Caves State Park"
       }
     ],
     "cities": [
       {
         "name": "디모인",
         "lat": 41.5868,
-        "lng": -93.625
+        "lng": -93.625,
+        "en": "Des Moines"
       },
       {
         "name": "시더래피즈",
         "lat": 41.9779,
-        "lng": -91.6656
+        "lng": -91.6656,
+        "en": "Cedar Rapids"
       },
       {
         "name": "대번포트",
         "lat": 41.5236,
-        "lng": -90.5776
+        "lng": -90.5776,
+        "en": "Davenport"
       },
       {
         "name": "수시티",
         "lat": 42.4999,
-        "lng": -96.4003
+        "lng": -96.4003,
+        "en": "Sioux City"
       },
       {
         "name": "아이오와시티",
         "lat": 41.6611,
-        "lng": -91.5302
+        "lng": -91.5302,
+        "en": "Iowa City"
       }
     ],
     "flags": [
@@ -3139,34 +4066,78 @@ export const STATE_INFO = {
     },
     "people": {
       "정치": [
-        "드와이트 D. 아이젠하워 (정치·제34대 미국 대통령, 애빌린 성장)",
-        "밥 돌 (정치·연방 상원 다수당 원내대표·대선 후보)"
+        {
+          "ko": "드와이트 D. 아이젠하워",
+          "en": "Dwight D. Eisenhower",
+          "note": "정치·제34대 미국 대통령, 애빌린 성장"
+        },
+        {
+          "ko": "밥 돌",
+          "en": "Bob Dole",
+          "note": "정치·연방 상원 다수당 원내대표·대선 후보"
+        }
       ],
       "예술·문화": [
-        "아멜리아 에어하트 (비행·여성 비행 개척자, 애치슨 출생)",
-        "고든 파크스 (사진·영화 감독)",
-        "윌리엄 인지 (문학·극작가)"
+        {
+          "ko": "아멜리아 에어하트",
+          "en": "Amelia Earhart",
+          "note": "비행·여성 비행 개척자, 애치슨 출생"
+        },
+        {
+          "ko": "고든 파크스",
+          "en": "Gordon Parks",
+          "note": "사진·영화 감독"
+        },
+        {
+          "ko": "윌리엄 인지",
+          "en": "William Inge",
+          "note": "문학·극작가"
+        }
       ],
       "스포츠": [
-        "월트 체임벌린 — 바버라 — 게일 세이어스 (미식축구·NFL 명예의 전당)",
-        "존 리겐스 (미식축구·NFL 러닝백)"
+        {
+          "ko": "월트 체임벌린 — 바버라 — 게일 세이어스",
+          "en": "Wilt Chamberlain / Barry Sanders / Gale Sayers",
+          "note": "미식축구·NFL 명예의 전당"
+        },
+        {
+          "ko": "존 리겐스",
+          "en": "John Riggins",
+          "note": "미식축구·NFL 러닝백"
+        }
       ],
       "과학·기술": [
-        "클라이드 톰보 (천문·명왕성 발견자)",
-        "버넌 L. 스미스 (경제학·노벨경제학상)"
+        {
+          "ko": "클라이드 톰보",
+          "en": "Clyde Tombaugh",
+          "note": "천문·명왕성 발견자"
+        },
+        {
+          "ko": "버넌 L. 스미스",
+          "en": "Vernon L. Smith",
+          "note": "경제학·노벨경제학상"
+        }
       ],
       "기업": [
-        "월터 크라이슬러 (자동차·크라이슬러 창업자)",
-        "찰스 코크 (기업·코크 인더스트리)"
+        {
+          "ko": "월터 크라이슬러",
+          "en": "Walter Chrysler",
+          "note": "자동차·크라이슬러 창업자"
+        },
+        {
+          "ko": "찰스 코크",
+          "en": "Charles Koch",
+          "note": "기업·코크 인더스트리"
+        }
       ]
     },
     "nationalParks": [
-      "톨그래스 프레리 국립보존지구"
+      "톨그래스 프레리 국립보존지구 (Tallgrass Prairie National Preserve)"
     ],
     "stateParks": [
-      "투론토 주립공원",
-      "엘크 시티 주립공원",
-      "클린턴 주립공원"
+      "투론토 주립공원 (Toronto State Park)",
+      "엘크 시티 주립공원 (Elk City State Park)",
+      "클린턴 주립공원 (Clinton State Park)"
     ],
     "teams": {
       "MLB": [],
@@ -3179,64 +4150,75 @@ export const STATE_INFO = {
         "name": "캔자스 주 의사당",
         "lat": 39.0473,
         "lng": -95.6781,
-        "cat": "건축도시"
+        "cat": "건축도시",
+        "en": "Kansas State Capitol"
       },
       {
         "name": "톨그래스 프레리 국립보존지구",
         "lat": 38.4338,
         "lng": -96.5586,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Tallgrass Prairie National Preserve"
       },
       {
         "name": "모뉴먼트 록스 (화이트 칠스)",
         "lat": 38.7906,
         "lng": -100.7625,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Monument Rocks"
       },
       {
         "name": "아멜리아 에어하트 생가",
         "lat": 39.5631,
         "lng": -95.1366,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "Amelia Earhart Birthplace Museum"
       },
       {
         "name": "보토 와 기념탑 (미국 지리적 중심)",
         "lat": 39.7989,
         "lng": -98.5795,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "Geographic Center of the Contiguous United States"
       },
       {
         "name": "위치토 코우타운 박물관",
         "lat": 37.69,
         "lng": -97.3431,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "Wichita Cowtown Museum"
       }
     ],
     "cities": [
       {
         "name": "위치토",
         "lat": 37.6872,
-        "lng": -97.3301
+        "lng": -97.3301,
+        "en": "Wichita"
       },
       {
         "name": "오버랜드파크",
         "lat": 38.9822,
-        "lng": -94.6708
+        "lng": -94.6708,
+        "en": "Overland Park"
       },
       {
         "name": "캔자스시티",
         "lat": 39.1141,
-        "lng": -94.6275
+        "lng": -94.6275,
+        "en": "Kansas City"
       },
       {
         "name": "토피카",
         "lat": 39.0473,
-        "lng": -95.6752
+        "lng": -95.6752,
+        "en": "Topeka"
       },
       {
         "name": "올레이스",
         "lat": 38.8814,
-        "lng": -94.8191
+        "lng": -94.8191,
+        "en": "Olathe"
       }
     ],
     "flags": [
@@ -3341,34 +4323,78 @@ export const STATE_INFO = {
     },
     "people": {
       "정치": [
-        "에이브러햄 링컨 (정치·제16대 미국 대통령, 호젠빌 출생)",
-        "헨리 클레이 (정치·'위대한 타협가' 상원의원)"
+        {
+          "ko": "에이브러햄 링컨",
+          "en": "Abraham Lincoln",
+          "note": "정치·제16대 미국 대통령, 호젠빌 출생"
+        },
+        {
+          "ko": "헨리 클레이",
+          "en": "Henry Clay",
+          "note": "정치·'위대한 타협가' 상원의원"
+        }
       ],
       "예술·문화": [
-        "조지 클루니 (영화·배우·감독, 렉싱턴 출생)",
-        "조니 뎁 (영화·배우, 오언즈버러 출생)",
-        "헌터 S. 톰슨 (문학·곤조 저널리즘)"
+        {
+          "ko": "조지 클루니",
+          "en": "George Clooney",
+          "note": "영화·배우·감독, 렉싱턴 출생"
+        },
+        {
+          "ko": "조니 뎁",
+          "en": "Johnny Depp",
+          "note": "영화·배우, 오언즈버러 출생"
+        },
+        {
+          "ko": "헌터 S. 톰슨",
+          "en": "Hunter S. Thompson",
+          "note": "문학·곤조 저널리즘"
+        }
       ],
       "스포츠": [
-        "무하마드 알리 (복싱·전설적 헤비급 챔피언, 루이빌 출생)",
-        "대럴 그리피스 (농구·NBA 선수)"
+        {
+          "ko": "무하마드 알리",
+          "en": "Muhammad Ali",
+          "note": "복싱·전설적 헤비급 챔피언, 루이빌 출생"
+        },
+        {
+          "ko": "대럴 그리피스",
+          "en": "Darrell Griffith",
+          "note": "농구·NBA 선수"
+        }
       ],
       "과학·기술": [
-        "토머스 헌트 모건 (생물학·유전학, 노벨생리의학상)",
-        "필 심스 — 너새니얼 섀일러 (지질학)"
+        {
+          "ko": "토머스 헌트 모건",
+          "en": "Thomas Hunt Morgan",
+          "note": "생물학·유전학, 노벨생리의학상"
+        },
+        {
+          "ko": "필 심스 — 너새니얼 섀일러",
+          "en": "Phil Simms / Nathaniel Shaler",
+          "note": "지질학"
+        }
       ],
       "기업": [
-        "할랜드 샌더스 (요식업·KFC 창업자, 커넬 샌더스)",
-        "존 G. 헤이건 — 짐 빔 (위스키)"
+        {
+          "ko": "할랜드 샌더스",
+          "en": "Harland Sanders",
+          "note": "요식업·KFC 창업자, 커넬 샌더스"
+        },
+        {
+          "ko": "존 G. 헤이건 — 짐 빔",
+          "en": "John G. Hagen / Jim Beam",
+          "note": "위스키"
+        }
       ]
     },
     "nationalParks": [
-      "매머드케이브 국립공원"
+      "매머드케이브 국립공원 (Mammoth Cave National Park)"
     ],
     "stateParks": [
-      "컴벌랜드 폴스 주립공원",
-      "내추럴 브리지 주립공원",
-      "레드 리버 협곡 주립공원"
+      "컴벌랜드 폴스 주립공원 (Cumberland Falls State Resort Park)",
+      "내추럴 브리지 주립공원 (Natural Bridge State Resort Park)",
+      "레드 리버 협곡 주립공원 (Red River Gorge State Park)"
     ],
     "teams": {
       "MLB": [],
@@ -3381,64 +4407,75 @@ export const STATE_INFO = {
         "name": "처칠 다운스 (켄터키 더비 경마장)",
         "lat": 38.2027,
         "lng": -85.77,
-        "cat": "관광체험"
+        "cat": "관광체험",
+        "en": "Churchill Downs"
       },
       {
         "name": "매머드케이브 국립공원",
         "lat": 37.1862,
         "lng": -86.1009,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Mammoth Cave National Park"
       },
       {
         "name": "켄터키 주 의사당",
         "lat": 38.1867,
         "lng": -84.8753,
-        "cat": "건축도시"
+        "cat": "건축도시",
+        "en": "Kentucky State Capitol"
       },
       {
         "name": "에이브러햄 링컨 생가 국립역사공원",
         "lat": 37.5316,
         "lng": -85.7372,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "Abraham Lincoln Birthplace National Historical Park"
       },
       {
         "name": "컴벌랜드 폭포",
         "lat": 36.8381,
         "lng": -84.3419,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Cumberland Falls"
       },
       {
         "name": "루이빌 슬러거 박물관",
         "lat": 38.2566,
         "lng": -85.7676,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "Louisville Slugger Museum"
       }
     ],
     "cities": [
       {
         "name": "루이빌",
         "lat": 38.2527,
-        "lng": -85.7585
+        "lng": -85.7585,
+        "en": "Louisville"
       },
       {
         "name": "렉싱턴",
         "lat": 38.0406,
-        "lng": -84.5037
+        "lng": -84.5037,
+        "en": "Lexington"
       },
       {
         "name": "볼링그린",
         "lat": 36.9685,
-        "lng": -86.4808
+        "lng": -86.4808,
+        "en": "Bowling Green"
       },
       {
         "name": "오언즈버러",
         "lat": 37.7719,
-        "lng": -87.1112
+        "lng": -87.1112,
+        "en": "Owensboro"
       },
       {
         "name": "프랭크퍼트",
         "lat": 38.2009,
-        "lng": -84.8733
+        "lng": -84.8733,
+        "en": "Frankfort"
       }
     ],
     "flags": [
@@ -3539,39 +4576,79 @@ export const STATE_INFO = {
     },
     "people": {
       "정치": [
-        "휴이 롱 (정치·루이지애나 주지사·상원의원)",
-        "재커리 테일러 (정치·제12대 미국 대통령, 루이지애나 성장)"
+        {
+          "ko": "휴이 롱",
+          "en": "Huey Long",
+          "note": "정치·루이지애나 주지사·상원의원"
+        },
+        {
+          "ko": "재커리 테일러",
+          "en": "Zachary Taylor",
+          "note": "정치·제12대 미국 대통령, 루이지애나 성장"
+        }
       ],
       "예술·문화": [
-        "루이 암스트롱 (음악·재즈 트럼펫의 거장, 뉴올리언스 출생)",
-        "트루먼 커포티 (문학·소설가 '냉혈한')",
-        "엘런 디제너러스 (방송·코미디언·진행자)"
+        {
+          "ko": "루이 암스트롱",
+          "en": "Louis Armstrong",
+          "note": "음악·재즈 트럼펫의 거장, 뉴올리언스 출생"
+        },
+        {
+          "ko": "트루먼 커포티",
+          "en": "Truman Capote",
+          "note": "문학·소설가 '냉혈한'"
+        },
+        {
+          "ko": "엘런 디제너러스",
+          "en": "Ellen DeGeneres",
+          "note": "방송·코미디언·진행자"
+        }
       ],
       "스포츠": [
-        "페이튼 매닝·일라이 매닝 (미식축구·NFL 쿼터백 형제)",
-        "테렌스 — 빌 러셀 (농구·NBA 전설, 먼로 출생)"
+        {
+          "ko": "페이튼 매닝·일라이 매닝",
+          "en": "Peyton Manning / Eli Manning",
+          "note": "미식축구·NFL 쿼터백 형제"
+        },
+        {
+          "ko": "테렌스 — 빌 러셀",
+          "en": "Terrence / Bill Russell",
+          "note": "농구·NBA 전설, 먼로 출생"
+        }
       ],
       "과학·기술": [
-        "앤드루 J. 무어 — 마이클 디바키 (의학·심혈관외과 선구자)"
+        {
+          "ko": "앤드루 J. 무어 — 마이클 디바키",
+          "en": "Andrew J. Moore / Michael DeBakey",
+          "note": "의학·심혈관외과 선구자"
+        }
       ],
       "기업": [
-        "톰 베니슨 (기업·뉴올리언스 세인츠 구단주)",
-        "마이클 디바키 — 폴 프루돔 (요리·케이준 요리 대중화)"
+        {
+          "ko": "톰 베니슨",
+          "en": "Tom Benson",
+          "note": "기업·뉴올리언스 세인츠 구단주"
+        },
+        {
+          "ko": "마이클 디바키 — 폴 프루돔",
+          "en": "Michael DeBakey / Paul Prudhomme",
+          "note": "요리·케이준 요리 대중화"
+        }
       ]
     },
     "nationalParks": [],
     "stateParks": [
-      "포니에르 주립공원",
-      "치커샤 주립공원",
-      "그랜드 아일 주립공원"
+      "포니에르 주립공원 (Fontainebleau State Park)",
+      "치커샤 주립공원 (Chicot State Park)",
+      "그랜드 아일 주립공원 (Grand Isle State Park)"
     ],
     "teams": {
       "MLB": [],
       "NBA": [
-        "뉴올리언스 펠리컨스"
+        "뉴올리언스 펠리컨스 (New Orleans Pelicans)"
       ],
       "NFL": [
-        "뉴올리언스 세인츠"
+        "뉴올리언스 세인츠 (New Orleans Saints)"
       ],
       "NHL": []
     },
@@ -3580,64 +4657,75 @@ export const STATE_INFO = {
         "name": "프렌치 쿼터 (잭슨 광장)",
         "lat": 29.9574,
         "lng": -90.0626,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "French Quarter"
       },
       {
         "name": "세인트루이스 대성당",
         "lat": 29.9579,
         "lng": -90.0633,
-        "cat": "건축도시"
+        "cat": "건축도시",
+        "en": "St. Louis Cathedral"
       },
       {
         "name": "루이지애나 주 의사당",
         "lat": 30.4571,
         "lng": -91.1874,
-        "cat": "건축도시"
+        "cat": "건축도시",
+        "en": "Louisiana State Capitol"
       },
       {
         "name": "시저스 슈퍼돔",
         "lat": 29.9511,
         "lng": -90.0812,
-        "cat": "관광체험"
+        "cat": "관광체험",
+        "en": "Caesars Superdome"
       },
       {
         "name": "오크 앨리 플랜테이션",
         "lat": 30.0049,
         "lng": -90.7838,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "Oak Alley Plantation"
       },
       {
         "name": "스틸 매그놀리아 — 가든 디스트릭트",
         "lat": 29.9281,
         "lng": -90.0843,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "Garden District"
       }
     ],
     "cities": [
       {
         "name": "뉴올리언스",
         "lat": 29.9511,
-        "lng": -90.0715
+        "lng": -90.0715,
+        "en": "New Orleans"
       },
       {
         "name": "배턴루지",
         "lat": 30.4515,
-        "lng": -91.1871
+        "lng": -91.1871,
+        "en": "Baton Rouge"
       },
       {
         "name": "슈리브포트",
         "lat": 32.5252,
-        "lng": -93.7502
+        "lng": -93.7502,
+        "en": "Shreveport"
       },
       {
         "name": "라피엣",
         "lat": 30.2241,
-        "lng": -92.0198
+        "lng": -92.0198,
+        "en": "Lafayette"
       },
       {
         "name": "레이크찰스",
         "lat": 30.2266,
-        "lng": -93.2174
+        "lng": -93.2174,
+        "en": "Lake Charles"
       }
     ],
     "flags": [
@@ -3743,34 +4831,78 @@ export const STATE_INFO = {
     },
     "people": {
       "정치": [
-        "한니발 햄린 (정치·제15대 미국 부통령)",
-        "마거릿 체이스 스미스 (정치·여성 최초 상·하원 양원 의원)"
+        {
+          "ko": "한니발 햄린",
+          "en": "Hannibal Hamlin",
+          "note": "정치·제15대 미국 부통령"
+        },
+        {
+          "ko": "마거릿 체이스 스미스",
+          "en": "Margaret Chase Smith",
+          "note": "정치·여성 최초 상·하원 양원 의원"
+        }
       ],
       "예술·문화": [
-        "스티븐 킹 (문학·공포소설의 거장, 포틀랜드 출생)",
-        "헨리 워즈워스 롱펠로 (문학·시인)",
-        "위노나 라이더 — 마즈데 — 앤드루 와이어스 (미술)"
+        {
+          "ko": "스티븐 킹",
+          "en": "Stephen King",
+          "note": "문학·공포소설의 거장, 포틀랜드 출생"
+        },
+        {
+          "ko": "헨리 워즈워스 롱펠로",
+          "en": "Henry Wadsworth Longfellow",
+          "note": "문학·시인"
+        },
+        {
+          "ko": "위노나 라이더 — 마즈데 — 앤드루 와이어스",
+          "en": "Winona Ryder / Andrew Wyeth",
+          "note": "미술"
+        }
       ],
       "스포츠": [
-        "조앤 베노이트 (육상·최초 여자 올림픽 마라톤 금메달)",
-        "시리 린들리 — 라리사 (트라이애슬론)"
+        {
+          "ko": "조앤 베노이트",
+          "en": "Joan Benoit",
+          "note": "육상·최초 여자 올림픽 마라톤 금메달"
+        },
+        {
+          "ko": "시리 린들리 — 라리사",
+          "en": "Siri Lindley / Larissa",
+          "note": "트라이애슬론"
+        }
       ],
       "과학·기술": [
-        "퍼시벌 로웰 (천문·로웰 천문대 설립자)",
-        "리어나도 — 한슨 — 멜빌 듀이 (도서·듀이 십진분류법)"
+        {
+          "ko": "퍼시벌 로웰",
+          "en": "Percival Lowell",
+          "note": "천문·로웰 천문대 설립자"
+        },
+        {
+          "ko": "리어나도 — 한슨 — 멜빌 듀이",
+          "en": "Leonardo / Hanson / Melvil Dewey",
+          "note": "도서·듀이 십진분류법"
+        }
       ],
       "기업": [
-        "레온 리언우드 빈 (기업·L.L.빈 창업자)",
-        "버트 셰이비츠 — 록샌 (기업·버츠비 공동창업)"
+        {
+          "ko": "레온 리언우드 빈",
+          "en": "Leon Leonwood Bean",
+          "note": "기업·L.L.빈 창업자"
+        },
+        {
+          "ko": "버트 셰이비츠 — 록샌",
+          "en": "Burt Shavitz / Roxanne Quimby",
+          "note": "기업·버츠비 공동창업"
+        }
       ]
     },
     "nationalParks": [
-      "아카디아 국립공원"
+      "아카디아 국립공원 (Acadia National Park)"
     ],
     "stateParks": [
-      "배스터 주립공원 (캐타딘)",
-      "캠던 힐스 주립공원",
-      "리드 주립공원"
+      "배스터 주립공원 (캐타딘) (Baxter State Park)",
+      "캠던 힐스 주립공원 (Camden Hills State Park)",
+      "리드 주립공원 (Reid State Park)"
     ],
     "teams": {
       "MLB": [],
@@ -3783,64 +4915,75 @@ export const STATE_INFO = {
         "name": "아카디아 국립공원 (캐딜락 산)",
         "lat": 44.3527,
         "lng": -68.2247,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Acadia National Park"
       },
       {
         "name": "포틀랜드 헤드 등대",
         "lat": 43.6231,
         "lng": -70.2079,
-        "cat": "건축도시"
+        "cat": "건축도시",
+        "en": "Portland Head Light"
       },
       {
         "name": "메인 주 의사당",
         "lat": 44.3074,
         "lng": -69.7817,
-        "cat": "건축도시"
+        "cat": "건축도시",
+        "en": "Maine State House"
       },
       {
         "name": "올드 포트 (포틀랜드)",
         "lat": 43.657,
         "lng": -70.248,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "Old Port"
       },
       {
         "name": "캐타딘 산 (캐타딘 우즈 앤드 워터스)",
         "lat": 45.9044,
         "lng": -68.9216,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Mount Katahdin"
       },
       {
         "name": "바 하버",
         "lat": 44.3876,
         "lng": -68.2039,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Bar Harbor"
       }
     ],
     "cities": [
       {
         "name": "포틀랜드",
         "lat": 43.6591,
-        "lng": -70.2568
+        "lng": -70.2568,
+        "en": "Portland"
       },
       {
         "name": "루이스턴",
         "lat": 44.1003,
-        "lng": -70.2148
+        "lng": -70.2148,
+        "en": "Lewiston"
       },
       {
         "name": "뱅거",
         "lat": 44.8012,
-        "lng": -68.7778
+        "lng": -68.7778,
+        "en": "Bangor"
       },
       {
         "name": "오번",
         "lat": 44.0976,
-        "lng": -70.2311
+        "lng": -70.2311,
+        "en": "Auburn"
       },
       {
         "name": "오거스타",
         "lat": 44.3106,
-        "lng": -69.7795
+        "lng": -69.7795,
+        "en": "Augusta"
       }
     ],
     "flags": [
@@ -3945,42 +5088,86 @@ export const STATE_INFO = {
     },
     "people": {
       "정치": [
-        "낸시 펠로시 (정치·연방 하원의장, 볼티모어 출생)",
-        "서굿 마셜 (정치·법조·최초 흑인 연방대법관)"
+        {
+          "ko": "낸시 펠로시",
+          "en": "Nancy Pelosi",
+          "note": "정치·연방 하원의장, 볼티모어 출생"
+        },
+        {
+          "ko": "서굿 마셜",
+          "en": "Thurgood Marshall",
+          "note": "정치·법조·최초 흑인 연방대법관"
+        }
       ],
       "예술·문화": [
-        "이디스 — 프랭크 자파 (음악·록 뮤지션, 볼티모어 출생)",
-        "에드거 앨런 포 (문학·소설가·시인, 볼티모어 활동)",
-        "프레더릭 더글러스 (문학·노예제 폐지론자·연설가)"
+        {
+          "ko": "이디스 — 프랭크 자파",
+          "en": "Edith / Frank Zappa",
+          "note": "음악·록 뮤지션, 볼티모어 출생"
+        },
+        {
+          "ko": "에드거 앨런 포",
+          "en": "Edgar Allan Poe",
+          "note": "문학·소설가·시인, 볼티모어 활동"
+        },
+        {
+          "ko": "프레더릭 더글러스",
+          "en": "Frederick Douglass",
+          "note": "문학·노예제 폐지론자·연설가"
+        }
       ],
       "스포츠": [
-        "베이브 루스 (야구·MLB 전설, 볼티모어 출생)",
-        "마이클 펠프스 (수영·올림픽 최다 금메달, 볼티모어 출생)"
+        {
+          "ko": "베이브 루스",
+          "en": "Babe Ruth",
+          "note": "야구·MLB 전설, 볼티모어 출생"
+        },
+        {
+          "ko": "마이클 펠프스",
+          "en": "Michael Phelps",
+          "note": "수영·올림픽 최다 금메달, 볼티모어 출생"
+        }
       ],
       "과학·기술": [
-        "벤저민 배니커 (천문·수학·과학자)",
-        "마이오 — 윌리엄 핼스테드 (의학·존스홉킨스 외과 선구자)"
+        {
+          "ko": "벤저민 배니커",
+          "en": "Benjamin Banneker",
+          "note": "천문·수학·과학자"
+        },
+        {
+          "ko": "마이오 — 윌리엄 핼스테드",
+          "en": "Mayo / William Halsted",
+          "note": "의학·존스홉킨스 외과 선구자"
+        }
       ],
       "기업": [
-        "케빈 플랭크 (기업·언더아머 창업자)",
-        "토머스 에디슨 — 존 W. 매리어트 (기업·메리어트 호텔)"
+        {
+          "ko": "케빈 플랭크",
+          "en": "Kevin Plank",
+          "note": "기업·언더아머 창업자"
+        },
+        {
+          "ko": "토머스 에디슨 — 존 W. 매리어트",
+          "en": "Thomas Edison / John W. Marriott",
+          "note": "기업·메리어트 호텔"
+        }
       ]
     },
     "nationalParks": [
-      "애서티그섬 국립해안"
+      "애서티그섬 국립해안 (Assateague Island National Seashore)"
     ],
     "stateParks": [
-      "스완 하버 — 디프 크리크 레이크 주립공원",
-      "샌디 포인트 주립공원",
-      "패텁스코 밸리 주립공원"
+      "스완 하버 — 디프 크리크 레이크 주립공원 (Swan Harbor / Deep Creek Lake State Park)",
+      "샌디 포인트 주립공원 (Sandy Point State Park)",
+      "패텁스코 밸리 주립공원 (Patapsco Valley State Park)"
     ],
     "teams": {
       "MLB": [
-        "볼티모어 오리올스"
+        "볼티모어 오리올스 (Baltimore Orioles)"
       ],
       "NBA": [],
       "NFL": [
-        "볼티모어 레이븐스"
+        "볼티모어 레이븐스 (Baltimore Ravens)"
       ],
       "NHL": []
     },
@@ -3989,70 +5176,82 @@ export const STATE_INFO = {
         "name": "포트 맥헨리 국가기념물",
         "lat": 39.2639,
         "lng": -76.5804,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "Fort McHenry National Monument"
       },
       {
         "name": "메릴랜드 주 의사당 (아나폴리스)",
         "lat": 38.9787,
         "lng": -76.491,
-        "cat": "건축도시"
+        "cat": "건축도시",
+        "en": "Maryland State House"
       },
       {
         "name": "이너 하버 (볼티모어)",
         "lat": 39.2857,
         "lng": -76.609,
-        "cat": "건축도시"
+        "cat": "건축도시",
+        "en": "Inner Harbor"
       },
       {
         "name": "오리올 파크 앳 캠던 야즈",
         "lat": 39.2839,
         "lng": -76.6217,
-        "cat": "관광체험"
+        "cat": "관광체험",
+        "en": "Oriole Park at Camden Yards"
       },
       {
         "name": "애서티그섬 국립해안",
         "lat": 38.1335,
         "lng": -75.1496,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Assateague Island National Seashore"
       },
       {
         "name": "앤티텀 국립전장",
         "lat": 39.4742,
         "lng": -77.7445,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "Antietam National Battlefield"
       },
       {
         "name": "미국 해군사관학교",
         "lat": 38.9844,
         "lng": -76.4855,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "United States Naval Academy"
       }
     ],
     "cities": [
       {
         "name": "볼티모어",
         "lat": 39.2904,
-        "lng": -76.6122
+        "lng": -76.6122,
+        "en": "Baltimore"
       },
       {
         "name": "콜럼비아",
         "lat": 39.2037,
-        "lng": -76.861
+        "lng": -76.861,
+        "en": "Columbia"
       },
       {
         "name": "저먼타운",
         "lat": 39.1732,
-        "lng": -77.2717
+        "lng": -77.2717,
+        "en": "Germantown"
       },
       {
         "name": "실버스프링",
         "lat": 38.9907,
-        "lng": -77.0261
+        "lng": -77.0261,
+        "en": "Silver Spring"
       },
       {
         "name": "아나폴리스",
         "lat": 38.9784,
-        "lng": -76.4922
+        "lng": -76.4922,
+        "en": "Annapolis"
       }
     ],
     "flags": [
@@ -4158,46 +5357,94 @@ export const STATE_INFO = {
     },
     "people": {
       "정치": [
-        "존 F. 케네디 (정치·제35대 미국 대통령)",
-        "존 애덤스 (정치·제2대 미국 대통령)",
-        "존 퀸시 애덤스 (정치·제6대 미국 대통령)"
+        {
+          "ko": "존 F. 케네디",
+          "en": "John F. Kennedy",
+          "note": "정치·제35대 미국 대통령"
+        },
+        {
+          "ko": "존 애덤스",
+          "en": "John Adams",
+          "note": "정치·제2대 미국 대통령"
+        },
+        {
+          "ko": "존 퀸시 애덤스",
+          "en": "John Quincy Adams",
+          "note": "정치·제6대 미국 대통령"
+        }
       ],
       "예술·문화": [
-        "에밀리 디킨슨 (문학·시인)",
-        "닥터 수스 (문학·동화 작가)",
-        "맷 데이먼 (영화·배우)"
+        {
+          "ko": "에밀리 디킨슨",
+          "en": "Emily Dickinson",
+          "note": "문학·시인"
+        },
+        {
+          "ko": "닥터 수스",
+          "en": "Dr. Seuss",
+          "note": "문학·동화 작가"
+        },
+        {
+          "ko": "맷 데이먼",
+          "en": "Matt Damon",
+          "note": "영화·배우"
+        }
       ],
       "스포츠": [
-        "래리 버드 (NBA·셀틱스 전설)",
-        "톰 브래디 (NFL·패트리어츠 쿼터백)"
+        {
+          "ko": "래리 버드",
+          "en": "Larry Bird",
+          "note": "NBA·셀틱스 전설"
+        },
+        {
+          "ko": "톰 브래디",
+          "en": "Tom Brady",
+          "note": "NFL·패트리어츠 쿼터백"
+        }
       ],
       "과학·기술": [
-        "벤저민 프랭클린 (과학·발명가·정치인)",
-        "로버트 노이스 (기술·인텔 공동창업자)"
+        {
+          "ko": "벤저민 프랭클린",
+          "en": "Benjamin Franklin",
+          "note": "과학·발명가·정치인"
+        },
+        {
+          "ko": "로버트 노이스",
+          "en": "Robert Noyce",
+          "note": "기술·인텔 공동창업자"
+        }
       ],
       "기업": [
-        "존 하버드 (교육·하버드대 후원자)",
-        "엘리 휘트니 (기업·조면기 발명가)"
+        {
+          "ko": "존 하버드",
+          "en": "John Harvard",
+          "note": "교육·하버드대 후원자"
+        },
+        {
+          "ko": "엘리 휘트니",
+          "en": "Eli Whitney",
+          "note": "기업·조면기 발명가"
+        }
       ]
     },
     "nationalParks": [],
     "stateParks": [
-      "월든 폰드 주립공원",
-      "마운트 그레이록 주립보호구역",
-      "닉커슨 주립공원"
+      "월든 폰드 주립공원 (Walden Pond State Reservation)",
+      "마운트 그레이록 주립보호구역 (Mount Greylock State Reservation)",
+      "닉커슨 주립공원 (Nickerson State Park)"
     ],
     "teams": {
       "MLB": [
-        "보스턴 레드삭스"
+        "보스턴 레드삭스 (Boston Red Sox)"
       ],
       "NBA": [
-        "보스턴 셀틱스"
+        "보스턴 셀틱스 (Boston Celtics)"
       ],
       "NFL": [
-        "뉴잉글랜드 패트리어츠"
+        "뉴잉글랜드 패트리어츠 (New England Patriots)"
       ],
       "NHL": [
-        "보스턴 브루인스"
+        "보스턴 브루인스 (Boston Bruins)"
       ]
     },
     "landmarks": [
@@ -4205,64 +5452,75 @@ export const STATE_INFO = {
         "name": "프리덤 트레일",
         "lat": 42.3601,
         "lng": -71.0589,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "Freedom Trail"
       },
       {
         "name": "펜웨이 파크",
         "lat": 42.3467,
         "lng": -71.0972,
-        "cat": "관광체험"
+        "cat": "관광체험",
+        "en": "Fenway Park"
       },
       {
         "name": "하버드 대학교",
         "lat": 42.377,
         "lng": -71.1167,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "Harvard University"
       },
       {
         "name": "MIT",
         "lat": 42.3601,
         "lng": -71.0942,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "MIT"
       },
       {
         "name": "플리머스 록",
         "lat": 41.9584,
         "lng": -70.662,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "Plymouth Rock"
       },
       {
         "name": "케이프 코드 국립해안",
         "lat": 41.917,
         "lng": -69.975,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Cape Cod National Seashore"
       }
     ],
     "cities": [
       {
         "name": "보스턴",
         "lat": 42.3601,
-        "lng": -71.0589
+        "lng": -71.0589,
+        "en": "Boston"
       },
       {
         "name": "우스터",
         "lat": 42.2626,
-        "lng": -71.8023
+        "lng": -71.8023,
+        "en": "Worcester"
       },
       {
         "name": "스프링필드",
         "lat": 42.1015,
-        "lng": -72.5898
+        "lng": -72.5898,
+        "en": "Springfield"
       },
       {
         "name": "케임브리지",
         "lat": 42.3736,
-        "lng": -71.1097
+        "lng": -71.1097,
+        "en": "Cambridge"
       },
       {
         "name": "로웰",
         "lat": 42.6334,
-        "lng": -71.3162
+        "lng": -71.3162,
+        "en": "Lowell"
       }
     ],
     "flags": [
@@ -4369,47 +5627,91 @@ export const STATE_INFO = {
     },
     "people": {
       "정치": [
-        "제럴드 포드 (정치·제38대 미국 대통령)",
-        "미트 롬니 (정치·상원의원·대선후보)"
+        {
+          "ko": "제럴드 포드",
+          "en": "Gerald Ford",
+          "note": "정치·제38대 미국 대통령"
+        },
+        {
+          "ko": "미트 롬니",
+          "en": "Mitt Romney",
+          "note": "정치·상원의원·대선후보"
+        }
       ],
       "예술·문화": [
-        "마돈나 (음악·팝 가수)",
-        "스티비 원더 (음악·싱어송라이터)",
-        "에미넴 (음악·래퍼)"
+        {
+          "ko": "마돈나",
+          "en": "Madonna",
+          "note": "음악·팝 가수"
+        },
+        {
+          "ko": "스티비 원더",
+          "en": "Stevie Wonder",
+          "note": "음악·싱어송라이터"
+        },
+        {
+          "ko": "에미넴",
+          "en": "Eminem",
+          "note": "음악·래퍼"
+        }
       ],
       "스포츠": [
-        "매직 존슨 (NBA·전설적 가드)",
-        "조 루이스 (복싱·헤비급 챔피언)"
+        {
+          "ko": "매직 존슨",
+          "en": "Magic Johnson",
+          "note": "NBA·전설적 가드"
+        },
+        {
+          "ko": "조 루이스",
+          "en": "Joe Louis",
+          "note": "복싱·헤비급 챔피언"
+        }
       ],
       "과학·기술": [
-        "토머스 에디슨 (과학·발명가, 미시간 성장)",
-        "래리 페이지 (기술·구글 공동창업자)"
+        {
+          "ko": "토머스 에디슨",
+          "en": "Thomas Edison",
+          "note": "과학·발명가, 미시간 성장"
+        },
+        {
+          "ko": "래리 페이지",
+          "en": "Larry Page",
+          "note": "기술·구글 공동창업자"
+        }
       ],
       "기업": [
-        "헨리 포드 (기업·포드 자동차 창업자)",
-        "윌 키스 켈로그 (기업·켈로그 창업자)"
+        {
+          "ko": "헨리 포드",
+          "en": "Henry Ford",
+          "note": "기업·포드 자동차 창업자"
+        },
+        {
+          "ko": "윌 키스 켈로그",
+          "en": "Will Keith Kellogg",
+          "note": "기업·켈로그 창업자"
+        }
       ]
     },
     "nationalParks": [
-      "아일로열 국립공원"
+      "아일로열 국립공원 (Isle Royale National Park)"
     ],
     "stateParks": [
-      "포큐파인산 야생 주립공원",
-      "테이콰메논폭포 주립공원",
-      "할러데일 주립공원"
+      "포큐파인산 야생 주립공원 (Porcupine Mountains Wilderness State Park)",
+      "테이콰메논폭포 주립공원 (Tahquamenon Falls State Park)",
+      "할러데일 주립공원 (Holland State Park)"
     ],
     "teams": {
       "MLB": [
-        "디트로이트 타이거스"
+        "디트로이트 타이거스 (Detroit Tigers)"
       ],
       "NBA": [
-        "디트로이트 피스턴스"
+        "디트로이트 피스턴스 (Detroit Pistons)"
       ],
       "NFL": [
-        "디트로이트 라이언스"
+        "디트로이트 라이언스 (Detroit Lions)"
       ],
       "NHL": [
-        "디트로이트 레드윙스"
+        "디트로이트 레드윙스 (Detroit Red Wings)"
       ]
     },
     "landmarks": [
@@ -4417,64 +5719,75 @@ export const STATE_INFO = {
         "name": "아일로열 국립공원",
         "lat": 48.0,
         "lng": -88.8,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Isle Royale National Park"
       },
       {
         "name": "슬리핑베어듄스 국립호반",
         "lat": 44.8819,
         "lng": -86.0586,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Sleeping Bear Dunes National Lakeshore"
       },
       {
         "name": "픽처드록스 국립호반",
         "lat": 46.56,
         "lng": -86.35,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Pictured Rocks National Lakeshore"
       },
       {
         "name": "매키낙교",
         "lat": 45.8174,
         "lng": -84.7278,
-        "cat": "건축도시"
+        "cat": "건축도시",
+        "en": "Mackinac Bridge"
       },
       {
         "name": "헨리 포드 박물관",
         "lat": 42.3043,
         "lng": -83.2341,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "Henry Ford Museum"
       },
       {
         "name": "디트로이트 르네상스 센터",
         "lat": 42.3293,
         "lng": -83.0398,
-        "cat": "건축도시"
+        "cat": "건축도시",
+        "en": "Detroit Renaissance Center"
       }
     ],
     "cities": [
       {
         "name": "디트로이트",
         "lat": 42.3314,
-        "lng": -83.0458
+        "lng": -83.0458,
+        "en": "Detroit"
       },
       {
         "name": "그랜드래피즈",
         "lat": 42.9634,
-        "lng": -85.6681
+        "lng": -85.6681,
+        "en": "Grand Rapids"
       },
       {
         "name": "워런",
         "lat": 42.5145,
-        "lng": -83.0147
+        "lng": -83.0147,
+        "en": "Warren"
       },
       {
         "name": "앤아버",
         "lat": 42.2808,
-        "lng": -83.743
+        "lng": -83.743,
+        "en": "Ann Arbor"
       },
       {
         "name": "랜싱",
         "lat": 42.7325,
-        "lng": -84.5555
+        "lng": -84.5555,
+        "en": "Lansing"
       }
     ],
     "flags": [
@@ -4571,47 +5884,91 @@ export const STATE_INFO = {
     },
     "people": {
       "정치": [
-        "휴버트 험프리 (정치·제38대 미국 부통령)",
-        "월터 먼데일 (정치·제42대 미국 부통령)"
+        {
+          "ko": "휴버트 험프리",
+          "en": "Hubert Humphrey",
+          "note": "정치·제38대 미국 부통령"
+        },
+        {
+          "ko": "월터 먼데일",
+          "en": "Walter Mondale",
+          "note": "정치·제42대 미국 부통령"
+        }
       ],
       "예술·문화": [
-        "프린스 (음악·싱어송라이터)",
-        "밥 딜런 (음악·싱어송라이터)",
-        "주디 갈런드 (영화·배우)"
+        {
+          "ko": "프린스",
+          "en": "Prince",
+          "note": "음악·싱어송라이터"
+        },
+        {
+          "ko": "밥 딜런",
+          "en": "Bob Dylan",
+          "note": "음악·싱어송라이터"
+        },
+        {
+          "ko": "주디 갈런드",
+          "en": "Judy Garland",
+          "note": "영화·배우"
+        }
       ],
       "스포츠": [
-        "케빈 가넷 (NBA·팀버울브스 전설)",
-        "케빈 맥헤일 (NBA·명예의 전당)"
+        {
+          "ko": "케빈 가넷",
+          "en": "Kevin Garnett",
+          "note": "NBA·팀버울브스 전설"
+        },
+        {
+          "ko": "케빈 맥헤일",
+          "en": "Kevin McHale",
+          "note": "NBA·명예의 전당"
+        }
       ],
       "과학·기술": [
-        "윌리엄·찰스 메이오 (의학·메이오 클리닉 설립)",
-        "시모어 크레이 (기술·슈퍼컴퓨터 선구자)"
+        {
+          "ko": "윌리엄·찰스 메이오",
+          "en": "William and Charles Mayo",
+          "note": "의학·메이오 클리닉 설립"
+        },
+        {
+          "ko": "시모어 크레이",
+          "en": "Seymour Cray",
+          "note": "기술·슈퍼컴퓨터 선구자"
+        }
       ],
       "기업": [
-        "리처드 시어스 (기업·시어스 창업자)",
-        "얼 바켄 (기업·메드트로닉 공동창업자)"
+        {
+          "ko": "리처드 시어스",
+          "en": "Richard Sears",
+          "note": "기업·시어스 창업자"
+        },
+        {
+          "ko": "얼 바켄",
+          "en": "Earl Bakken",
+          "note": "기업·메드트로닉 공동창업자"
+        }
       ]
     },
     "nationalParks": [
-      "보이저스 국립공원"
+      "보이저스 국립공원 (Voyageurs National Park)"
     ],
     "stateParks": [
-      "이타스카 주립공원",
-      "고스베리폭포 주립공원",
-      "스플릿록 등대 주립공원"
+      "이타스카 주립공원 (Itasca State Park)",
+      "고스베리폭포 주립공원 (Gooseberry Falls State Park)",
+      "스플릿록 등대 주립공원 (Split Rock Lighthouse State Park)"
     ],
     "teams": {
       "MLB": [
-        "미네소타 트윈스"
+        "미네소타 트윈스 (Minnesota Twins)"
       ],
       "NBA": [
-        "미네소타 팀버울브스"
+        "미네소타 팀버울브스 (Minnesota Timberwolves)"
       ],
       "NFL": [
-        "미네소타 바이킹스"
+        "미네소타 바이킹스 (Minnesota Vikings)"
       ],
       "NHL": [
-        "미네소타 와일드"
+        "미네소타 와일드 (Minnesota Wild)"
       ]
     },
     "landmarks": [
@@ -4619,64 +5976,75 @@ export const STATE_INFO = {
         "name": "보이저스 국립공원",
         "lat": 48.5,
         "lng": -92.88,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Voyageurs National Park"
       },
       {
         "name": "몰 오브 아메리카",
         "lat": 44.8548,
         "lng": -93.2422,
-        "cat": "관광체험"
+        "cat": "관광체험",
+        "en": "Mall of America"
       },
       {
         "name": "이타스카 주립공원(미시시피강 발원지)",
         "lat": 47.2417,
         "lng": -95.207,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Itasca State Park (Mississippi River Headwaters)"
       },
       {
         "name": "스플릿록 등대",
         "lat": 47.2003,
         "lng": -91.3672,
-        "cat": "건축도시"
+        "cat": "건축도시",
+        "en": "Split Rock Lighthouse"
       },
       {
         "name": "미니애폴리스 세인트앤서니폭포",
         "lat": 44.981,
         "lng": -93.2569,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Saint Anthony Falls, Minneapolis"
       },
       {
         "name": "미네소타 주의사당",
         "lat": 44.9553,
         "lng": -93.1022,
-        "cat": "건축도시"
+        "cat": "건축도시",
+        "en": "Minnesota State Capitol"
       }
     ],
     "cities": [
       {
         "name": "미니애폴리스",
         "lat": 44.9778,
-        "lng": -93.265
+        "lng": -93.265,
+        "en": "Minneapolis"
       },
       {
         "name": "세인트폴",
         "lat": 44.9537,
-        "lng": -93.09
+        "lng": -93.09,
+        "en": "Saint Paul"
       },
       {
         "name": "로체스터",
         "lat": 44.0121,
-        "lng": -92.4802
+        "lng": -92.4802,
+        "en": "Rochester"
       },
       {
         "name": "덜루스",
         "lat": 46.7867,
-        "lng": -92.1005
+        "lng": -92.1005,
+        "en": "Duluth"
       },
       {
         "name": "블루밍턴",
         "lat": 44.8408,
-        "lng": -93.2983
+        "lng": -93.2983,
+        "en": "Bloomington"
       }
     ],
     "flags": [
@@ -4796,32 +6164,76 @@ export const STATE_INFO = {
     },
     "people": {
       "정치": [
-        "하이럼 레벨스 (정치·최초 흑인 상원의원)",
-        "트렌트 롯 (정치·상원 원내대표)"
+        {
+          "ko": "하이럼 레벨스",
+          "en": "Hiram Revels",
+          "note": "정치·최초 흑인 상원의원"
+        },
+        {
+          "ko": "트렌트 롯",
+          "en": "Trent Lott",
+          "note": "정치·상원 원내대표"
+        }
       ],
       "예술·문화": [
-        "엘비스 프레슬리 (음악·로큰롤의 제왕)",
-        "윌리엄 포크너 (문학·노벨문학상)",
-        "B.B. 킹 (음악·블루스 기타리스트)",
-        "오프라 윈프리 (방송·진행자)"
+        {
+          "ko": "엘비스 프레슬리",
+          "en": "Elvis Presley",
+          "note": "음악·로큰롤의 제왕"
+        },
+        {
+          "ko": "윌리엄 포크너",
+          "en": "William Faulkner",
+          "note": "문학·노벨문학상"
+        },
+        {
+          "ko": "B.B. 킹",
+          "en": "B.B. King",
+          "note": "음악·블루스 기타리스트"
+        },
+        {
+          "ko": "오프라 윈프리",
+          "en": "Oprah Winfrey",
+          "note": "방송·진행자"
+        }
       ],
       "스포츠": [
-        "월터 페이튼 (NFL·러닝백 전설)",
-        "제리 라이스 (NFL·와이드리시버 전설)"
+        {
+          "ko": "월터 페이튼",
+          "en": "Walter Payton",
+          "note": "NFL·러닝백 전설"
+        },
+        {
+          "ko": "제리 라이스",
+          "en": "Jerry Rice",
+          "note": "NFL·와이드리시버 전설"
+        }
       ],
       "과학·기술": [
-        "제임스 D. 하디 (의학·최초 폐 이식 집도)"
+        {
+          "ko": "제임스 D. 하디",
+          "en": "James D. Hardy",
+          "note": "의학·최초 폐 이식 집도"
+        }
       ],
       "기업": [
-        "짐 헨슨 (기업·머펫 창작자)",
-        "존 그리샴 (문학·법정소설 작가)"
+        {
+          "ko": "짐 헨슨",
+          "en": "Jim Henson",
+          "note": "기업·머펫 창작자"
+        },
+        {
+          "ko": "존 그리샴",
+          "en": "John Grisham",
+          "note": "문학·법정소설 작가"
+        }
       ]
     },
     "nationalParks": [],
     "stateParks": [
-      "타이슈오메인고히 주립공원",
-      "리로이퍼시 주립공원",
-      "퍼시콰이아 주립공원"
+      "타이슈오메인고히 주립공원 (Tishomingo State Park)",
+      "리로이퍼시 주립공원 (Leroy Percy State Park)",
+      "퍼시콰이아 주립공원 (Percy Quin State Park)"
     ],
     "teams": {
       "MLB": [],
@@ -4834,64 +6246,75 @@ export const STATE_INFO = {
         "name": "비키 컨트리 그레이스랜드(엘비스 생가)",
         "lat": 34.2576,
         "lng": -88.7034,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "Graceland (Elvis Presley's birthplace, Tupelo)"
       },
       {
         "name": "빅스버그 국립군사공원",
         "lat": 32.3463,
         "lng": -90.8517,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "Vicksburg National Military Park"
       },
       {
         "name": "내치즈 트레이스 파크웨이",
         "lat": 32.301,
         "lng": -90.877,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "Natchez Trace Parkway"
       },
       {
         "name": "미시시피 주의사당",
         "lat": 32.3036,
         "lng": -90.182,
-        "cat": "건축도시"
+        "cat": "건축도시",
+        "en": "Mississippi State Capitol"
       },
       {
         "name": "걸프 제도 국립해안",
         "lat": 30.228,
         "lng": -88.992,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Gulf Islands National Seashore"
       },
       {
         "name": "비스버그 국립군사공원 기념관",
         "lat": 32.358,
         "lng": -90.849,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "Vicksburg National Military Park Memorial"
       }
     ],
     "cities": [
       {
         "name": "잭슨",
         "lat": 32.2988,
-        "lng": -90.1848
+        "lng": -90.1848,
+        "en": "Jackson"
       },
       {
         "name": "걸프포트",
         "lat": 30.3674,
-        "lng": -89.0928
+        "lng": -89.0928,
+        "en": "Gulfport"
       },
       {
         "name": "사우스헤이븐",
         "lat": 34.9889,
-        "lng": -90.0126
+        "lng": -90.0126,
+        "en": "Southaven"
       },
       {
         "name": "빌럭시",
         "lat": 30.396,
-        "lng": -88.8853
+        "lng": -88.8853,
+        "en": "Biloxi"
       },
       {
         "name": "해티스버그",
         "lat": 31.3271,
-        "lng": -89.2903
+        "lng": -89.2903,
+        "en": "Hattiesburg"
       }
     ],
     "flags": [
@@ -5000,46 +6423,90 @@ export const STATE_INFO = {
     },
     "people": {
       "정치": [
-        "해리 S. 트루먼 (정치·제33대 미국 대통령)",
-        "율리시스 S. 그랜트 (정치·제18대 미국 대통령, 거주)"
+        {
+          "ko": "해리 S. 트루먼",
+          "en": "Harry S. Truman",
+          "note": "정치·제33대 미국 대통령"
+        },
+        {
+          "ko": "율리시스 S. 그랜트",
+          "en": "Ulysses S. Grant",
+          "note": "정치·제18대 미국 대통령, 거주"
+        }
       ],
       "예술·문화": [
-        "마크 트웨인 (문학·소설가)",
-        "월트 디즈니 (영화·애니메이션 거장)",
-        "척 베리 (음악·로큰롤 선구자)"
+        {
+          "ko": "마크 트웨인",
+          "en": "Mark Twain",
+          "note": "문학·소설가"
+        },
+        {
+          "ko": "월트 디즈니",
+          "en": "Walt Disney",
+          "note": "영화·애니메이션 거장"
+        },
+        {
+          "ko": "척 베리",
+          "en": "Chuck Berry",
+          "note": "음악·로큰롤 선구자"
+        }
       ],
       "스포츠": [
-        "야디어 몰리나 (MLB·카디널스 포수)",
-        "케이시 스텡걸 (MLB·명예의 전당 감독)"
+        {
+          "ko": "야디어 몰리나",
+          "en": "Yadier Molina",
+          "note": "MLB·카디널스 포수"
+        },
+        {
+          "ko": "케이시 스텡걸",
+          "en": "Casey Stengel",
+          "note": "MLB·명예의 전당 감독"
+        }
       ],
       "과학·기술": [
-        "조지 워싱턴 카버 (과학·식물학자)",
-        "에드윈 허블 (과학·천문학자)"
+        {
+          "ko": "조지 워싱턴 카버",
+          "en": "George Washington Carver",
+          "note": "과학·식물학자"
+        },
+        {
+          "ko": "에드윈 허블",
+          "en": "Edwin Hubble",
+          "note": "과학·천문학자"
+        }
       ],
       "기업": [
-        "제임스 캐시 페니 (기업·JC페니 창업자)",
-        "조이스 홀 (기업·홀마크 창업자)"
+        {
+          "ko": "제임스 캐시 페니",
+          "en": "James Cash Penney",
+          "note": "기업·JC페니 창업자"
+        },
+        {
+          "ko": "조이스 홀",
+          "en": "Joyce Hall",
+          "note": "기업·홀마크 창업자"
+        }
       ]
     },
     "nationalParks": [
-      "게이트웨이 아치 국립공원"
+      "게이트웨이 아치 국립공원 (Gateway Arch National Park)"
     ],
     "stateParks": [
-      "엘리펀트록스 주립공원",
-      "햐하 통크스 주립공원",
-      "오나도 호수 주립공원"
+      "엘리펀트록스 주립공원 (Elephant Rocks State Park)",
+      "햐하 통크스 주립공원 (Ha Ha Tonka State Park)",
+      "오나도 호수 주립공원 (Lake of the Ozarks State Park)"
     ],
     "teams": {
       "MLB": [
-        "세인트루이스 카디널스",
-        "캔자스시티 로열스"
+        "세인트루이스 카디널스 (St. Louis Cardinals)",
+        "캔자스시티 로열스 (Kansas City Royals)"
       ],
       "NBA": [],
       "NFL": [
-        "캔자스시티 치프스"
+        "캔자스시티 치프스 (Kansas City Chiefs)"
       ],
       "NHL": [
-        "세인트루이스 블루스"
+        "세인트루이스 블루스 (St. Louis Blues)"
       ]
     },
     "landmarks": [
@@ -5047,64 +6514,75 @@ export const STATE_INFO = {
         "name": "게이트웨이 아치",
         "lat": 38.6247,
         "lng": -90.1848,
-        "cat": "건축도시"
+        "cat": "건축도시",
+        "en": "Gateway Arch"
       },
       {
         "name": "조지 워싱턴 카버 국가기념물",
         "lat": 36.9858,
         "lng": -94.3553,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "George Washington Carver National Monument"
       },
       {
         "name": "오자크 국립경관 하천",
         "lat": 37.15,
         "lng": -91.1,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Ozark National Scenic Riverways"
       },
       {
         "name": "미주리 주의사당",
         "lat": 38.579,
         "lng": -92.173,
-        "cat": "건축도시"
+        "cat": "건축도시",
+        "en": "Missouri State Capitol"
       },
       {
         "name": "유니언 스테이션(세인트루이스)",
         "lat": 38.627,
         "lng": -90.209,
-        "cat": "건축도시"
+        "cat": "건축도시",
+        "en": "Union Station (St. Louis)"
       },
       {
         "name": "캔자스시티 유니언 스테이션",
         "lat": 39.0847,
         "lng": -94.5853,
-        "cat": "건축도시"
+        "cat": "건축도시",
+        "en": "Kansas City Union Station"
       }
     ],
     "cities": [
       {
         "name": "캔자스시티",
         "lat": 39.0997,
-        "lng": -94.5786
+        "lng": -94.5786,
+        "en": "Kansas City"
       },
       {
         "name": "세인트루이스",
         "lat": 38.627,
-        "lng": -90.1994
+        "lng": -90.1994,
+        "en": "St. Louis"
       },
       {
         "name": "스프링필드",
         "lat": 37.2089,
-        "lng": -93.2923
+        "lng": -93.2923,
+        "en": "Springfield"
       },
       {
         "name": "컬럼비아",
         "lat": 38.9517,
-        "lng": -92.3341
+        "lng": -92.3341,
+        "en": "Columbia"
       },
       {
         "name": "제퍼슨시티",
         "lat": 38.5767,
-        "lng": -92.1735
+        "lng": -92.1735,
+        "en": "Jefferson City"
       }
     ],
     "flags": [
@@ -5185,31 +6663,59 @@ export const STATE_INFO = {
     },
     "people": {
       "정치": [
-        "마이크 맨스필드 (정치·상원 다수당 원내대표)",
-        "지넷 랭킨 (정치·최초 여성 하원의원)"
+        {
+          "ko": "마이크 맨스필드",
+          "en": "Mike Mansfield",
+          "note": "정치·상원 다수당 원내대표"
+        },
+        {
+          "ko": "지넷 랭킨",
+          "en": "Jeannette Rankin",
+          "note": "정치·최초 여성 하원의원"
+        }
       ],
       "예술·문화": [
-        "게리 쿠퍼 (영화·배우)",
-        "데이비드 린치 (영화·감독)"
+        {
+          "ko": "게리 쿠퍼",
+          "en": "Gary Cooper",
+          "note": "영화·배우"
+        },
+        {
+          "ko": "데이비드 린치",
+          "en": "David Lynch",
+          "note": "영화·감독"
+        }
       ],
       "스포츠": [
-        "필 잭슨 (NBA·전설적 감독, 몬태나 성장)"
+        {
+          "ko": "필 잭슨",
+          "en": "Phil Jackson",
+          "note": "NBA·전설적 감독, 몬태나 성장"
+        }
       ],
       "과학·기술": [
-        "잭 호너 (과학·고생물학자)"
+        {
+          "ko": "잭 호너",
+          "en": "Jack Horner",
+          "note": "과학·고생물학자"
+        }
       ],
       "기업": [
-        "마커스 데일리 (기업·아나콘다 구리회사 창업자)"
+        {
+          "ko": "마커스 데일리",
+          "en": "Marcus Daly",
+          "note": "기업·아나콘다 구리회사 창업자"
+        }
       ]
     },
     "nationalParks": [
-      "글레이셔 국립공원",
-      "옐로스톤 국립공원"
+      "글레이셔 국립공원 (Glacier National Park)",
+      "옐로스톤 국립공원 (Yellowstone National Park)"
     ],
     "stateParks": [
-      "메디슨 버펄로 점프 주립공원",
-      "루이스앤드클라크 동굴 주립공원",
-      "마쿼라 동굴 주립공원"
+      "메디슨 버펄로 점프 주립공원 (Madison Buffalo Jump State Park)",
+      "루이스앤드클라크 동굴 주립공원 (Lewis and Clark Caverns State Park)",
+      "마쿼라 동굴 주립공원 (Makoshika State Park)"
     ],
     "teams": {
       "MLB": [],
@@ -5222,64 +6728,75 @@ export const STATE_INFO = {
         "name": "글레이셔 국립공원",
         "lat": 48.7596,
         "lng": -113.787,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Glacier National Park"
       },
       {
         "name": "고잉투더선 로드",
         "lat": 48.696,
         "lng": -113.718,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Going-to-the-Sun Road"
       },
       {
         "name": "리틀빅혼 전투지 국가기념물",
         "lat": 45.5703,
         "lng": -107.4267,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "Little Bighorn Battlefield National Monument"
       },
       {
         "name": "옐로스톤 북쪽 입구(가디너)",
         "lat": 45.0303,
         "lng": -110.708,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Yellowstone North Entrance (Gardiner)"
       },
       {
         "name": "몬태나 주의사당(헬레나)",
         "lat": 46.5853,
         "lng": -112.0181,
-        "cat": "건축도시"
+        "cat": "건축도시",
+        "en": "Montana State Capitol (Helena)"
       },
       {
         "name": "비글호 국립전적지",
         "lat": 45.6406,
         "lng": -113.647,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "Beaverhead National Forest"
       }
     ],
     "cities": [
       {
         "name": "빌링스",
         "lat": 45.7833,
-        "lng": -108.5007
+        "lng": -108.5007,
+        "en": "Billings"
       },
       {
         "name": "미줄라",
         "lat": 46.8721,
-        "lng": -113.994
+        "lng": -113.994,
+        "en": "Missoula"
       },
       {
         "name": "그레이트폴스",
         "lat": 47.4941,
-        "lng": -111.2833
+        "lng": -111.2833,
+        "en": "Great Falls"
       },
       {
         "name": "보즈먼",
         "lat": 45.677,
-        "lng": -111.0429
+        "lng": -111.0429,
+        "en": "Bozeman"
       },
       {
         "name": "헬레나",
         "lat": 46.5891,
-        "lng": -112.0391
+        "lng": -112.0391,
+        "en": "Helena"
       }
     ],
     "flags": [
@@ -5373,31 +6890,71 @@ export const STATE_INFO = {
     },
     "people": {
       "정치": [
-        "제럴드 포드 (정치·제38대 미국 대통령, 오마하 출생)",
-        "윌리엄 제닝스 브라이언 (정치·대선후보·국무장관)"
+        {
+          "ko": "제럴드 포드",
+          "en": "Gerald Ford",
+          "note": "정치·제38대 미국 대통령, 오마하 출생"
+        },
+        {
+          "ko": "윌리엄 제닝스 브라이언",
+          "en": "William Jennings Bryan",
+          "note": "정치·대선후보·국무장관"
+        }
       ],
       "예술·문화": [
-        "프레드 아스테어 (영화·배우·댄서)",
-        "헨리 폰다 (영화·배우)",
-        "말런 브랜도 (영화·배우)"
+        {
+          "ko": "프레드 아스테어",
+          "en": "Fred Astaire",
+          "note": "영화·배우·댄서"
+        },
+        {
+          "ko": "헨리 폰다",
+          "en": "Henry Fonda",
+          "note": "영화·배우"
+        },
+        {
+          "ko": "말런 브랜도",
+          "en": "Marlon Brando",
+          "note": "영화·배우"
+        }
       ],
       "스포츠": [
-        "밥 깁슨 (MLB·카디널스 투수)",
-        "그로버 클리블랜드 알렉산더 (MLB·명예의 전당 투수)"
+        {
+          "ko": "밥 깁슨",
+          "en": "Bob Gibson",
+          "note": "MLB·카디널스 투수"
+        },
+        {
+          "ko": "그로버 클리블랜드 알렉산더",
+          "en": "Grover Cleveland Alexander",
+          "note": "MLB·명예의 전당 투수"
+        }
       ],
       "과학·기술": [
-        "조지 비들 (과학·노벨생리의학상)"
+        {
+          "ko": "조지 비들",
+          "en": "George Beadle",
+          "note": "과학·노벨생리의학상"
+        }
       ],
       "기업": [
-        "워런 버핏 (기업·버크셔 해서웨이 회장)",
-        "에드워드 크레이턴 (기업·금융·교육 후원자)"
+        {
+          "ko": "워런 버핏",
+          "en": "Warren Buffett",
+          "note": "기업·버크셔 해서웨이 회장"
+        },
+        {
+          "ko": "에드워드 크레이턴",
+          "en": "Edward Creighton",
+          "note": "기업·금융·교육 후원자"
+        }
       ]
     },
     "nationalParks": [],
     "stateParks": [
-      "인디언 케이브 주립공원",
-      "포니어 주립공원",
-      "플랫강 주립공원"
+      "인디언 케이브 주립공원 (Indian Cave State Park)",
+      "포니어 주립공원 (Ponca State Park)",
+      "플랫강 주립공원 (Platte River State Park)"
     ],
     "teams": {
       "MLB": [],
@@ -5410,64 +6967,75 @@ export const STATE_INFO = {
         "name": "침니록 국가사적지",
         "lat": 41.7033,
         "lng": -103.345,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "Chimney Rock National Historic Site"
       },
       {
         "name": "스카츠블러프 국가기념물",
         "lat": 41.835,
         "lng": -103.707,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "Scotts Bluff National Monument"
       },
       {
         "name": "네브래스카 주의사당(링컨)",
         "lat": 40.8081,
         "lng": -96.6997,
-        "cat": "건축도시"
+        "cat": "건축도시",
+        "en": "Nebraska State Capitol (Lincoln)"
       },
       {
         "name": "헨리 둘리 동물원(오마하)",
         "lat": 41.2256,
         "lng": -95.9249,
-        "cat": "관광체험"
+        "cat": "관광체험",
+        "en": "Henry Doorly Zoo (Omaha)"
       },
       {
         "name": "아버 로지 주립역사공원",
         "lat": 41.047,
         "lng": -96.161,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "Arbor Lodge State Historical Park"
       },
       {
         "name": "토드스톤힌지(카휭가)",
         "lat": 41.0419,
         "lng": -96.9609,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "Toadstool Geologic Park"
       }
     ],
     "cities": [
       {
         "name": "오마하",
         "lat": 41.2565,
-        "lng": -95.9345
+        "lng": -95.9345,
+        "en": "Omaha"
       },
       {
         "name": "링컨",
         "lat": 40.8136,
-        "lng": -96.7026
+        "lng": -96.7026,
+        "en": "Lincoln"
       },
       {
         "name": "벨뷰",
         "lat": 41.137,
-        "lng": -95.9145
+        "lng": -95.9145,
+        "en": "Bellevue"
       },
       {
         "name": "그랜드아일랜드",
         "lat": 40.9264,
-        "lng": -98.342
+        "lng": -98.342,
+        "en": "Grand Island"
       },
       {
         "name": "커니",
         "lat": 40.6995,
-        "lng": -99.0817
+        "lng": -99.0817,
+        "en": "Kearney"
       }
     ],
     "flags": [
@@ -5556,41 +7124,77 @@ export const STATE_INFO = {
     },
     "people": {
       "정치": [
-        "해리 리드 (정치·전 상원 다수당 원내대표)",
-        "팻 매캐런 (정치·상원의원, 매캐런 공항 명칭 유래)"
+        {
+          "ko": "해리 리드",
+          "en": "Harry Reid",
+          "note": "정치·전 상원 다수당 원내대표"
+        },
+        {
+          "ko": "팻 매캐런",
+          "en": "Pat McCarran",
+          "note": "정치·상원의원, 매캐런 공항 명칭 유래"
+        }
       ],
       "예술·문화": [
-        "지미 킴멜 (방송·심야 토크쇼 진행자)",
-        "패니타 무어 (음악·재즈 가수)"
+        {
+          "ko": "지미 킴멜",
+          "en": "Jimmy Kimmel",
+          "note": "방송·심야 토크쇼 진행자"
+        },
+        {
+          "ko": "패니타 무어",
+          "en": "Fannie Moore",
+          "note": "음악·재즈 가수"
+        }
       ],
       "스포츠": [
-        "안드레 애거시 (테니스·그랜드슬램 8회 우승)",
-        "케일럽 플러레이 (수영·올림픽 금메달리스트)"
+        {
+          "ko": "안드레 애거시",
+          "en": "Andre Agassi",
+          "note": "테니스·그랜드슬램 8회 우승"
+        },
+        {
+          "ko": "케일럽 플러레이",
+          "en": "Caleb Dressel",
+          "note": "수영·올림픽 금메달리스트"
+        }
       ],
       "과학·기술": [
-        "토니 시아 (기술·기업가)"
+        {
+          "ko": "토니 시아",
+          "en": "Tony Hsieh",
+          "note": "기술·기업가"
+        }
       ],
       "기업": [
-        "스티브 윈 (기업·카지노 리조트 사업가)",
-        "커크 커코리언 (기업·MGM 투자가)"
+        {
+          "ko": "스티브 윈",
+          "en": "Steve Wynn",
+          "note": "기업·카지노 리조트 사업가"
+        },
+        {
+          "ko": "커크 커코리언",
+          "en": "Kirk Kerkorian",
+          "note": "기업·MGM 투자가"
+        }
       ]
     },
     "nationalParks": [
-      "그레이트베이슨 국립공원"
+      "그레이트베이슨 국립공원 (Great Basin National Park)"
     ],
     "stateParks": [
-      "밸리 오브 파이어 주립공원",
-      "스프링 마운틴 랜치 주립공원",
-      "캐슬 록스 주립공원"
+      "밸리 오브 파이어 주립공원 (Valley of Fire State Park)",
+      "스프링 마운틴 랜치 주립공원 (Spring Mountain Ranch State Park)",
+      "캐슬 록스 주립공원 (Castle Rocks State Park)"
     ],
     "teams": {
       "MLB": [],
       "NBA": [],
       "NFL": [
-        "라스베이거스 라이더스"
+        "라스베이거스 라이더스 (Las Vegas Raiders)"
       ],
       "NHL": [
-        "베이거스 골든나이츠"
+        "베이거스 골든나이츠 (Vegas Golden Knights)"
       ]
     },
     "landmarks": [
@@ -5598,64 +7202,75 @@ export const STATE_INFO = {
         "name": "라스베이거스 스트립",
         "lat": 36.1147,
         "lng": -115.1728,
-        "cat": "관광체험"
+        "cat": "관광체험",
+        "en": "Las Vegas Strip"
       },
       {
         "name": "후버 댐",
         "lat": 36.0161,
         "lng": -114.7377,
-        "cat": "건축도시"
+        "cat": "건축도시",
+        "en": "Hoover Dam"
       },
       {
         "name": "벨라지오 분수",
         "lat": 36.1126,
         "lng": -115.1767,
-        "cat": "관광체험"
+        "cat": "관광체험",
+        "en": "Fountains of Bellagio"
       },
       {
         "name": "밸리 오브 파이어 주립공원",
         "lat": 36.4816,
         "lng": -114.5283,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Valley of Fire State Park"
       },
       {
         "name": "그레이트베이슨 국립공원",
         "lat": 38.9833,
         "lng": -114.3,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Great Basin National Park"
       },
       {
         "name": "리노 아치",
         "lat": 39.5273,
         "lng": -119.8138,
-        "cat": "건축도시"
+        "cat": "건축도시",
+        "en": "Reno Arch"
       }
     ],
     "cities": [
       {
         "name": "라스베이거스",
         "lat": 36.1699,
-        "lng": -115.1398
+        "lng": -115.1398,
+        "en": "Las Vegas"
       },
       {
         "name": "헨더슨",
         "lat": 36.0397,
-        "lng": -114.9819
+        "lng": -114.9819,
+        "en": "Henderson"
       },
       {
         "name": "리노",
         "lat": 39.5296,
-        "lng": -119.8138
+        "lng": -119.8138,
+        "en": "Reno"
       },
       {
         "name": "노스라스베이거스",
         "lat": 36.1989,
-        "lng": -115.1175
+        "lng": -115.1175,
+        "en": "North Las Vegas"
       },
       {
         "name": "카슨시티",
         "lat": 39.1638,
-        "lng": -119.7674
+        "lng": -119.7674,
+        "en": "Carson City"
       }
     ],
     "flags": [
@@ -5761,30 +7376,66 @@ export const STATE_INFO = {
     },
     "people": {
       "정치": [
-        "프랭클린 피어스 (정치·제14대 미국 대통령)",
-        "대니얼 웹스터 (정치·정치가·웅변가)"
+        {
+          "ko": "프랭클린 피어스",
+          "en": "Franklin Pierce",
+          "note": "정치·제14대 미국 대통령"
+        },
+        {
+          "ko": "대니얼 웹스터",
+          "en": "Daniel Webster",
+          "note": "정치·정치가·웅변가"
+        }
       ],
       "예술·문화": [
-        "댄 브라운 (문학·《다빈치 코드》 작가)",
-        "J.D. 샐린저 (문학·《호밀밭의 파수꾼》 작가)",
-        "세스 메이어스 (방송·코미디언)"
+        {
+          "ko": "댄 브라운",
+          "en": "Dan Brown",
+          "note": "문학·《다빈치 코드》 작가"
+        },
+        {
+          "ko": "J.D. 샐린저",
+          "en": "J.D. Salinger",
+          "note": "문학·《호밀밭의 파수꾼》 작가"
+        },
+        {
+          "ko": "세스 메이어스",
+          "en": "Seth Meyers",
+          "note": "방송·코미디언"
+        }
       ],
       "스포츠": [
-        "캐리 로 (피겨스케이팅·올림픽 선수)",
-        "밥 테와스버리 (야구·MLB 투수)"
+        {
+          "ko": "캐리 로",
+          "en": "Carrie Lou",
+          "note": "피겨스케이팅·올림픽 선수"
+        },
+        {
+          "ko": "밥 테와스버리",
+          "en": "Bob Tewksbury",
+          "note": "야구·MLB 투수"
+        }
       ],
       "과학·기술": [
-        "앨런 셰퍼드 (우주·미국 최초의 우주비행사)"
+        {
+          "ko": "앨런 셰퍼드",
+          "en": "Alan Shepard",
+          "note": "우주·미국 최초의 우주비행사"
+        }
       ],
       "기업": [
-        "딘 케이먼 (기업·세그웨이 발명가)"
+        {
+          "ko": "딘 케이먼",
+          "en": "Dean Kamen",
+          "note": "기업·세그웨이 발명가"
+        }
       ]
     },
     "nationalParks": [],
     "stateParks": [
-      "프랜코니아 노치 주립공원",
-      "워싱턴산 주립공원",
-      "오디오너 포인트 주립공원"
+      "프랜코니아 노치 주립공원 (Franconia Notch State Park)",
+      "워싱턴산 주립공원 (Mount Washington State Park)",
+      "오디오너 포인트 주립공원 (Odiorne Point State Park)"
     ],
     "teams": {
       "MLB": [],
@@ -5797,64 +7448,75 @@ export const STATE_INFO = {
         "name": "워싱턴산",
         "lat": 44.2706,
         "lng": -71.3033,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Mount Washington"
       },
       {
         "name": "프랜코니아 노치 주립공원",
         "lat": 44.1417,
         "lng": -71.6831,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Franconia Notch State Park"
       },
       {
         "name": "올드 맨 오브 더 마운틴 기념지",
         "lat": 44.1606,
         "lng": -71.6814,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "Old Man of the Mountain Memorial"
       },
       {
         "name": "뉴햄프셔 주의사당 (콩코드)",
         "lat": 43.207,
         "lng": -71.538,
-        "cat": "건축도시"
+        "cat": "건축도시",
+        "en": "New Hampshire State House (Concord)"
       },
       {
         "name": "포츠머스 항구",
         "lat": 43.0718,
         "lng": -70.7626,
-        "cat": "건축도시"
+        "cat": "건축도시",
+        "en": "Portsmouth Harbor"
       },
       {
         "name": "위니퍼소키 호수",
         "lat": 43.6128,
         "lng": -71.3286,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Lake Winnipesaukee"
       }
     ],
     "cities": [
       {
         "name": "맨체스터",
         "lat": 42.9956,
-        "lng": -71.4548
+        "lng": -71.4548,
+        "en": "Manchester"
       },
       {
         "name": "내슈아",
         "lat": 42.7654,
-        "lng": -71.4676
+        "lng": -71.4676,
+        "en": "Nashua"
       },
       {
         "name": "콩코드",
         "lat": 43.2081,
-        "lng": -71.5376
+        "lng": -71.5376,
+        "en": "Concord"
       },
       {
         "name": "더럼",
         "lat": 43.134,
-        "lng": -70.9264
+        "lng": -70.9264,
+        "en": "Durham"
       },
       {
         "name": "포츠머스",
         "lat": 43.0718,
-        "lng": -70.7626
+        "lng": -70.7626,
+        "en": "Portsmouth"
       }
     ],
     "flags": [
@@ -5960,38 +7622,78 @@ export const STATE_INFO = {
     },
     "people": {
       "정치": [
-        "그로버 클리블랜드 (정치·제22·24대 미국 대통령)",
-        "프랭크 허그 (정치·뉴저지 주지사)"
+        {
+          "ko": "그로버 클리블랜드",
+          "en": "Grover Cleveland",
+          "note": "정치·제22·24대 미국 대통령"
+        },
+        {
+          "ko": "프랭크 허그",
+          "en": "Frank Hague",
+          "note": "정치·뉴저지 주지사"
+        }
       ],
       "예술·문화": [
-        "프랭크 시나트라 (음악·전설적 가수)",
-        "브루스 스프링스틴 (음악·록 음악가)",
-        "메릴 스트립 (영화·아카데미 다관왕 배우)"
+        {
+          "ko": "프랭크 시나트라",
+          "en": "Frank Sinatra",
+          "note": "음악·전설적 가수"
+        },
+        {
+          "ko": "브루스 스프링스틴",
+          "en": "Bruce Springsteen",
+          "note": "음악·록 음악가"
+        },
+        {
+          "ko": "메릴 스트립",
+          "en": "Meryl Streep",
+          "note": "영화·아카데미 다관왕 배우"
+        }
       ],
       "스포츠": [
-        "셰킬 오닐 (농구·NBA 명예의 전당)",
-        "마이크 트라웃 (야구·MLB MVP)"
+        {
+          "ko": "셰킬 오닐",
+          "en": "Shaquille O'Neal",
+          "note": "농구·NBA 명예의 전당"
+        },
+        {
+          "ko": "마이크 트라웃",
+          "en": "Mike Trout",
+          "note": "야구·MLB MVP"
+        }
       ],
       "과학·기술": [
-        "토머스 에디슨 (발명·전구·축음기 발명가)",
-        "앨버트 아인슈타인 (물리학·프린스턴 활동, 노벨상)"
+        {
+          "ko": "토머스 에디슨",
+          "en": "Thomas Edison",
+          "note": "발명·전구·축음기 발명가"
+        },
+        {
+          "ko": "앨버트 아인슈타인",
+          "en": "Albert Einstein",
+          "note": "물리학·프린스턴 활동, 노벨상"
+        }
       ],
       "기업": [
-        "말콤 포브스 (기업·포브스 발행인)"
+        {
+          "ko": "말콤 포브스",
+          "en": "Malcolm Forbes",
+          "note": "기업·포브스 발행인"
+        }
       ]
     },
     "nationalParks": [],
     "stateParks": [
-      "리버티 주립공원",
-      "하이포인트 주립공원",
-      "아일랜드 비치 주립공원"
+      "리버티 주립공원 (Liberty State Park)",
+      "하이포인트 주립공원 (High Point State Park)",
+      "아일랜드 비치 주립공원 (Island Beach State Park)"
     ],
     "teams": {
       "MLB": [],
       "NBA": [],
       "NFL": [],
       "NHL": [
-        "뉴저지 데블스"
+        "뉴저지 데블스 (New Jersey Devils)"
       ]
     },
     "landmarks": [
@@ -5999,64 +7701,75 @@ export const STATE_INFO = {
         "name": "자유의 여신상 (리버티 주립공원 측)",
         "lat": 40.6892,
         "lng": -74.0445,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "Statue of Liberty (Liberty State Park side)"
       },
       {
         "name": "엘리스 섬",
         "lat": 40.6995,
         "lng": -74.0397,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "Ellis Island"
       },
       {
         "name": "애틀랜틱시티 보드워크",
         "lat": 39.3543,
         "lng": -74.4291,
-        "cat": "관광체험"
+        "cat": "관광체험",
+        "en": "Atlantic City Boardwalk"
       },
       {
         "name": "메트라이프 스타디움 (이스트러더퍼드)",
         "lat": 40.8135,
         "lng": -74.0745,
-        "cat": "관광체험"
+        "cat": "관광체험",
+        "en": "MetLife Stadium (East Rutherford)"
       },
       {
         "name": "프린스턴 대학교",
         "lat": 40.3431,
         "lng": -74.6551,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "Princeton University"
       },
       {
         "name": "케이프메이 등대",
         "lat": 38.9337,
         "lng": -74.9601,
-        "cat": "건축도시"
+        "cat": "건축도시",
+        "en": "Cape May Lighthouse"
       }
     ],
     "cities": [
       {
         "name": "뉴어크",
         "lat": 40.7357,
-        "lng": -74.1724
+        "lng": -74.1724,
+        "en": "Newark"
       },
       {
         "name": "저지시티",
         "lat": 40.7178,
-        "lng": -74.0431
+        "lng": -74.0431,
+        "en": "Jersey City"
       },
       {
         "name": "패터슨",
         "lat": 40.9168,
-        "lng": -74.1718
+        "lng": -74.1718,
+        "en": "Paterson"
       },
       {
         "name": "엘리자베스",
         "lat": 40.6639,
-        "lng": -74.2107
+        "lng": -74.2107,
+        "en": "Elizabeth"
       },
       {
         "name": "트렌턴",
         "lat": 40.2206,
-        "lng": -74.7597
+        "lng": -74.7597,
+        "en": "Trenton"
       }
     ],
     "flags": [
@@ -6134,32 +7847,64 @@ export const STATE_INFO = {
     },
     "people": {
       "정치": [
-        "빌 리처드슨 (정치·뉴멕시코 주지사·UN 대사)",
-        "데니스 차베스 (정치·상원의원)"
+        {
+          "ko": "빌 리처드슨",
+          "en": "Bill Richardson",
+          "note": "정치·뉴멕시코 주지사·UN 대사"
+        },
+        {
+          "ko": "데니스 차베스",
+          "en": "Dennis Chavez",
+          "note": "정치·상원의원"
+        }
       ],
       "예술·문화": [
-        "조지아 오키프 (미술·화가)",
-        "데미 무어 (영화·배우)"
+        {
+          "ko": "조지아 오키프",
+          "en": "Georgia O'Keeffe",
+          "note": "미술·화가"
+        },
+        {
+          "ko": "데미 무어",
+          "en": "Demi Moore",
+          "note": "영화·배우"
+        }
       ],
       "스포츠": [
-        "홀리 홈 (격투기·UFC 챔피언)",
-        "로니 루 (야구·MLB 선수)"
+        {
+          "ko": "홀리 홈",
+          "en": "Holly Holm",
+          "note": "격투기·UFC 챔피언"
+        },
+        {
+          "ko": "로니 루",
+          "en": "Ronnie Lou",
+          "note": "야구·MLB 선수"
+        }
       ],
       "과학·기술": [
-        "로버트 오펜하이머 (물리학·로스앨러모스 맨해튼 계획 주도)"
+        {
+          "ko": "로버트 오펜하이머",
+          "en": "Robert Oppenheimer",
+          "note": "물리학·로스앨러모스 맨해튼 계획 주도"
+        }
       ],
       "기업": [
-        "콘래드 힐튼 (기업·힐튼 호텔 창업자)"
+        {
+          "ko": "콘래드 힐튼",
+          "en": "Conrad Hilton",
+          "note": "기업·힐튼 호텔 창업자"
+        }
       ]
     },
     "nationalParks": [
-      "칼즈배드 동굴 국립공원",
-      "화이트샌즈 국립공원"
+      "칼즈배드 동굴 국립공원 (Carlsbad Caverns National Park)",
+      "화이트샌즈 국립공원 (White Sands National Park)"
     ],
     "stateParks": [
-      "엘리펀트 뷰트 호수 주립공원",
-      "시티 오브 록스 주립공원",
-      "리오그란데 협곡 주립공원"
+      "엘리펀트 뷰트 호수 주립공원 (Elephant Butte Lake State Park)",
+      "시티 오브 록스 주립공원 (City of Rocks State Park)",
+      "리오그란데 협곡 주립공원 (Rio Grande Gorge State Park)"
     ],
     "teams": {
       "MLB": [],
@@ -6172,64 +7917,75 @@ export const STATE_INFO = {
         "name": "칼즈배드 동굴 국립공원",
         "lat": 32.1479,
         "lng": -104.5567,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Carlsbad Caverns National Park"
       },
       {
         "name": "화이트샌즈 국립공원",
         "lat": 32.7872,
         "lng": -106.3257,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "White Sands National Park"
       },
       {
         "name": "산타페 광장",
         "lat": 35.687,
         "lng": -105.9378,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "Santa Fe Plaza"
       },
       {
         "name": "타오스 푸에블로",
         "lat": 36.4385,
         "lng": -105.545,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "Taos Pueblo"
       },
       {
         "name": "로스앨러모스 연구소",
         "lat": 35.844,
         "lng": -106.287,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "Los Alamos National Laboratory"
       },
       {
         "name": "리오그란데 협곡 다리",
         "lat": 36.4593,
         "lng": -105.7297,
-        "cat": "건축도시"
+        "cat": "건축도시",
+        "en": "Rio Grande Gorge Bridge"
       }
     ],
     "cities": [
       {
         "name": "앨버커키",
         "lat": 35.0844,
-        "lng": -106.6504
+        "lng": -106.6504,
+        "en": "Albuquerque"
       },
       {
         "name": "라스크루세스",
         "lat": 32.3199,
-        "lng": -106.7637
+        "lng": -106.7637,
+        "en": "Las Cruces"
       },
       {
         "name": "리오랜초",
         "lat": 35.2328,
-        "lng": -106.663
+        "lng": -106.663,
+        "en": "Rio Rancho"
       },
       {
         "name": "산타페",
         "lat": 35.687,
-        "lng": -105.9378
+        "lng": -105.9378,
+        "en": "Santa Fe"
       },
       {
         "name": "로즈웰",
         "lat": 33.3943,
-        "lng": -104.523
+        "lng": -104.523,
+        "en": "Roswell"
       }
     ],
     "flags": [
@@ -6334,47 +8090,91 @@ export const STATE_INFO = {
     },
     "people": {
       "정치": [
-        "프랭클린 D. 루스벨트 (정치·제32대 미국 대통령)",
-        "시어도어 루스벨트 (정치·제26대 미국 대통령)",
-        "힐러리 클린턴 (정치·국무장관·대선 후보)"
+        {
+          "ko": "프랭클린 D. 루스벨트",
+          "en": "Franklin D. Roosevelt",
+          "note": "정치·제32대 미국 대통령"
+        },
+        {
+          "ko": "시어도어 루스벨트",
+          "en": "Theodore Roosevelt",
+          "note": "정치·제26대 미국 대통령"
+        },
+        {
+          "ko": "힐러리 클린턴",
+          "en": "Hillary Clinton",
+          "note": "정치·국무장관·대선 후보"
+        }
       ],
       "예술·문화": [
-        "조지 거슈윈 (음악·작곡가)",
-        "마틴 스코세이지 (영화·감독)",
-        "레이디 가가 (음악·가수)"
+        {
+          "ko": "조지 거슈윈",
+          "en": "George Gershwin",
+          "note": "음악·작곡가"
+        },
+        {
+          "ko": "마틴 스코세이지",
+          "en": "Martin Scorsese",
+          "note": "영화·감독"
+        },
+        {
+          "ko": "레이디 가가",
+          "en": "Lady Gaga",
+          "note": "음악·가수"
+        }
       ],
       "스포츠": [
-        "루 게릭 (야구·뉴욕 양키스 전설)",
-        "마이크 타이슨 (복싱·세계 챔피언)"
+        {
+          "ko": "루 게릭",
+          "en": "Lou Gehrig",
+          "note": "야구·뉴욕 양키스 전설"
+        },
+        {
+          "ko": "마이크 타이슨",
+          "en": "Mike Tyson",
+          "note": "복싱·세계 챔피언"
+        }
       ],
       "과학·기술": [
-        "리처드 파인먼 (물리학·노벨물리학상)"
+        {
+          "ko": "리처드 파인먼",
+          "en": "Richard Feynman",
+          "note": "물리학·노벨물리학상"
+        }
       ],
       "기업": [
-        "존 D. 록펠러 (기업·스탠더드 오일 창업자)",
-        "마이클 블룸버그 (기업·블룸버그 창업자·뉴욕 시장)"
+        {
+          "ko": "존 D. 록펠러",
+          "en": "John D. Rockefeller",
+          "note": "기업·스탠더드 오일 창업자"
+        },
+        {
+          "ko": "마이클 블룸버그",
+          "en": "Michael Bloomberg",
+          "note": "기업·블룸버그 창업자·뉴욕 시장"
+        }
       ]
     },
     "nationalParks": [],
     "stateParks": [
-      "나이아가라 폭포 주립공원",
-      "레치워스 주립공원",
-      "몬타우크 포인트 주립공원"
+      "나이아가라 폭포 주립공원 (Niagara Falls State Park)",
+      "레치워스 주립공원 (Letchworth State Park)",
+      "몬타우크 포인트 주립공원 (Montauk Point State Park)"
     ],
     "teams": {
       "MLB": [
-        "뉴욕 양키스",
-        "뉴욕 메츠"
+        "뉴욕 양키스 (New York Yankees)",
+        "뉴욕 메츠 (New York Mets)"
       ],
       "NBA": [
-        "뉴욕 닉스",
-        "브루클린 네츠"
+        "뉴욕 닉스 (New York Knicks)",
+        "브루클린 네츠 (Brooklyn Nets)"
       ],
       "NFL": [],
       "NHL": [
-        "뉴욕 레인저스",
-        "뉴욕 아일런더스",
-        "버펄로 세이버스"
+        "뉴욕 레인저스 (New York Rangers)",
+        "뉴욕 아일런더스 (New York Islanders)",
+        "버펄로 세이버스 (Buffalo Sabres)"
       ]
     },
     "landmarks": [
@@ -6382,64 +8182,75 @@ export const STATE_INFO = {
         "name": "자유의 여신상",
         "lat": 40.6892,
         "lng": -74.0445,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "Statue of Liberty"
       },
       {
         "name": "엠파이어 스테이트 빌딩",
         "lat": 40.7484,
         "lng": -73.9857,
-        "cat": "건축도시"
+        "cat": "건축도시",
+        "en": "Empire State Building"
       },
       {
         "name": "타임스 스퀘어",
         "lat": 40.758,
         "lng": -73.9855,
-        "cat": "관광체험"
+        "cat": "관광체험",
+        "en": "Times Square"
       },
       {
         "name": "센트럴 파크",
         "lat": 40.7829,
         "lng": -73.9654,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Central Park"
       },
       {
         "name": "나이아가라 폭포 (미국 측)",
         "lat": 43.0828,
         "lng": -79.0742,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Niagara Falls (American side)"
       },
       {
         "name": "브루클린 브리지",
         "lat": 40.7061,
         "lng": -73.9969,
-        "cat": "건축도시"
+        "cat": "건축도시",
+        "en": "Brooklyn Bridge"
       }
     ],
     "cities": [
       {
         "name": "뉴욕시",
         "lat": 40.7128,
-        "lng": -74.006
+        "lng": -74.006,
+        "en": "New York City"
       },
       {
         "name": "버펄로",
         "lat": 42.8864,
-        "lng": -78.8784
+        "lng": -78.8784,
+        "en": "Buffalo"
       },
       {
         "name": "로체스터",
         "lat": 43.1566,
-        "lng": -77.6088
+        "lng": -77.6088,
+        "en": "Rochester"
       },
       {
         "name": "용커스",
         "lat": 40.9312,
-        "lng": -73.8987
+        "lng": -73.8987,
+        "en": "Yonkers"
       },
       {
         "name": "올버니",
         "lat": 42.6526,
-        "lng": -73.7562
+        "lng": -73.7562,
+        "en": "Albany"
       }
     ],
     "flags": [
@@ -6544,42 +8355,74 @@ export const STATE_INFO = {
     },
     "people": {
       "정치": [
-        "제임스 K. 포크 (정치·제11대 미국 대통령)",
-        "앤드루 존슨 (정치·제17대 미국 대통령)"
+        {
+          "ko": "제임스 K. 포크",
+          "en": "James K. Polk",
+          "note": "정치·제11대 미국 대통령"
+        },
+        {
+          "ko": "앤드루 존슨",
+          "en": "Andrew Johnson",
+          "note": "정치·제17대 미국 대통령"
+        }
       ],
       "예술·문화": [
-        "닉 조나스 (음악·가수)",
-        "마야 안젤루 (문학·시인·작가)"
+        {
+          "ko": "닉 조나스",
+          "en": "Nick Jonas",
+          "note": "음악·가수"
+        },
+        {
+          "ko": "마야 안젤루",
+          "en": "Maya Angelou",
+          "note": "문학·시인·작가"
+        }
       ],
       "스포츠": [
-        "마이클 조던 (농구·NBA 전설, NC 출신·대학)",
-        "리처드 페티 (자동차경주·NASCAR 전설)"
+        {
+          "ko": "마이클 조던",
+          "en": "Michael Jordan",
+          "note": "농구·NBA 전설, NC 출신·대학"
+        },
+        {
+          "ko": "리처드 페티",
+          "en": "Richard Petty",
+          "note": "자동차경주·NASCAR 전설"
+        }
       ],
       "과학·기술": [
-        "라이트 형제 (항공·세계 최초 동력 비행, 키티호크)"
+        {
+          "ko": "라이트 형제",
+          "en": "Wright Brothers",
+          "note": "항공·세계 최초 동력 비행, 키티호크"
+        }
       ],
       "기업": [
-        "제임스 뷰캐넌 듀크 (기업·아메리칸 토바코 창업자)"
+        {
+          "ko": "제임스 뷰캐넌 듀크",
+          "en": "James Buchanan Duke",
+          "note": "기업·아메리칸 토바코 창업자"
+        }
       ]
     },
     "nationalParks": [
-      "그레이트스모키산맥 국립공원"
+      "그레이트스모키산맥 국립공원 (Great Smoky Mountains National Park)"
     ],
     "stateParks": [
-      "마운트 미첼 주립공원",
-      "해머콕스 마운틴 주립공원",
-      "조던 호수 주립휴양지"
+      "마운트 미첼 주립공원 (Mount Mitchell State Park)",
+      "해머콕스 마운틴 주립공원 (Hanging Rock State Park)",
+      "조던 호수 주립휴양지 (Jordan Lake State Recreation Area)"
     ],
     "teams": {
       "MLB": [],
       "NBA": [
-        "샬럿 호네츠"
+        "샬럿 호네츠 (Charlotte Hornets)"
       ],
       "NFL": [
-        "캐롤라이나 팬서스"
+        "캐롤라이나 팬서스 (Carolina Panthers)"
       ],
       "NHL": [
-        "캐롤라이나 허리케인스"
+        "캐롤라이나 허리케인스 (Carolina Hurricanes)"
       ]
     },
     "landmarks": [
@@ -6587,64 +8430,75 @@ export const STATE_INFO = {
         "name": "라이트 형제 국립기념지 (키티호크)",
         "lat": 36.0146,
         "lng": -75.6677,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "Wright Brothers National Memorial (Kitty Hawk)"
       },
       {
         "name": "빌트모어 에스테이트 (애슈빌)",
         "lat": 35.5402,
         "lng": -82.5515,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "Biltmore Estate (Asheville)"
       },
       {
         "name": "그레이트스모키산맥 국립공원",
         "lat": 35.6118,
         "lng": -83.4895,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Great Smoky Mountains National Park"
       },
       {
         "name": "하테라스 곶 등대",
         "lat": 35.2503,
         "lng": -75.5288,
-        "cat": "건축도시"
+        "cat": "건축도시",
+        "en": "Cape Hatteras Lighthouse"
       },
       {
         "name": "마운트 미첼",
         "lat": 35.7648,
         "lng": -82.2652,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Mount Mitchell"
       },
       {
         "name": "노스캐롤라이나 주의사당 (롤리)",
         "lat": 35.7804,
         "lng": -78.6391,
-        "cat": "건축도시"
+        "cat": "건축도시",
+        "en": "North Carolina State Capitol (Raleigh)"
       }
     ],
     "cities": [
       {
         "name": "샬럿",
         "lat": 35.2271,
-        "lng": -80.8431
+        "lng": -80.8431,
+        "en": "Charlotte"
       },
       {
         "name": "롤리",
         "lat": 35.7796,
-        "lng": -78.6382
+        "lng": -78.6382,
+        "en": "Raleigh"
       },
       {
         "name": "그린즈버러",
         "lat": 36.0726,
-        "lng": -79.792
+        "lng": -79.792,
+        "en": "Greensboro"
       },
       {
         "name": "더럼",
         "lat": 35.994,
-        "lng": -78.8986
+        "lng": -78.8986,
+        "en": "Durham"
       },
       {
         "name": "윈스턴세일럼",
         "lat": 36.0999,
-        "lng": -80.2442
+        "lng": -80.2442,
+        "en": "Winston-Salem"
       }
     ],
     "flags": [
@@ -6723,32 +8577,68 @@ export const STATE_INFO = {
     },
     "people": {
       "정치": [
-        "바이런 도건 (정치·상원의원)",
-        "켄트 콘래드 (정치·상원의원)"
+        {
+          "ko": "바이런 도건",
+          "en": "Byron Dorgan",
+          "note": "정치·상원의원"
+        },
+        {
+          "ko": "켄트 콘래드",
+          "en": "Kent Conrad",
+          "note": "정치·상원의원"
+        }
       ],
       "예술·문화": [
-        "페기 리 (음악·재즈 가수)",
-        "루이스 라무르 (문학·서부 소설가)",
-        "조시 두하멜 (영화·배우)"
+        {
+          "ko": "페기 리",
+          "en": "Peggy Lee",
+          "note": "음악·재즈 가수"
+        },
+        {
+          "ko": "루이스 라무르",
+          "en": "Louis L'Amour",
+          "note": "문학·서부 소설가"
+        },
+        {
+          "ko": "조시 두하멜",
+          "en": "Josh Duhamel",
+          "note": "영화·배우"
+        }
       ],
       "스포츠": [
-        "필 잭슨 (농구·NBA 명장 감독)",
-        "칼 멀로니 (육상·올림픽 선수)"
+        {
+          "ko": "필 잭슨",
+          "en": "Phil Jackson",
+          "note": "농구·NBA 명장 감독"
+        },
+        {
+          "ko": "칼 멀로니",
+          "en": "Carl Mahlue",
+          "note": "육상·올림픽 선수"
+        }
       ],
       "과학·기술": [
-        "에로 사리넨 (건축·미국 디자인, 노스다코타 관련 작품)"
+        {
+          "ko": "에로 사리넨",
+          "en": "Eero Saarinen",
+          "note": "건축·미국 디자인, 노스다코타 관련 작품"
+        }
       ],
       "기업": [
-        "해럴드 슈에이퍼 (기업·실리콘 제조 기업가)"
+        {
+          "ko": "해럴드 슈에이퍼",
+          "en": "Harold Schafer",
+          "note": "기업·실리콘 제조 기업가"
+        }
       ]
     },
     "nationalParks": [
-      "시어도어 루스벨트 국립공원"
+      "시어도어 루스벨트 국립공원 (Theodore Roosevelt National Park)"
     ],
     "stateParks": [
-      "포트 에이브러햄 링컨 주립공원",
-      "레이크 사카케이위아 주립공원",
-      "터틀 리버 주립공원"
+      "포트 에이브러햄 링컨 주립공원 (Fort Abraham Lincoln State Park)",
+      "레이크 사카케이위아 주립공원 (Lake Sakakawea State Park)",
+      "터틀 리버 주립공원 (Turtle River State Park)"
     ],
     "teams": {
       "MLB": [],
@@ -6761,64 +8651,75 @@ export const STATE_INFO = {
         "name": "시어도어 루스벨트 국립공원",
         "lat": 46.979,
         "lng": -103.5387,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Theodore Roosevelt National Park"
       },
       {
         "name": "노스다코타 주의사당 (비스마크)",
         "lat": 46.8208,
         "lng": -100.7837,
-        "cat": "건축도시"
+        "cat": "건축도시",
+        "en": "North Dakota State Capitol (Bismarck)"
       },
       {
         "name": "포트 에이브러햄 링컨 주립공원",
         "lat": 46.7592,
         "lng": -100.843,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Fort Abraham Lincoln State Park"
       },
       {
         "name": "국제 평화 정원",
         "lat": 48.9994,
         "lng": -100.0594,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "International Peace Garden"
       },
       {
         "name": "레이크 사카케이위아",
         "lat": 47.5,
         "lng": -101.45,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Lake Sakakawea"
       },
       {
         "name": "메데오라 (배들랜즈 관문)",
         "lat": 46.9136,
         "lng": -103.523,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Medora (Gateway to the Badlands)"
       }
     ],
     "cities": [
       {
         "name": "파고",
         "lat": 46.8772,
-        "lng": -96.7898
+        "lng": -96.7898,
+        "en": "Fargo"
       },
       {
         "name": "비스마크",
         "lat": 46.8083,
-        "lng": -100.7837
+        "lng": -100.7837,
+        "en": "Bismarck"
       },
       {
         "name": "그랜드포크스",
         "lat": 47.9253,
-        "lng": -97.0329
+        "lng": -97.0329,
+        "en": "Grand Forks"
       },
       {
         "name": "마이놋",
         "lat": 48.233,
-        "lng": -101.2923
+        "lng": -101.2923,
+        "en": "Minot"
       },
       {
         "name": "웨스트파고",
         "lat": 46.8747,
-        "lng": -96.9003
+        "lng": -96.9003,
+        "en": "West Fargo"
       }
     ],
     "flags": [
@@ -6923,51 +8824,103 @@ export const STATE_INFO = {
     },
     "people": {
       "정치": [
-        "윌리엄 매킨리 (정치·제25대 미국 대통령)",
-        "율리시스 S. 그랜트 (정치·제18대 미국 대통령)",
-        "존 글렌 (정치·우주비행사 출신 연방 상원의원)"
+        {
+          "ko": "윌리엄 매킨리",
+          "en": "William McKinley",
+          "note": "정치·제25대 미국 대통령"
+        },
+        {
+          "ko": "율리시스 S. 그랜트",
+          "en": "Ulysses S. Grant",
+          "note": "정치·제18대 미국 대통령"
+        },
+        {
+          "ko": "존 글렌",
+          "en": "John Glenn",
+          "note": "정치·우주비행사 출신 연방 상원의원"
+        }
       ],
       "예술·문화": [
-        "토니 모리슨 (문학·노벨문학상 수상 소설가)",
-        "스티븐 스필버그 (영화·신시내티 출생 감독)",
-        "할리 베리 (영화·아카데미 여우주연상 배우)"
+        {
+          "ko": "토니 모리슨",
+          "en": "Toni Morrison",
+          "note": "문학·노벨문학상 수상 소설가"
+        },
+        {
+          "ko": "스티븐 스필버그",
+          "en": "Steven Spielberg",
+          "note": "영화·신시내티 출생 감독"
+        },
+        {
+          "ko": "할리 베리",
+          "en": "Halle Berry",
+          "note": "영화·아카데미 여우주연상 배우"
+        }
       ],
       "스포츠": [
-        "제시 오언스 (육상·1936 베를린 올림픽 4관왕)",
-        "르브론 제임스 (농구·NBA 4회 우승)"
+        {
+          "ko": "제시 오언스",
+          "en": "Jesse Owens",
+          "note": "육상·1936 베를린 올림픽 4관왕"
+        },
+        {
+          "ko": "르브론 제임스",
+          "en": "LeBron James",
+          "note": "농구·NBA 4회 우승"
+        }
       ],
       "과학·기술": [
-        "토머스 에디슨 (발명·전구·축음기)",
-        "라이트 형제 (항공·최초 동력 비행기)",
-        "닐 암스트롱 (우주·인류 최초 달 착륙)"
+        {
+          "ko": "토머스 에디슨",
+          "en": "Thomas Edison",
+          "note": "발명·전구·축음기"
+        },
+        {
+          "ko": "라이트 형제",
+          "en": "Wright Brothers",
+          "note": "항공·최초 동력 비행기"
+        },
+        {
+          "ko": "닐 암스트롱",
+          "en": "Neil Armstrong",
+          "note": "우주·인류 최초 달 착륙"
+        }
       ],
       "기업": [
-        "존 D. 록펠러 (기업·스탠더드오일 창업)",
-        "할랜드 샌더스 식 영향 외 — 로저 펜스키 (기업·펜스키 자동차그룹)"
+        {
+          "ko": "존 D. 록펠러",
+          "en": "John D. Rockefeller",
+          "note": "기업·스탠더드오일 창업"
+        },
+        {
+          "ko": "할랜드 샌더스 식 영향 외 — 로저 펜스키",
+          "en": "Roger Penske",
+          "note": "기업·펜스키 자동차그룹"
+        }
       ]
     },
     "nationalParks": [
-      "쿠야호가밸리 국립공원"
+      "쿠야호가밸리 국립공원 (Cuyahoga Valley National Park)"
     ],
     "stateParks": [
-      "호킹힐스 주립공원",
-      "마우미베이 주립공원",
-      "리틀미아미 주립공원"
+      "호킹힐스 주립공원 (Hocking Hills State Park)",
+      "마우미베이 주립공원 (Maumee Bay State Park)",
+      "리틀미아미 주립공원 (Little Miami State Park)"
     ],
     "teams": {
       "MLB": [
-        "클리블랜드 가디언스",
-        "신시내티 레즈"
+        "클리블랜드 가디언스 (Cleveland Guardians)",
+        "신시내티 레즈 (Cincinnati Reds)"
       ],
       "NBA": [
-        "클리블랜드 캐벌리어스"
+        "클리블랜드 캐벌리어스 (Cleveland Cavaliers)"
       ],
       "NFL": [
-        "클리블랜드 브라운스",
-        "신시내티 벵골스"
+        "클리블랜드 브라운스 (Cleveland Browns)",
+        "신시내티 벵골스 (Cincinnati Bengals)"
       ],
       "NHL": [
-        "콜럼버스 블루재키츠"
+        "콜럼버스 블루재키츠 (Columbus Blue Jackets)"
       ]
     },
     "landmarks": [
@@ -6975,64 +8928,75 @@ export const STATE_INFO = {
         "name": "로큰롤 명예의 전당",
         "lat": 41.5085,
         "lng": -81.6954,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "Rock and Roll Hall of Fame"
       },
       {
         "name": "쿠야호가밸리 국립공원",
         "lat": 41.2808,
         "lng": -81.5678,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Cuyahoga Valley National Park"
       },
       {
         "name": "오하이오 주의사당",
         "lat": 39.9612,
         "lng": -82.9988,
-        "cat": "건축도시"
+        "cat": "건축도시",
+        "en": "Ohio Statehouse"
       },
       {
         "name": "프로 풋볼 명예의 전당",
         "lat": 40.8208,
         "lng": -81.4042,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "Pro Football Hall of Fame"
       },
       {
         "name": "신시내티 유니언 터미널",
         "lat": 39.11,
         "lng": -84.5371,
-        "cat": "건축도시"
+        "cat": "건축도시",
+        "en": "Cincinnati Union Terminal"
       },
       {
         "name": "호킹힐스 주립공원",
         "lat": 39.428,
         "lng": -82.5407,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Hocking Hills State Park"
       }
     ],
     "cities": [
       {
         "name": "콜럼버스",
         "lat": 39.9612,
-        "lng": -82.9988
+        "lng": -82.9988,
+        "en": "Columbus"
       },
       {
         "name": "클리블랜드",
         "lat": 41.4993,
-        "lng": -81.6944
+        "lng": -81.6944,
+        "en": "Cleveland"
       },
       {
         "name": "신시내티",
         "lat": 39.1031,
-        "lng": -84.512
+        "lng": -84.512,
+        "en": "Cincinnati"
       },
       {
         "name": "톨레도",
         "lat": 41.6528,
-        "lng": -83.5379
+        "lng": -83.5379,
+        "en": "Toledo"
       },
       {
         "name": "데이턴",
         "lat": 39.7589,
-        "lng": -84.1916
+        "lng": -84.1916,
+        "en": "Dayton"
       }
     ],
     "flags": [
@@ -7106,37 +9070,81 @@ export const STATE_INFO = {
     },
     "people": {
       "정치": [
-        "칼 앨버트 (정치·미국 하원의장)",
-        "프레드 해리스 (정치·연방 상원의원)"
+        {
+          "ko": "칼 앨버트",
+          "en": "Carl Albert",
+          "note": "정치·미국 하원의장"
+        },
+        {
+          "ko": "프레드 해리스",
+          "en": "Fred Harris",
+          "note": "정치·연방 상원의원"
+        }
       ],
       "예술·문화": [
-        "윌 로저스 (공연·코미디언·배우)",
-        "랠프 엘리슨 (문학·《보이지 않는 인간》 작가)",
-        "갈랜드 외 — 칼리 게리스 외 가스 브룩스 (음악·컨트리 가수)"
+        {
+          "ko": "윌 로저스",
+          "en": "Will Rogers",
+          "note": "공연·코미디언·배우"
+        },
+        {
+          "ko": "랠프 엘리슨",
+          "en": "Ralph Ellison",
+          "note": "문학·《보이지 않는 인간》 작가"
+        },
+        {
+          "ko": "갈랜드 외 — 칼리 게리스 외 가스 브룩스",
+          "en": "Garth Brooks",
+          "note": "음악·컨트리 가수"
+        }
       ],
       "스포츠": [
-        "짐 소프 (육상·올림픽 다종목 금메달리스트)",
-        "미키 맨틀 (야구·MLB 명예의 전당)"
+        {
+          "ko": "짐 소프",
+          "en": "Jim Thorpe",
+          "note": "육상·올림픽 다종목 금메달리스트"
+        },
+        {
+          "ko": "미키 맨틀",
+          "en": "Mickey Mantle",
+          "note": "야구·MLB 명예의 전당"
+        }
       ],
       "과학·기술": [
-        "쉐넌 루시드 (우주·미국 여성 우주비행사)",
-        "토머스 P. 스태퍼드 (우주·아폴로 10호 사령관)"
+        {
+          "ko": "쉐넌 루시드",
+          "en": "Shannon Lucid",
+          "note": "우주·미국 여성 우주비행사"
+        },
+        {
+          "ko": "토머스 P. 스태퍼드",
+          "en": "Thomas P. Stafford",
+          "note": "우주·아폴로 10호 사령관"
+        }
       ],
       "기업": [
-        "필립스 형제 (기업·필립스 석유 창업)",
-        "T. 분 피컨스 (기업·석유 투자가)"
+        {
+          "ko": "필립스 형제",
+          "en": "Phillips Brothers",
+          "note": "기업·필립스 석유 창업"
+        },
+        {
+          "ko": "T. 분 피컨스",
+          "en": "T. Boone Pickens",
+          "note": "기업·석유 투자가"
+        }
       ]
     },
     "nationalParks": [],
     "stateParks": [
-      "비버스벤드 주립공원",
-      "로버스케이브 주립공원",
-      "그레이트솔트플레인스 주립공원"
+      "비버스벤드 주립공원 (Beavers Bend State Park)",
+      "로버스케이브 주립공원 (Robbers Cave State Park)",
+      "그레이트솔트플레인스 주립공원 (Great Salt Plains State Park)"
     ],
     "teams": {
       "MLB": [],
       "NBA": [
-        "오클라호마시티 썬더"
+        "오클라호마시티 썬더 (Oklahoma City Thunder)"
       ],
       "NFL": [],
       "NHL": []
@@ -7146,58 +9154,68 @@ export const STATE_INFO = {
         "name": "오클라호마시티 국립추모관",
         "lat": 35.4727,
         "lng": -97.517,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "Oklahoma City National Memorial"
       },
       {
         "name": "오클라호마 주의사당",
         "lat": 35.4922,
         "lng": -97.5031,
-        "cat": "건축도시"
+        "cat": "건축도시",
+        "en": "Oklahoma State Capitol"
       },
       {
         "name": "위치타산맥 야생동물 보호구역",
         "lat": 34.7332,
         "lng": -98.7065,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Wichita Mountains Wildlife Refuge"
       },
       {
         "name": "내셔널 카우보이·서부유산 박물관",
         "lat": 35.5275,
         "lng": -97.476,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "National Cowboy & Western Heritage Museum"
       },
       {
         "name": "탈사 게이서더 센터",
         "lat": 36.154,
         "lng": -95.9928,
-        "cat": "관광체험"
+        "cat": "관광체험",
+        "en": "Tulsa Gathering Place"
       }
     ],
     "cities": [
       {
         "name": "오클라호마시티",
         "lat": 35.4676,
-        "lng": -97.5164
+        "lng": -97.5164,
+        "en": "Oklahoma City"
       },
       {
         "name": "털사",
         "lat": 36.154,
-        "lng": -95.9928
+        "lng": -95.9928,
+        "en": "Tulsa"
       },
       {
         "name": "노먼",
         "lat": 35.2226,
-        "lng": -97.4395
+        "lng": -97.4395,
+        "en": "Norman"
       },
       {
         "name": "브로큰애로",
         "lat": 36.0526,
-        "lng": -95.7908
+        "lng": -95.7908,
+        "en": "Broken Arrow"
       },
       {
         "name": "로턴",
         "lat": 34.6036,
-        "lng": -98.3959
+        "lng": -98.3959,
+        "en": "Lawton"
       }
     ],
     "flags": [
@@ -7311,39 +9329,83 @@ export const STATE_INFO = {
     },
     "people": {
       "정치": [
-        "마크 햇필드 (정치·연방 상원의원·전 주지사)",
-        "톰 매콜 (정치·환경보호 추진 주지사)"
+        {
+          "ko": "마크 햇필드",
+          "en": "Mark Hatfield",
+          "note": "정치·연방 상원의원·전 주지사"
+        },
+        {
+          "ko": "톰 매콜",
+          "en": "Tom McCall",
+          "note": "정치·환경보호 추진 주지사"
+        }
       ],
       "예술·문화": [
-        "맷 그레이닝 (만화·《심슨 가족》 창작자)",
-        "비벌리 클리어리 (문학·아동문학 작가)",
-        "라이언 고슬링 외 — 사노 외 캐리 브라운스타인 (음악·밴드 슬리터키니)"
+        {
+          "ko": "맷 그레이닝",
+          "en": "Matt Groening",
+          "note": "만화·《심슨 가족》 창작자"
+        },
+        {
+          "ko": "비벌리 클리어리",
+          "en": "Beverly Cleary",
+          "note": "문학·아동문학 작가"
+        },
+        {
+          "ko": "라이언 고슬링 외 — 사노 외 캐리 브라운스타인",
+          "en": "Carrie Brownstein",
+          "note": "음악·밴드 슬리터키니"
+        }
       ],
       "스포츠": [
-        "댄 오브라이언 (육상·올림픽 10종 금메달)",
-        "테리 베이커 (미식축구·하이즈먼 트로피)"
+        {
+          "ko": "댄 오브라이언",
+          "en": "Dan O'Brien",
+          "note": "육상·올림픽 10종 금메달"
+        },
+        {
+          "ko": "테리 베이커",
+          "en": "Terry Baker",
+          "note": "미식축구·하이즈먼 트로피"
+        }
       ],
       "과학·기술": [
-        "라이너스 폴링 (화학·노벨화학상·노벨평화상 수상)",
-        "더그 엥겔바트 영향 외 — 호머 데이븐포트 (만화·언론)"
+        {
+          "ko": "라이너스 폴링",
+          "en": "Linus Pauling",
+          "note": "화학·노벨화학상·노벨평화상 수상"
+        },
+        {
+          "ko": "더그 엥겔바트 영향 외 — 호머 데이븐포트",
+          "en": "Homer Davenport",
+          "note": "만화·언론"
+        }
       ],
       "기업": [
-        "필 나이트 (기업·나이키 공동창업)",
-        "빌 보워먼 (기업·나이키 공동창업)"
+        {
+          "ko": "필 나이트",
+          "en": "Phil Knight",
+          "note": "기업·나이키 공동창업"
+        },
+        {
+          "ko": "빌 보워먼",
+          "en": "Bill Bowerman",
+          "note": "기업·나이키 공동창업"
+        }
       ]
     },
     "nationalParks": [
-      "크레이터레이크 국립공원"
+      "크레이터레이크 국립공원 (Crater Lake National Park)"
     ],
     "stateParks": [
-      "에콜라 주립공원",
-      "실버폴스 주립공원",
-      "스미스록 주립공원"
+      "에콜라 주립공원 (Ecola State Park)",
+      "실버폴스 주립공원 (Silver Falls State Park)",
+      "스미스록 주립공원 (Smith Rock State Park)"
     ],
     "teams": {
       "MLB": [],
       "NBA": [
-        "포틀랜드 트레일블레이저스"
+        "포틀랜드 트레일블레이저스 (Portland Trail Blazers)"
       ],
       "NFL": [],
       "NHL": []
@@ -7353,64 +9415,75 @@ export const STATE_INFO = {
         "name": "크레이터레이크 국립공원",
         "lat": 42.9446,
         "lng": -122.109,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Crater Lake National Park"
       },
       {
         "name": "멀트노마 폭포",
         "lat": 45.5762,
         "lng": -122.1158,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Multnomah Falls"
       },
       {
         "name": "캐넌비치 헤이스택록",
         "lat": 45.8847,
         "lng": -123.9686,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Cannon Beach Haystack Rock"
       },
       {
         "name": "포틀랜드 일본 정원",
         "lat": 45.5191,
         "lng": -122.708,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Portland Japanese Garden"
       },
       {
         "name": "후드산",
         "lat": 45.3736,
         "lng": -121.696,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Mount Hood"
       },
       {
         "name": "오리건 주의사당",
         "lat": 44.9382,
         "lng": -123.0301,
-        "cat": "건축도시"
+        "cat": "건축도시",
+        "en": "Oregon State Capitol"
       }
     ],
     "cities": [
       {
         "name": "포틀랜드",
         "lat": 45.5152,
-        "lng": -122.6784
+        "lng": -122.6784,
+        "en": "Portland"
       },
       {
         "name": "세일럼",
         "lat": 44.9429,
-        "lng": -123.0351
+        "lng": -123.0351,
+        "en": "Salem"
       },
       {
         "name": "유진",
         "lat": 44.0521,
-        "lng": -123.0868
+        "lng": -123.0868,
+        "en": "Eugene"
       },
       {
         "name": "그레셤",
         "lat": 45.5001,
-        "lng": -122.4302
+        "lng": -122.4302,
+        "en": "Gresham"
       },
       {
         "name": "벤드",
         "lat": 44.0582,
-        "lng": -121.3153
+        "lng": -121.3153,
+        "en": "Bend"
       }
     ],
     "flags": [
@@ -7516,50 +9589,102 @@ export const STATE_INFO = {
     },
     "people": {
       "정치": [
-        "벤저민 프랭클린 (정치·미국 건국의 아버지)",
-        "조 바이든 (정치·제46대 미국 대통령)",
-        "제임스 뷰캐넌 (정치·제15대 미국 대통령)"
+        {
+          "ko": "벤저민 프랭클린",
+          "en": "Benjamin Franklin",
+          "note": "정치·미국 건국의 아버지"
+        },
+        {
+          "ko": "조 바이든",
+          "en": "Joe Biden",
+          "note": "정치·제46대 미국 대통령"
+        },
+        {
+          "ko": "제임스 뷰캐넌",
+          "en": "James Buchanan",
+          "note": "정치·제15대 미국 대통령"
+        }
       ],
       "예술·문화": [
-        "앤디 워홀 (미술·팝아트 거장)",
-        "메리 카사트 (미술·인상파 화가)",
-        "윌 스미스 (영화·필라델피아 출신 배우)"
+        {
+          "ko": "앤디 워홀",
+          "en": "Andy Warhol",
+          "note": "미술·팝아트 거장"
+        },
+        {
+          "ko": "메리 카사트",
+          "en": "Mary Cassatt",
+          "note": "미술·인상파 화가"
+        },
+        {
+          "ko": "윌 스미스",
+          "en": "Will Smith",
+          "note": "영화·필라델피아 출신 배우"
+        }
       ],
       "스포츠": [
-        "윌트 체임벌린 (농구·NBA 100점 기록)",
-        "조 몬태나 (미식축구·NFL 명예의 전당)"
+        {
+          "ko": "윌트 체임벌린",
+          "en": "Wilt Chamberlain",
+          "note": "농구·NBA 100점 기록"
+        },
+        {
+          "ko": "조 몬태나",
+          "en": "Joe Montana",
+          "note": "미식축구·NFL 명예의 전당"
+        }
       ],
       "과학·기술": [
-        "조나스 소크 (의학·소아마비 백신 개발)",
-        "레이철 카슨 (생물학·《침묵의 봄》 저자)"
+        {
+          "ko": "조나스 소크",
+          "en": "Jonas Salk",
+          "note": "의학·소아마비 백신 개발"
+        },
+        {
+          "ko": "레이철 카슨",
+          "en": "Rachel Carson",
+          "note": "생물학·《침묵의 봄》 저자"
+        }
       ],
       "기업": [
-        "앤드루 카네기 (기업·카네기 철강)",
-        "밀턴 허쉬 (기업·허쉬 초콜릿 창업)",
-        "헨리 J. 하인즈 (기업·H. J. 하인즈 창업)"
+        {
+          "ko": "앤드루 카네기",
+          "en": "Andrew Carnegie",
+          "note": "기업·카네기 철강"
+        },
+        {
+          "ko": "밀턴 허쉬",
+          "en": "Milton Hershey",
+          "note": "기업·허쉬 초콜릿 창업"
+        },
+        {
+          "ko": "헨리 J. 하인즈",
+          "en": "Henry J. Heinz",
+          "note": "기업·H. J. 하인즈 창업"
+        }
       ]
     },
     "nationalParks": [],
     "stateParks": [
-      "오하이오파일 주립공원",
-      "리케츠글렌 주립공원",
-      "프레스크아일 주립공원"
+      "오하이오파일 주립공원 (Ohiopyle State Park)",
+      "리케츠글렌 주립공원 (Ricketts Glen State Park)",
+      "프레스크아일 주립공원 (Presque Isle State Park)"
     ],
     "teams": {
       "MLB": [
-        "필라델피아 필리스",
-        "피츠버그 파이리츠"
+        "필라델피아 필리스 (Philadelphia Phillies)",
+        "피츠버그 파이리츠 (Pittsburgh Pirates)"
       ],
       "NBA": [
-        "필라델피아 76ers"
+        "필라델피아 76ers (Philadelphia 76ers)"
       ],
       "NFL": [
-        "필라델피아 이글스",
-        "피츠버그 스틸러스"
+        "필라델피아 이글스 (Philadelphia Eagles)",
+        "피츠버그 스틸러스 (Pittsburgh Steelers)"
       ],
       "NHL": [
-        "필라델피아 플라이어스",
-        "피츠버그 펭귄스"
+        "필라델피아 플라이어스 (Philadelphia Flyers)",
+        "피츠버그 펭귄스 (Pittsburgh Penguins)"
       ]
     },
     "landmarks": [
@@ -7567,64 +9692,75 @@ export const STATE_INFO = {
         "name": "독립기념관",
         "lat": 39.9489,
         "lng": -75.15,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "Independence Hall"
       },
       {
         "name": "자유의 종",
         "lat": 39.9496,
         "lng": -75.1503,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "Liberty Bell"
       },
       {
         "name": "필라델피아 미술관",
         "lat": 39.9656,
         "lng": -75.181,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "Philadelphia Museum of Art"
       },
       {
         "name": "게티즈버그 국립군사공원",
         "lat": 39.8118,
         "lng": -77.2311,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "Gettysburg National Military Park"
       },
       {
         "name": "펜실베이니아 주의사당(해리스버그)",
         "lat": 40.2645,
         "lng": -76.8836,
-        "cat": "건축도시"
+        "cat": "건축도시",
+        "en": "Pennsylvania State Capitol (Harrisburg)"
       },
       {
         "name": "낙수장(폴링워터)",
         "lat": 39.9064,
         "lng": -79.4681,
-        "cat": "건축도시"
+        "cat": "건축도시",
+        "en": "Fallingwater"
       }
     ],
     "cities": [
       {
         "name": "필라델피아",
         "lat": 39.9526,
-        "lng": -75.1652
+        "lng": -75.1652,
+        "en": "Philadelphia"
       },
       {
         "name": "피츠버그",
         "lat": 40.4406,
-        "lng": -79.9959
+        "lng": -79.9959,
+        "en": "Pittsburgh"
       },
       {
         "name": "앨런타운",
         "lat": 40.6084,
-        "lng": -75.4902
+        "lng": -75.4902,
+        "en": "Allentown"
       },
       {
         "name": "이리",
         "lat": 42.1292,
-        "lng": -80.0851
+        "lng": -80.0851,
+        "en": "Erie"
       },
       {
         "name": "해리스버그",
         "lat": 40.2732,
-        "lng": -76.8867
+        "lng": -76.8867,
+        "en": "Harrisburg"
       }
     ],
     "flags": [
@@ -7730,32 +9866,76 @@ export const STATE_INFO = {
     },
     "people": {
       "정치": [
-        "로저 윌리엄스 (정치·로드아일랜드 식민지 창설자)",
-        "존 O. 패스토어 (정치·연방 상원의원)"
+        {
+          "ko": "로저 윌리엄스",
+          "en": "Roger Williams",
+          "note": "정치·로드아일랜드 식민지 창설자"
+        },
+        {
+          "ko": "존 O. 패스토어",
+          "en": "John O. Pastore",
+          "note": "정치·연방 상원의원"
+        }
       ],
       "예술·문화": [
-        "H. P. 러브크래프트 (문학·괴기소설 작가)",
-        "조지 M. 코핸 (공연·뮤지컬 작곡가)",
-        "비올라 데이비스 (영화·아카데미 수상 배우)"
+        {
+          "ko": "H. P. 러브크래프트",
+          "en": "H. P. Lovecraft",
+          "note": "문학·괴기소설 작가"
+        },
+        {
+          "ko": "조지 M. 코핸",
+          "en": "George M. Cohan",
+          "note": "공연·뮤지컬 작곡가"
+        },
+        {
+          "ko": "비올라 데이비스",
+          "en": "Viola Davis",
+          "note": "영화·아카데미 수상 배우"
+        }
       ],
       "스포츠": [
-        "냅 라조이 (야구·MLB 명예의 전당)",
-        "로코 발델리 (야구·MLB 감독)"
+        {
+          "ko": "냅 라조이",
+          "en": "Nap Lajoie",
+          "note": "야구·MLB 명예의 전당"
+        },
+        {
+          "ko": "로코 발델리",
+          "en": "Rocco Baldelli",
+          "note": "야구·MLB 감독"
+        }
       ],
       "과학·기술": [
-        "조지 H. 코를리스 (공학·코를리스 증기기관)",
-        "토머스 텍스터 외 — 메리 디킨슨 외 (과학·연구)"
+        {
+          "ko": "조지 H. 코를리스",
+          "en": "George H. Corliss",
+          "note": "공학·코를리스 증기기관"
+        },
+        {
+          "ko": "토머스 텍스터 외 — 메리 디킨슨 외",
+          "en": "Mary Dickinson",
+          "note": "과학·연구"
+        }
       ],
       "기업": [
-        "새뮤얼 슬레이터 (기업·미국 산업혁명의 아버지)",
-        "시어도어 프랜시스 그린 (기업·정치·은행가)"
+        {
+          "ko": "새뮤얼 슬레이터",
+          "en": "Samuel Slater",
+          "note": "기업·미국 산업혁명의 아버지"
+        },
+        {
+          "ko": "시어도어 프랜시스 그린",
+          "en": "Theodore Francis Green",
+          "note": "기업·정치·은행가"
+        }
       ]
     },
     "nationalParks": [],
     "stateParks": [
-      "콜트 주립공원",
-      "린컨우즈 주립공원",
-      "비버테일 주립공원"
+      "콜트 주립공원 (Colt State Park)",
+      "린컨우즈 주립공원 (Lincoln Woods State Park)",
+      "비버테일 주립공원 (Beavertail State Park)"
     ],
     "teams": {
       "MLB": [],
@@ -7768,58 +9948,68 @@ export const STATE_INFO = {
         "name": "더 브레이커스 저택",
         "lat": 41.4699,
         "lng": -71.2986,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "The Breakers"
       },
       {
         "name": "로드아일랜드 주의사당",
         "lat": 41.8309,
         "lng": -71.4147,
-        "cat": "건축도시"
+        "cat": "건축도시",
+        "en": "Rhode Island State House"
       },
       {
         "name": "워터파이어 프로비던스",
         "lat": 41.8231,
         "lng": -71.4106,
-        "cat": "관광체험"
+        "cat": "관광체험",
+        "en": "WaterFire Providence"
       },
       {
         "name": "뉴포트 클리프워크",
         "lat": 41.473,
         "lng": -71.298,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Newport Cliff Walk"
       },
       {
         "name": "블록아일랜드",
         "lat": 41.1685,
         "lng": -71.5783,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Block Island"
       }
     ],
     "cities": [
       {
         "name": "프로비던스",
         "lat": 41.824,
-        "lng": -71.4128
+        "lng": -71.4128,
+        "en": "Providence"
       },
       {
         "name": "크랜스턴",
         "lat": 41.7798,
-        "lng": -71.4373
+        "lng": -71.4373,
+        "en": "Cranston"
       },
       {
         "name": "워릭",
         "lat": 41.7001,
-        "lng": -71.4162
+        "lng": -71.4162,
+        "en": "Warwick"
       },
       {
         "name": "포투켓",
         "lat": 41.8787,
-        "lng": -71.3826
+        "lng": -71.3826,
+        "en": "Pawtucket"
       },
       {
         "name": "뉴포트",
         "lat": 41.4901,
-        "lng": -71.3128
+        "lng": -71.3128,
+        "en": "Newport"
       }
     ],
     "flags": [
@@ -7926,35 +10116,83 @@ export const STATE_INFO = {
     },
     "people": {
       "정치": [
-        "앤드루 잭슨 (정치·제7대 미국 대통령)",
-        "존 C. 칼훈 (정치·제7대 미국 부통령)",
-        "스트롬 서먼드 (정치·최장수 연방 상원의원)"
+        {
+          "ko": "앤드루 잭슨",
+          "en": "Andrew Jackson",
+          "note": "정치·제7대 미국 대통령"
+        },
+        {
+          "ko": "존 C. 칼훈",
+          "en": "John C. Calhoun",
+          "note": "정치·제7대 미국 부통령"
+        },
+        {
+          "ko": "스트롬 서먼드",
+          "en": "Strom Thurmond",
+          "note": "정치·최장수 연방 상원의원"
+        }
       ],
       "예술·문화": [
-        "디지 길레스피 (음악·재즈 트럼펫 거장)",
-        "제임스 브라운 (음악·소울의 대부)",
-        "치코 코리아 외 — 비올라 외 크리스 록 (코미디·배우)"
+        {
+          "ko": "디지 길레스피",
+          "en": "Dizzy Gillespie",
+          "note": "음악·재즈 트럼펫 거장"
+        },
+        {
+          "ko": "제임스 브라운",
+          "en": "James Brown",
+          "note": "음악·소울의 대부"
+        },
+        {
+          "ko": "치코 코리아 외 — 비올라 외 크리스 록",
+          "en": "Chris Rock",
+          "note": "코미디·배우"
+        }
       ],
       "스포츠": [
-        "조 프레이저 (복싱·헤비급 챔피언)",
-        "케빈 가넷 (농구·NBA MVP)"
+        {
+          "ko": "조 프레이저",
+          "en": "Joe Frazier",
+          "note": "복싱·헤비급 챔피언"
+        },
+        {
+          "ko": "케빈 가넷",
+          "en": "Kevin Garnett",
+          "note": "농구·NBA MVP"
+        }
       ],
       "과학·기술": [
-        "찰스 H. 타운스 (물리·노벨물리학상·레이저 개발)",
-        "키티 콜 외 — 로널드 맥네어 (우주·NASA 우주비행사)"
+        {
+          "ko": "찰스 H. 타운스",
+          "en": "Charles H. Townes",
+          "note": "물리·노벨물리학상·레이저 개발"
+        },
+        {
+          "ko": "키티 콜 외 — 로널드 맥네어",
+          "en": "Ronald McNair",
+          "note": "우주·NASA 우주비행사"
+        }
       ],
       "기업": [
-        "에드 노매스 외 — 안나 캘훈 외 (기업·실업가)",
-        "다든 외 — 로버트 G. 홀 (기업·실업가)"
+        {
+          "ko": "에드 노매스 외 — 안나 캘훈 외",
+          "en": "Anna Calhoun",
+          "note": "기업·실업가"
+        },
+        {
+          "ko": "다든 외 — 로버트 G. 홀",
+          "en": "Robert G. Hall",
+          "note": "기업·실업가"
+        }
       ]
     },
     "nationalParks": [
-      "콩가리 국립공원"
+      "콩가리 국립공원 (Congaree National Park)"
     ],
     "stateParks": [
-      "테이블록 주립공원",
-      "헌팅턴비치 주립공원",
-      "캐사르스헤드 주립공원"
+      "테이블록 주립공원 (Table Rock State Park)",
+      "헌팅턴비치 주립공원 (Huntington Beach State Park)",
+      "캐사르스헤드 주립공원 (Caesars Head State Park)"
     ],
     "teams": {
       "MLB": [],
@@ -7967,64 +10205,75 @@ export const STATE_INFO = {
         "name": "콩가리 국립공원",
         "lat": 33.7948,
         "lng": -80.7821,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Congaree National Park"
       },
       {
         "name": "포트섬터 국립기념물",
         "lat": 32.7523,
         "lng": -79.8748,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "Fort Sumter National Monument"
       },
       {
         "name": "사우스캐롤라이나 주의사당",
         "lat": 34.0007,
         "lng": -81.0331,
-        "cat": "건축도시"
+        "cat": "건축도시",
+        "en": "South Carolina State House"
       },
       {
         "name": "찰스턴 레인보우로",
         "lat": 32.7765,
         "lng": -79.9275,
-        "cat": "건축도시"
+        "cat": "건축도시",
+        "en": "Charleston Rainbow Row"
       },
       {
         "name": "머틀비치 보드워크",
         "lat": 33.6938,
         "lng": -78.8819,
-        "cat": "관광체험"
+        "cat": "관광체험",
+        "en": "Myrtle Beach Boardwalk"
       },
       {
         "name": "매그놀리아 플랜테이션",
         "lat": 32.8783,
         "lng": -80.0853,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "Magnolia Plantation"
       }
     ],
     "cities": [
       {
         "name": "찰스턴",
         "lat": 32.7765,
-        "lng": -79.9311
+        "lng": -79.9311,
+        "en": "Charleston"
       },
       {
         "name": "컬럼비아",
         "lat": 34.0007,
-        "lng": -81.0348
+        "lng": -81.0348,
+        "en": "Columbia"
       },
       {
         "name": "노스찰스턴",
         "lat": 32.8546,
-        "lng": -79.9748
+        "lng": -79.9748,
+        "en": "North Charleston"
       },
       {
         "name": "마운트플레전트",
         "lat": 32.7941,
-        "lng": -79.8626
+        "lng": -79.8626,
+        "en": "Mount Pleasant"
       },
       {
         "name": "머틀비치",
         "lat": 33.6891,
-        "lng": -78.8867
+        "lng": -78.8867,
+        "en": "Myrtle Beach"
       }
     ],
     "flags": [
@@ -8105,35 +10354,79 @@ export const STATE_INFO = {
     },
     "people": {
       "정치": [
-        "조지 맥거번 (정치·연방 상원의원·대선 후보)",
-        "톰 대슐 (정치·연방 상원 원내대표)",
-        "휴버트 험프리 외 — 칼 먼트 (정치·연방 상원의원)"
+        {
+          "ko": "조지 맥거번",
+          "en": "George McGovern",
+          "note": "정치·연방 상원의원·대선 후보"
+        },
+        {
+          "ko": "톰 대슐",
+          "en": "Tom Daschle",
+          "note": "정치·연방 상원 원내대표"
+        },
+        {
+          "ko": "휴버트 험프리 외 — 칼 먼트",
+          "en": "Karl Mundt",
+          "note": "정치·연방 상원의원"
+        }
       ],
       "예술·문화": [
-        "로라 잉걸스 와일더 (문학·《초원의 집》 작가)",
-        "크레이지 호스 외 — 메리 하트 (방송·진행자)"
+        {
+          "ko": "로라 잉걸스 와일더",
+          "en": "Laura Ingalls Wilder",
+          "note": "문학·《초원의 집》 작가"
+        },
+        {
+          "ko": "크레이지 호스 외 — 메리 하트",
+          "en": "Mary Hart",
+          "note": "방송·진행자"
+        }
       ],
       "스포츠": [
-        "마이크 밀러 (농구·NBA 우승)",
-        "벡키 해먼 (농구·WNBA·코치)"
+        {
+          "ko": "마이크 밀러",
+          "en": "Mike Miller",
+          "note": "농구·NBA 우승"
+        },
+        {
+          "ko": "벡키 해먼",
+          "en": "Becky Hammon",
+          "note": "농구·WNBA·코치"
+        }
       ],
       "과학·기술": [
-        "어니스트 로런스 (물리·노벨물리학상·사이클로트론 발명)",
-        "굿슬 외 — 에마누엘 헤르틀라인 (과학·연구)"
+        {
+          "ko": "어니스트 로런스",
+          "en": "Ernest Lawrence",
+          "note": "물리·노벨물리학상·사이클로트론 발명"
+        },
+        {
+          "ko": "굿슬 외 — 에마누엘 헤르틀라인",
+          "en": "Emmanuel Hertlein",
+          "note": "과학·연구"
+        }
       ],
       "기업": [
-        "T. 데니 샌포드 (기업·금융·자선가)",
-        "피에르 외 — 잭 빌리언 (기업·실업가)"
+        {
+          "ko": "T. 데니 샌포드",
+          "en": "T. Denny Sanford",
+          "note": "기업·금융·자선가"
+        },
+        {
+          "ko": "피에르 외 — 잭 빌리언",
+          "en": "Jack Billion",
+          "note": "기업·실업가"
+        }
       ]
     },
     "nationalParks": [
-      "배드랜즈 국립공원",
-      "윈드케이브 국립공원"
+      "배드랜즈 국립공원 (Badlands National Park)",
+      "윈드케이브 국립공원 (Wind Cave National Park)"
     ],
     "stateParks": [
-      "커스터 주립공원",
-      "팰리세이즈 주립공원",
-      "베어부트 주립공원"
+      "커스터 주립공원 (Custer State Park)",
+      "팰리세이즈 주립공원 (Palisades State Park)",
+      "베어부트 주립공원 (Bear Butte State Park)"
     ],
     "teams": {
       "MLB": [],
@@ -8146,64 +10439,75 @@ export const STATE_INFO = {
         "name": "러시모어산",
         "lat": 43.8791,
         "lng": -103.4591,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "Mount Rushmore"
       },
       {
         "name": "배드랜즈 국립공원",
         "lat": 43.8554,
         "lng": -102.3397,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Badlands National Park"
       },
       {
         "name": "크레이지 호스 기념물",
         "lat": 43.8369,
         "lng": -103.6238,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "Crazy Horse Memorial"
       },
       {
         "name": "윈드케이브 국립공원",
         "lat": 43.5562,
         "lng": -103.4787,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Wind Cave National Park"
       },
       {
         "name": "커스터 주립공원",
         "lat": 43.7494,
         "lng": -103.4115,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Custer State Park"
       },
       {
         "name": "사우스다코타 주의사당(피어)",
         "lat": 44.3677,
         "lng": -100.346,
-        "cat": "건축도시"
+        "cat": "건축도시",
+        "en": "South Dakota State Capitol (Pierre)"
       }
     ],
     "cities": [
       {
         "name": "수폴스",
         "lat": 43.5446,
-        "lng": -96.7311
+        "lng": -96.7311,
+        "en": "Sioux Falls"
       },
       {
         "name": "래피드시티",
         "lat": 44.0805,
-        "lng": -103.231
+        "lng": -103.231,
+        "en": "Rapid City"
       },
       {
         "name": "애버딘",
         "lat": 45.4647,
-        "lng": -98.4865
+        "lng": -98.4865,
+        "en": "Aberdeen"
       },
       {
         "name": "브루킹스",
         "lat": 44.3114,
-        "lng": -96.7984
+        "lng": -96.7984,
+        "en": "Brookings"
       },
       {
         "name": "피어",
         "lat": 44.3683,
-        "lng": -100.351
+        "lng": -100.351,
+        "en": "Pierre"
       }
     ],
     "flags": [
@@ -8319,46 +10623,94 @@ export const STATE_INFO = {
     },
     "people": {
       "정치": [
-        "앤드루 잭슨 (정치·제7대 대통령)",
-        "앨 고어 (정치·제45대 부통령)",
-        "제임스 K. 포크 (정치·제11대 대통령)"
+        {
+          "ko": "앤드루 잭슨",
+          "en": "Andrew Jackson",
+          "note": "정치·제7대 대통령"
+        },
+        {
+          "ko": "앨 고어",
+          "en": "Al Gore",
+          "note": "정치·제45대 부통령"
+        },
+        {
+          "ko": "제임스 K. 포크",
+          "en": "James K. Polk",
+          "note": "정치·제11대 대통령"
+        }
       ],
       "예술·문화": [
-        "돌리 파튼 (음악·컨트리 가수)",
-        "아레사 프랭클린 (음악·소울 여왕)",
-        "모건 프리먼 (영화·배우)"
+        {
+          "ko": "돌리 파튼",
+          "en": "Dolly Parton",
+          "note": "음악·컨트리 가수"
+        },
+        {
+          "ko": "아레사 프랭클린",
+          "en": "Aretha Franklin",
+          "note": "음악·소울 여왕"
+        },
+        {
+          "ko": "모건 프리먼",
+          "en": "Morgan Freeman",
+          "note": "영화·배우"
+        }
       ],
       "스포츠": [
-        "페이턴 매닝 (미식축구·쿼터백)",
-        "윌마 루돌프 (육상·올림픽 금메달)"
+        {
+          "ko": "페이턴 매닝",
+          "en": "Peyton Manning",
+          "note": "미식축구·쿼터백"
+        },
+        {
+          "ko": "윌마 루돌프",
+          "en": "Wilma Rudolph",
+          "note": "육상·올림픽 금메달"
+        }
       ],
       "과학·기술": [
-        "프레더릭 매키니 (의학·연구자)",
-        "윌리엄 스타 (과학·물리학)"
+        {
+          "ko": "프레더릭 매키니",
+          "en": "Frederick McKinney",
+          "note": "의학·연구자"
+        },
+        {
+          "ko": "윌리엄 스타",
+          "en": "William Star",
+          "note": "과학·물리학"
+        }
       ],
       "기업": [
-        "프레드 스미스 (FedEx 창업자)",
-        "켐몬스 윌슨 (홀리데이인 창업자)"
+        {
+          "ko": "프레드 스미스",
+          "en": "Fred Smith",
+          "note": "FedEx 창업자"
+        },
+        {
+          "ko": "켐몬스 윌슨",
+          "en": "Kemmons Wilson",
+          "note": "홀리데이인 창업자"
+        }
       ]
     },
     "nationalParks": [
-      "그레이트스모키산맥"
+      "그레이트스모키산맥 (Great Smoky Mountains)"
     ],
     "stateParks": [
-      "폴크리크폴스 주립공원",
-      "라디언트 마운틴 주립공원",
-      "롤리오브룩스 주립공원"
+      "폴크리크폴스 주립공원 (Fall Creek Falls State Park)",
+      "라디언트 마운틴 주립공원 (Radnor Lake State Park)",
+      "롤리오브룩스 주립공원 (Rock Island State Park)"
     ],
     "teams": {
       "MLB": [],
       "NBA": [
-        "멤피스 그리즐리스"
+        "멤피스 그리즐리스 (Memphis Grizzlies)"
       ],
       "NFL": [
-        "테네시 타이탄스"
+        "테네시 타이탄스 (Tennessee Titans)"
       ],
       "NHL": [
-        "내슈빌 프레더터스"
+        "내슈빌 프레더터스 (Nashville Predators)"
       ]
     },
     "landmarks": [
@@ -8366,64 +10718,75 @@ export const STATE_INFO = {
         "name": "그레이트스모키산맥 국립공원",
         "lat": 35.6118,
         "lng": -83.4895,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Great Smoky Mountains National Park"
       },
       {
         "name": "그레이스랜드 (엘비스 저택)",
         "lat": 35.0477,
         "lng": -90.026,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "Graceland"
       },
       {
         "name": "내슈빌 그랜드올오프리",
         "lat": 36.2069,
         "lng": -86.6924,
-        "cat": "관광체험"
+        "cat": "관광체험",
+        "en": "Grand Ole Opry"
       },
       {
         "name": "테네시 주의사당",
         "lat": 36.1659,
         "lng": -86.7844,
-        "cat": "건축도시"
+        "cat": "건축도시",
+        "en": "Tennessee State Capitol"
       },
       {
         "name": "빌 스트리트 (멤피스)",
         "lat": 35.1392,
         "lng": -90.0517,
-        "cat": "관광체험"
+        "cat": "관광체험",
+        "en": "Beale Street"
       },
       {
         "name": "파르테논 복제 신전 (내슈빌)",
         "lat": 36.1496,
         "lng": -86.8133,
-        "cat": "건축도시"
+        "cat": "건축도시",
+        "en": "The Parthenon"
       }
     ],
     "cities": [
       {
         "name": "내슈빌",
         "lat": 36.1627,
-        "lng": -86.7816
+        "lng": -86.7816,
+        "en": "Nashville"
       },
       {
         "name": "멤피스",
         "lat": 35.1495,
-        "lng": -90.049
+        "lng": -90.049,
+        "en": "Memphis"
       },
       {
         "name": "녹스빌",
         "lat": 35.9606,
-        "lng": -83.9207
+        "lng": -83.9207,
+        "en": "Knoxville"
       },
       {
         "name": "채터누가",
         "lat": 35.0456,
-        "lng": -85.3097
+        "lng": -85.3097,
+        "en": "Chattanooga"
       },
       {
         "name": "클락스빌",
         "lat": 36.5298,
-        "lng": -87.3595
+        "lng": -87.3595,
+        "en": "Clarksville"
       }
     ],
     "flags": [
@@ -8520,54 +10883,106 @@ export const STATE_INFO = {
     },
     "people": {
       "정치": [
-        "린든 B. 존슨 (정치·제36대 대통령)",
-        "조지 W. 부시 (정치·제43대 대통령)",
-        "샘 휴스턴 (정치·텍사스 공화국 대통령)"
+        {
+          "ko": "린든 B. 존슨",
+          "en": "Lyndon B. Johnson",
+          "note": "정치·제36대 대통령"
+        },
+        {
+          "ko": "조지 W. 부시",
+          "en": "George W. Bush",
+          "note": "정치·제43대 대통령"
+        },
+        {
+          "ko": "샘 휴스턴",
+          "en": "Sam Houston",
+          "note": "정치·텍사스 공화국 대통령"
+        }
       ],
       "예술·문화": [
-        "비욘세 (음악·가수)",
-        "셀레나 (음악·테하노 가수)",
-        "매슈 매코너히 (영화·배우)"
+        {
+          "ko": "비욘세",
+          "en": "Beyoncé",
+          "note": "음악·가수"
+        },
+        {
+          "ko": "셀레나",
+          "en": "Selena",
+          "note": "음악·테하노 가수"
+        },
+        {
+          "ko": "매슈 매코너히",
+          "en": "Matthew McConaughey",
+          "note": "영화·배우"
+        }
       ],
       "스포츠": [
-        "놀란 라이언 (야구·투수)",
-        "벤 호건 (골프·선수)"
+        {
+          "ko": "놀란 라이언",
+          "en": "Nolan Ryan",
+          "note": "야구·투수"
+        },
+        {
+          "ko": "벤 호건",
+          "en": "Ben Hogan",
+          "note": "골프·선수"
+        }
       ],
       "과학·기술": [
-        "마이클 델 (기술·델 창업자)",
-        "잭 킬비 (전자·집적회로 발명)"
+        {
+          "ko": "마이클 델",
+          "en": "Michael Dell",
+          "note": "기술·델 창업자"
+        },
+        {
+          "ko": "잭 킬비",
+          "en": "Jack Kilby",
+          "note": "전자·집적회로 발명"
+        }
       ],
       "기업": [
-        "하워드 휴스 (기업·항공·영화)",
-        "T. 분 피컨스 (석유 사업가)",
-        "마크 큐반 (기업·투자가)"
+        {
+          "ko": "하워드 휴스",
+          "en": "Howard Hughes",
+          "note": "기업·항공·영화"
+        },
+        {
+          "ko": "T. 분 피컨스",
+          "en": "T. Boone Pickens",
+          "note": "석유 사업가"
+        },
+        {
+          "ko": "마크 큐반",
+          "en": "Mark Cuban",
+          "note": "기업·투자가"
+        }
       ]
     },
     "nationalParks": [
-      "빅벤드",
-      "과달루페산맥"
+      "빅벤드 (Big Bend)",
+      "과달루페산맥 (Guadalupe Mountains)"
     ],
     "stateParks": [
-      "엔샨티드록 주립공원",
-      "팰러두로캐니언 주립공원",
-      "빅벤드랜치 주립공원"
+      "엔샨티드록 주립공원 (Enchanted Rock State Natural Area)",
+      "팰러두로캐니언 주립공원 (Palo Duro Canyon State Park)",
+      "빅벤드랜치 주립공원 (Big Bend Ranch State Park)"
     ],
     "teams": {
       "MLB": [
-        "텍사스 레인저스",
-        "휴스턴 애스트로스"
+        "텍사스 레인저스 (Texas Rangers)",
+        "휴스턴 애스트로스 (Houston Astros)"
       ],
       "NBA": [
-        "댈러스 매버릭스",
-        "휴스턴 로키츠",
-        "샌안토니오 스퍼스"
+        "댈러스 매버릭스 (Dallas Mavericks)",
+        "휴스턴 로키츠 (Houston Rockets)",
+        "샌안토니오 스퍼스 (San Antonio Spurs)"
       ],
       "NFL": [
-        "댈러스 카우보이스",
-        "휴스턴 텍산스"
+        "댈러스 카우보이스 (Dallas Cowboys)",
+        "휴스턴 텍산스 (Houston Texans)"
       ],
       "NHL": [
-        "댈러스 스타스"
+        "댈러스 스타스 (Dallas Stars)"
       ]
     },
     "landmarks": [
@@ -8575,70 +10990,82 @@ export const STATE_INFO = {
         "name": "알라모 (샌안토니오)",
         "lat": 29.426,
         "lng": -98.4861,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "The Alamo"
       },
       {
         "name": "텍사스 주의사당 (오스틴)",
         "lat": 30.2747,
         "lng": -97.7404,
-        "cat": "건축도시"
+        "cat": "건축도시",
+        "en": "Texas State Capitol"
       },
       {
         "name": "빅벤드 국립공원",
         "lat": 29.1275,
         "lng": -103.2425,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Big Bend National Park"
       },
       {
         "name": "스페이스센터 휴스턴",
         "lat": 29.5519,
         "lng": -95.0975,
-        "cat": "관광체험"
+        "cat": "관광체험",
+        "en": "Space Center Houston"
       },
       {
         "name": "샌안토니오 리버워크",
         "lat": 29.4252,
         "lng": -98.4861,
-        "cat": "건축도시"
+        "cat": "건축도시",
+        "en": "San Antonio River Walk"
       },
       {
         "name": "디일리 플라자 (댈러스)",
         "lat": 32.7787,
         "lng": -96.8085,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "Dealey Plaza"
       },
       {
         "name": "과달루페산맥 국립공원",
         "lat": 31.918,
         "lng": -104.8602,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Guadalupe Mountains National Park"
       }
     ],
     "cities": [
       {
         "name": "휴스턴",
         "lat": 29.7604,
-        "lng": -95.3698
+        "lng": -95.3698,
+        "en": "Houston"
       },
       {
         "name": "샌안토니오",
         "lat": 29.4241,
-        "lng": -98.4936
+        "lng": -98.4936,
+        "en": "San Antonio"
       },
       {
         "name": "댈러스",
         "lat": 32.7767,
-        "lng": -96.797
+        "lng": -96.797,
+        "en": "Dallas"
       },
       {
         "name": "오스틴",
         "lat": 30.2672,
-        "lng": -97.7431
+        "lng": -97.7431,
+        "en": "Austin"
       },
       {
         "name": "포트워스",
         "lat": 32.7555,
-        "lng": -97.3308
+        "lng": -97.3308,
+        "en": "Fort Worth"
       }
     ],
     "flags": [
@@ -8720,47 +11147,91 @@ export const STATE_INFO = {
     },
     "people": {
       "정치": [
-        "미트 롬니 (정치·상원의원)",
-        "오린 해치 (정치·상원의원)",
-        "브리검 영 (종교·정치 지도자)"
+        {
+          "ko": "미트 롬니",
+          "en": "Mitt Romney",
+          "note": "정치·상원의원"
+        },
+        {
+          "ko": "오린 해치",
+          "en": "Orrin Hatch",
+          "note": "정치·상원의원"
+        },
+        {
+          "ko": "브리검 영",
+          "en": "Brigham Young",
+          "note": "종교·정치 지도자"
+        }
       ],
       "예술·문화": [
-        "도니 오스먼드 (음악·가수)",
-        "로버트 레드퍼드 (영화·배우·감독)"
+        {
+          "ko": "도니 오스먼드",
+          "en": "Donny Osmond",
+          "note": "음악·가수"
+        },
+        {
+          "ko": "로버트 레드퍼드",
+          "en": "Robert Redford",
+          "note": "영화·배우·감독"
+        }
       ],
       "스포츠": [
-        "존 스탁턴 (농구·유타 재즈)",
-        "칼 말론 (농구·유타 재즈)"
+        {
+          "ko": "존 스탁턴",
+          "en": "John Stockton",
+          "note": "농구·유타 재즈"
+        },
+        {
+          "ko": "칼 말론",
+          "en": "Karl Malone",
+          "note": "농구·유타 재즈"
+        }
       ],
       "과학·기술": [
-        "필로 판즈워스 (발명·전자 텔레비전)",
-        "놀런 부시넬 (기술·아타리 창업자)"
+        {
+          "ko": "필로 판즈워스",
+          "en": "Philo Farnsworth",
+          "note": "발명·전자 텔레비전"
+        },
+        {
+          "ko": "놀런 부시넬",
+          "en": "Nolan Bushnell",
+          "note": "기술·아타리 창업자"
+        }
       ],
       "기업": [
-        "조지프 스미스 (종교 창시자)",
-        "제임스 르보이 소렌슨 (기업·의료기기)"
+        {
+          "ko": "조지프 스미스",
+          "en": "Joseph Smith",
+          "note": "종교 창시자"
+        },
+        {
+          "ko": "제임스 르보이 소렌슨",
+          "en": "James LeVoy Sorenson",
+          "note": "기업·의료기기"
+        }
       ]
     },
     "nationalParks": [
-      "자이언",
-      "브라이스캐니언",
-      "아치스",
-      "캐니언랜즈",
-      "캐피톨리프"
+      "자이언 (Zion)",
+      "브라이스캐니언 (Bryce Canyon)",
+      "아치스 (Arches)",
+      "캐니언랜즈 (Canyonlands)",
+      "캐피톨리프 (Capitol Reef)"
     ],
     "stateParks": [
-      "딘트벨리 주립공원",
-      "안텔로프섬 주립공원",
-      "골든스파이크 주립공원"
+      "딘트벨리 주립공원 (Dead Horse Point State Park)",
+      "안텔로프섬 주립공원 (Antelope Island State Park)",
+      "골든스파이크 주립공원 (Golden Spike State Park)"
     ],
     "teams": {
       "MLB": [],
       "NBA": [
-        "유타 재즈"
+        "유타 재즈 (Utah Jazz)"
       ],
       "NFL": [],
       "NHL": [
-        "유타 매머드"
+        "유타 매머드 (Utah Mammoth)"
       ]
     },
     "landmarks": [
@@ -8768,64 +11239,75 @@ export const STATE_INFO = {
         "name": "솔트레이크 템플스퀘어",
         "lat": 40.7707,
         "lng": -111.8911,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "Salt Lake Temple Square"
       },
       {
         "name": "자이언 국립공원",
         "lat": 37.2982,
         "lng": -113.0263,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Zion National Park"
       },
       {
         "name": "브라이스캐니언 국립공원",
         "lat": 37.593,
         "lng": -112.1871,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Bryce Canyon National Park"
       },
       {
         "name": "아치스 국립공원 (델리킷 아치)",
         "lat": 38.7436,
         "lng": -109.4993,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Arches National Park"
       },
       {
         "name": "그레이트솔트레이크",
         "lat": 41.1136,
         "lng": -112.486,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Great Salt Lake"
       },
       {
         "name": "유타 주의사당",
         "lat": 40.7774,
         "lng": -111.8881,
-        "cat": "건축도시"
+        "cat": "건축도시",
+        "en": "Utah State Capitol"
       }
     ],
     "cities": [
       {
         "name": "솔트레이크시티",
         "lat": 40.7608,
-        "lng": -111.891
+        "lng": -111.891,
+        "en": "Salt Lake City"
       },
       {
         "name": "웨스트밸리시티",
         "lat": 40.6916,
-        "lng": -112.0011
+        "lng": -112.0011,
+        "en": "West Valley City"
       },
       {
         "name": "프로보",
         "lat": 40.2338,
-        "lng": -111.6585
+        "lng": -111.6585,
+        "en": "Provo"
       },
       {
         "name": "웨스트조던",
         "lat": 40.6097,
-        "lng": -111.9391
+        "lng": -111.9391,
+        "en": "West Jordan"
       },
       {
         "name": "오렘",
         "lat": 40.2969,
-        "lng": -111.6946
+        "lng": -111.6946,
+        "en": "Orem"
       }
     ],
     "flags": [
@@ -8936,32 +11418,76 @@ export const STATE_INFO = {
     },
     "people": {
       "정치": [
-        "캘빈 쿨리지 (정치·제30대 대통령)",
-        "버니 샌더스 (정치·상원의원)",
-        "체스터 A. 아서 (정치·제21대 대통령)"
+        {
+          "ko": "캘빈 쿨리지",
+          "en": "Calvin Coolidge",
+          "note": "정치·제30대 대통령"
+        },
+        {
+          "ko": "버니 샌더스",
+          "en": "Bernie Sanders",
+          "note": "정치·상원의원"
+        },
+        {
+          "ko": "체스터 A. 아서",
+          "en": "Chester A. Arthur",
+          "note": "정치·제21대 대통령"
+        }
       ],
       "예술·문화": [
-        "루디야드 키플링 (문학·작가, 거주)",
-        "노먼 록웰 (미술·화가, 거주)"
+        {
+          "ko": "루디야드 키플링",
+          "en": "Rudyard Kipling",
+          "note": "문학·작가, 거주"
+        },
+        {
+          "ko": "노먼 록웰",
+          "en": "Norman Rockwell",
+          "note": "미술·화가, 거주"
+        }
       ],
       "스포츠": [
-        "안드레아 미드 로런스 (스키·올림픽 2관왕)",
-        "빌리 키더 (스키·올림픽 금메달)"
+        {
+          "ko": "안드레아 미드 로런스",
+          "en": "Andrea Mead Lawrence",
+          "note": "스키·올림픽 2관왕"
+        },
+        {
+          "ko": "빌리 키더",
+          "en": "Billy Kidd",
+          "note": "스키·올림픽 금메달"
+        }
       ],
       "과학·기술": [
-        "존 듀이 (철학·교육학자)",
-        "엘리샤 오티스 (발명·엘리베이터)"
+        {
+          "ko": "존 듀이",
+          "en": "John Dewey",
+          "note": "철학·교육학자"
+        },
+        {
+          "ko": "엘리샤 오티스",
+          "en": "Elisha Otis",
+          "note": "발명·엘리베이터"
+        }
       ],
       "기업": [
-        "벤 코언과 제리 그린필드 (벤앤제리스 창업자)",
-        "존 디어 (제조·트랙터 창업자)"
+        {
+          "ko": "벤 코언과 제리 그린필드",
+          "en": "Ben Cohen and Jerry Greenfield",
+          "note": "벤앤제리스 창업자"
+        },
+        {
+          "ko": "존 디어",
+          "en": "John Deere",
+          "note": "제조·트랙터 창업자"
+        }
       ]
     },
     "nationalParks": [],
     "stateParks": [
-      "스모글러스노치 주립공원",
-      "그랜드아일 주립공원",
-      "마운트필로 주립공원"
+      "스모글러스노치 주립공원 (Smugglers' Notch State Park)",
+      "그랜드아일 주립공원 (Grand Isle State Park)",
+      "마운트필로 주립공원 (Mount Philo State Park)"
     ],
     "teams": {
       "MLB": [],
@@ -8974,64 +11500,75 @@ export const STATE_INFO = {
         "name": "버몬트 주의사당 (몬트필리어)",
         "lat": 44.2624,
         "lng": -72.58,
-        "cat": "건축도시"
+        "cat": "건축도시",
+        "en": "Vermont State House"
       },
       {
         "name": "벤앤제리스 공장",
         "lat": 44.3175,
         "lng": -72.7193,
-        "cat": "관광체험"
+        "cat": "관광체험",
+        "en": "Ben & Jerry's Factory"
       },
       {
         "name": "스토우 마운틴 리조트",
         "lat": 44.5303,
         "lng": -72.7814,
-        "cat": "관광체험"
+        "cat": "관광체험",
+        "en": "Stowe Mountain Resort"
       },
       {
         "name": "챔플레인호",
         "lat": 44.5366,
         "lng": -73.3318,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Lake Champlain"
       },
       {
         "name": "캠프그라운드 (벌링턴 워터프런트)",
         "lat": 44.4759,
         "lng": -73.221,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Burlington Waterfront"
       },
       {
         "name": "퀴치 협곡",
         "lat": 43.636,
         "lng": -72.409,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Quechee Gorge"
       }
     ],
     "cities": [
       {
         "name": "벌링턴",
         "lat": 44.4759,
-        "lng": -73.2121
+        "lng": -73.2121,
+        "en": "Burlington"
       },
       {
         "name": "사우스벌링턴",
         "lat": 44.4669,
-        "lng": -73.1709
+        "lng": -73.1709,
+        "en": "South Burlington"
       },
       {
         "name": "러틀랜드",
         "lat": 43.6106,
-        "lng": -72.9726
+        "lng": -72.9726,
+        "en": "Rutland"
       },
       {
         "name": "몬트필리어",
         "lat": 44.2601,
-        "lng": -72.5754
+        "lng": -72.5754,
+        "en": "Montpelier"
       },
       {
         "name": "베닝턴",
         "lat": 42.8781,
-        "lng": -73.1968
+        "lng": -73.1968,
+        "en": "Bennington"
       }
     ],
     "flags": [
@@ -9146,35 +11683,83 @@ export const STATE_INFO = {
     },
     "people": {
       "정치": [
-        "조지 워싱턴 (정치·초대 대통령)",
-        "토머스 제퍼슨 (정치·제3대 대통령)",
-        "제임스 매디슨 (정치·제4대 대통령)"
+        {
+          "ko": "조지 워싱턴",
+          "en": "George Washington",
+          "note": "정치·초대 대통령"
+        },
+        {
+          "ko": "토머스 제퍼슨",
+          "en": "Thomas Jefferson",
+          "note": "정치·제3대 대통령"
+        },
+        {
+          "ko": "제임스 매디슨",
+          "en": "James Madison",
+          "note": "정치·제4대 대통령"
+        }
       ],
       "예술·문화": [
-        "에드거 앨런 포 (문학·작가)",
-        "엘라 피츠제럴드 (음악·재즈 가수)",
-        "팰 윌리엄스 (음악·가수)"
+        {
+          "ko": "에드거 앨런 포",
+          "en": "Edgar Allan Poe",
+          "note": "문학·작가"
+        },
+        {
+          "ko": "엘라 피츠제럴드",
+          "en": "Ella Fitzgerald",
+          "note": "음악·재즈 가수"
+        },
+        {
+          "ko": "팰 윌리엄스",
+          "en": "Pharrell Williams",
+          "note": "음악·가수"
+        }
       ],
       "스포츠": [
-        "아서 애시 (테니스·선수)",
-        "모지스 말론 (농구·선수)"
+        {
+          "ko": "아서 애시",
+          "en": "Arthur Ashe",
+          "note": "테니스·선수"
+        },
+        {
+          "ko": "모지스 말론",
+          "en": "Moses Malone",
+          "note": "농구·선수"
+        }
       ],
       "과학·기술": [
-        "사이러스 매코믹 (발명·수확기)",
-        "월터 리드 (의학·황열병 연구)"
+        {
+          "ko": "사이러스 매코믹",
+          "en": "Cyrus McCormick",
+          "note": "발명·수확기"
+        },
+        {
+          "ko": "월터 리드",
+          "en": "Walter Reed",
+          "note": "의학·황열병 연구"
+        }
       ],
       "기업": [
-        "부커 T. 워싱턴 (교육·사상가)",
-        "리처드 셰리던 (기업가)"
+        {
+          "ko": "부커 T. 워싱턴",
+          "en": "Booker T. Washington",
+          "note": "교육·사상가"
+        },
+        {
+          "ko": "리처드 셰리던",
+          "en": "Richard Sheridan",
+          "note": "기업가"
+        }
       ]
     },
     "nationalParks": [
-      "셰넌도어"
+      "셰넌도어 (Shenandoah)"
     ],
     "stateParks": [
-      "퍼스트랜딩 주립공원",
-      "더글러스호 주립공원",
-      "내추럴브리지 주립공원"
+      "퍼스트랜딩 주립공원 (First Landing State Park)",
+      "더글러스호 주립공원 (Douthat State Park)",
+      "내추럴브리지 주립공원 (Natural Bridge State Park)"
     ],
     "teams": {
       "MLB": [],
@@ -9187,64 +11772,75 @@ export const STATE_INFO = {
         "name": "마운트버넌 (워싱턴 저택)",
         "lat": 38.7077,
         "lng": -77.0861,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "Mount Vernon"
       },
       {
         "name": "몬티첼로 (제퍼슨 저택)",
         "lat": 38.0081,
         "lng": -78.4533,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "Monticello"
       },
       {
         "name": "알링턴 국립묘지",
         "lat": 38.8783,
         "lng": -77.0687,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "Arlington National Cemetery"
       },
       {
         "name": "셰넌도어 국립공원",
         "lat": 38.533,
         "lng": -78.3499,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Shenandoah National Park"
       },
       {
         "name": "콜로니얼 윌리엄스버그",
         "lat": 37.2707,
         "lng": -76.7075,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "Colonial Williamsburg"
       },
       {
         "name": "버지니아 주의사당 (리치먼드)",
         "lat": 37.5388,
         "lng": -77.4332,
-        "cat": "건축도시"
+        "cat": "건축도시",
+        "en": "Virginia State Capitol"
       }
     ],
     "cities": [
       {
         "name": "버지니아비치",
         "lat": 36.8529,
-        "lng": -75.978
+        "lng": -75.978,
+        "en": "Virginia Beach"
       },
       {
         "name": "체서피크",
         "lat": 36.7682,
-        "lng": -76.2875
+        "lng": -76.2875,
+        "en": "Chesapeake"
       },
       {
         "name": "리치먼드",
         "lat": 37.5407,
-        "lng": -77.436
+        "lng": -77.436,
+        "en": "Richmond"
       },
       {
         "name": "노퍽",
         "lat": 36.8508,
-        "lng": -76.2859
+        "lng": -76.2859,
+        "en": "Norfolk"
       },
       {
         "name": "알링턴",
         "lat": 38.8816,
-        "lng": -77.091
+        "lng": -77.091,
+        "en": "Arlington"
       }
     ],
     "flags": [
@@ -9326,48 +11922,96 @@ export const STATE_INFO = {
     },
     "people": {
       "정치": [
-        "워런 매그너슨 (정치·상원의원)",
-        "토머스 폴리 (정치·하원의장)",
-        "게리 로크 (정치·주지사·대사)"
+        {
+          "ko": "워런 매그너슨",
+          "en": "Warren Magnuson",
+          "note": "정치·상원의원"
+        },
+        {
+          "ko": "토머스 폴리",
+          "en": "Thomas Foley",
+          "note": "정치·하원의장"
+        },
+        {
+          "ko": "게리 로크",
+          "en": "Gary Locke",
+          "note": "정치·주지사·대사"
+        }
       ],
       "예술·문화": [
-        "지미 헨드릭스 (음악·기타리스트)",
-        "커트 코베인 (음악·너바나)",
-        "브루스 리 (영화·무술가, 거주)"
+        {
+          "ko": "지미 헨드릭스",
+          "en": "Jimi Hendrix",
+          "note": "음악·기타리스트"
+        },
+        {
+          "ko": "커트 코베인",
+          "en": "Kurt Cobain",
+          "note": "음악·너바나"
+        },
+        {
+          "ko": "브루스 리",
+          "en": "Bruce Lee",
+          "note": "영화·무술가, 거주"
+        }
       ],
       "스포츠": [
-        "존 스탁턴 (농구·선수)",
-        "애프릴 로스 (배구·올림픽)"
+        {
+          "ko": "존 스탁턴",
+          "en": "John Stockton",
+          "note": "농구·선수"
+        },
+        {
+          "ko": "애프릴 로스",
+          "en": "April Ross",
+          "note": "배구·올림픽"
+        }
       ],
       "과학·기술": [
-        "빌 게이츠 (기술·마이크로소프트 창업자)",
-        "폴 앨런 (기술·마이크로소프트 공동창업자)"
+        {
+          "ko": "빌 게이츠",
+          "en": "Bill Gates",
+          "note": "기술·마이크로소프트 창업자"
+        },
+        {
+          "ko": "폴 앨런",
+          "en": "Paul Allen",
+          "note": "기술·마이크로소프트 공동창업자"
+        }
       ],
       "기업": [
-        "제프 베이조스 (아마존 창업자)",
-        "하워드 슐츠 (스타벅스 CEO)"
+        {
+          "ko": "제프 베이조스",
+          "en": "Jeff Bezos",
+          "note": "아마존 창업자"
+        },
+        {
+          "ko": "하워드 슐츠",
+          "en": "Howard Schultz",
+          "note": "스타벅스 CEO"
+        }
       ]
     },
     "nationalParks": [
-      "올림픽",
-      "레이니어산",
-      "노스캐스케이드"
+      "올림픽 (Olympic)",
+      "레이니어산 (Mount Rainier)",
+      "노스캐스케이드 (North Cascades)"
     ],
     "stateParks": [
-      "데셉션패스 주립공원",
-      "케이프디스어포인트먼트 주립공원",
-      "리코노클루스 주립공원"
+      "데셉션패스 주립공원 (Deception Pass State Park)",
+      "케이프디스어포인트먼트 주립공원 (Cape Disappointment State Park)",
+      "리코노클루스 주립공원 (Lake Wenatchee State Park)"
     ],
     "teams": {
       "MLB": [
-        "시애틀 매리너스"
+        "시애틀 매리너스 (Seattle Mariners)"
       ],
       "NBA": [],
       "NFL": [
-        "시애틀 시호크스"
+        "시애틀 시호크스 (Seattle Seahawks)"
       ],
       "NHL": [
-        "시애틀 크라켄"
+        "시애틀 크라켄 (Seattle Kraken)"
       ]
     },
     "landmarks": [
@@ -9375,70 +12019,82 @@ export const STATE_INFO = {
         "name": "스페이스 니들 (시애틀)",
         "lat": 47.6205,
         "lng": -122.3493,
-        "cat": "건축도시"
+        "cat": "건축도시",
+        "en": "Space Needle"
       },
       {
         "name": "레이니어산 국립공원",
         "lat": 46.8523,
         "lng": -121.7603,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Mount Rainier National Park"
       },
       {
         "name": "올림픽 국립공원",
         "lat": 47.8021,
         "lng": -123.6044,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Olympic National Park"
       },
       {
         "name": "파이크 플레이스 마켓",
         "lat": 47.6097,
         "lng": -122.3422,
-        "cat": "관광체험"
+        "cat": "관광체험",
+        "en": "Pike Place Market"
       },
       {
         "name": "워싱턴 주의사당 (올림피아)",
         "lat": 47.0357,
         "lng": -122.9051,
-        "cat": "건축도시"
+        "cat": "건축도시",
+        "en": "Washington State Capitol"
       },
       {
         "name": "노스캐스케이드 국립공원",
         "lat": 48.7718,
         "lng": -121.2985,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "North Cascades National Park"
       },
       {
         "name": "세인트헬렌스산",
         "lat": 46.1912,
         "lng": -122.1944,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Mount St. Helens"
       }
     ],
     "cities": [
       {
         "name": "시애틀",
         "lat": 47.6062,
-        "lng": -122.3321
+        "lng": -122.3321,
+        "en": "Seattle"
       },
       {
         "name": "스포캔",
         "lat": 47.6588,
-        "lng": -117.426
+        "lng": -117.426,
+        "en": "Spokane"
       },
       {
         "name": "타코마",
         "lat": 47.2529,
-        "lng": -122.4443
+        "lng": -122.4443,
+        "en": "Tacoma"
       },
       {
         "name": "벨뷰",
         "lat": 47.6101,
-        "lng": -122.2015
+        "lng": -122.2015,
+        "en": "Bellevue"
       },
       {
         "name": "밴쿠버",
         "lat": 45.6387,
-        "lng": -122.6615
+        "lng": -122.6615,
+        "en": "Vancouver"
       }
     ],
     "flags": [
@@ -9540,35 +12196,83 @@ export const STATE_INFO = {
     },
     "people": {
       "정치": [
-        "로버트 버드 (정치·최장수 상원의원)",
-        "조 맨친 (정치·상원의원)",
-        "사이러스 밴스 (정치·국무장관)"
+        {
+          "ko": "로버트 버드",
+          "en": "Robert Byrd",
+          "note": "정치·최장수 상원의원"
+        },
+        {
+          "ko": "조 맨친",
+          "en": "Joe Manchin",
+          "note": "정치·상원의원"
+        },
+        {
+          "ko": "사이러스 밴스",
+          "en": "Cyrus Vance",
+          "note": "정치·국무장관"
+        }
       ],
       "예술·문화": [
-        "돈 노츠 (영화·배우)",
-        "브래드 페이즐리 (음악·컨트리 가수)",
-        "펄 벅 (문학·노벨상 작가)"
+        {
+          "ko": "돈 노츠",
+          "en": "Don Knotts",
+          "note": "영화·배우"
+        },
+        {
+          "ko": "브래드 페이즐리",
+          "en": "Brad Paisley",
+          "note": "음악·컨트리 가수"
+        },
+        {
+          "ko": "펄 벅",
+          "en": "Pearl S. Buck",
+          "note": "문학·노벨상 작가"
+        }
       ],
       "스포츠": [
-        "제리 웨스트 (농구·NBA 로고)",
-        "랜디 모스 (미식축구·선수)"
+        {
+          "ko": "제리 웨스트",
+          "en": "Jerry West",
+          "note": "농구·NBA 로고"
+        },
+        {
+          "ko": "랜디 모스",
+          "en": "Randy Moss",
+          "note": "미식축구·선수"
+        }
       ],
       "과학·기술": [
-        "체스터 메릴 (과학·연구자)",
-        "캐서린 존슨 (수학·NASA)"
+        {
+          "ko": "체스터 메릴",
+          "en": "Chester Merrill",
+          "note": "과학·연구자"
+        },
+        {
+          "ko": "캐서린 존슨",
+          "en": "Katherine Johnson",
+          "note": "수학·NASA"
+        }
       ],
       "기업": [
-        "마이클 오언스 (제조·유리 제병기 발명)",
-        "헨리 게스트 키니 (기업가)"
+        {
+          "ko": "마이클 오언스",
+          "en": "Michael Owens",
+          "note": "제조·유리 제병기 발명"
+        },
+        {
+          "ko": "헨리 게스트 키니",
+          "en": "Henry Guest Kinney",
+          "note": "기업가"
+        }
       ]
     },
     "nationalParks": [
-      "뉴리버고지"
+      "뉴리버고지 (New River Gorge)"
     ],
     "stateParks": [
-      "블랙워터폴스 주립공원",
-      "쿠퍼스록 주립삼림",
-      "할리어호 주립공원"
+      "블랙워터폴스 주립공원 (Blackwater Falls State Park)",
+      "쿠퍼스록 주립삼림 (Coopers Rock State Forest)",
+      "할리어호 주립공원 (Hawks Nest State Park)"
     ],
     "teams": {
       "MLB": [],
@@ -9581,64 +12285,75 @@ export const STATE_INFO = {
         "name": "뉴리버고지 다리",
         "lat": 38.0703,
         "lng": -81.0769,
-        "cat": "건축도시"
+        "cat": "건축도시",
+        "en": "New River Gorge Bridge"
       },
       {
         "name": "웨스트버지니아 주의사당 (찰스턴)",
         "lat": 38.3362,
         "lng": -81.6125,
-        "cat": "건축도시"
+        "cat": "건축도시",
+        "en": "West Virginia State Capitol"
       },
       {
         "name": "할퍼스페리 국립역사공원",
         "lat": 39.3254,
         "lng": -77.7392,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "Harpers Ferry National Historical Park"
       },
       {
         "name": "블랙워터폴스 주립공원",
         "lat": 39.114,
         "lng": -79.497,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Blackwater Falls State Park"
       },
       {
         "name": "그린브라이어 리조트",
         "lat": 37.7843,
         "lng": -80.3015,
-        "cat": "관광체험"
+        "cat": "관광체험",
+        "en": "The Greenbrier"
       },
       {
         "name": "시너커브 록스",
         "lat": 38.82,
         "lng": -79.354,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Seneca Rocks"
       }
     ],
     "cities": [
       {
         "name": "찰스턴",
         "lat": 38.3498,
-        "lng": -81.6326
+        "lng": -81.6326,
+        "en": "Charleston"
       },
       {
         "name": "헌팅턴",
         "lat": 38.4192,
-        "lng": -82.4452
+        "lng": -82.4452,
+        "en": "Huntington"
       },
       {
         "name": "모건타운",
         "lat": 39.6295,
-        "lng": -79.9559
+        "lng": -79.9559,
+        "en": "Morgantown"
       },
       {
         "name": "파커스버그",
         "lat": 39.2667,
-        "lng": -81.5615
+        "lng": -81.5615,
+        "en": "Parkersburg"
       },
       {
         "name": "휠링",
         "lat": 40.064,
-        "lng": -80.7209
+        "lng": -80.7209,
+        "en": "Wheeling"
       }
     ],
     "flags": [
@@ -9747,43 +12462,91 @@ export const STATE_INFO = {
     },
     "people": {
       "정치": [
-        "로버트 라폴레트 (정치·진보주의 주지사)",
-        "조지프 매카시 (정치·상원의원)",
-        "타미 볼드윈 (정치·상원의원)"
+        {
+          "ko": "로버트 라폴레트",
+          "en": "Robert La Follette",
+          "note": "정치·진보주의 주지사"
+        },
+        {
+          "ko": "조지프 매카시",
+          "en": "Joseph McCarthy",
+          "note": "정치·상원의원"
+        },
+        {
+          "ko": "타미 볼드윈",
+          "en": "Tammy Baldwin",
+          "note": "정치·상원의원"
+        }
       ],
       "예술·문화": [
-        "프랭크 로이드 라이트 (건축·건축가)",
-        "오슨 웰스 (영화·감독·배우)",
-        "조지아 오키프 (미술·화가)"
+        {
+          "ko": "프랭크 로이드 라이트",
+          "en": "Frank Lloyd Wright",
+          "note": "건축·건축가"
+        },
+        {
+          "ko": "오슨 웰스",
+          "en": "Orson Welles",
+          "note": "영화·감독·배우"
+        },
+        {
+          "ko": "조지아 오키프",
+          "en": "Georgia O'Keeffe",
+          "note": "미술·화가"
+        }
       ],
       "스포츠": [
-        "에런 로저스 (미식축구·쿼터백)",
-        "에릭 헤이든 (스피드스케이팅·올림픽)"
+        {
+          "ko": "에런 로저스",
+          "en": "Aaron Rodgers",
+          "note": "미식축구·쿼터백"
+        },
+        {
+          "ko": "에릭 헤이든",
+          "en": "Eric Heiden",
+          "note": "스피드스케이팅·올림픽"
+        }
       ],
       "과학·기술": [
-        "존 바딘 (물리학·노벨상 2회)",
-        "존 뮤어 (자연·환경운동가)"
+        {
+          "ko": "존 바딘",
+          "en": "John Bardeen",
+          "note": "물리학·노벨상 2회"
+        },
+        {
+          "ko": "존 뮤어",
+          "en": "John Muir",
+          "note": "자연·환경운동가"
+        }
       ],
       "기업": [
-        "윌리엄 할리·아서 데이비드슨 (할리데이비슨 창업자)",
-        "존 마이클 콜러 (콜러 제조 창업자)"
+        {
+          "ko": "윌리엄 할리·아서 데이비드슨",
+          "en": "William Harley and Arthur Davidson",
+          "note": "할리데이비슨 창업자"
+        },
+        {
+          "ko": "존 마이클 콜러",
+          "en": "John Michael Kohler",
+          "note": "콜러 제조 창업자"
+        }
       ]
     },
     "nationalParks": [],
     "stateParks": [
-      "디버럴스레이크 주립공원",
-      "페닌슐라 주립공원",
-      "위스콘신델스 주변 주립공원"
+      "디버럴스레이크 주립공원 (Devil's Lake State Park)",
+      "페닌슐라 주립공원 (Peninsula State Park)",
+      "위스콘신델스 주변 주립공원 (Wisconsin Dells State Parks)"
     ],
     "teams": {
       "MLB": [
-        "밀워키 브루어스"
+        "밀워키 브루어스 (Milwaukee Brewers)"
       ],
       "NBA": [
-        "밀워키 벅스"
+        "밀워키 벅스 (Milwaukee Bucks)"
       ],
       "NFL": [
-        "그린베이 패커스"
+        "그린베이 패커스 (Green Bay Packers)"
       ],
       "NHL": []
     },
@@ -9792,64 +12555,75 @@ export const STATE_INFO = {
         "name": "위스콘신 주의사당 (매디슨)",
         "lat": 43.0747,
         "lng": -89.3844,
-        "cat": "건축도시"
+        "cat": "건축도시",
+        "en": "Wisconsin State Capitol"
       },
       {
         "name": "램보 필드 (그린베이)",
         "lat": 44.5013,
         "lng": -88.0622,
-        "cat": "관광체험"
+        "cat": "관광체험",
+        "en": "Lambeau Field"
       },
       {
         "name": "밀워키 미술관",
         "lat": 43.04,
         "lng": -87.897,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "Milwaukee Art Museum"
       },
       {
         "name": "위스콘신 델스",
         "lat": 43.6275,
         "lng": -89.771,
-        "cat": "관광체험"
+        "cat": "관광체험",
+        "en": "Wisconsin Dells"
       },
       {
         "name": "도어 카운티",
         "lat": 45.0822,
         "lng": -87.139,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Door County"
       },
       {
         "name": "할리데이비슨 박물관 (밀워키)",
         "lat": 43.0274,
         "lng": -87.921,
-        "cat": "역사문화"
+        "cat": "역사문화",
+        "en": "Harley-Davidson Museum"
       }
     ],
     "cities": [
       {
         "name": "밀워키",
         "lat": 43.0389,
-        "lng": -87.9065
+        "lng": -87.9065,
+        "en": "Milwaukee"
       },
       {
         "name": "매디슨",
         "lat": 43.0731,
-        "lng": -89.4012
+        "lng": -89.4012,
+        "en": "Madison"
       },
       {
         "name": "그린베이",
         "lat": 44.5133,
-        "lng": -88.0133
+        "lng": -88.0133,
+        "en": "Green Bay"
       },
       {
         "name": "케노샤",
         "lat": 42.5847,
-        "lng": -87.8212
+        "lng": -87.8212,
+        "en": "Kenosha"
       },
       {
         "name": "러신",
         "lat": 42.7261,
-        "lng": -87.7829
+        "lng": -87.7829,
+        "en": "Racine"
       }
     ],
     "flags": [
@@ -9936,35 +12710,79 @@ export const STATE_INFO = {
     },
     "people": {
       "정치": [
-        "딕 체니 (정치·제46대 부통령)",
-        "앨런 심프슨 (정치·상원의원)",
-        "넬리 태일로 로스 (정치·최초 여성 주지사)"
+        {
+          "ko": "딕 체니",
+          "en": "Dick Cheney",
+          "note": "정치·제46대 부통령"
+        },
+        {
+          "ko": "앨런 심프슨",
+          "en": "Alan Simpson",
+          "note": "정치·상원의원"
+        },
+        {
+          "ko": "넬리 태일로 로스",
+          "en": "Nellie Tayloe Ross",
+          "note": "정치·최초 여성 주지사"
+        }
       ],
       "예술·문화": [
-        "잭슨 폴록 (미술·추상화가)",
-        "패트리샤 매클라클런 (문학·작가)"
+        {
+          "ko": "잭슨 폴록",
+          "en": "Jackson Pollock",
+          "note": "미술·추상화가"
+        },
+        {
+          "ko": "패트리샤 매클라클런",
+          "en": "Patricia MacLachlan",
+          "note": "문학·작가"
+        }
       ],
       "스포츠": [
-        "랜디 데인스 (로데오·선수)",
-        "마일스 그레고리 (스포츠·선수)"
+        {
+          "ko": "랜디 데인스",
+          "en": "Randy Deines",
+          "note": "로데오·선수"
+        },
+        {
+          "ko": "마일스 그레고리",
+          "en": "Miles Gregory",
+          "note": "스포츠·선수"
+        }
       ],
       "과학·기술": [
-        "존 콜터 (탐험·옐로스톤 발견)",
-        "토머스 몰스워스 (과학·연구자)"
+        {
+          "ko": "존 콜터",
+          "en": "John Colter",
+          "note": "탐험·옐로스톤 발견"
+        },
+        {
+          "ko": "토머스 몰스워스",
+          "en": "Thomas Moran",
+          "note": "과학·연구자"
+        }
       ],
       "기업": [
-        "존 보즈먼 (개척·기업가)",
-        "프랜시스 워런 (정치·목축 사업가)"
+        {
+          "ko": "존 보즈먼",
+          "en": "John Bozeman",
+          "note": "개척·기업가"
+        },
+        {
+          "ko": "프랜시스 워런",
+          "en": "Francis Warren",
+          "note": "정치·목축 사업가"
+        }
       ]
     },
     "nationalParks": [
-      "옐로스톤",
-      "그랜드티턴"
+      "옐로스톤 (Yellowstone)",
+      "그랜드티턴 (Grand Teton)"
     ],
     "stateParks": [
-      "커트굴치 주립공원",
-      "보이시리버 주립공원",
-      "글렌도 주립공원"
+      "커트굴치 주립공원 (Curt Gowdy State Park)",
+      "보이시리버 주립공원 (Boysen State Park)",
+      "글렌도 주립공원 (Glendo State Park)"
     ],
     "teams": {
       "MLB": [],
@@ -9977,64 +12795,75 @@ export const STATE_INFO = {
         "name": "옐로스톤 국립공원 (올드페이스풀)",
         "lat": 44.4605,
         "lng": -110.8281,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Yellowstone National Park"
       },
       {
         "name": "그랜드티턴 국립공원",
         "lat": 43.7904,
         "lng": -110.6818,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Grand Teton National Park"
       },
       {
         "name": "데블스타워 국립기념물",
         "lat": 44.5902,
         "lng": -104.7146,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Devils Tower National Monument"
       },
       {
         "name": "와이오밍 주의사당 (샤이엔)",
         "lat": 41.14,
         "lng": -104.8202,
-        "cat": "건축도시"
+        "cat": "건축도시",
+        "en": "Wyoming State Capitol"
       },
       {
         "name": "잭슨홀",
         "lat": 43.4799,
         "lng": -110.7624,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Jackson Hole"
       },
       {
         "name": "옐로스톤 그랜드프리즈매틱 스프링",
         "lat": 44.5251,
         "lng": -110.8383,
-        "cat": "자연"
+        "cat": "자연",
+        "en": "Grand Prismatic Spring"
       }
     ],
     "cities": [
       {
         "name": "샤이엔",
         "lat": 41.14,
-        "lng": -104.8202
+        "lng": -104.8202,
+        "en": "Cheyenne"
       },
       {
         "name": "캐스퍼",
         "lat": 42.8666,
-        "lng": -106.3131
+        "lng": -106.3131,
+        "en": "Casper"
       },
       {
         "name": "래러미",
         "lat": 41.3114,
-        "lng": -105.5911
+        "lng": -105.5911,
+        "en": "Laramie"
       },
       {
         "name": "길레트",
         "lat": 44.2911,
-        "lng": -105.5022
+        "lng": -105.5022,
+        "en": "Gillette"
       },
       {
         "name": "잭슨",
         "lat": 43.4799,
-        "lng": -110.7624
+        "lng": -110.7624,
+        "en": "Jackson"
       }
     ],
     "flags": [

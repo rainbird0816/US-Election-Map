@@ -1,0 +1,402 @@
+{
+ "25": {
+  "peopleEn": {
+   "정치": [
+    "John F. Kennedy",
+    "John Adams",
+    "John Quincy Adams"
+   ],
+   "예술·문화": [
+    "Emily Dickinson",
+    "Dr. Seuss",
+    "Matt Damon"
+   ],
+   "스포츠": [
+    "Larry Bird",
+    "Tom Brady"
+   ],
+   "과학·기술": [
+    "Benjamin Franklin",
+    "Robert Noyce"
+   ],
+   "기업": [
+    "John Harvard",
+    "Eli Whitney"
+   ]
+  },
+  "nationalParksEn": [],
+  "stateParksEn": [
+   "Walden Pond State Reservation",
+   "Mount Greylock State Reservation",
+   "Nickerson State Park"
+  ],
+  "teamsEn": {
+   "MLB": [
+    "Boston Red Sox"
+   ],
+   "NBA": [
+    "Boston Celtics"
+   ],
+   "NFL": [
+    "New England Patriots"
+   ],
+   "NHL": [
+    "Boston Bruins"
+   ]
+  },
+  "landmarksEn": [
+   "Freedom Trail",
+   "Fenway Park",
+   "Harvard University",
+   "MIT",
+   "Plymouth Rock",
+   "Cape Cod National Seashore"
+  ],
+  "citiesEn": [
+   "Boston",
+   "Worcester",
+   "Springfield",
+   "Cambridge",
+   "Lowell"
+  ]
+ },
+ "26": {
+  "peopleEn": {
+   "정치": [
+    "Gerald Ford",
+    "Mitt Romney"
+   ],
+   "예술·문화": [
+    "Madonna",
+    "Stevie Wonder",
+    "Eminem"
+   ],
+   "스포츠": [
+    "Magic Johnson",
+    "Joe Louis"
+   ],
+   "과학·기술": [
+    "Thomas Edison",
+    "Larry Page"
+   ],
+   "기업": [
+    "Henry Ford",
+    "Will Keith Kellogg"
+   ]
+  },
+  "nationalParksEn": [
+   "Isle Royale National Park"
+  ],
+  "stateParksEn": [
+   "Porcupine Mountains Wilderness State Park",
+   "Tahquamenon Falls State Park",
+   "Holland State Park"
+  ],
+  "teamsEn": {
+   "MLB": [
+    "Detroit Tigers"
+   ],
+   "NBA": [
+    "Detroit Pistons"
+   ],
+   "NFL": [
+    "Detroit Lions"
+   ],
+   "NHL": [
+    "Detroit Red Wings"
+   ]
+  },
+  "landmarksEn": [
+   "Isle Royale National Park",
+   "Sleeping Bear Dunes National Lakeshore",
+   "Pictured Rocks National Lakeshore",
+   "Mackinac Bridge",
+   "Henry Ford Museum",
+   "Detroit Renaissance Center"
+  ],
+  "citiesEn": [
+   "Detroit",
+   "Grand Rapids",
+   "Warren",
+   "Ann Arbor",
+   "Lansing"
+  ]
+ },
+ "27": {
+  "peopleEn": {
+   "정치": [
+    "Hubert Humphrey",
+    "Walter Mondale"
+   ],
+   "예술·문화": [
+    "Prince",
+    "Bob Dylan",
+    "Judy Garland"
+   ],
+   "스포츠": [
+    "Kevin Garnett",
+    "Kevin McHale"
+   ],
+   "과학·기술": [
+    "William and Charles Mayo",
+    "Seymour Cray"
+   ],
+   "기업": [
+    "Richard Sears",
+    "Earl Bakken"
+   ]
+  },
+  "nationalParksEn": [
+   "Voyageurs National Park"
+  ],
+  "stateParksEn": [
+   "Itasca State Park",
+   "Gooseberry Falls State Park",
+   "Split Rock Lighthouse State Park"
+  ],
+  "teamsEn": {
+   "MLB": [
+    "Minnesota Twins"
+   ],
+   "NBA": [
+    "Minnesota Timberwolves"
+   ],
+   "NFL": [
+    "Minnesota Vikings"
+   ],
+   "NHL": [
+    "Minnesota Wild"
+   ]
+  },
+  "landmarksEn": [
+   "Voyageurs National Park",
+   "Mall of America",
+   "Itasca State Park (Mississippi River Headwaters)",
+   "Split Rock Lighthouse",
+   "Saint Anthony Falls, Minneapolis",
+   "Minnesota State Capitol"
+  ],
+  "citiesEn": [
+   "Minneapolis",
+   "Saint Paul",
+   "Rochester",
+   "Duluth",
+   "Bloomington"
+  ]
+ },
+ "28": {
+  "peopleEn": {
+   "정치": [
+    "Hiram Revels",
+    "Trent Lott"
+   ],
+   "예술·문화": [
+    "Elvis Presley",
+    "William Faulkner",
+    "B.B. King",
+    "Oprah Winfrey"
+   ],
+   "스포츠": [
+    "Walter Payton",
+    "Jerry Rice"
+   ],
+   "과학·기술": [
+    "James D. Hardy"
+   ],
+   "기업": [
+    "Jim Henson",
+    "John Grisham"
+   ]
+  },
+  "nationalParksEn": [],
+  "stateParksEn": [
+   "Tishomingo State Park",
+   "Leroy Percy State Park",
+   "Percy Quin State Park"
+  ],
+  "teamsEn": {
+   "MLB": [],
+   "NBA": [],
+   "NFL": [],
+   "NHL": []
+  },
+  "landmarksEn": [
+   "Graceland (Elvis Presley's birthplace, Tupelo)",
+   "Vicksburg National Military Park",
+   "Natchez Trace Parkway",
+   "Mississippi State Capitol",
+   "Gulf Islands National Seashore",
+   "Vicksburg National Military Park Memorial"
+  ],
+  "citiesEn": [
+   "Jackson",
+   "Gulfport",
+   "Southaven",
+   "Biloxi",
+   "Hattiesburg"
+  ]
+ },
+ "29": {
+  "peopleEn": {
+   "정치": [
+    "Harry S. Truman",
+    "Ulysses S. Grant"
+   ],
+   "예술·문화": [
+    "Mark Twain",
+    "Walt Disney",
+    "Chuck Berry"
+   ],
+   "스포츠": [
+    "Yadier Molina",
+    "Casey Stengel"
+   ],
+   "과학·기술": [
+    "George Washington Carver",
+    "Edwin Hubble"
+   ],
+   "기업": [
+    "James Cash Penney",
+    "Joyce Hall"
+   ]
+  },
+  "nationalParksEn": [
+   "Gateway Arch National Park"
+  ],
+  "stateParksEn": [
+   "Elephant Rocks State Park",
+   "Ha Ha Tonka State Park",
+   "Lake of the Ozarks State Park"
+  ],
+  "teamsEn": {
+   "MLB": [
+    "St. Louis Cardinals",
+    "Kansas City Royals"
+   ],
+   "NBA": [],
+   "NFL": [
+    "Kansas City Chiefs"
+   ],
+   "NHL": [
+    "St. Louis Blues"
+   ]
+  },
+  "landmarksEn": [
+   "Gateway Arch",
+   "George Washington Carver National Monument",
+   "Ozark National Scenic Riverways",
+   "Missouri State Capitol",
+   "Union Station (St. Louis)",
+   "Kansas City Union Station"
+  ],
+  "citiesEn": [
+   "Kansas City",
+   "St. Louis",
+   "Springfield",
+   "Columbia",
+   "Jefferson City"
+  ]
+ },
+ "30": {
+  "peopleEn": {
+   "정치": [
+    "Mike Mansfield",
+    "Jeannette Rankin"
+   ],
+   "예술·문화": [
+    "Gary Cooper",
+    "David Lynch"
+   ],
+   "스포츠": [
+    "Phil Jackson"
+   ],
+   "과학·기술": [
+    "Jack Horner"
+   ],
+   "기업": [
+    "Marcus Daly"
+   ]
+  },
+  "nationalParksEn": [
+   "Glacier National Park",
+   "Yellowstone National Park"
+  ],
+  "stateParksEn": [
+   "Madison Buffalo Jump State Park",
+   "Lewis and Clark Caverns State Park",
+   "Makoshika State Park"
+  ],
+  "teamsEn": {
+   "MLB": [],
+   "NBA": [],
+   "NFL": [],
+   "NHL": []
+  },
+  "landmarksEn": [
+   "Glacier National Park",
+   "Going-to-the-Sun Road",
+   "Little Bighorn Battlefield National Monument",
+   "Yellowstone North Entrance (Gardiner)",
+   "Montana State Capitol (Helena)",
+   "Beaverhead National Forest"
+  ],
+  "citiesEn": [
+   "Billings",
+   "Missoula",
+   "Great Falls",
+   "Bozeman",
+   "Helena"
+  ]
+ },
+ "31": {
+  "peopleEn": {
+   "정치": [
+    "Gerald Ford",
+    "William Jennings Bryan"
+   ],
+   "예술·문화": [
+    "Fred Astaire",
+    "Henry Fonda",
+    "Marlon Brando"
+   ],
+   "스포츠": [
+    "Bob Gibson",
+    "Grover Cleveland Alexander"
+   ],
+   "과학·기술": [
+    "George Beadle"
+   ],
+   "기업": [
+    "Warren Buffett",
+    "Edward Creighton"
+   ]
+  },
+  "nationalParksEn": [],
+  "stateParksEn": [
+   "Indian Cave State Park",
+   "Ponca State Park",
+   "Platte River State Park"
+  ],
+  "teamsEn": {
+   "MLB": [],
+   "NBA": [],
+   "NFL": [],
+   "NHL": []
+  },
+  "landmarksEn": [
+   "Chimney Rock National Historic Site",
+   "Scotts Bluff National Monument",
+   "Nebraska State Capitol (Lincoln)",
+   "Henry Doorly Zoo (Omaha)",
+   "Arbor Lodge State Historical Park",
+   "Toadstool Geologic Park"
+  ],
+  "citiesEn": [
+   "Omaha",
+   "Lincoln",
+   "Bellevue",
+   "Grand Island",
+   "Kearney"
+  ]
+ }
+}

@@ -1,9 +1,22 @@
 """state_base.py + aug_*.json 병합 → frontend/src/content/states_info.js 생성.
 인구순위(popRank)·면적순위(areaRank)는 50개 주 기준으로 여기서 계산(DC 제외, null).
 실행: python tools/build_states_info.py"""
-import json, pathlib, sys
+import json, pathlib, sys, re
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from state_base import BASE, CAP_EN
+
+_PERSON = re.compile(r"^(.*?)\s*\((.*)\)\s*$")
+def split_person(s):
+    m = _PERSON.match(s)
+    return (m.group(1).strip(), m.group(2).strip()) if m else (s.strip(), "")
+
+def biling(ko_list, en_list):
+    """['요세미티 국립공원'] + ['Yosemite NP'] → ['요세미티 국립공원 (Yosemite NP)']."""
+    out = []
+    for i, k in enumerate(ko_list):
+        e = en_list[i].strip() if i < len(en_list) and en_list[i] else ""
+        out.append(f"{k} ({e})" if e and e != k else k)
+    return out
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 AUG_DIR = ROOT / "tools"
@@ -45,6 +58,17 @@ for tag in "ABCDEFG":
 if gmiss:
     print("경고: 누락된 geo 배치", gmiss)
 
+# 영문 병기(en_*.json): {fips: {peopleEn, nationalParksEn, stateParksEn, teamsEn, landmarksEn, citiesEn}}
+en = {}
+emiss = []
+for tag in "ABCDEFG":
+    p = AUG_DIR / f"en_{tag}.json"
+    if not p.exists():
+        emiss.append(tag); continue
+    en.update(json.loads(p.read_text(encoding="utf-8")))
+if emiss:
+    print("경고: 누락된 en 배치", emiss)
+
 # 주기 변천(flag_hist_*.json): {fips: {flags:[{from,to,file,label}]}}
 flaghist = {}
 fmiss = []
@@ -71,11 +95,27 @@ for fips, b in BASE.items():
     a = aug.get(fips, {})
     cen = census.get(fips, {})
     g = geo.get(fips, {})
+    e = en.get(fips, {})
     cats = g.get("cats", [])
-    # 랜드마크에 분류(cat) 부착 — 길이 불일치 시 기본값 '관광체험'
+    lm_en = e.get("landmarksEn", [])
+    # 랜드마크: 분류(cat)·영문(en) 부착
     lms = a.get("landmarks", [])
-    landmarks = [{**lm, "cat": (cats[i] if i < len(cats) else "관광체험")}
+    landmarks = [{**lm, "cat": (cats[i] if i < len(cats) else "관광체험"),
+                  "en": (lm_en[i] if i < len(lm_en) else None)}
                  for i, lm in enumerate(lms)]
+    # 주요 도시: 영문 부착
+    city_en = e.get("citiesEn", [])
+    cities = [{**c, "en": (city_en[i] if i < len(city_en) else None)}
+              for i, c in enumerate(g.get("cities", []))]
+    # 주요 인물: {ko, en, note} 구조화
+    people_en = e.get("peopleEn", {})
+    people = {}
+    for field, arr in a.get("people", {}).items():
+        ens = people_en.get(field, [])
+        people[field] = []
+        for i, s in enumerate(arr):
+            ko, note = split_person(s)
+            people[field].append({"ko": ko, "en": (ens[i] if i < len(ens) else None), "note": note})
     evy = ev_by.get(fips, {})
     flags = sorted(flaghist.get(fips, {}).get("flags", []), key=lambda x: x["from"])
     rec[fips] = {
@@ -85,12 +125,13 @@ for fips, b in BASE.items():
         "evByYear": {str(y): evy[y] for y in sorted(evy)},
         "pop": a.get("pop2020"),
         "census": {str(y): cen[y] for y in sorted(cen)},
-        "people": a.get("people", {}),
-        "nationalParks": a.get("nationalParks", []),
-        "stateParks": a.get("stateParks", []),
-        "teams": a.get("teams", {}),
+        "people": people,
+        "nationalParks": biling(a.get("nationalParks", []), e.get("nationalParksEn", [])),
+        "stateParks": biling(a.get("stateParks", []), e.get("stateParksEn", [])),
+        "teams": {lg: biling(ts, e.get("teamsEn", {}).get(lg, []))
+                  for lg, ts in a.get("teams", {}).items()},
         "landmarks": landmarks,
-        "cities": g.get("cities", []),
+        "cities": cities,
         "flags": flags,
     }
 

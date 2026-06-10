@@ -1,0 +1,401 @@
+{
+ "10": {
+  "peopleEn": {
+   "정치": [
+    "Joe Biden",
+    "Thomas F. Bayard"
+   ],
+   "예술·문화": [
+    "Henry Heimlich",
+    "Valerie Bertinelli"
+   ],
+   "스포츠": [
+    "Judy Johnson",
+    "Elena Delle Donne"
+   ],
+   "과학·기술": [
+    "Wallace Carothers",
+    "Edward G. Budd"
+   ],
+   "기업": [
+    "Eleuthère Irénée du Pont",
+    "Pierre S. du Pont"
+   ]
+  },
+  "nationalParksEn": [
+   "First State National Historical Park"
+  ],
+  "stateParksEn": [
+   "Cape Henlopen State Park",
+   "Brandywine Creek State Park",
+   "White Clay Creek State Park"
+  ],
+  "teamsEn": {
+   "MLB": [],
+   "NBA": [],
+   "NFL": [],
+   "NHL": []
+  },
+  "landmarksEn": [
+   "Cape Henlopen Lighthouse",
+   "DuPont Headquarters (Wilmington)",
+   "Old New Castle Court House",
+   "Rehoboth Beach",
+   "Delaware State Capitol (Dover)",
+   "Winterthur Museum"
+  ],
+  "citiesEn": [
+   "Wilmington",
+   "Dover",
+   "Newark",
+   "Rehoboth Beach"
+  ]
+ },
+ "11": {
+  "peopleEn": {
+   "정치": [
+    "Frederick Douglass",
+    "Eleanor Holmes Norton"
+   ],
+   "예술·문화": [
+    "Duke Ellington",
+    "Marvin Gaye"
+   ],
+   "스포츠": [
+    "Kevin Durant",
+    "Elgin Baylor"
+   ],
+   "과학·기술": [
+    "Robert C. Weaver",
+    "Benjamin O. Davis Jr."
+   ],
+   "기업": [
+    "Katharine Graham",
+    "Philip Graham"
+   ]
+  },
+  "nationalParksEn": [],
+  "stateParksEn": [
+   "Rock Creek Park",
+   "National Mall",
+   "East Potomac Park"
+  ],
+  "teamsEn": {
+   "MLB": [
+    "Washington Nationals"
+   ],
+   "NBA": [
+    "Washington Wizards"
+   ],
+   "NFL": [
+    "Washington Commanders"
+   ],
+   "NHL": [
+    "Washington Capitals"
+   ]
+  },
+  "landmarksEn": [
+   "White House",
+   "Washington Monument",
+   "Lincoln Memorial",
+   "United States Capitol",
+   "Smithsonian Institution",
+   "Jefferson Memorial"
+  ],
+  "citiesEn": []
+ },
+ "12": {
+  "peopleEn": {
+   "정치": [
+    "Janet Reno",
+    "Marco Rubio"
+   ],
+   "예술·문화": [
+    "Sidney Poitier",
+    "Gloria Estefan"
+   ],
+   "스포츠": [
+    "Chris Evert",
+    "Deion Sanders"
+   ],
+   "과학·기술": [
+    "John Glenn",
+    "Gary Keith"
+   ],
+   "기업": [
+    "Wally Amos",
+    "James McAllister"
+   ]
+  },
+  "nationalParksEn": [
+   "Everglades National Park",
+   "Biscayne National Park",
+   "Dry Tortugas National Park"
+  ],
+  "stateParksEn": [
+   "Hillsborough River State Park",
+   "John Pennekamp Coral Reef State Park",
+   "Weeki Wachee Springs State Park"
+  ],
+  "teamsEn": {
+   "MLB": [
+    "Miami Marlins",
+    "Tampa Bay Rays"
+   ],
+   "NBA": [
+    "Miami Heat",
+    "Orlando Magic"
+   ],
+   "NFL": [
+    "Miami Dolphins",
+    "Jacksonville Jaguars",
+    "Tampa Bay Buccaneers"
+   ],
+   "NHL": [
+    "Florida Panthers",
+    "Tampa Bay Lightning"
+   ]
+  },
+  "landmarksEn": [
+   "Walt Disney World (Orlando)",
+   "Kennedy Space Center",
+   "Miami Beach",
+   "Everglades National Park",
+   "Key West",
+   "Florida State Capitol (Tallahassee)"
+  ],
+  "citiesEn": [
+   "Jacksonville",
+   "Miami",
+   "Tampa",
+   "Orlando",
+   "Tallahassee"
+  ]
+ },
+ "13": {
+  "peopleEn": {
+   "정치": [
+    "Jimmy Carter",
+    "Martin Luther King Jr."
+   ],
+   "예술·문화": [
+    "Ray Charles",
+    "Julia Roberts"
+   ],
+   "스포츠": [
+    "Hank Aaron",
+    "Herschel Walker"
+   ],
+   "과학·기술": [
+    "Crawford Long",
+    "Christa McAuliffe"
+   ],
+   "기업": [
+    "Asa Candler",
+    "Ted Turner"
+   ]
+  },
+  "nationalParksEn": [
+   "Cumberland Island National Seashore"
+  ],
+  "stateParksEn": [
+   "Tallulah Gorge State Park",
+   "Stone Mountain Park",
+   "Providence Canyon State Park"
+  ],
+  "teamsEn": {
+   "MLB": [
+    "Atlanta Braves"
+   ],
+   "NBA": [
+    "Atlanta Hawks"
+   ],
+   "NFL": [
+    "Atlanta Falcons"
+   ],
+   "NHL": []
+  },
+  "landmarksEn": [
+   "Stone Mountain",
+   "Georgia State Capitol (Atlanta)",
+   "Martin Luther King Jr. National Historical Park",
+   "Savannah Historic District",
+   "World of Coca-Cola",
+   "Tallulah Gorge"
+  ],
+  "citiesEn": [
+   "Atlanta",
+   "Savannah",
+   "Augusta",
+   "Columbus"
+  ]
+ },
+ "15": {
+  "peopleEn": {
+   "정치": [
+    "Barack Obama",
+    "Daniel Inouye"
+   ],
+   "예술·문화": [
+    "Bette Midler",
+    "Israel Kamakawiwoʻole"
+   ],
+   "스포츠": [
+    "Michelle Wie",
+    "BJ Penn"
+   ],
+   "과학·기술": [
+    "Ellison Onizuka",
+    "Charles Reed"
+   ],
+   "기업": [
+    "Sanford Dole",
+    "Henry J. Kaiser"
+   ]
+  },
+  "nationalParksEn": [
+   "Hawaiʻi Volcanoes National Park",
+   "Haleakalā National Park"
+  ],
+  "stateParksEn": [
+   "Nā Pali Coast State Park",
+   "Waimea Canyon State Park",
+   "ʻĪao Valley State Park"
+  ],
+  "teamsEn": {
+   "MLB": [],
+   "NBA": [],
+   "NFL": [],
+   "NHL": []
+  },
+  "landmarksEn": [
+   "Waikiki Beach",
+   "Pearl Harbor (USS Arizona Memorial)",
+   "Hawaiʻi Volcanoes National Park",
+   "Diamond Head",
+   "Haleakalā Summit",
+   "Hawaii State Capitol (Honolulu)"
+  ],
+  "citiesEn": [
+   "Honolulu",
+   "Hilo",
+   "Kailua",
+   "Kahului"
+  ]
+ },
+ "16": {
+  "peopleEn": {
+   "정치": [
+    "Frank Church",
+    "William Borah"
+   ],
+   "예술·문화": [
+    "Ezra Pound",
+    "Aaron Paul"
+   ],
+   "스포츠": [
+    "Harmon Killebrew",
+    "Jake Flores"
+   ],
+   "과학·기술": [
+    "Philo Farnsworth",
+    "Gregory Carr"
+   ],
+   "기업": [
+    "Joe Albertson",
+    "J.R. Simplot"
+   ]
+  },
+  "nationalParksEn": [
+   "Yellowstone National Park (partial)",
+   "Nez Perce National Historical Park"
+  ],
+  "stateParksEn": [
+   "Ponderosa State Park",
+   "Hayden Lake State Park",
+   "Bruneau Dunes State Park"
+  ],
+  "teamsEn": {
+   "MLB": [],
+   "NBA": [],
+   "NFL": [],
+   "NHL": []
+  },
+  "landmarksEn": [
+   "Sawtooth National Recreation Area",
+   "Craters of the Moon National Monument",
+   "Hells Canyon",
+   "Idaho State Capitol (Boise)",
+   "Sun Valley Resort",
+   "Shoshone Falls"
+  ],
+  "citiesEn": [
+   "Boise",
+   "Meridian",
+   "Nampa",
+   "Idaho Falls"
+  ]
+ },
+ "17": {
+  "peopleEn": {
+   "정치": [
+    "Abraham Lincoln",
+    "Barack Obama"
+   ],
+   "예술·문화": [
+    "Walt Disney",
+    "Ernest Hemingway"
+   ],
+   "스포츠": [
+    "Michael Jordan",
+    "Dick Butkus"
+   ],
+   "과학·기술": [
+    "Enrico Fermi",
+    "Ray Kroc"
+   ],
+   "기업": [
+    "John Deere",
+    "Oprah Winfrey"
+   ]
+  },
+  "nationalParksEn": [
+   "Lincoln Home National Historic Site",
+   "Pullman National Historical Park"
+  ],
+  "stateParksEn": [
+   "Starved Rock State Park",
+   "Matthiessen State Park",
+   "Giant City State Park"
+  ],
+  "teamsEn": {
+   "MLB": [
+    "Chicago Cubs",
+    "Chicago White Sox"
+   ],
+   "NBA": [
+    "Chicago Bulls"
+   ],
+   "NFL": [
+    "Chicago Bears"
+   ],
+   "NHL": [
+    "Chicago Blackhawks"
+   ]
+  },
+  "landmarksEn": [
+   "Willis Tower (Sears Tower)",
+   "Millennium Park (Cloud Gate)",
+   "Navy Pier",
+   "Illinois State Capitol (Springfield)",
+   "Lincoln Tomb (Springfield)",
+   "Art Institute of Chicago"
+  ],
+  "citiesEn": [
+   "Chicago",
+   "Aurora",
+   "Springfield",
+   "Rockford"
+  ]
+ }
+}

@@ -1,0 +1,443 @@
+{
+ "01": {
+  "peopleEn": {
+   "정치": [
+    "Hugo Black",
+    "Condoleezza Rice",
+    "George Wallace"
+   ],
+   "예술·문화": [
+    "Hank Williams",
+    "Nat King Cole",
+    "Harper Lee",
+    "Lionel Richie"
+   ],
+   "스포츠": [
+    "Hank Aaron",
+    "Willie Mays",
+    "Jesse Owens",
+    "Bo Jackson"
+   ],
+   "과학·기술": [
+    "Percy Lavon Julian",
+    "George Washington Carver"
+   ],
+   "기업": [
+    "Tim Cook",
+    "Angelo Bruno"
+   ]
+  },
+  "nationalParksEn": [],
+  "stateParksEn": [
+   "Gulf State Park",
+   "Cheaha State Park",
+   "Oak Mountain State Park"
+  ],
+  "teamsEn": {
+   "MLB": [],
+   "NBA": [],
+   "NFL": [],
+   "NHL": []
+  },
+  "landmarksEn": [
+   "U.S. Space & Rocket Center",
+   "Alabama State Capitol",
+   "Birmingham Civil Rights Institute",
+   "Gulf Shores Beach",
+   "Vulcan Statue"
+  ],
+  "citiesEn": [
+   "Huntsville",
+   "Birmingham",
+   "Montgomery",
+   "Mobile"
+  ]
+ },
+ "02": {
+  "peopleEn": {
+   "정치": [
+    "Sarah Palin",
+    "Ted Stevens",
+    "Lisa Murkowski"
+   ],
+   "예술·문화": [
+    "Jewel",
+    "Bella Hammond",
+    "Sydney Laurence"
+   ],
+   "스포츠": [
+    "Trajan Langdon",
+    "Holly Brooks",
+    "Kirk Alkire"
+   ],
+   "과학·기술": [
+    "Syed Mohammed",
+    "William Egan"
+   ],
+   "기업": [
+    "Lowell Thomas Jr.",
+    "Bob Gibson"
+   ]
+  },
+  "nationalParksEn": [
+   "Denali National Park",
+   "Glacier Bay National Park",
+   "Gates of the Arctic National Park",
+   "Kenai Fjords National Park",
+   "Kobuk Valley National Park",
+   "Lake Clark National Park",
+   "Wrangell-St. Elias National Park",
+   "Katmai National Park"
+  ],
+  "stateParksEn": [
+   "Chugach State Park",
+   "Denali State Park",
+   "Kachemak Bay State Park"
+  ],
+  "teamsEn": {
+   "MLB": [],
+   "NBA": [],
+   "NFL": [],
+   "NHL": []
+  },
+  "landmarksEn": [
+   "Denali",
+   "Mendenhall Glacier",
+   "Glacier Bay National Park",
+   "Downtown Anchorage",
+   "Kenai Fjords National Park"
+  ],
+  "citiesEn": [
+   "Anchorage",
+   "Fairbanks",
+   "Juneau"
+  ]
+ },
+ "04": {
+  "peopleEn": {
+   "정치": [
+    "Barry Goldwater",
+    "John McCain",
+    "Sandra Day O'Connor",
+    "Cesar Chavez"
+   ],
+   "예술·문화": [
+    "Steven Spielberg",
+    "Linda Ronstadt",
+    "Emma Stone",
+    "Alice Cooper"
+   ],
+   "스포츠": [
+    "Phil Mickelson",
+    "Kerri Walker",
+    "Danny White"
+   ],
+   "과학·기술": [
+    "Andrew Wiles",
+    "Percival Lowell"
+   ],
+   "기업": [
+    "Henry Tsukosaki",
+    "Jerry Colangelo"
+   ]
+  },
+  "nationalParksEn": [
+   "Grand Canyon National Park",
+   "Petrified Forest National Park",
+   "Saguaro National Park"
+  ],
+  "stateParksEn": [
+   "Slide Rock State Park",
+   "Catalina State Park",
+   "Lost Dutchman State Park"
+  ],
+  "teamsEn": {
+   "MLB": [
+    "Arizona Diamondbacks"
+   ],
+   "NBA": [
+    "Phoenix Suns"
+   ],
+   "NFL": [
+    "Arizona Cardinals"
+   ],
+   "NHL": []
+  },
+  "landmarksEn": [
+   "Grand Canyon",
+   "Antelope Canyon",
+   "Horseshoe Bend",
+   "Monument Valley",
+   "Sedona Red Rocks",
+   "Hoover Dam"
+  ],
+  "citiesEn": [
+   "Phoenix",
+   "Tucson",
+   "Mesa",
+   "Scottsdale"
+  ]
+ },
+ "05": {
+  "peopleEn": {
+   "정치": [
+    "Bill Clinton",
+    "Douglas MacArthur",
+    "J. William Fulbright"
+   ],
+   "예술·문화": [
+    "Johnny Cash",
+    "Maya Angelou",
+    "Glen Campbell",
+    "Billy Bob Thornton"
+   ],
+   "스포츠": [
+    "Scottie Pippen",
+    "Brooks Robinson",
+    "Jerry Jones"
+   ],
+   "과학·기술": [
+    "John H. Johnson",
+    "William Dietmus"
+   ],
+   "기업": [
+    "Sam Walton",
+    "J. B. Hunt"
+   ]
+  },
+  "nationalParksEn": [
+   "Hot Springs National Park"
+  ],
+  "stateParksEn": [
+   "Petit Jean State Park",
+   "Crater of Diamonds State Park",
+   "DeGray Lake Resort State Park"
+  ],
+  "teamsEn": {
+   "MLB": [],
+   "NBA": [],
+   "NFL": [],
+   "NHL": []
+  },
+  "landmarksEn": [
+   "Hot Springs National Park",
+   "Crater of Diamonds State Park",
+   "Little Rock Central High School",
+   "Clinton Presidential Library",
+   "Buffalo National River"
+  ],
+  "citiesEn": [
+   "Little Rock",
+   "Fayetteville",
+   "Fort Smith",
+   "Springdale"
+  ]
+ },
+ "06": {
+  "peopleEn": {
+   "정치": [
+    "Richard Nixon",
+    "Ronald Reagan",
+    "Kamala Harris",
+    "Nancy Pelosi"
+   ],
+   "예술·문화": [
+    "Leonardo DiCaprio",
+    "The Beach Boys",
+    "Walt Disney",
+    "John Steinbeck"
+   ],
+   "스포츠": [
+    "Tiger Woods",
+    "Ted Williams",
+    "Venus and Serena Williams"
+   ],
+   "과학·기술": [
+    "Steve Jobs",
+    "Gordon Moore",
+    "Jack Kilby"
+   ],
+   "기업": [
+    "Mark Zuckerberg",
+    "Larry Page",
+    "Elon Musk"
+   ]
+  },
+  "nationalParksEn": [
+   "Yosemite National Park",
+   "Sequoia National Park",
+   "Kings Canyon National Park",
+   "Death Valley National Park",
+   "Joshua Tree National Park",
+   "Redwood National Park",
+   "Lassen Volcanic National Park",
+   "Channel Islands National Park",
+   "Pinnacles National Park"
+  ],
+  "stateParksEn": [
+   "Big Basin Redwoods State Park",
+   "Anza-Borrego Desert State Park",
+   "Calaveras Big Trees State Park"
+  ],
+  "teamsEn": {
+   "MLB": [
+    "Los Angeles Dodgers",
+    "San Francisco Giants",
+    "San Diego Padres",
+    "Los Angeles Angels",
+    "Oakland Athletics"
+   ],
+   "NBA": [
+    "Los Angeles Lakers",
+    "Los Angeles Clippers",
+    "Golden State Warriors",
+    "Sacramento Kings"
+   ],
+   "NFL": [
+    "Los Angeles Rams",
+    "Los Angeles Chargers",
+    "San Francisco 49ers"
+   ],
+   "NHL": [
+    "Los Angeles Kings",
+    "Anaheim Ducks",
+    "San Jose Sharks"
+   ]
+  },
+  "landmarksEn": [
+   "Golden Gate Bridge",
+   "Hollywood Sign",
+   "Yosemite National Park",
+   "Disneyland",
+   "Alcatraz Island",
+   "Death Valley National Park"
+  ],
+  "citiesEn": [
+   "Los Angeles",
+   "San Diego",
+   "San Francisco",
+   "Sacramento",
+   "San Jose"
+  ]
+ },
+ "08": {
+  "peopleEn": {
+   "정치": [
+    "John Kerry",
+    "Ken Salazar",
+    "Pat Schroeder"
+   ],
+   "예술·문화": [
+    "Tim Allen",
+    "Trey Parker",
+    "Jake Gyllenhaal",
+    "India Arie"
+   ],
+   "스포츠": [
+    "Amy Van Dyken",
+    "Missy Franklin",
+    "Jack Nicklaus"
+   ],
+   "과학·기술": [
+    "M. Scott Carpenter",
+    "Jack Swigert"
+   ],
+   "기업": [
+    "Philip Anschutz",
+    "Charles Bolden"
+   ]
+  },
+  "nationalParksEn": [
+   "Rocky Mountain National Park",
+   "Mesa Verde National Park",
+   "Great Sand Dunes National Park",
+   "Black Canyon of the Gunnison National Park"
+  ],
+  "stateParksEn": [
+   "Chatfield State Park",
+   "Eldorado Canyon State Park",
+   "State Forest State Park"
+  ],
+  "teamsEn": {
+   "MLB": [
+    "Colorado Rockies"
+   ],
+   "NBA": [
+    "Denver Nuggets"
+   ],
+   "NFL": [
+    "Denver Broncos"
+   ],
+   "NHL": [
+    "Colorado Avalanche"
+   ]
+  },
+  "landmarksEn": [
+   "Red Rocks Amphitheatre",
+   "Rocky Mountain National Park",
+   "Garden of the Gods",
+   "Mesa Verde National Park",
+   "Pikes Peak",
+   "Colorado State Capitol"
+  ],
+  "citiesEn": [
+   "Denver",
+   "Colorado Springs",
+   "Aurora",
+   "Boulder"
+  ]
+ },
+ "09": {
+  "peopleEn": {
+   "정치": [
+    "George W. Bush",
+    "Lyman Trumbull",
+    "Abby Houghton"
+   ],
+   "예술·문화": [
+    "Katharine Hepburn",
+    "Mark Twain",
+    "Meg Ryan",
+    "Charles Ives"
+   ],
+   "스포츠": [
+    "Walter Camp",
+    "Dorothy Hamill",
+    "Steve Young"
+   ],
+   "과학·기술": [
+    "Charles Goodyear",
+    "Eli Whitney"
+   ],
+   "기업": [
+    "P. T. Barnum",
+    "Frederick Rentschler"
+   ]
+  },
+  "nationalParksEn": [],
+  "stateParksEn": [
+   "Hurd State Park",
+   "Gillette Castle State Park",
+   "Sherwood Island State Park"
+  ],
+  "teamsEn": {
+   "MLB": [],
+   "NBA": [],
+   "NFL": [],
+   "NHL": []
+  },
+  "landmarksEn": [
+   "Yale University",
+   "Mark Twain House",
+   "Connecticut State Capitol",
+   "Mystic Seaport",
+   "Gillette Castle State Park"
+  ],
+  "citiesEn": [
+   "Bridgeport",
+   "New Haven",
+   "Hartford",
+   "Stamford"
+  ]
+ }
+}

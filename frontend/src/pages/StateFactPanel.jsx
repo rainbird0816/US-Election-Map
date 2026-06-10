@@ -110,10 +110,22 @@ export default function StateFactPanel({ code, name, year, onBack }) {
               <button key={`${m.name}-${i}`}
                 className={`sf-lm${pin === i ? " on" : ""}`}
                 onMouseEnter={() => setPin(i)} onMouseLeave={() => setPin(null)}>
-                <span className="sf-lm-dot" style={{ background: LANDMARK_CATS[m.cat]?.color || "#D64545" }} />{m.name}
+                <span className="sf-lm-dot" style={{ background: LANDMARK_CATS[m.cat]?.color || "#D64545" }} />
+                <span className="sf-lm-ko">{m.name}</span>
+                {m.en && <span className="sf-lm-en">{m.en}</span>}
               </button>
             ))}
           </div>
+          {info?.cities?.length > 0 && (
+            <div className="sf-citylist">
+              <span className="sf-parks-lbl city">주요 도시</span>
+              {info.cities.map((c, i) => (
+                <span key={i} className="sf-chip">
+                  {c.name}{c.en && <i className="sf-chip-en">{c.en}</i>}
+                </span>
+              ))}
+            </div>
+          )}
         </section>
       )}
 
@@ -125,7 +137,13 @@ export default function StateFactPanel({ code, name, year, onBack }) {
             {peopleFields.map(([field, list]) => (
               <div key={field} className="sf-pf">
                 <div className="sf-pf-h">{field}</div>
-                <ul>{list.map((p, i) => <li key={i}>{p}</li>)}</ul>
+                <ul>{list.map((p, i) => (
+                  <li key={i}>
+                    <span className="pf-ko">{p.ko}</span>
+                    {p.en && <span className="pf-en">{p.en}</span>}
+                    {p.note && <span className="pf-note">{p.note}</span>}
+                  </li>
+                ))}</ul>
               </div>
             ))}
           </div>

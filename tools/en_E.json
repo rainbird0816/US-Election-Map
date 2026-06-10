@@ -1,0 +1,384 @@
+{
+ "32": {
+  "peopleEn": {
+   "정치": [
+    "Harry Reid",
+    "Pat McCarran"
+   ],
+   "예술·문화": [
+    "Jimmy Kimmel",
+    "Fannie Moore"
+   ],
+   "스포츠": [
+    "Andre Agassi",
+    "Caleb Dressel"
+   ],
+   "과학·기술": [
+    "Tony Hsieh"
+   ],
+   "기업": [
+    "Steve Wynn",
+    "Kirk Kerkorian"
+   ]
+  },
+  "nationalParksEn": [
+   "Great Basin National Park"
+  ],
+  "stateParksEn": [
+   "Valley of Fire State Park",
+   "Spring Mountain Ranch State Park",
+   "Castle Rocks State Park"
+  ],
+  "teamsEn": {
+   "MLB": [],
+   "NBA": [],
+   "NFL": [
+    "Las Vegas Raiders"
+   ],
+   "NHL": [
+    "Vegas Golden Knights"
+   ]
+  },
+  "landmarksEn": [
+   "Las Vegas Strip",
+   "Hoover Dam",
+   "Fountains of Bellagio",
+   "Valley of Fire State Park",
+   "Great Basin National Park",
+   "Reno Arch"
+  ],
+  "citiesEn": [
+   "Las Vegas",
+   "Henderson",
+   "Reno",
+   "North Las Vegas",
+   "Carson City"
+  ]
+ },
+ "33": {
+  "peopleEn": {
+   "정치": [
+    "Franklin Pierce",
+    "Daniel Webster"
+   ],
+   "예술·문화": [
+    "Dan Brown",
+    "J.D. Salinger",
+    "Seth Meyers"
+   ],
+   "스포츠": [
+    "Carrie Lou",
+    "Bob Tewksbury"
+   ],
+   "과학·기술": [
+    "Alan Shepard"
+   ],
+   "기업": [
+    "Dean Kamen"
+   ]
+  },
+  "nationalParksEn": [],
+  "stateParksEn": [
+   "Franconia Notch State Park",
+   "Mount Washington State Park",
+   "Odiorne Point State Park"
+  ],
+  "teamsEn": {
+   "MLB": [],
+   "NBA": [],
+   "NFL": [],
+   "NHL": []
+  },
+  "landmarksEn": [
+   "Mount Washington",
+   "Franconia Notch State Park",
+   "Old Man of the Mountain Memorial",
+   "New Hampshire State House (Concord)",
+   "Portsmouth Harbor",
+   "Lake Winnipesaukee"
+  ],
+  "citiesEn": [
+   "Manchester",
+   "Nashua",
+   "Concord",
+   "Durham",
+   "Portsmouth"
+  ]
+ },
+ "34": {
+  "peopleEn": {
+   "정치": [
+    "Grover Cleveland",
+    "Frank Hague"
+   ],
+   "예술·문화": [
+    "Frank Sinatra",
+    "Bruce Springsteen",
+    "Meryl Streep"
+   ],
+   "스포츠": [
+    "Shaquille O'Neal",
+    "Mike Trout"
+   ],
+   "과학·기술": [
+    "Thomas Edison",
+    "Albert Einstein"
+   ],
+   "기업": [
+    "Malcolm Forbes"
+   ]
+  },
+  "nationalParksEn": [],
+  "stateParksEn": [
+   "Liberty State Park",
+   "High Point State Park",
+   "Island Beach State Park"
+  ],
+  "teamsEn": {
+   "MLB": [],
+   "NBA": [],
+   "NFL": [],
+   "NHL": [
+    "New Jersey Devils"
+   ]
+  },
+  "landmarksEn": [
+   "Statue of Liberty (Liberty State Park side)",
+   "Ellis Island",
+   "Atlantic City Boardwalk",
+   "MetLife Stadium (East Rutherford)",
+   "Princeton University",
+   "Cape May Lighthouse"
+  ],
+  "citiesEn": [
+   "Newark",
+   "Jersey City",
+   "Paterson",
+   "Elizabeth",
+   "Trenton"
+  ]
+ },
+ "35": {
+  "peopleEn": {
+   "정치": [
+    "Bill Richardson",
+    "Dennis Chavez"
+   ],
+   "예술·문화": [
+    "Georgia O'Keeffe",
+    "Demi Moore"
+   ],
+   "스포츠": [
+    "Holly Holm",
+    "Ronnie Lou"
+   ],
+   "과학·기술": [
+    "Robert Oppenheimer"
+   ],
+   "기업": [
+    "Conrad Hilton"
+   ]
+  },
+  "nationalParksEn": [
+   "Carlsbad Caverns National Park",
+   "White Sands National Park"
+  ],
+  "stateParksEn": [
+   "Elephant Butte Lake State Park",
+   "City of Rocks State Park",
+   "Rio Grande Gorge State Park"
+  ],
+  "teamsEn": {
+   "MLB": [],
+   "NBA": [],
+   "NFL": [],
+   "NHL": []
+  },
+  "landmarksEn": [
+   "Carlsbad Caverns National Park",
+   "White Sands National Park",
+   "Santa Fe Plaza",
+   "Taos Pueblo",
+   "Los Alamos National Laboratory",
+   "Rio Grande Gorge Bridge"
+  ],
+  "citiesEn": [
+   "Albuquerque",
+   "Las Cruces",
+   "Rio Rancho",
+   "Santa Fe",
+   "Roswell"
+  ]
+ },
+ "36": {
+  "peopleEn": {
+   "정치": [
+    "Franklin D. Roosevelt",
+    "Theodore Roosevelt",
+    "Hillary Clinton"
+   ],
+   "예술·문화": [
+    "George Gershwin",
+    "Martin Scorsese",
+    "Lady Gaga"
+   ],
+   "스포츠": [
+    "Lou Gehrig",
+    "Mike Tyson"
+   ],
+   "과학·기술": [
+    "Richard Feynman"
+   ],
+   "기업": [
+    "John D. Rockefeller",
+    "Michael Bloomberg"
+   ]
+  },
+  "nationalParksEn": [],
+  "stateParksEn": [
+   "Niagara Falls State Park",
+   "Letchworth State Park",
+   "Montauk Point State Park"
+  ],
+  "teamsEn": {
+   "MLB": [
+    "New York Yankees",
+    "New York Mets"
+   ],
+   "NBA": [
+    "New York Knicks",
+    "Brooklyn Nets"
+   ],
+   "NFL": [],
+   "NHL": [
+    "New York Rangers",
+    "New York Islanders",
+    "Buffalo Sabres"
+   ]
+  },
+  "landmarksEn": [
+   "Statue of Liberty",
+   "Empire State Building",
+   "Times Square",
+   "Central Park",
+   "Niagara Falls (American side)",
+   "Brooklyn Bridge"
+  ],
+  "citiesEn": [
+   "New York City",
+   "Buffalo",
+   "Rochester",
+   "Yonkers",
+   "Albany"
+  ]
+ },
+ "37": {
+  "peopleEn": {
+   "정치": [
+    "James K. Polk",
+    "Andrew Johnson"
+   ],
+   "예술·문화": [
+    "Nick Jonas",
+    "Maya Angelou"
+   ],
+   "스포츠": [
+    "Michael Jordan",
+    "Richard Petty"
+   ],
+   "과학·기술": [
+    "Wright Brothers"
+   ],
+   "기업": [
+    "James Buchanan Duke"
+   ]
+  },
+  "nationalParksEn": [
+   "Great Smoky Mountains National Park"
+  ],
+  "stateParksEn": [
+   "Mount Mitchell State Park",
+   "Hanging Rock State Park",
+   "Jordan Lake State Recreation Area"
+  ],
+  "teamsEn": {
+   "MLB": [],
+   "NBA": [
+    "Charlotte Hornets"
+   ],
+   "NFL": [
+    "Carolina Panthers"
+   ],
+   "NHL": [
+    "Carolina Hurricanes"
+   ]
+  },
+  "landmarksEn": [
+   "Wright Brothers National Memorial (Kitty Hawk)",
+   "Biltmore Estate (Asheville)",
+   "Great Smoky Mountains National Park",
+   "Cape Hatteras Lighthouse",
+   "Mount Mitchell",
+   "North Carolina State Capitol (Raleigh)"
+  ],
+  "citiesEn": [
+   "Charlotte",
+   "Raleigh",
+   "Greensboro",
+   "Durham",
+   "Winston-Salem"
+  ]
+ },
+ "38": {
+  "peopleEn": {
+   "정치": [
+    "Byron Dorgan",
+    "Kent Conrad"
+   ],
+   "예술·문화": [
+    "Peggy Lee",
+    "Louis L'Amour",
+    "Josh Duhamel"
+   ],
+   "스포츠": [
+    "Phil Jackson",
+    "Carl Mahlue"
+   ],
+   "과학·기술": [
+    "Eero Saarinen"
+   ],
+   "기업": [
+    "Harold Schafer"
+   ]
+  },
+  "nationalParksEn": [
+   "Theodore Roosevelt National Park"
+  ],
+  "stateParksEn": [
+   "Fort Abraham Lincoln State Park",
+   "Lake Sakakawea State Park",
+   "Turtle River State Park"
+  ],
+  "teamsEn": {
+   "MLB": [],
+   "NBA": [],
+   "NFL": [],
+   "NHL": []
+  },
+  "landmarksEn": [
+   "Theodore Roosevelt National Park",
+   "North Dakota State Capitol (Bismarck)",
+   "Fort Abraham Lincoln State Park",
+   "International Peace Garden",
+   "Lake Sakakawea",
+   "Medora (Gateway to the Badlands)"
+  ],
+  "citiesEn": [
+   "Fargo",
+   "Bismarck",
+   "Grand Forks",
+   "Minot",
+   "West Fargo"
+  ]
+ }
+}

@@ -1,0 +1,535 @@
+{
+ "47": {
+  "peopleEn": {
+   "정치": [
+    "Andrew Jackson",
+    "Al Gore",
+    "James K. Polk"
+   ],
+   "예술·문화": [
+    "Dolly Parton",
+    "Aretha Franklin",
+    "Morgan Freeman"
+   ],
+   "스포츠": [
+    "Peyton Manning",
+    "Wilma Rudolph"
+   ],
+   "과학·기술": [
+    "Frederick McKinney",
+    "William Star"
+   ],
+   "기업": [
+    "Fred Smith",
+    "Kemmons Wilson"
+   ]
+  },
+  "nationalParksEn": [
+   "Great Smoky Mountains"
+  ],
+  "stateParksEn": [
+   "Fall Creek Falls State Park",
+   "Radnor Lake State Park",
+   "Rock Island State Park"
+  ],
+  "teamsEn": {
+   "MLB": [],
+   "NBA": [
+    "Memphis Grizzlies"
+   ],
+   "NFL": [
+    "Tennessee Titans"
+   ],
+   "NHL": [
+    "Nashville Predators"
+   ]
+  },
+  "landmarksEn": [
+   "Great Smoky Mountains National Park",
+   "Graceland",
+   "Grand Ole Opry",
+   "Tennessee State Capitol",
+   "Beale Street",
+   "The Parthenon"
+  ],
+  "citiesEn": [
+   "Nashville",
+   "Memphis",
+   "Knoxville",
+   "Chattanooga",
+   "Clarksville"
+  ]
+ },
+ "48": {
+  "peopleEn": {
+   "정치": [
+    "Lyndon B. Johnson",
+    "George W. Bush",
+    "Sam Houston"
+   ],
+   "예술·문화": [
+    "Beyoncé",
+    "Selena",
+    "Matthew McConaughey"
+   ],
+   "스포츠": [
+    "Nolan Ryan",
+    "Ben Hogan"
+   ],
+   "과학·기술": [
+    "Michael Dell",
+    "Jack Kilby"
+   ],
+   "기업": [
+    "Howard Hughes",
+    "T. Boone Pickens",
+    "Mark Cuban"
+   ]
+  },
+  "nationalParksEn": [
+   "Big Bend",
+   "Guadalupe Mountains"
+  ],
+  "stateParksEn": [
+   "Enchanted Rock State Natural Area",
+   "Palo Duro Canyon State Park",
+   "Big Bend Ranch State Park"
+  ],
+  "teamsEn": {
+   "MLB": [
+    "Texas Rangers",
+    "Houston Astros"
+   ],
+   "NBA": [
+    "Dallas Mavericks",
+    "Houston Rockets",
+    "San Antonio Spurs"
+   ],
+   "NFL": [
+    "Dallas Cowboys",
+    "Houston Texans"
+   ],
+   "NHL": [
+    "Dallas Stars"
+   ]
+  },
+  "landmarksEn": [
+   "The Alamo",
+   "Texas State Capitol",
+   "Big Bend National Park",
+   "Space Center Houston",
+   "San Antonio River Walk",
+   "Dealey Plaza",
+   "Guadalupe Mountains National Park"
+  ],
+  "citiesEn": [
+   "Houston",
+   "San Antonio",
+   "Dallas",
+   "Austin",
+   "Fort Worth"
+  ]
+ },
+ "49": {
+  "peopleEn": {
+   "정치": [
+    "Mitt Romney",
+    "Orrin Hatch",
+    "Brigham Young"
+   ],
+   "예술·문화": [
+    "Donny Osmond",
+    "Robert Redford"
+   ],
+   "스포츠": [
+    "John Stockton",
+    "Karl Malone"
+   ],
+   "과학·기술": [
+    "Philo Farnsworth",
+    "Nolan Bushnell"
+   ],
+   "기업": [
+    "Joseph Smith",
+    "James LeVoy Sorenson"
+   ]
+  },
+  "nationalParksEn": [
+   "Zion",
+   "Bryce Canyon",
+   "Arches",
+   "Canyonlands",
+   "Capitol Reef"
+  ],
+  "stateParksEn": [
+   "Dead Horse Point State Park",
+   "Antelope Island State Park",
+   "Golden Spike State Park"
+  ],
+  "teamsEn": {
+   "MLB": [],
+   "NBA": [
+    "Utah Jazz"
+   ],
+   "NFL": [],
+   "NHL": [
+    "Utah Mammoth"
+   ]
+  },
+  "landmarksEn": [
+   "Salt Lake Temple Square",
+   "Zion National Park",
+   "Bryce Canyon National Park",
+   "Arches National Park",
+   "Great Salt Lake",
+   "Utah State Capitol"
+  ],
+  "citiesEn": [
+   "Salt Lake City",
+   "West Valley City",
+   "Provo",
+   "West Jordan",
+   "Orem"
+  ]
+ },
+ "50": {
+  "peopleEn": {
+   "정치": [
+    "Calvin Coolidge",
+    "Bernie Sanders",
+    "Chester A. Arthur"
+   ],
+   "예술·문화": [
+    "Rudyard Kipling",
+    "Norman Rockwell"
+   ],
+   "스포츠": [
+    "Andrea Mead Lawrence",
+    "Billy Kidd"
+   ],
+   "과학·기술": [
+    "John Dewey",
+    "Elisha Otis"
+   ],
+   "기업": [
+    "Ben Cohen and Jerry Greenfield",
+    "John Deere"
+   ]
+  },
+  "nationalParksEn": [],
+  "stateParksEn": [
+   "Smugglers' Notch State Park",
+   "Grand Isle State Park",
+   "Mount Philo State Park"
+  ],
+  "teamsEn": {
+   "MLB": [],
+   "NBA": [],
+   "NFL": [],
+   "NHL": []
+  },
+  "landmarksEn": [
+   "Vermont State House",
+   "Ben & Jerry's Factory",
+   "Stowe Mountain Resort",
+   "Lake Champlain",
+   "Burlington Waterfront",
+   "Quechee Gorge"
+  ],
+  "citiesEn": [
+   "Burlington",
+   "South Burlington",
+   "Rutland",
+   "Montpelier",
+   "Bennington"
+  ]
+ },
+ "51": {
+  "peopleEn": {
+   "정치": [
+    "George Washington",
+    "Thomas Jefferson",
+    "James Madison"
+   ],
+   "예술·문화": [
+    "Edgar Allan Poe",
+    "Ella Fitzgerald",
+    "Pharrell Williams"
+   ],
+   "스포츠": [
+    "Arthur Ashe",
+    "Moses Malone"
+   ],
+   "과학·기술": [
+    "Cyrus McCormick",
+    "Walter Reed"
+   ],
+   "기업": [
+    "Booker T. Washington",
+    "Richard Sheridan"
+   ]
+  },
+  "nationalParksEn": [
+   "Shenandoah"
+  ],
+  "stateParksEn": [
+   "First Landing State Park",
+   "Douthat State Park",
+   "Natural Bridge State Park"
+  ],
+  "teamsEn": {
+   "MLB": [],
+   "NBA": [],
+   "NFL": [],
+   "NHL": []
+  },
+  "landmarksEn": [
+   "Mount Vernon",
+   "Monticello",
+   "Arlington National Cemetery",
+   "Shenandoah National Park",
+   "Colonial Williamsburg",
+   "Virginia State Capitol"
+  ],
+  "citiesEn": [
+   "Virginia Beach",
+   "Chesapeake",
+   "Richmond",
+   "Norfolk",
+   "Arlington"
+  ]
+ },
+ "53": {
+  "peopleEn": {
+   "정치": [
+    "Warren Magnuson",
+    "Thomas Foley",
+    "Gary Locke"
+   ],
+   "예술·문화": [
+    "Jimi Hendrix",
+    "Kurt Cobain",
+    "Bruce Lee"
+   ],
+   "스포츠": [
+    "John Stockton",
+    "April Ross"
+   ],
+   "과학·기술": [
+    "Bill Gates",
+    "Paul Allen"
+   ],
+   "기업": [
+    "Jeff Bezos",
+    "Howard Schultz"
+   ]
+  },
+  "nationalParksEn": [
+   "Olympic",
+   "Mount Rainier",
+   "North Cascades"
+  ],
+  "stateParksEn": [
+   "Deception Pass State Park",
+   "Cape Disappointment State Park",
+   "Lake Wenatchee State Park"
+  ],
+  "teamsEn": {
+   "MLB": [
+    "Seattle Mariners"
+   ],
+   "NBA": [],
+   "NFL": [
+    "Seattle Seahawks"
+   ],
+   "NHL": [
+    "Seattle Kraken"
+   ]
+  },
+  "landmarksEn": [
+   "Space Needle",
+   "Mount Rainier National Park",
+   "Olympic National Park",
+   "Pike Place Market",
+   "Washington State Capitol",
+   "North Cascades National Park",
+   "Mount St. Helens"
+  ],
+  "citiesEn": [
+   "Seattle",
+   "Spokane",
+   "Tacoma",
+   "Bellevue",
+   "Vancouver"
+  ]
+ },
+ "54": {
+  "peopleEn": {
+   "정치": [
+    "Robert Byrd",
+    "Joe Manchin",
+    "Cyrus Vance"
+   ],
+   "예술·문화": [
+    "Don Knotts",
+    "Brad Paisley",
+    "Pearl S. Buck"
+   ],
+   "스포츠": [
+    "Jerry West",
+    "Randy Moss"
+   ],
+   "과학·기술": [
+    "Chester Merrill",
+    "Katherine Johnson"
+   ],
+   "기업": [
+    "Michael Owens",
+    "Henry Guest Kinney"
+   ]
+  },
+  "nationalParksEn": [
+   "New River Gorge"
+  ],
+  "stateParksEn": [
+   "Blackwater Falls State Park",
+   "Coopers Rock State Forest",
+   "Hawks Nest State Park"
+  ],
+  "teamsEn": {
+   "MLB": [],
+   "NBA": [],
+   "NFL": [],
+   "NHL": []
+  },
+  "landmarksEn": [
+   "New River Gorge Bridge",
+   "West Virginia State Capitol",
+   "Harpers Ferry National Historical Park",
+   "Blackwater Falls State Park",
+   "The Greenbrier",
+   "Seneca Rocks"
+  ],
+  "citiesEn": [
+   "Charleston",
+   "Huntington",
+   "Morgantown",
+   "Parkersburg",
+   "Wheeling"
+  ]
+ },
+ "55": {
+  "peopleEn": {
+   "정치": [
+    "Robert La Follette",
+    "Joseph McCarthy",
+    "Tammy Baldwin"
+   ],
+   "예술·문화": [
+    "Frank Lloyd Wright",
+    "Orson Welles",
+    "Georgia O'Keeffe"
+   ],
+   "스포츠": [
+    "Aaron Rodgers",
+    "Eric Heiden"
+   ],
+   "과학·기술": [
+    "John Bardeen",
+    "John Muir"
+   ],
+   "기업": [
+    "William Harley and Arthur Davidson",
+    "John Michael Kohler"
+   ]
+  },
+  "nationalParksEn": [],
+  "stateParksEn": [
+   "Devil's Lake State Park",
+   "Peninsula State Park",
+   "Wisconsin Dells State Parks"
+  ],
+  "teamsEn": {
+   "MLB": [
+    "Milwaukee Brewers"
+   ],
+   "NBA": [
+    "Milwaukee Bucks"
+   ],
+   "NFL": [
+    "Green Bay Packers"
+   ],
+   "NHL": []
+  },
+  "landmarksEn": [
+   "Wisconsin State Capitol",
+   "Lambeau Field",
+   "Milwaukee Art Museum",
+   "Wisconsin Dells",
+   "Door County",
+   "Harley-Davidson Museum"
+  ],
+  "citiesEn": [
+   "Milwaukee",
+   "Madison",
+   "Green Bay",
+   "Kenosha",
+   "Racine"
+  ]
+ },
+ "56": {
+  "peopleEn": {
+   "정치": [
+    "Dick Cheney",
+    "Alan Simpson",
+    "Nellie Tayloe Ross"
+   ],
+   "예술·문화": [
+    "Jackson Pollock",
+    "Patricia MacLachlan"
+   ],
+   "스포츠": [
+    "Randy Deines",
+    "Miles Gregory"
+   ],
+   "과학·기술": [
+    "John Colter",
+    "Thomas Moran"
+   ],
+   "기업": [
+    "John Bozeman",
+    "Francis Warren"
+   ]
+  },
+  "nationalParksEn": [
+   "Yellowstone",
+   "Grand Teton"
+  ],
+  "stateParksEn": [
+   "Curt Gowdy State Park",
+   "Boysen State Park",
+   "Glendo State Park"
+  ],
+  "teamsEn": {
+   "MLB": [],
+   "NBA": [],
+   "NFL": [],
+   "NHL": []
+  },
+  "landmarksEn": [
+   "Yellowstone National Park",
+   "Grand Teton National Park",
+   "Devils Tower National Monument",
+   "Wyoming State Capitol",
+   "Jackson Hole",
+   "Grand Prismatic Spring"
+  ],
+  "citiesEn": [
+   "Cheyenne",
+   "Casper",
+   "Laramie",
+   "Gillette",
+   "Jackson"
+  ]
+ }
+}
