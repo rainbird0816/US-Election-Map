@@ -1,6 +1,20 @@
 // 역대 인구조사 조회·순위 헬퍼. states_info.js(AUTO-GEN)의 census/CENSUS_YEARS 사용.
 // 규칙: 선택 연도에는 "그 이하의 가장 최근 인구조사" 결과를 적용(예: 2010~2019 → 2010년 조사).
-import { CENSUS_YEARS, STATE_INFO } from "./states_info";
+import { CENSUS_YEARS, EV_YEARS, STATE_INFO } from "./states_info";
+
+// 공통: 정렬된 연도배열에서 선택 연도 이하 가장 최근 항목.
+function latestLE(years, year) {
+  let pick = null;
+  for (const y of years) { if (y <= year) pick = y; else break; }
+  return pick;
+}
+
+// 선거인단(EV) 연동: 선택 연도 이하 '가장 최근 대선'의 그 주 EV + 그 대선연도.
+export function evAt(code, year) {
+  const evYear = latestLE(EV_YEARS, year);
+  const value = evYear != null ? (STATE_INFO[code]?.evByYear?.[evYear] ?? null) : null;
+  return { value, evYear };
+}
 
 // 선택 연도에 적용되는 인구조사 연도. 첫 조사(보통 1790) 이전이면 null.
 export function applicableCensus(year) {

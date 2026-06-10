@@ -3,8 +3,8 @@ import { getStateDetail } from "../api";
 import { portraitUrl } from "../content/presidents";
 import { partyKo, partyColor } from "../content/parties";
 import { STATE_INFO } from "../content/states_info";
-import { popAt, popRankAt } from "../content/census";
-import StateMap from "../maps/StateMap.jsx";
+import { popAt, popRankAt, evAt } from "../content/census";
+import StateMap, { LANDMARK_CATS } from "../maps/StateMap.jsx";
 
 // 주기(州旗) — 로드 실패 시 숨김.
 function Flag({ file, name }) {
@@ -47,6 +47,7 @@ export default function StateFactPanel({ code, name, year, onBack }) {
   const capText = info?.capEn ? `${info.capEn}(${info.cap})` : (info?.cap || f?.capital || "—");
   const popInfo = popAt(code, year);            // {value, censusYear}
   const rankInfo = popRankAt(code, year);       // {rank, of, censusYear}
+  const evInfo = evAt(code, year);              // {value, evYear}
 
   return (
     <div className="state-fact">
@@ -64,7 +65,9 @@ export default function StateFactPanel({ code, name, year, onBack }) {
       {/* ── 핵심 지표 ── */}
       <div className="sf-grid">
         <div className="sf-cell"><span>주도</span><b>{capText}</b></div>
-        <div className="sf-cell"><span>선거인단</span><b>{info?.ev ?? "—"}<i className="sf-u">표</i></b></div>
+        <div className="sf-cell"><span>선거인단{evInfo.evYear ? ` · ${evInfo.evYear} 대선` : ""}</span>
+          <b>{evInfo.value != null ? evInfo.value : "—"}<i className="sf-u">표</i></b>
+          {evInfo.value == null && <i className="sf-note">해당 연도 배정 없음</i>}</div>
         <div className="sf-cell"><span>연방 가입</span>
           <b>{info?.adm ? `${info.adm}년` : (f?.state_po === "DC" ? "주 아님" : "—")}</b>
           {info?.order && <i className="sf-note">{info.order}번째 가입</i>}</div>
@@ -84,13 +87,20 @@ export default function StateFactPanel({ code, name, year, onBack }) {
       {landmarks.length > 0 && (
         <section className="sf-sec">
           <div className="sf-sec-h">지도 · 주요 관광지/랜드마크</div>
-          <StateMap code={code} landmarks={landmarks} active={pin} onPick={setPin} />
+          <StateMap code={code} landmarks={landmarks} cities={info?.cities || []}
+            active={pin} onPick={setPin} />
+          <div className="sf-mlegend">
+            {Object.entries(LANDMARK_CATS).map(([k, v]) => (
+              <span key={k} className="sf-ml"><span className="sf-ml-dot" style={{ background: v.color }} />{v.label}</span>
+            ))}
+            <span className="sf-ml"><span className="sf-ml-city" />주요 도시</span>
+          </div>
           <div className="sf-lm-list">
             {landmarks.map((m, i) => (
               <button key={`${m.name}-${i}`}
                 className={`sf-lm${pin === i ? " on" : ""}`}
                 onMouseEnter={() => setPin(i)} onMouseLeave={() => setPin(null)}>
-                <span className="sf-lm-dot" />{m.name}
+                <span className="sf-lm-dot" style={{ background: LANDMARK_CATS[m.cat]?.color || "#D64545" }} />{m.name}
               </button>
             ))}
           </div>

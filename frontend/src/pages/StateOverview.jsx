@@ -7,7 +7,7 @@ import { portraitUrl } from "../content/presidents";
 import { POTUS_ADMIN, presidentAt } from "../content/presidents_admin.js";
 import { partyKo, partyColor } from "../content/parties";
 import { STATE_INFO } from "../content/states_info";
-import { popAt, applicableCensus } from "../content/census";
+import { popAt, applicableCensus, evAt } from "../content/census";
 
 const NOW = 2026;            // 기본 연도(현재). span.max 와 일치.
 const noop = () => {};
@@ -169,11 +169,12 @@ export default function StateOverview() {
                   {listed.map((s) => {
                     const info = STATE_INFO[s.region_code];
                     const p = popAt(s.region_code, year).value;
+                    const e = evAt(s.region_code, year).value;
                     return (
                     <tr key={s.region_code} className={s.governor ? "" : "off"}
                       onClick={() => onState(s.region_code)}>
                       <td className="ovl-state">{info?.ko || s.name}</td>
-                      <td className="num">{info?.ev ?? "—"}</td>
+                      <td className="num">{e != null ? e : "—"}</td>
                       <td className="num">{p != null ? p.toLocaleString() : "—"}</td>
                       <td>{s.governor || <span className="muted">—</span>}</td>
                       <td>
