@@ -399,6 +399,13 @@ body {
   .ov-slider { min-width: 100%; }
   .sf-grid { grid-template-columns: repeat(2, 1fr); }
   .ov-list { font-size: 13px; }
-  .ov-list th, .ov-list td { padding: 7px 8px; }
+  .ov-list th, .ov-list td { padding: 7px 6px; }
+  .ov-list .ovl-party { white-space: nowrap; }   /* '민주당'이 세로로 쪼개지지 않게 */
+  .ov-list td:first-child { word-break: keep-all; }
   .gl-yr { width: 84px; }
+
+  /* 주 상세: 좁은 폭에선 인물·스포츠를 1열로(영문 병기가 줄바꿈으로 깨지지 않게) */
+  .sf-people, .sf-teams { grid-template-columns: 1fr; }
+  .sf-cell b { font-size: 16px; }
+  .pf-en, .sf-lm-en, .sf-chip-en { font-size: 11px; }
 }
