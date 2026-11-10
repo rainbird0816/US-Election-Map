@@ -409,3 +409,166 @@ body {
   .sf-cell b { font-size: 16px; }
   .pf-en, .sf-lm-en, .sf-chip-en { font-size: 11px; }
 }
+
+/* ── 의회 명단 ── */
+.cr-control { gap: 14px 22px; }
+.cr-year { display: flex; align-items: center; gap: 6px; }
+.cr-step { border: 1px solid var(--line); background: #fff; border-radius: 6px; padding: 4px 8px; cursor: pointer; font-size: 12px; }
+.cr-step:disabled { opacity: .35; cursor: default; }
+.cr-ref { font-size: 13px; color: var(--muted); display: flex; align-items: center; gap: 6px; }
+.cr-ref input { font-size: 14px; padding: 4px 6px; border: 1px solid #ccc; border-radius: 6px; }
+.cr-cong { display: flex; flex-direction: column; font-size: 12px; color: var(--muted); }
+.cr-cong b { font-size: 16px; color: var(--ink); }
+.cr-stale { font-size: 12px; background: #fff8e1; border: 1px solid #f3e0a6; border-radius: 8px; padding: 8px 12px; margin: 12px 0 0; }
+.cr-summary { display: flex; align-items: center; gap: 24px; flex-wrap: wrap; }
+.cr-hemi-wrap { flex: 1 1 380px; max-width: 560px; text-align: center; }
+.cr-hemi { width: 100%; height: auto; display: block; }
+.cr-hemi-total { font-size: 13px; color: var(--muted); margin-top: -4px; }
+.cr-hemi-total b { font-size: 20px; color: var(--ink); }
+.cr-legend { min-width: 200px; }
+.cr-legend li { gap: 8px; }
+.cr-n { margin-left: auto; padding-left: 14px; font-size: 15px; }
+.cr-vac-sw { background: #fff; border: 1px dashed #9e9e9e; }
+.cr-deleg-note { font-size: 12px; }
+.cr-filters { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; margin-bottom: 10px; }
+.cr-filters select, .cr-search { font-size: 14px; padding: 5px 8px; border: 1px solid #ccc; border-radius: 6px; }
+.cr-search { min-width: 160px; }
+.cr-check { font-size: 13px; display: flex; align-items: center; gap: 4px; cursor: pointer; }
+.cr-count { margin-left: auto; font-size: 13px; }
+.cr-table-wrap { overflow: auto; max-height: min(70vh, 720px); border: 1px solid var(--line); border-radius: 10px; }
+.cr-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.cr-table th { text-align: left; font-weight: 600; font-size: 12px; color: #555; background: #fafafa; padding: 8px; border-bottom: 1px solid var(--line); white-space: nowrap; position: sticky; top: 0; z-index: 1; }
+.cr-table td { padding: 6px 8px; border-bottom: 1px solid #f1f1f1; vertical-align: middle; }
+.cr-table tr.row-active { background: #fff6e0; }
+.cr-sortable { cursor: pointer; user-select: none; }
+.cr-sortable.on { color: var(--ink); }
+.cr-photo { width: 34px; height: 42px; object-fit: cover; border-radius: 4px; border: 2px solid; display: block; background: #eee; }
+.cr-photo-fb { display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 700; color: #666; }
+.cr-name { font-weight: 600; min-width: 150px; }
+.cr-name a { color: inherit; text-decoration: none; }
+.cr-name a:hover { text-decoration: underline; }
+.cr-badge { font-size: 10px; font-weight: 700; border-radius: 6px; padding: 0 5px; margin-left: 5px; vertical-align: 1px; }
+.cr-badge.appt { background: #ede7f6; color: #5e35b1; }
+.cr-badge.spec { background: #e0f2f1; color: #00796b; }
+.cr-badge.deleg { background: #eceff1; color: #546e7a; }
+.cr-party { display: inline-block; font-size: 11px; font-weight: 700; color: #fff; padding: 1px 8px; border-radius: 999px; white-space: nowrap; }
+.cr-party.sm { font-size: 10px; padding: 0 6px; }
+.cr-sub { font-size: 11px; color: var(--muted); margin-top: 2px; }
+.cr-sub.warn { color: #c62828; }
+.cr-term { white-space: nowrap; color: #444; }
+.cr-remain { min-width: 130px; }
+.cr-remain > span { font-size: 12px; }
+.cr-bar { height: 6px; background: #eee; border-radius: 3px; overflow: hidden; margin-bottom: 3px; }
+.cr-bar > div { height: 100%; }
+.cr-pending { font-size: 11px; color: #5e35b1; }
+.cr-senior { white-space: nowrap; }
+.cr-side { display: grid; grid-template-columns: 1fr 1.4fr; gap: 24px; }
+.cr-list { list-style: none; margin: 0; padding: 0; font-size: 13px; }
+.cr-list li { padding: 5px 0; border-bottom: 1px solid #f1f1f1; }
+.cr-changes li { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.cr-changes li.future { opacity: .45; }
+.cr-date { font-variant-numeric: tabular-nums; color: var(--muted); font-size: 12px; min-width: 78px; }
+.cr-kind { font-size: 11px; font-weight: 700; border-radius: 6px; padding: 0 6px; background: #eceff1; color: #455a64; }
+.cr-kind.in { background: #e8f5e9; color: #2e7d32; }
+.cr-kind.out { background: #ffebee; color: #c62828; }
+.cr-kind.special { background: #ede7f6; color: #5e35b1; }
+.cr-kind.party { background: #fff3e0; color: #e65100; }
+.cr-source { margin-top: 18px; }
+.cr-classes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 12px; }
+.cr-class { text-align: left; border: 1px solid var(--line); border-radius: 10px; background: #fff; padding: 10px 12px; cursor: pointer; font: inherit; }
+.cr-class:hover { border-color: #bbb; }
+.cr-class.on { border-color: var(--ink); box-shadow: 0 0 0 1px var(--ink) inset; background: #fafafa; }
+.cr-class-head { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; font-size: 12px; color: var(--muted); }
+.cr-class-head b { font-size: 15px; color: var(--ink); }
+.cr-class-bar { display: flex; height: 8px; border-radius: 4px; overflow: hidden; margin: 7px 0 6px; gap: 1px; }
+.cr-class-parts { display: flex; flex-wrap: wrap; gap: 2px 10px; font-size: 12px; }
+.cr-class-parts i { display: inline-block; width: 8px; height: 8px; border-radius: 2px; margin-right: 4px; }
+@media (max-width: 760px) {
+  .cr-side { grid-template-columns: 1fr; }
+  .cr-classes { grid-template-columns: 1fr; }
+  .cr-count { margin-left: 0; }
+  .cr-table th:nth-child(6), .cr-table td:nth-child(6) { display: none; }   /* 좁은 폭: 임기 기간 열 숨김 */
+  .cr-table td { white-space: nowrap; }   /* 줄바꿈 대신 표 가로 스크롤 */
+  .cr-name { min-width: 0; }
+  .cr-chamber { align-self: flex-start; }
+}
+
+/* ── 정치 ── */
+.pl-cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+.pl-card { border: 1px solid var(--line); border-radius: 12px; background: #fff; padding: 12px 14px; min-width: 0; }
+.pl-card-title { font-size: 13px; font-weight: 700; margin-bottom: 8px; }
+.pl-pres-name { font-size: 18px; font-weight: 800; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.pl-small { font-size: 12px; font-weight: 400; width: 100%; }
+.pl-bar { position: relative; display: flex; height: 12px; border-radius: 6px; overflow: hidden; gap: 1px; }
+.pl-maj { position: absolute; top: -2px; bottom: -2px; width: 2px; background: #111; }
+.pl-parts { display: flex; flex-wrap: wrap; gap: 2px 10px; font-size: 12px; margin-top: 7px; }
+.pl-parts i, .cr-class-parts i { display: inline-block; width: 8px; height: 8px; border-radius: 2px; margin-right: 4px; }
+.pl-modes { margin-bottom: 8px; }
+.pl-state-head { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.pl-state-head h2 { margin: 0; }
+.pl-en { font-size: 13px; color: var(--muted); font-weight: 500; }
+.pl-link { margin-left: auto; border: 1px solid var(--line); background: #fff; border-radius: 6px; padding: 4px 10px; font-size: 12px; cursor: pointer; }
+.pl-link:hover { background: #f4f4f4; }
+.pl-gov { display: flex; align-items: center; gap: 8px; font-size: 15px; }
+.pl-sens { display: grid; gap: 8px; }
+.pl-sen { display: flex; gap: 10px; align-items: center; }
+.pl-sen .cr-photo { width: 44px; height: 54px; }
+.pl-sen-name { font-weight: 700; font-size: 14px; }
+.pl-sen-sub { display: flex; align-items: center; flex-wrap: wrap; gap: 6px; font-size: 12px; margin-top: 2px; }
+.pl-up { font-size: 10px; font-weight: 700; background: #fff3e0; color: #e65100; border-radius: 6px; padding: 0 5px; }
+.pl-reps, .pl-up-list, .pl-people { list-style: none; margin: 8px 0 0; padding: 0; font-size: 13px; }
+.pl-reps li, .pl-up-list li { display: flex; align-items: center; gap: 7px; padding: 3px 0; border-bottom: 1px solid #f3f3f3; }
+.pl-cd { width: 34px; color: var(--muted); font-size: 12px; font-variant-numeric: tabular-nums; }
+.pl-dot { width: 9px; height: 9px; border-radius: 50%; flex: 0 0 auto; }
+.pl-rp { margin-left: auto; font-size: 12px; }
+.pl-up-list li { cursor: pointer; }
+.pl-up-list li:hover { background: #fafafa; }
+.pl-up-list b { min-width: 76px; }
+.pl-pres { display: flex; flex-wrap: wrap; gap: 4px; }
+.pl-pres-chip { color: #fff; font-size: 11px; font-weight: 700; border-radius: 4px; padding: 2px 5px; font-variant-numeric: tabular-nums; }
+.pl-people li { padding: 4px 0; border-bottom: 1px solid #f3f3f3; }
+@media (max-width: 900px) { .pl-cards { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 480px) { .pl-cards { grid-template-columns: 1fr; } }
+
+/* ── 하원 선거구 지도 ── */
+.cd-map { width: 100%; height: auto; display: block; }
+.cd-map path, .cd-mark { cursor: pointer; }
+.cd-map path:hover { opacity: .8; }
+.cd-loading { padding: 80px 0; text-align: center; }
+.cd-legend { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 14px; margin: 8px 2px 2px; font-size: 12px; }
+.cd-flip-sw { width: 14px; height: 14px; }
+.cd-mid-sw { background: #fff; border: 1.5px dashed #111; }
+.cd-focus { margin-left: auto; font-weight: 600; }
+.cd-flips li { flex-wrap: wrap; }
+.cd-flips b { min-width: 52px; }
+.cd-arrow { display: inline-flex; align-items: center; gap: 3px; font-size: 11px; color: var(--muted); }
+.cd-redrawn { font-size: 10px; font-weight: 700; background: #eceff1; color: #546e7a; border-radius: 6px; padding: 0 5px; }
+.cd-flip-badge { font-size: 10px; font-weight: 700; background: #f3f3f3; color: #333; border: 1px solid #ccc; border-radius: 6px; padding: 0 6px; white-space: nowrap; }
+.cd-mid-badge { font-size: 10px; font-weight: 700; border: 1px dashed #111; border-radius: 6px; padding: 0 5px; }
+.cd-state-map { border: 1px solid var(--line); border-radius: 10px; background: #fff; margin: 8px 0; }
+.pl-reps li { cursor: pointer; }
+.pl-reps li.row-active { background: #fff6e0; }
+.pl-gov-photo { width: 44px; height: 54px; }
+.cd-drill-head { display: flex; align-items: baseline; gap: 8px; margin-bottom: 6px; }
+.cd-drill-head b { font-size: 18px; }
+.cd-back { margin-left: 0; margin-right: 6px; }
+
+/* ── 확대 지도 ── */
+.zoom-wrap { position: relative; }
+.zoom-pane { width: 100%; height: auto; display: block; touch-action: none; user-select: none; }
+.zoom-pane.zoomed { cursor: grab; }
+.zoom-pane.zoomed:active { cursor: grabbing; }
+.zoom-pane path { vector-effect: non-scaling-stroke; }
+.zoom-ctl { position: absolute; top: 8px; right: 8px; display: flex; flex-direction: column; gap: 4px; }
+.zoom-ctl button { width: 32px; height: 32px; border: 1px solid var(--line); background: #fff; border-radius: 6px; font-size: 18px; line-height: 1; cursor: pointer; box-shadow: 0 1px 3px rgba(0,0,0,.08); }
+.zoom-ctl button:disabled { opacity: .4; cursor: default; }
+.zoom-ctl .zoom-reset { font-size: 15px; }
+.zoom-hint { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); background: rgba(0,0,0,.7); color: #fff; font-size: 13px; padding: 8px 14px; border-radius: 8px; pointer-events: none; }
+.county-map.zoom-wrap { border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+.pl-cty { font-size: 11px; border: 1px solid var(--line); background: #fff; border-radius: 6px; padding: 1px 7px; cursor: pointer; color: #1a4d8f; }
+.pl-cty:hover { background: #f3f7fc; }
+.pl-cty.none { border: none; background: none; color: var(--muted); padding: 0; cursor: default; }
+.pl-gov-term { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.pl-gov-term .cr-bar { width: 90px; }
+.pl-up-end { margin-left: auto; font-size: 12px; }
+.pl-reps { max-height: 420px; overflow-y: auto; padding-right: 4px; }

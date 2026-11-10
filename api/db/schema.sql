@@ -134,6 +134,17 @@ CREATE TABLE IF NOT EXISTS governor_terms (
 
 CREATE INDEX IF NOT EXISTS idx_gov_state ON governor_terms(region_code, start_year);
 
+-- 연방의회 의원 임기(unitedstates/congress-legislators, 1789~). ingest_congress.py 가 재생성.
+-- end = 실제 종료일(중도 이임 반영), 임명직은 보궐선거일. affiliations = 임기 중 정당 변경 JSON.
+CREATE TABLE IF NOT EXISTS congress_terms (
+  bioguide TEXT, name TEXT, gender TEXT, chamber TEXT, state TEXT,
+  district INTEGER, sen_class INTEGER, party TEXT, party_raw TEXT, caucus TEXT,
+  start TEXT, end TEXT, how TEXT, affiliations TEXT, wikipedia TEXT
+);
+CREATE INDEX IF NOT EXISTS idx_cterm ON congress_terms(chamber, start, end);
+CREATE INDEX IF NOT EXISTS idx_cterm_bio ON congress_terms(bioguide);
+CREATE TABLE IF NOT EXISTS meta (key TEXT PRIMARY KEY, value TEXT);
+
 CREATE INDEX IF NOT EXISTS idx_results_lookup ON results(election_id, level, region_code);
 CREATE INDEX IF NOT EXISTS idx_seats_region   ON elected_seats(region_code);
 CREATE INDEX IF NOT EXISTS idx_summary_region ON region_election_summary(region_code);

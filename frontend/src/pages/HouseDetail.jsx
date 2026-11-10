@@ -4,7 +4,7 @@ import { getHouseDistricts } from "../api";
 const fmt = (n) => (!n ? "—" : Number(n).toLocaleString());
 
 // 의석 점유 도넛: segs=[{abbr,n,color}] (내림차순 전제), total=총 의석.
-function SeatDonut({ segs, total }) {
+export function SeatDonut({ segs, total }) {
   const size = 168, stroke = 30, r = (size - stroke) / 2, C = 2 * Math.PI * r;
   let acc = 0;
   return (

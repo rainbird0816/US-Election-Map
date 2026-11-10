@@ -22,6 +22,8 @@ export const PARTY = {
   CU:   { ko: "입헌연합당",   color: "#795548" },
   GB:   { ko: "그린백당",     color: "#2E7D32" },
   LIB:  { ko: "자유당",       color: "#26A69A" },
+  LBT:  { ko: "자유지상당",   color: "#FBC02D" },
+  FS:   { ko: "자유토지당",   color: "#AFB42B" },
   AA:   { ko: "반행정파",     color: "#90A4AE" },
   PA:   { ko: "친행정파",     color: "#607D8B" },
   ADM:  { ko: "애덤스파",     color: "#9575CD" },

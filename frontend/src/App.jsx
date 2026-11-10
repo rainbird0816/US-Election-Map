@@ -11,6 +11,8 @@ import RaceDetail from "./pages/RaceDetail.jsx";
 import HouseDetail from "./pages/HouseDetail.jsx";
 import PotusHistory from "./pages/PotusHistory.jsx";
 import StateOverview from "./pages/StateOverview.jsx";
+import CongressRoster from "./pages/CongressRoster.jsx";
+import PoliticsPage from "./pages/PoliticsPage.jsx";
 import {
   getPresidentElections, getPresidentMap, getElections, getOfficeMap,
 } from "./api";
@@ -23,13 +25,16 @@ const OFFICES = [
   { key: "governor", label: "주지사" },
   { key: "history", label: "역대 대선" },
   { key: "overview", label: "주 개관" },
+  { key: "politics", label: "정치" },
+  { key: "congress", label: "의회 명단" },
 ];
 const TITLE = {
   president: "미국 대통령선거 지도", senate: "미국 상원선거 지도",
   house: "미국 하원선거 지도", governor: "미국 주지사선거 지도",
   history: "역대 미국 대통령선거", overview: "미국 주(州) 개관",
+  congress: "미국 연방의회 명단", politics: "미국 정치 지형",
 };
-const SELF_PAGES = new Set(["history", "overview"]);  // 자체 데이터를 관리하는 탭
+const SELF_PAGES = new Set(["history", "overview", "congress", "politics"]);  // 자체 데이터를 관리하는 탭
 
 export default function App() {
   const [office, setOffice] = useState("president");
@@ -38,6 +43,7 @@ export default function App() {
   const [mapData, setMapData] = useState(null);
   const [selected, setSelected] = useState(null); // {code, name}
   const [error, setError] = useState(null);
+  const [overviewCode, setOverviewCode] = useState(null); // 정치 → 주 개관 이동 시 열어둘 주
 
   // office 변경 → 사이클 목록 로드 (연도는 일단 null 로 리셋해 지도 effect 오발사 방지)
   useEffect(() => {
@@ -83,6 +89,7 @@ export default function App() {
     setMapData(null);
     setSelected(null);
     setError(null);
+    if (key !== "overview") setOverviewCode(null);
     setOffice(key);
   }
 
@@ -95,7 +102,7 @@ export default function App() {
   return (
     <div className="app">
       <header className="topbar">
-        <h1>{TITLE[office]} <span className="sub">1976–2024</span></h1>
+        <h1>{TITLE[office]} <span className="sub">{office === "congress" || office === "politics" ? "2024년 선거 · 제119대 (시범)" : "1976–2024"}</span></h1>
         <div className="selector">
           <div className="office-tabs">
             {OFFICES.map((o) => (
@@ -126,7 +133,11 @@ export default function App() {
       {office === "history" ? (
         <PotusHistory />
       ) : office === "overview" ? (
-        <StateOverview />
+        <StateOverview initialCode={overviewCode} />
+      ) : office === "politics" ? (
+        <PoliticsPage onOverview={(code) => { setOverviewCode(code); switchOffice("overview"); }} />
+      ) : office === "congress" ? (
+        <CongressRoster />
       ) : (
         <>
 

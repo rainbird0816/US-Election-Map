@@ -28,6 +28,13 @@ NONCAND = {"WRITE-IN", "WRITEIN", "WRITE-INS", "UNDERVOTES", "OVERVOTES",
            "SPOILED", "BLANK", "BLANK VOTES", "EXHAUSTED", "SCATTERING", "NA"}
 
 
+# 순위선택투표(RCV) 선거구: 1차 득표를 정당별로 합산하면 승자가 뒤바뀜(2022 AK: Palin+Begich 공화 합산 > Peltola).
+# → 최종 라운드 공식 결과로 대체. {(year, cd): ({pid: (이름, 득표)}, 최종라운드 유효표)}
+RCV_RESULT = {
+    (2022, "0200"): ({1: ("Mary Peltola", 136893), 2: ("Sarah Palin", 112255)}, 249148),
+}
+
+
 def election_day(year):
     d = datetime.date(year, 11, 1)
     while d.weekday() != 0:
@@ -124,6 +131,10 @@ def load(po2fips):
                 b["name"] = name
                 b["_max"] = c["votes"]
         tot[year][cd] = totals[key]
+    for (year, cd), (cands, total) in RCV_RESULT.items():
+        if cd in data[year]:
+            data[year][cd] = {pid: {"votes": v, "name": n, "_max": v} for pid, (n, v) in cands.items()}
+            tot[year][cd] = total
     return data, tot
 
 

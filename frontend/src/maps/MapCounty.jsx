@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { geoAlbers, geoPath } from "d3-geo";
 import { feature } from "topojson-client";
+import ZoomPane from "./ZoomPane.jsx";
 
 // 카운티 TopoJSON (us-atlas, geometry id = 5자리 FIPS = regions.code).
 const GEO_URL = "/geo/us-counties-10m.json";
@@ -20,7 +21,7 @@ function loadCounties() {
 // 선택한 주의 카운티만 잘라, 그 주에 맞춰 투영을 fit 한 분할 지도.
 // colorByCode: {FIPS5: color}, onSelect(code) 로 카운티 클릭 전달.
 export default function MapCounty({
-  stateCode, colorByCode = {}, selectedCode, onSelect, width = 460, height = 320,
+  stateCode, colorByCode = {}, selectedCode, onSelect, width = 460, height = 320, zoom = false, titleOf,
 }) {
   const [allFeatures, setAllFeatures] = useState(null);
 
@@ -42,14 +43,7 @@ export default function MapCounty({
   if (!allFeatures) return <p className="muted">카운티 지도 불러오는 중…</p>;
   if (!paths.length) return null;
 
-  return (
-    <svg
-      viewBox={`0 0 ${width} ${height}`}
-      className="county-map"
-      role="img"
-      aria-label="카운티별 결과 지도"
-    >
-      {paths.map((p) => {
+  const body = paths.map((p) => {
         const isSel = p.id === selectedCode;
         return (
           <path
@@ -61,10 +55,15 @@ export default function MapCounty({
             onClick={() => onSelect && onSelect(p.id)}
             style={{ cursor: onSelect ? "pointer" : "default", outline: "none" }}
           >
-            <title>{p.name}</title>
+            <title>{titleOf ? titleOf(p.id, p.name) : p.name}</title>
           </path>
         );
-      })}
+      });
+  // zoom=true: 확대·이동 가능한 큰 지도(정치 탭). 기본은 기존 고정 지도.
+  if (zoom) return <ZoomPane width={width} height={height} className="county-map" resetKey={stateCode} label="카운티별 결과 지도">{body}</ZoomPane>;
+  return (
+    <svg viewBox={`0 0 ${width} ${height}`} className="county-map" role="img" aria-label="카운티별 결과 지도">
+      {body}
     </svg>
   );
 }

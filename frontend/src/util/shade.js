@@ -6,7 +6,7 @@
 const FULL = 20;          // 이 이상 격차면 원색
 const MAX_LIGHTEN = 0.74; // margin 0 일 때 흰색 쪽으로 섞는 최대 비율
 
-function mixWhite(hex, amt) {
+export function mixWhite(hex, amt) {
   const c = String(hex).replace("#", "");
   const n = c.length === 3 ? c.split("").map((x) => x + x).join("") : c;
   if (n.length !== 6) return hex;

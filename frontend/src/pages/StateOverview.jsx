@@ -40,12 +40,13 @@ function GovLegend({ states }) {
   );
 }
 
-export default function StateOverview() {
+export default function StateOverview({ initialCode = null }) {
   const [year, setYear] = useState(NOW);
   const [yearText, setYearText] = useState(String(NOW)); // 상단 연도 직접 입력용(미확정 텍스트)
   const [data, setData] = useState(null);
   const [error, setError] = useState(null);
-  const [selected, setSelected] = useState(null); // {code, name}
+  const [selected, setSelected] = useState(
+    initialCode ? { code: initialCode, name: STATE_INFO[initialCode]?.ko || initialCode } : null); // {code, name}
 
   useEffect(() => {
     setError(null);

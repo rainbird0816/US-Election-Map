@@ -9,7 +9,8 @@ from fastapi import FastAPI, APIRouter, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 
-from app import electoral
+from app import electoral, congress
+import datetime as _dt
 
 DB = pathlib.Path(__file__).resolve().parent.parent / "db" / "election.sqlite"
 DIST = pathlib.Path(__file__).resolve().parent.parent.parent / "frontend" / "dist"
@@ -399,10 +400,11 @@ def house_districts(cycle_year: int, state_code: str):
 
 
 @api.get("/counties")
-def office_counties(office: str, cycle_year: int, state_code: str):
-    """일반화 카운티 결과 (대통령·상원). 그 주의 카운티별 승자색 + 후보별 득표.
-    상원 카운티는 2024 만 데이터 보유."""
-    eid = _eid(office, cycle_year)
+def office_counties(office: str, cycle_year: int, state_code: str, special: int = 0):
+    """일반화 카운티 결과 (대통령·상원·주지사). 그 주의 카운티별 승자색 + 후보별 득표.
+    상원: 2022·2024(정규), 보궐은 special=1. 주지사: 2022·2024 (MEDSL precinct 집계).
+    coverage = 카운티 합계 표 / 주 단위 표(%) — 원본에 카운티가 일부 빠진 주 안내용."""
+    eid = _eid(office, cycle_year) + (500_000 if special and office == "senate" else 0)
     rows = q(
         """SELECT rg.code, rg.name AS region_name, rg.level,
                   c.name AS winner_name, p.name AS party, p.abbr, p.color_hex,
@@ -425,7 +427,30 @@ def office_counties(office: str, cycle_year: int, state_code: str):
         detail.setdefault(r["region_code"], []).append(r)
     for row in rows:
         row["candidates"] = detail.get(row["code"], [])
-    return {"office": office, "cycle_year": cycle_year, "state_code": state_code, "counties": rows}
+    cty_total = sum(c["votes"] or 0 for cs in detail.values() for c in cs)
+    st_total = q("SELECT SUM(votes) AS v FROM results WHERE election_id=? AND level='state' AND region_code=?",
+                 (eid, state_code))[0]["v"]
+    coverage = round(cty_total / st_total * 100) if st_total and cty_total else None
+    return {"office": office, "cycle_year": cycle_year, "state_code": state_code, "special": bool(special),
+            "coverage": coverage, "counties": rows}
+
+
+@api.get("/politics/races")
+def politics_races(code: str, since: int = 2016):
+    """한 주의 최근 상원(정규·보궐)·주지사 선거 당선자 + 카운티 데이터 보유 여부.
+    정치 탭이 현직 의원·주지사의 '당선 선거'를 이름으로 찾아 카운티 지도를 연다."""
+    out = []
+    for office, base, special in (("senate", 1_000_000, 0), ("senate", 1_500_000, 1), ("governor", 3_000_000, 0)):
+        for r in q(
+            """SELECT r.election_id AS eid, c.name, c.party_id, r.vote_rate
+               FROM results r JOIN candidates c ON c.id=r.candidate_id
+               WHERE r.level='state' AND r.region_code=? AND c.is_elected=1
+                 AND r.election_id BETWEEN ? AND ?""", (code, base + since, base + 2100)):
+            has = q("SELECT 1 FROM results r JOIN regions rg ON rg.code=r.region_code "
+                    "WHERE r.election_id=? AND r.level='county' AND rg.parent_code=? LIMIT 1", (r["eid"], code))
+            out.append({"office": office, "special": special, "year": r["eid"] - base, "winner": r["name"],
+                        "party_id": r["party_id"], "rate": r["vote_rate"], "has_county": bool(has)})
+    return sorted(out, key=lambda x: -x["year"])
 
 
 @api.get("/state/overview")
@@ -459,6 +484,67 @@ def state_detail(code: str):
            FROM governor_terms WHERE region_code=?
            ORDER BY start_year, CAST(ordinal AS INTEGER)""", (code,))
     return {"state": fact[0], "governors": govs}
+
+
+# 2022→2024 사이 선거구 경계를 다시 그린 주(법원 명령·재획정). 같은 번호라도 지역이 달라 '정당 변화'는 참고용.
+REDRAWN_2024 = {"01": "AL", "13": "GA", "22": "LA", "36": "NY", "37": "NC", "39": "OH"}
+
+
+def _house_winners(eid: int):
+    """선거구별 1·2위 (정당·득표율). region_code = 주FIPS+선거구 2자리(전체선거구 00)."""
+    rows = q(
+        """SELECT r.region_code AS cd, c.name, p.abbr, r.vote_rate, c.is_elected
+           FROM results r JOIN candidates c ON c.id = r.candidate_id
+           LEFT JOIN parties p ON p.id = c.party_id
+           WHERE r.election_id=? AND r.level='cd'
+           ORDER BY r.region_code, c.is_elected DESC, r.vote_rate DESC""", (eid,))
+    out = {}
+    for r in rows:
+        out.setdefault(r["cd"], []).append(r)
+    return out
+
+
+@api.get("/house/district_map")
+def house_district_map(cycle_year: int = 2024, prev_year: int = 2022):
+    """하원 선거구 지도용: 선거구별 당선 정당·격차 + 직전 선거 대비 정당 변화."""
+    cur, prev = _house_winners(_eid("house", cycle_year)), _house_winners(_eid("house", prev_year))
+    if not cur:
+        raise HTTPException(404, f"no house data for {cycle_year}")
+    districts = []
+    for cd, cands in cur.items():
+        w = cands[0]
+        runner = cands[1]["vote_rate"] if len(cands) > 1 and cands[1]["vote_rate"] is not None else 0
+        p = prev.get(cd, [None])[0]
+        districts.append({
+            "cd": cd, "winner": w["name"], "party": w["abbr"], "rate": w["vote_rate"],
+            "margin": round((w["vote_rate"] or 0) - (runner or 0), 2),
+            "prev_party": p["abbr"] if p else None, "prev_winner": p["name"] if p else None,
+            "flipped": bool(p and p["abbr"] != w["abbr"]),
+            "redrawn": cd[:2] in REDRAWN_2024,
+        })
+    return {"cycle_year": cycle_year, "prev_year": prev_year,
+            "redrawn_states": list(REDRAWN_2024.values()), "districts": districts}
+
+
+@api.get("/congress/roster")
+def congress_roster(chamber: str, date: str):
+    """기준일(date, YYYY-MM-DD) 시점 상원(sen)/하원(rep) 명단 + 공석 + 회기 중 변동."""
+    if chamber not in ("sen", "rep"):
+        raise HTTPException(400, "chamber must be sen|rep")
+    try:
+        ref = _dt.date.fromisoformat(date)
+    except ValueError:
+        raise HTTPException(400, "date must be YYYY-MM-DD")
+    if ref < _dt.date(1789, 3, 4):
+        raise HTTPException(404, "before 1st Congress")
+    con = _con()
+    try:
+        meta = {r["key"]: r["value"] for r in con.execute("SELECT key, value FROM meta")}
+        out = congress.roster(con, chamber, ref, meta.get("congress_last_change", ""))
+    finally:
+        con.close()
+    out["fetched"] = meta.get("congress_fetched")
+    return out
 
 
 app.include_router(api, prefix="/api")

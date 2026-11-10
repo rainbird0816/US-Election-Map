@@ -26,9 +26,15 @@ export const getOfficeState = (office, cycleYear, code) =>
   get("/state", { office, cycle_year: cycleYear, code });
 export const getHouseDistricts = (cycleYear, stateCode) =>
   get("/house/districts", { cycle_year: cycleYear, state_code: stateCode });
-export const getCounties = (office, cycleYear, stateCode) =>
-  get("/counties", { office, cycle_year: cycleYear, state_code: stateCode });
+export const getCounties = (office, cycleYear, stateCode, special = 0) =>
+  get("/counties", { office, cycle_year: cycleYear, state_code: stateCode, special });
+export const getPoliticsRaces = (code) => get("/politics/races", { code });
 
 // 주 개관 (정적정보 + 역대 주지사)
 export const getStateOverview = (year) => get("/state/overview", { year });
 export const getStateDetail = (code) => get("/state/detail", { code });
+
+// 의회 명단 (기준일 시점 상원 sen / 하원 rep)
+export const getCongressRoster = (chamber, date) => get("/congress/roster", { chamber, date });
+export const getHouseDistrictMap = (cycleYear = 2024, prevYear = 2022) =>
+  get("/house/district_map", { cycle_year: cycleYear, prev_year: prevYear });
