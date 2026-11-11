@@ -5,7 +5,10 @@ const SMALL = [
   ["33", "NH"], ["34", "NJ"], ["44", "RI"], ["50", "VT"], ["15", "HI"],
 ];
 
-export default function SmallStates({ states, colorByCode, selectedCode, onSelect }) {
+// 정보 상자 내용(MapUS tipOf 형식)을 기본 툴팁 문자열로
+const tipText = (t) => (t ? [t.title, ...t.lines.map((l) => `${l.text}${l.sub ? ` ${l.sub}` : ""}`)].join("\n") : "");
+
+export default function SmallStates({ states, colorByCode, selectedCode, onSelect, tipOf }) {
   const byCode = {};
   for (const s of states || []) byCode[s.region_code] = s;
   const items = SMALL.filter(([fips]) => byCode[fips]);
@@ -20,7 +23,7 @@ export default function SmallStates({ states, colorByCode, selectedCode, onSelec
           <button
             key={fips}
             className={`small-state${sel ? " sel" : ""}`}
-            title={`${s.region_name}${s.winner_rate != null ? ` · ${s.abbr} ${s.winner_rate}%` : ""}`}
+            title={tipOf ? tipText(tipOf(fips)) : `${s.region_name}${s.winner_rate != null ? ` · ${s.abbr} ${s.winner_rate}%` : ""}`}
             onClick={() => onSelect(fips)}
           >
             <span className="ss-swatch" style={{ background: colorByCode[fips] || "#ddd" }} />

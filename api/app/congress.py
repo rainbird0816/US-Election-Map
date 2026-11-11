@@ -43,6 +43,29 @@ def party_at(t, ref_iso):
     return t["party"], t["party_raw"], t["caucus"]
 
 
+# 회기 중 이임 사유(원본 congress-legislators 에는 사유가 없어 수동 기입) — bioguide → 사유
+# 출처: 각 의원 사망·사임 보도(AP·Ballotpedia·Congressional Record 등). 새 이임이 생기면 여기에 추가.
+DEPART_REASON = {
+    "G000578": "법무장관 지명 후 사임 · 119대 취임 포기",   # Matt Gaetz (FL-1)
+    "V000137": "부통령 취임으로 사임",                       # J.D. Vance (OH)
+    "R000595": "국무장관 취임으로 사임",                     # Marco Rubio (FL)
+    "W000823": "국가안보보좌관 취임으로 사임",               # Michael Waltz (FL-6)
+    "T000489": "사망",                                       # Sylvester Turner (TX-18)
+    "G000551": "사망",                                       # Raúl Grijalva (AZ-7)
+    "C001078": "사망",                                       # Gerald Connolly (VA-11)
+    "G000590": "사임(민간 부문 이직)",                       # Mark Green (TN-7)
+    "S001207": "뉴저지 주지사 당선으로 사임",                # Mikie Sherrill (NJ-11)
+    "G000596": "사임",                                       # Marjorie Taylor Greene (GA-14)
+    "L000578": "사망",                                       # Doug LaMalfa (CA-1)
+    "M001190": "국토안보부 장관 취임으로 사임",              # Markwayne Mullin (OK)
+    "S001193": "사임(성비위 의혹·제명 압박)",                # Eric Swalwell (CA-14)
+    "G000594": "사임(성비위 의혹·제명 압박)",                # Tony Gonzales (TX-23)
+    "C001127": "사임(공금 유용 기소·제명 압박)",             # Sheila Cherfilus-McCormick (FL-20)
+    "S001157": "사망",                                       # David Scott (GA-13)
+    "G000359": "사망",                                       # Lindsey Graham (SC)
+}
+
+
 def seat_key(t):
     if t["chamber"] == "sen":
         return (t["state"], t["sen_class"])
@@ -85,7 +108,8 @@ def roster(con, chamber: str, ref: dt.date, last_change: str):
                 cur, status = last, "pending"
             else:
                 vacancies.append({"state": key[0], "seat": key[1] if not str(key[1]).startswith("G:") else -1,
-                                  "since": last["end"], "prev": last["name"], "prev_party": party_at(last, last["end"][:10])[0]})
+                                  "since": last["end"], "prev": last["name"], "prev_party": party_at(last, last["end"][:10])[0],
+                                  "prev_reason": DEPART_REASON.get(last["bioguide"])})
                 continue
         if cur is None:
             # 기준일 이후에야 첫 취임 — 그 주에 이미 재직자가 있으면 '회기 개원 시점부터 공석'
@@ -96,6 +120,18 @@ def roster(con, chamber: str, ref: dt.date, last_change: str):
                                   "next_start": ts[0]["start"]})
             continue
         party, party_raw, caucus = party_at(cur, ref_iso)
+        # 회기 중 취임자: 같은 의석 직전 재직자와 이임 사유(승계 표시용)
+        prev = None
+        if cur["start"] > c0.isoformat():
+            sk = "sen_class=?" if chamber == "sen" else "district=?"
+            r = con.execute(
+                f"SELECT bioguide, name, end FROM congress_terms WHERE chamber=? AND state=? AND {sk} "
+                "AND end<=? AND bioguide<>? ORDER BY end DESC LIMIT 1",
+                (chamber, cur["state"], cur["sen_class"] if chamber == "sen" else cur["district"],
+                 cur["start"], cur["bioguide"])).fetchone()
+            if r and r["end"][5:10] != "01-03" and (D(cur["start"]) - D(r["end"])).days < 400:
+                prev = {"bioguide": r["bioguide"], "name": r["name"], "end": r["end"],
+                        "reason": DEPART_REASON.get(r["bioguide"])}
         start = D(cur["start"])
         if cur["how"] == "appointment":
             sched = D(cur["end"])                    # 보궐선거일까지
@@ -115,7 +151,7 @@ def roster(con, chamber: str, ref: dt.date, last_change: str):
             "remaining_days": max(0, (sched - ref).days),
             "first_start": first.get(cur["bioguide"]), "n_terms": nterms.get(cur["bioguide"], 1),
             "delegate": chamber == "rep" and cur["state"] in NON_STATES,
-            "wikipedia": cur["wikipedia"],
+            "wikipedia": cur["wikipedia"], "prev": prev,
         })
 
     # 회기 중 변동: 회기 시작 이후 취임 / 회기 종료 전 이임
@@ -131,6 +167,7 @@ def roster(con, chamber: str, ref: dt.date, last_change: str):
         early = (c1 - D(t["end"])).days > 3
         if early and t["end"] <= last_change and t["how"] != "appointment":
             changes.append({"date": t["end"], "kind": "out", "how": None, "name": t["name"],
+                            "reason": DEPART_REASON.get(t["bioguide"]),
                             "state": t["state"], "district": t["district"], "sen_class": t["sen_class"],
                             "party": party_at(t, t["end"])[0]})
         elif t["how"] == "appointment" and early:

@@ -572,3 +572,23 @@ body {
 .pl-gov-term .cr-bar { width: 90px; }
 .pl-up-end { margin-left: auto; font-size: 12px; }
 .pl-reps { max-height: 420px; overflow-y: auto; padding-right: 4px; }
+.pl-prev { font-size: 12px; color: #8a5a00; }
+.cr-reason { font-size: 12px; }
+.cr-hemi circle { transition: opacity .2s; }
+/* 지도 마우스 오버 정보 상자 */
+.map-tip-wrap { position: relative; }
+.map-tip { position: absolute; transform: translate(12px, 12px); pointer-events: none; z-index: 5; background: rgba(255,255,255,.97); border: 1px solid var(--line); border-radius: 8px; box-shadow: 0 4px 14px rgba(0,0,0,.12); padding: 8px 10px; font-size: 12px; white-space: nowrap; }
+.map-tip.left { transform: translate(calc(-100% - 12px), 12px); }
+.map-tip.up { transform: translate(12px, calc(-100% - 12px)); }
+.map-tip.left.up { transform: translate(calc(-100% - 12px), calc(-100% - 12px)); }
+.map-tip b { display: block; font-size: 13px; margin-bottom: 4px; }
+.map-tip-line { display: flex; align-items: flex-start; gap: 6px; line-height: 1.45; }
+.map-tip-line i { width: 9px; height: 9px; border-radius: 50%; flex: none; margin-top: 4px; }
+.map-tip-sub { color: var(--muted); }
+/* 정치 → 다음 선거 안내 / 2026 선거 예정 화면 */
+.pl-next { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 8px 0; }
+.pl-next-btn { text-align: left; border: 1px solid var(--line); border-radius: 8px; background: #fff; padding: 10px 12px; cursor: pointer; display: flex; flex-direction: column; gap: 2px; }
+.pl-next-btn:hover { border-color: #111; }
+.pl-next-btn span { font-size: 12px; color: var(--muted); }
+.up-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+@media (max-width: 640px) { .pl-next, .up-cards { grid-template-columns: 1fr; } }

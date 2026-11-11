@@ -3,7 +3,7 @@ import MapUS from "../maps/MapUS.jsx";
 import SmallStates from "../components/SmallStates.jsx";
 import MapCD from "../maps/MapCD.jsx";
 import { SeatDonut } from "./HouseDetail.jsx";
-import { Photo, stKo, remainText, pLabel } from "./CongressRoster.jsx";
+import { Photo, remainText, pLabel, prevText } from "./CongressRoster.jsx";
 import { getCongressRoster, getStateOverview, getPresidentHistory, getHouseDistrictMap, getPoliticsRaces, getCounties } from "../api";
 import MapCounty from "../maps/MapCounty.jsx";
 import { partyKo, partyColor } from "../content/parties";
@@ -13,17 +13,17 @@ import { evAt } from "../content/census";
 import { GOV_PHOTO } from "../content/governor_photos";
 import { GOV_TERM } from "../content/governor_terms";
 import { portraitUrl } from "../content/presidents";
-import { shadeByMargin, mixWhite } from "../util/shade";
+import { shadeByMargin } from "../util/shade";
 
 // 시범 범위: 2024년 선거로 구성된 현재 정치 지형(제119대 의회 회기 안의 기준일).
 const TODAY = new Date().toISOString().slice(0, 10);
 const START = "2025-01-03", END = "2027-01-02";
-const REF_MAX = TODAY < END ? TODAY : END;
-const SPLIT = "#8E24AA";        // 상원 2석 분할·하원 동수
-const FIPS_BY_PO = Object.fromEntries(Object.entries(STATE_INFO).map(([f, s]) => [s.po, f]));
+export const REF_MAX = TODAY < END ? TODAY : END;
+export const SPLIT = "#8E24AA";        // 상원 2석 분할·하원 동수
+export const FIPS_BY_PO = Object.fromEntries(Object.entries(STATE_INFO).map(([f, s]) => [s.po, f]));
 
 // 교섭단체 기준 진영(무소속은 caucus 로 귀속)
-const side = (p, caucus) => (p === "DEM" || p === "REP" ? p : caucus === "DEM" || caucus === "REP" ? caucus : "IND");
+export const side = (p, caucus) => (p === "DEM" || p === "REP" ? p : caucus === "DEM" || caucus === "REP" ? caucus : "IND");
 
 const MODES = [
   { key: "all", label: "종합" },
@@ -63,7 +63,7 @@ const cdInfo = (x) => !x ? {} : {
 
 // 주지사 사진(Wikipedia 대표 이미지, 실패 시 이니셜)
 // 2026년 11월 주지사 선거 대상 36개 주 = 2022년에 뽑힌 34개 주(4년 임기) + NH·VT(2년 임기, 짝수해마다)
-const GOV_UP_2026 = new Set(Object.keys(GOV_TERM).filter((po) => GOV_TERM[po][0] === 2026));
+export const GOV_UP_2026 = new Set(Object.keys(GOV_TERM).filter((po) => GOV_TERM[po][0] === 2026));
 const DAY = 86400000;
 function GovTerm({ po, party, refDate }) {
   const t = GOV_TERM[po];
@@ -79,7 +79,7 @@ function GovTerm({ po, party, refDate }) {
   );
 }
 
-function GovPhoto({ po, gov }) {
+export function GovPhoto({ po, gov }) {
   const [err, setErr] = useState(false);
   const file = GOV_PHOTO[`${po}|${gov.name}`];
   const st = { borderColor: partyColor(gov.party) };
@@ -155,7 +155,7 @@ const ALL_SCALE = [
   { k: "D4", label: "민주 4/4", color: "#0D47A1" },
 ];
 
-function buildStates(sen, rep, gov) {
+export function buildStates(sen, rep, gov) {
   const out = {};
   for (const [fips, info] of Object.entries(STATE_INFO)) {
     out[fips] = { fips, po: info.po, ko: info.ko, en: info.en, sens: [], reps: [], vac: [], gov: null };
@@ -183,19 +183,43 @@ function buildStates(sen, rep, gov) {
   return out;
 }
 
-// 2026년 11월 상원 선거가 있는 주: 2027-01 만료(Class 2) 의석 또는 임명직(보궐) 의석 보유
-const senUp2026 = (s) => s.sens.some((m) => m.sched_end.startsWith("2027") || m.how === "appointment");
+// 상원 임명직이 보궐선거로 뽑히는가(sched_end = 보궐선거일). 임명직이라도 정규 임기 만료(1월 3일)가 먼저면 정규 선거.
+const senSpecial = (m) => m.how === "appointment" && !m.sched_end.endsWith("-01-03");
+// 다음 선거 연도: 보궐이면 보궐선거일 연도, 아니면 임기 만료 전해 11월
+const senNext = (m) => senSpecial(m) ? Number(m.sched_end.slice(0, 4)) : Number(m.sched_end.slice(0, 4)) - 1;
+
+// 지도 마우스 오버 정보: 보기(mode)별 주지사·상원·하원 대표단 요약
+function tipFor(mode, s) {
+  if (!s) return null;
+  const title = `${s.ko} ${s.en}`;
+  const gov = () => {
+    if (!s.gov) return [{ text: "주지사 정보 없음" }];
+    const t = GOV_TERM[s.po];
+    return [{ color: partyColor(s.gov.party), text: `주지사 ${s.gov.name} (${partyKo(s.gov.party)})`,
+      sub: t ? `· 다음 선거 ${t[0]}년` : "" }];
+  };
+  const sens = () => s.sens.map((m) => ({ color: partyColor(m.party),
+    text: `상원 ${m.name} (${pLabel(m)}${m.caucus && m.caucus !== m.party ? `·${partyKo(m.caucus)} 교섭` : ""})`,
+    sub: `· Class ${m.sen_class}${m.how === "appointment" ? " 임명" : ""} · 다음 선거 ${senNext(m)}년${senSpecial(m) ? "(보궐)" : ""}` }));
+  const reps = () => {
+    const n = s.reps.filter((m) => !m.delegate).length + s.vac.length;
+    if (!n) return [];
+    const parts = s.repTally.map((x) => `${partyKo(x.p)} ${x.n}`);
+    if (s.vac.length) parts.push(`공석 ${s.vac.length}`);
+    return [{ color: s.repMaj && s.repMaj !== "TIE" ? partyColor(s.repMaj) : SPLIT, text: `하원 대표단 ${n}석`, sub: `· ${parts.join(" · ")}` }];
+  };
+  if (s.po === "DC") return { title, lines: [{ text: "주지사·상원 없음 · 하원 대표(투표권 없음) 1명" }] };
+  const lines = mode === "gov" ? gov() : mode === "sen" ? sens() : mode === "rep" || mode === "cd" ? reps() : [...gov(), ...sens(), ...reps()];
+  return { title, lines };
+}
 
 function colorFor(mode, s) {
   if (!s) return null;
-  // 2026년에 주지사 선거가 없는 14개 주는 옅게
-  if (mode === "gov") return s.gov ? (GOV_UP_2026.has(s.po) ? partyColor(s.gov.party) : mixWhite(partyColor(s.gov.party), 0.55)) : null;
+  if (mode === "gov") return s.gov ? partyColor(s.gov.party) : null;
   if (mode === "sen") {
     if (!s.sens.length) return null;
     const [a, b] = s.sens.map((m) => side(m.party, m.caucus));
-    const c = a === b ? (a === "IND" ? partyColor("IND") : partyColor(a)) : SPLIT;
-    // 2026년에 상원 선거가 없는 주는 옅게
-    return senUp2026(s) ? c : mixWhite(c, 0.55);
+    return a === b ? partyColor(a) : SPLIT;
   }
   if (mode === "rep") {
     if (!s.repMaj) return null;
@@ -212,25 +236,18 @@ function Legend({ mode, states }) {
     items = ALL_SCALE.map((x) => ({ color: x.color, label: x.label, n: vals.filter((s) => s.allKey === x.k).length }));
   } else if (mode === "gov") {
     const t = {};
-    for (const s of vals) if (s.gov) { const k = `${s.gov.party}|${GOV_UP_2026.has(s.po) ? 1 : 0}`; t[k] = (t[k] || 0) + 1; }
-    items = Object.entries(t).sort((a, b) => b[0].localeCompare(a[0])).map(([k, n]) => {
-      const [p, up] = k.split("|");
-      return up === "1" ? { color: partyColor(p), label: `${partyKo(p)} · 2026 선거`, n }
-        : { color: mixWhite(partyColor(p), 0.55), label: `${partyKo(p)} · 선거 없음`, n };
-    });
+    for (const s of vals) if (s.gov) t[s.gov.party] = (t[s.gov.party] || 0) + 1;
+    items = Object.entries(t).sort((a, b) => b[1] - a[1]).map(([p, n]) => ({ color: partyColor(p), label: partyKo(p), n }));
   } else if (mode === "sen") {
     const t = {};
     for (const s of vals) {
       if (!s.sens.length) continue;
       const [a, b] = s.sens.map((m) => side(m.party, m.caucus));
-      const k = `${a === b ? a : "SPLIT"}|${senUp2026(s) ? 1 : 0}`;
+      const k = a === b ? a : "SPLIT";
       t[k] = (t[k] || 0) + 1;
     }
-    const base = [["REP", partyColor("REP"), "공화 2석"], ["DEM", partyColor("DEM"), "민주(교섭 포함) 2석"], ["SPLIT", SPLIT, "양당 1석씩"]];
-    items = base.flatMap(([k, c, l]) => [
-      { color: c, label: `${l} · 2026 선거`, n: t[`${k}|1`] || 0 },
-      { color: mixWhite(c, 0.55), label: `${l} · 선거 없음`, n: t[`${k}|0`] || 0 },
-    ]);
+    items = [["REP", partyColor("REP"), "공화 2석"], ["DEM", partyColor("DEM"), "민주(교섭 포함) 2석"], ["SPLIT", SPLIT, "양당 1석씩"]]
+      .map(([k, c, l]) => ({ color: c, label: l, n: t[k] || 0 }));
   } else {
     const t = { REP: 0, DEM: 0, TIE: 0 };
     for (const s of vals) if (s.repMaj) t[s.repMaj] = (t[s.repMaj] || 0) + 1;
@@ -410,6 +427,7 @@ function StatePanel({ s, refDate, onOverview, cd, selectedCd, onPickCd, showCdMa
                   {m.caucus && m.caucus !== m.party && <span className="muted">{partyKo(m.caucus)} 교섭</span>}
                   <span className="muted">Class {m.sen_class}</span>
                 </div>
+                {m.prev && <div className="pl-sen-sub pl-prev">{prevText(m.prev)}{m.how === "appointment" ? " → 주지사 임명" : ""}</div>}
                 <div className="pl-sen-sub muted">
                   {m.status === "pending" ? `${m.sched_end} 보궐선거 · 결과 반영 대기`
                     : `임기 만료 ${m.sched_end.slice(0, 4)}.01 · 잔여 ${remainText(m.remaining_days)}`}
@@ -449,7 +467,7 @@ function StatePanel({ s, refDate, onOverview, cd, selectedCd, onPickCd, showCdMa
               onClick={() => !m.delegate && onPickCd(cdKey(m))}>
               <span className="pl-cd">{m.district === 0 ? (m.delegate ? "대표" : "AL") : `${m.district}구`}</span>
               <span className="pl-dot" style={{ background: partyColor(m.party) }} />
-              <span>{m.name}</span>
+              <span>{m.name}{m.prev && <span className="muted pl-prev"> ({prevText(m.prev)})</span>}</span>
               {x?.flipped && <span className="cd-flip-badge">★ {partyKo(x.prev_party)}→{partyKo(x.party)}</span>}
               {x?.midterm === "party" && <span className="cd-mid-badge">당적 변경</span>}
               <span className="muted pl-rp">{pLabel(m)}{x ? ` · +${x.margin}%p` : ""}</span>
@@ -459,7 +477,7 @@ function StatePanel({ s, refDate, onOverview, cd, selectedCd, onPickCd, showCdMa
         {s.vac.map((v) => (
           <li key={`v${v.seat}`} className="muted">
             <span className="pl-cd">{v.seat}구</span><span className="pl-dot" style={{ background: "#e0e0e0" }} />
-            <span>공석{v.prev ? ` (전임 ${v.prev}, ${v.since} 이임)` : ""}</span>
+            <span>공석{v.prev ? ` (전임 ${v.prev} · ${v.since.replace(/-/g, ".")} ${v.prev_reason || "이임"})` : ""}</span>
           </li>
         ))}
       </ul>
@@ -489,54 +507,23 @@ function StatePanel({ s, refDate, onOverview, cd, selectedCd, onPickCd, showCdMa
   );
 }
 
-// 기본 우측 패널: 2026년 선거 대상 상원 의석
-function UpIn2026({ sen, onSelect }) {
-  const up = (sen?.members || [])
-    .filter((m) => m.sched_end.startsWith("2027") || m.how === "appointment")
-    .sort((a, b) => stKo(a.state).localeCompare(stKo(b.state), "ko"));
-  const r = up.filter((m) => side(m.party, m.caucus) === "REP").length;
+// 기본 우측 패널: 다음 선거는 상원·주지사 선거 탭의 '2026 (예정)'에서 따로 보여 준다
+function NextElections({ sen, onElection }) {
+  const nSen = (sen?.members || []).filter((m) => m.sched_end.startsWith("2027") || m.how === "appointment").length;
   return (
     <div>
-      <h2 className="ov-h2">2026년 선거 대상 상원 의석 <span>· {up.length}석 (공화 {r} · 민주 {up.length - r})</span></h2>
-      <p className="hint" style={{ marginTop: 0 }}>Class 2 정규 33석 + 임명직 보궐(오하이오·플로리다 등). 2026년 11월 결과는 아직 반영 전입니다. 주를 누르면 상세가 열립니다.</p>
-      <ul className="pl-up-list">
-        {up.map((m) => (
-          <li key={m.bioguide} onClick={() => onSelect(FIPS_BY_PO[m.state])}>
-            <span className="pl-dot" style={{ background: partyColor(m.party) }} />
-            <b>{stKo(m.state)}</b>
-            <span>{m.name}</span>
-            {m.how === "appointment" && <span className="cr-badge appt">임명·보궐</span>}
-          </li>
-        ))}
-      </ul>
+      <h2 className="ov-h2">다음 선거 <span>· 2026년 11월 3일</span></h2>
+      <p className="hint" style={{ marginTop: 0 }}>이 페이지는 기준일 현재 누가 자리를 쥐고 있는지만 보여 줍니다. 2026년 선거 대상(선거 없는 주는 회색)은 선거 지도에서 따로 볼 수 있습니다.</p>
+      <div className="pl-next">
+        <button className="pl-next-btn" onClick={() => onElection("senate")}><b>상원 선거 지도</b><span>대상 {nSen || "…"}석 · 정규 + 보궐</span></button>
+        <button className="pl-next-btn" onClick={() => onElection("governor")}><b>주지사 선거 지도</b><span>대상 {GOV_UP_2026.size}개 주</span></button>
+      </div>
+      <p className="hint">하원은 435석 전부가 2년마다 선거라 '하원 선거구' 보기에서 현직과 2024년 결과를 확인하면 됩니다. 주를 클릭하면 상세가 보입니다.</p>
     </div>
   );
 }
 
-// 주지사 보기의 기본 우측 패널: 2026년 선거 대상 주지사 36곳
-function GovUp2026({ states, onSelect }) {
-  const up = Object.values(states).filter((s) => GOV_UP_2026.has(s.po) && s.gov)
-    .sort((a, b) => a.ko.localeCompare(b.ko, "ko"));
-  const r = up.filter((s) => s.gov.party === "REP").length;
-  return (
-    <div>
-      <h2 className="ov-h2">2026년 선거 대상 주지사 <span>· {up.length}곳 (공화 {r} · 민주 {up.length - r})</span></h2>
-      <p className="hint" style={{ marginTop: 0 }}>2022년에 뽑힌 34개 주(4년 임기) + 뉴햄프셔·버몬트(2년 임기). 2026년 11월 결과는 아직 반영 전입니다. 주를 누르면 상세가 열립니다.</p>
-      <ul className="pl-up-list">
-        {up.map((s) => (
-          <li key={s.fips} onClick={() => onSelect(s.fips)}>
-            <span className="pl-dot" style={{ background: partyColor(s.gov.party) }} />
-            <b>{s.ko}</b>
-            <span>{s.gov.name}</span>
-            <span className="muted pl-up-end">{GOV_TERM[s.po][1].slice(0, 7).replace("-", ".")} 만료</span>
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
-}
-
-export default function PoliticsPage({ onOverview }) {
+export default function PoliticsPage({ onOverview, onElection }) {
   const [ref, setRef] = useState(REF_MAX);
   const [sen, setSen] = useState(null);
   const [rep, setRep] = useState(null);
@@ -639,21 +626,21 @@ export default function PoliticsPage({ onOverview }) {
             ) : <div className="cd-loading muted">선거구 데이터 불러오는 중…</div>
           ) : mode === "cd" ? (
             <>
-              <MapUS colorByCode={colorByCode} selectedCode={selected} onSelect={pickState} />
-              <SmallStates states={mapStates} colorByCode={colorByCode} selectedCode={selected} onSelect={pickState} />
+              <MapUS colorByCode={colorByCode} selectedCode={selected} onSelect={pickState} tipOf={(c) => tipFor(mode, states[c])} />
+              <SmallStates states={mapStates} colorByCode={colorByCode} selectedCode={selected} onSelect={pickState} tipOf={(c) => tipFor(mode, states[c])} />
               <Legend mode="rep" states={states} />
             </>
           ) : (
             <>
-              <MapUS colorByCode={colorByCode} selectedCode={selected} onSelect={pickState} />
-              <SmallStates states={mapStates} colorByCode={colorByCode} selectedCode={selected} onSelect={pickState} />
+              <MapUS colorByCode={colorByCode} selectedCode={selected} onSelect={pickState} tipOf={(c) => tipFor(mode, states[c])} />
+              <SmallStates states={mapStates} colorByCode={colorByCode} selectedCode={selected} onSelect={pickState} tipOf={(c) => tipFor(mode, states[c])} />
               <Legend mode={mode} states={states} />
             </>
           )}
           {!countyView && <p className="hint">
             {mode === "all" && "종합 = 주지사·상원 2석·하원 대표단 다수 등 4개 축 중 한 정당이 몇 개를 쥐고 있는지(무소속은 교섭단체 기준)."}
-            {mode === "gov" && "현직 주지사의 정당. 옅은 색 = 2026년에 주지사 선거가 없는 주."}
-            {mode === "sen" && "그 주 상원의원 2명의 정당(무소속은 교섭단체 기준). 보라색은 양당이 1석씩. 옅은 색 = 2026년에 상원 선거가 없는 주."}
+            {mode === "gov" && "현직 주지사의 정당. 2026년 선거 대상은 주지사 탭의 '2026 (예정)'에서 볼 수 있습니다."}
+            {mode === "sen" && "그 주 상원의원 2명의 정당(무소속은 교섭단체 기준). 보라색은 양당이 1석씩. 2026년 선거 대상은 상원 탭의 '2026 (예정)'에서 볼 수 있습니다."}
             {mode === "rep" && "그 주 하원 대표단의 다수당. 격차가 작을수록 옅게, 동수는 보라색."}
             {mode === "cd" && !sel && "주 색 = 하원 대표단 다수당. 주를 클릭하면 그 주의 선거구 지도(제119대, Census CD119)가 열립니다. 오른쪽 목록에서 정당이 바뀐 선거구로 바로 갈 수도 있습니다."}
             {mode === "cd" && sel && "색 = 현직 의원 정당, 농도 = 2024년 득표 격차. 정당 교체 선거구는 채움 = 현재 정당, 안쪽 테두리 = 2022년 정당, 점선 테두리 = 회기 중 당적 변경·공석. 선거구를 누르면 오른쪽 목록에서 강조됩니다."}
@@ -661,11 +648,10 @@ export default function PoliticsPage({ onOverview }) {
           </p>}
         </section>
         <aside className="detail">
-          {sel && <button className="back-link" onClick={() => { setSelected(null); setSelectedCd(null); }}>← {mode === "cd" ? "정당이 바뀐 선거구" : "2026 선거 대상"}</button>}
+          {sel && <button className="back-link" onClick={() => { setSelected(null); setSelectedCd(null); }}>← {mode === "cd" ? "정당이 바뀐 선거구" : "다음 선거"}</button>}
           {sel ? <StatePanel s={sel} refDate={ref} onOverview={onOverview} cd={cd} selectedCd={selectedCd} onPickCd={pickCd} showCdMap={mode !== "cd"} onCounty={setCountyView} />
             : mode === "cd" ? <FlipList cd={cd} onPick={pickCd} />
-            : mode === "gov" ? <GovUp2026 states={states} onSelect={pickState} />
-            : <UpIn2026 sen={sen} onSelect={pickState} />}
+            : <NextElections sen={sen} onElection={onElection} />}
         </aside>
       </main>
       <p className="hint cr-source">출처: 의원 unitedstates/congress-legislators · 주지사·대선 결과는 이 사이트 DB. 2026년 11월 선거 결과는 미반영.</p>

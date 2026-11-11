@@ -28,6 +28,9 @@ function sideRank(m) {
 }
 export const pLabel = (m) => (!m.party || m.party === "OTH" ? m.party_raw || "정당 미상" : partyKo(m.party));
 
+// 회기 중 취임자의 전임자·이임 사유: "전임 Lindsey Graham · 2026.07.11 사망"
+export const prevText = (p) => `전임 ${p.name} · ${p.end.replace(/-/g, ".")} ${p.reason || "이임"}`;
+
 export function remainText(days) {
   if (days <= 0) return "만료";
   const y = Math.floor(days / 365), mo = Math.floor((days % 365) / 30.4);
@@ -46,7 +49,7 @@ export function Photo({ m }) {
 }
 
 // 의석 반원도: 행별 반지름에 비례해 좌석 배분 → 각도순(좌→우)으로 진영 순서대로 채색.
-function Hemicycle({ seats, highlight, onPick }) {
+function Hemicycle({ seats, highlight, onPick, group }) {
   const n = seats.length;
   const rows = n > 300 ? 12 : n > 150 ? 8 : n > 60 ? 5 : 3;
   const R = 200, r0 = R * 0.38;
@@ -70,11 +73,12 @@ function Hemicycle({ seats, highlight, onPick }) {
       {pts.map((p, i) => {
         const s = seats[i];
         const on = highlight && s.key === highlight;
+        const dim = group && s.group !== group;   // Class 선택 시 다른 Class 의석은 흐리게
         return (
           <circle key={i} cx={p.x} cy={p.y} r={on ? dot * 1.6 : dot}
             fill={s.vacant ? "#fff" : s.color} stroke={s.vacant ? "#9e9e9e" : on ? "#111" : "none"}
             strokeWidth={s.vacant ? 1 : 1.5} strokeDasharray={s.vacant ? "2 1.5" : undefined}
-            opacity={s.pending ? 0.5 : 1} style={{ cursor: s.key ? "pointer" : "default" }}
+            opacity={dim ? 0.15 : s.pending ? 0.5 : 1} style={{ cursor: s.key ? "pointer" : "default" }}
             onClick={() => s.key && onPick(s.key)}>
             <title>{s.title}</title>
           </circle>
@@ -136,11 +140,11 @@ export default function CongressRoster() {
 
   const seats = useMemo(() => {
     const s = voting.slice().sort((a, b) => sideRank(a) - sideRank(b) || SORTS.state(a, b)).map((m) => ({
-      key: m.bioguide, rank: sideRank(m), color: partyColor(m.party), pending: m.status === "pending",
+      key: m.bioguide, rank: sideRank(m), color: partyColor(m.party), pending: m.status === "pending", group: m.sen_class,
       title: `${m.name} (${pLabel(m)}, ${stKo(m.state)} ${seatLabel(m, chamber)})`,
     }));
     const vac = (data?.vacancies || []).filter((v) => !PO_KO_TERR.has(v.state)).map((v) => ({
-      vacant: true, title: `공석: ${stKo(v.state)} ${chamber === "sen" ? `Class ${v.seat}` : `${v.seat}구`}`,
+      vacant: true, group: chamber === "sen" ? v.seat : null, title: `공석: ${stKo(v.state)} ${chamber === "sen" ? `Class ${v.seat}` : `${v.seat}구`}`,
     }));
     // 공석은 가운데(기타 진영 자리)에 끼워 넣는다
     const mid = s.findIndex((x) => x.rank >= 3);
@@ -210,8 +214,10 @@ export default function CongressRoster() {
       {data && (
         <section className="ov-section cr-summary">
           <div className="cr-hemi-wrap">
-            <Hemicycle seats={seats} highlight={pick} onPick={(k) => { setPick(k); setState(""); setParty(""); setQuery(""); setNextOnly(false); setCls(0); setTimeout(() => document.getElementById(`cr-${k}`)?.scrollIntoView({ block: "center", behavior: "smooth" }), 0); }} />
-            <div className="cr-hemi-total"><b>{nSeats}</b>석 · 과반 {majority}</div>
+            <Hemicycle seats={seats} highlight={pick} group={isSen ? cls : 0} onPick={(k) => { setPick(k); setState(""); setParty(""); setQuery(""); setNextOnly(false); setCls(0); setTimeout(() => document.getElementById(`cr-${k}`)?.scrollIntoView({ block: "center", behavior: "smooth" }), 0); }} />
+            <div className="cr-hemi-total">
+              {isSen && cls ? <><b>Class {cls}</b> {seats.filter((x) => x.group === cls).length}석 강조 · 전체 {nSeats}석</> : <><b>{nSeats}</b>석 · 과반 {majority}</>}
+            </div>
           </div>
           <ul className="seat-legend cr-legend">
             {tally.map((t) => (
@@ -300,6 +306,7 @@ export default function CongressRoster() {
                         {m.how === "appointment" && <span className="cr-badge appt">임명</span>}
                         {m.how === "special-election" && <span className="cr-badge spec">보궐</span>}
                         {m.delegate && <span className="cr-badge deleg">대표</span>}
+                        {m.prev && <div className="cr-sub">{prevText(m.prev)}</div>}
                       </td>
                       <td>{stKo(m.state)}</td>
                       <td className="muted">{seatLabel(m, chamber)}</td>
@@ -347,7 +354,7 @@ export default function CongressRoster() {
                   <li key={i}>
                     <b>{stKo(v.state)} {isSen ? `Class ${v.seat}` : v.seat === 0 ? "전체(AL)" : `${v.seat}구`}</b>
                     {v.prev
-                      ? <> — {v.prev}<span className="muted"> ({partyKo(v.prev_party)})</span> {v.since} 이임 이후</>
+                      ? <> — {v.prev}<span className="muted"> ({partyKo(v.prev_party)})</span> {v.since} {v.prev_reason ? `${v.prev_reason} 이후` : "이임 이후"}</>
                       : <> — 회기 개원부터 공석, {v.next_start} {v.next} 취임 예정</>}
                   </li>
                 ))}
@@ -367,10 +374,11 @@ export default function CongressRoster() {
                     </span>
                     <span>{c.name} <span className="muted">· {stKo(c.state)} {isSen ? `Class ${c.sen_class}` : c.district === 0 ? "AL" : `${c.district}구`}</span></span>
                     <span className="cr-party sm" style={{ background: partyColor(c.party) }}>{partyKo(c.party)}</span>
+                    {c.reason && <span className="muted cr-reason">{c.reason}</span>}
                   </li>
                 ))}
               </ul>
-              <p className="hint">흐리게 표시된 항목은 기준일 이후의 변동입니다. 이임 사유(사퇴·사망·입각 등)는 원본 데이터에 없어 표기하지 않습니다.</p>
+              <p className="hint">흐리게 표시된 항목은 기준일 이후의 변동입니다. 이임 사유(사망·사임·입각 등)는 원본 데이터에 없어 보도 기준으로 따로 기입했습니다.</p>
             </div>
           )}
         </section>
